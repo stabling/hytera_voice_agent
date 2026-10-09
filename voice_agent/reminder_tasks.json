@@ -1,0 +1,70 @@
+[
+  {
+    "task": "明天早上9点钟去开会",
+    "time_desc": "明天早上9点钟",
+    "target_datetime": "2026-09-03 09:00",
+    "terminal_id": 6,
+    "channel_id": 238219072,
+    "request_id": 16,
+    "origin_command_id": "cmd_aad5f3834e864ce391d7f3168813c672",
+    "sms_content": "1分钟后明天早上9点钟去开会",
+    "scheduled_at": "2026-09-02 20:38:19",
+    "delay_seconds": 44440.3,
+    "status": "failed",
+    "scheduled_command_id": "cmd_2d9e07842b4f451b95048ed54bf15046",
+    "operation_id": "op_e724b5c113034c589544dec7f6b622af",
+    "error": "connection error: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+    "failed_at": "2026-09-03 10:29:29"
+  },
+  {
+    "task": "明天下午2点去仓库巡逻",
+    "time_desc": "明天下午2点",
+    "target_datetime": "2026-09-03 14:00",
+    "terminal_id": 6,
+    "channel_id": 238219072,
+    "request_id": 17,
+    "origin_command_id": "cmd_71c6077f18364902bbb867f6ab6a8638",
+    "sms_content": "1分钟后明天下午2点去仓库巡逻",
+    "scheduled_at": "2026-09-02 20:38:33",
+    "delay_seconds": 62426.7,
+    "status": "sent",
+    "scheduled_command_id": "cmd_1963d7fc6e09494b86cc4ea8a3e52937",
+    "operation_id": "op_ee71a405b6f6471385cc89efcd51f3ff",
+    "delivery_result": {
+      "ok": true,
+      "target_type": "private",
+      "target_id": "6",
+      "content": "1分钟后明天下午2点去仓库巡逻",
+      "request_bytes": 90,
+      "delivery_status": "submitted_to_adk",
+      "accepted": true,
+      "dispatched": true,
+      "device_confirmed": false,
+      "timing_ms": {
+        "protobuf_encode_ms": 0.011,
+        "agent_to_gateway_http_ms": 69.109,
+        "gateway_processing_ms": 8.461,
+        "adk_send_command_ms": 2.432,
+        "response_decode_ms": 0.017,
+        "total_ms": 69.668
+      },
+      "adk_result": {
+        "accepted": true,
+        "operation": "private_text",
+        "option": "TMP_PRIVATE_NO_NEED_ACK_REQUEST",
+        "target_id": 6,
+        "channel_id": 253865880,
+        "request_id": 805306369,
+        "note": "Submitted to ADK without terminal ACK requirement. An ADK-discovered runtime ChannelID was used.",
+        "error_code": null,
+        "error_name": null,
+        "timing_ms": {
+          "adk_send_command_ms": 2.432,
+          "gateway_service_ms": 6.492,
+          "gateway_processing_ms": 8.461
+        }
+      }
+    },
+    "sent_at": "2026-09-03 13:59:00"
+  }
+]

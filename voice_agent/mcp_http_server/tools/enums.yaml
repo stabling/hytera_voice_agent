@@ -1,0 +1,284 @@
+api_version: 1.0.0
+enums:
+- name: target_type
+  description: 呼叫/短消息目标类型
+  values:
+  - value: 0
+    name: standby
+    desc: 待机联系人（当前选中的目标）
+  - value: 1
+    name: private
+    desc: 个呼
+  - value: 2
+    name: group
+    desc: 组呼
+  - value: 3
+    name: all
+    desc: 全呼
+  - value: 4
+    name: all_in_station
+    desc: 基站全呼
+  - value: 5
+    name: all_in_area
+    desc: 本地全呼
+  - value: 6
+    name: all_in_system
+    desc: 全网全呼
+  - value: 7
+    name: all_in_region
+    desc: 地域全呼
+  - value: 8
+    name: pstn
+    desc: 公共电话
+  - value: 9
+    name: pabx
+    desc: 内部电话
+  - value: 10
+    name: sna
+    desc: 短号码寻址
+  - value: 11
+    name: fssn
+    desc: 段队短号
+  - value: 12
+    name: full_run
+    desc: 完整无线用户号码
+  - value: 13
+    name: short_run
+    desc: 短无线用户号码
+- name: call_priority
+  description: 呼叫优先级
+  values:
+  - value: 0
+    name: normal
+    desc: 普通
+  - value: 1
+    name: preemptive
+    desc: 预占
+  - value: 2
+    name: emergency
+    desc: 紧急
+- name: talk_mode
+  description: 通话模式
+  values:
+  - value: 0
+    name: simplex
+    desc: 单工
+  - value: 1
+    name: half_duplex
+    desc: 半双工
+  - value: 2
+    name: full_duplex
+    desc: 全双工
+- name: work_mode
+  description: 终端工作模式
+  values:
+  - value: 0
+    name: active
+    desc: 当前激活模式
+  - value: 1
+    name: conventional
+    desc: 常规模式 (DMR/PDT)
+  - value: 2
+    name: trunking
+    desc: 集群模式 (DMR/PDT)
+  - value: 3
+    name: tmo
+    desc: 集群模式 (TETRA)
+  - value: 4
+    name: dmo
+    desc: 直通模式 (TETRA)
+  - value: 5
+    name: repeater
+    desc: 中转模式 (TETRA)
+- name: volume_type
+  description: 音量类型
+  values:
+  - value: 0
+    name: call
+    desc: 通话音量
+  - value: 1
+    name: tone
+    desc: 提示音
+  - value: 2
+    name: alarm
+    desc: 闹铃音量
+  - value: 3
+    name: media
+    desc: 多媒体音量
+- name: tx_power_level
+  description: 射频发射功率等级
+  values:
+  - value: 0
+    name: high
+    desc: 高
+  - value: 1
+    name: medium
+    desc: 中
+  - value: 2
+    name: low
+    desc: 低
+  - value: 3
+    name: auto
+    desc: 自动
+  - value: 4
+    name: watt_0_3
+    desc: 0.3 瓦
+  - value: 5
+    name: watt_0_56
+    desc: 0.56 瓦
+  - value: 6
+    name: watt_1
+    desc: 1 瓦
+  - value: 7
+    name: watt_1_8
+    desc: 1.8 瓦
+  - value: 8
+    name: watt_3
+    desc: 3 瓦
+  - value: 9
+    name: watt_5_6
+    desc: 5.6 瓦
+  - value: 10
+    name: watt_10
+    desc: 10 瓦
+  - value: 11
+    name: watt_17_5
+    desc: 17.5 瓦
+  - value: 12
+    name: watt_30
+    desc: 30 瓦
+- name: hmi_profile
+  description: 情景模式
+  values:
+  - value: 0
+    name: standard
+    desc: 标准/正常模式
+  - value: 1
+    name: silent
+    desc: 静音模式
+  - value: 2
+    name: vibration
+    desc: 振动模式
+  - value: 3
+    name: meeting
+    desc: 会议模式
+  - value: 4
+    name: outdoor
+    desc: 户外模式
+  - value: 5
+    name: flight
+    desc: 飞行模式
+- name: gps_mode
+  description: 定位模块运行模式
+  values:
+  - value: 0
+    name: 'on'
+    desc: 定位业务常开
+  - value: 1
+    name: 'off'
+    desc: 定位业务常闭
+  - value: 2
+    name: auto
+    desc: 智能自动：进入定位相关功能界面时自动开启，退出时自动关闭
+- name: channel_type
+  description: 信道类型
+  values:
+  - value: 0
+    name: digital
+    desc: 数字信道
+  - value: 1
+    name: analog
+    desc: 模拟信道
+- name: resource_name
+  description: 订阅资源类型
+  values:
+  - value: 0
+    name: all
+    desc: 所有一级资源
+  - value: 1
+    name: system
+    desc: 系统级资源
+  - value: 2
+    name: radio
+    desc: 设备基础信息
+  - value: 3
+    name: power
+    desc: 电源电池
+  - value: 4
+    name: audio
+    desc: 音频通路
+  - value: 5
+    name: zone
+    desc: 区域管理
+  - value: 6
+    name: channel
+    desc: 信道管理
+  - value: 7
+    name: contact
+    desc: 联系人管理
+  - value: 8
+    name: call
+    desc: 呼叫控制
+  - value: 9
+    name: sms
+    desc: 短消息
+  - value: 10
+    name: network
+    desc: 网络制式
+  - value: 11
+    name: scan
+    desc: 信道扫描
+  - value: 12
+    name: security
+    desc: 安全加密
+  - value: 13
+    name: hmi
+    desc: 人机交互
+  - value: 14
+    name: location
+    desc: 定位服务
+  - value: 15
+    name: media
+    desc: 多媒体
+  - value: 16
+    name: accessory
+    desc: 外设配件
+  - value: 17
+    name: utility
+    desc: 本地工具
+  - value: 18
+    name: folder
+    desc: 通话组管理
+- name: event_name
+  description: 订阅事件类型
+  values:
+  - value: 0
+    name: all
+    desc: 该资源域下的所有事件
+  - value: 1
+    name: call_received
+    desc: 来电事件
+  - value: 2
+    name: call_status_changed
+    desc: 呼叫状态改变事件
+  - value: 3
+    name: sms_received
+    desc: 收到短消息事件
+- name: call_status
+  description: 呼叫状态
+  values:
+  - value: 0
+    name: ringing
+    desc: 振铃
+  - value: 1
+    name: rejected
+    desc: 拒绝接听
+  - value: 2
+    name: connected
+    desc: 已接通
+  - value: 3
+    name: talker
+    desc: 话语权改变
+  - value: 4
+    name: end
+    desc: 呼叫结束

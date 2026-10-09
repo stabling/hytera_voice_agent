@@ -1,0 +1,118 @@
+name: accessory_tools
+description: 外设与配件管理
+tools:
+- name: accessory_bt_list
+  resource: accessory
+  permission: READ
+  description:
+    function: 获取当前蓝牙模块搜索到的设备列表，包含已配对、未配对及已连接的设备信息，用于在配对前查找目标设备。
+    precondition: 蓝牙模块已开启（可用 accessory_bt_switch 开启）。
+    side_effect_and_idempotency: 只读查询，无副作用，可重复调用。每次调用会触发一次设备扫描刷新，结果反映调用时刻的可见设备。
+    recommended_tools: accessory_bt_switch（开启蓝牙）、accessory_bt_pair（配对）。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: offset
+    type: integer
+    required: false
+    description: 偏移量
+    default: 0
+  - field: limit
+    type: integer
+    required: false
+    description: 每页数量
+    default: 10
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: total
+    type: integer
+    presence: mandatory
+    description: 当前扫描到的总设备数
+  - field: has_more
+    type: boolean
+    presence: mandatory
+    description: 是否还有更多数据
+  - field: items
+    type: array
+    presence: mandatory
+    description: 当前页设备记录列表
+  - field: items[].address
+    type: string
+    max: 18
+    presence: mandatory
+    description: 蓝牙设备地址（如 AA:BB:CC:DD:EE:FF）
+  - field: items[].name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 设备名称
+  - field: items[].rssi
+    type: integer
+    presence: optional
+    description: 信号强度（dBm），值越大信号越强
+  - field: items[].paired
+    type: boolean
+    presence: optional
+    description: 是否已配对
+  - field: items[].connected
+    type: boolean
+    presence: optional
+    description: 是否当前已连接
+  error_codes: []
+- name: accessory_bt_pair
+  resource: accessory
+  permission: WRITE
+  description:
+    function: 发起蓝牙配对，与指定蓝牙设备（耳机、肩咪等）建立配对关系。
+    precondition: 蓝牙模块已开启（可用 accessory_bt_switch 开启）。
+    side_effect_and_idempotency: 每次调用发起一次配对请求，请勿重复调用；配对过程可能耗时，超时返回错误。
+    recommended_tools: accessory_bt_switch。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: address
+    type: string
+    required: true
+    description: 蓝牙设备地址（如 AA:BB:CC:DD:EE:FF）
+    max: 18
+  - field: timeout
+    type: integer
+    required: false
+    description: 配对超时秒数
+    default: 30
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: accessory_bt_switch
+  resource: accessory
+  permission: WRITE
+  description:
+    function: 开启或关闭蓝牙模块。蓝牙耳机、蓝牙肩咪等配件须蓝牙开启后才可连接。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: enabled
+    type: boolean
+    required: true
+    description: true=开启,   false=关闭
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

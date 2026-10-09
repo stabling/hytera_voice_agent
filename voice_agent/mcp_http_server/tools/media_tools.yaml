@@ -1,0 +1,40 @@
+name: media_tools
+description: 多媒体采集与存储
+tools:
+- name: media_record_play
+  resource: media
+  permission: WRITE
+  description:
+    function: 播放录音文件。
+    precondition: 指定的录音记录须存在。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: path
+    type: string
+    required: false
+    description: 录音文件路径，知道录音文件路径时传递该字段，优先使用路径
+    default: ''
+    max: 256
+  - field: start
+    type: integer
+    required: false
+    description: '当路径为空时，使用索引值
+
+      start>=0为正向索引，0为第一条录音；start<0为负向索引，-1为最后一条录音'
+    default: -1
+  - field: number
+    type: integer
+    required: false
+    description: 从start开始播放录音的数目
+    default: 1
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

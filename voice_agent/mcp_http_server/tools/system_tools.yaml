@@ -1,0 +1,76 @@
+name: system_tools
+description: 系统级控制与管理，非特定业务资源的全局能力
+tools:
+- name: system_event_subscribe
+  resource: system
+  permission: WRITE
+  description:
+    function: 订阅指定一级资源下的业务事件。订阅后，当该资源产生对应事件时，终端设备将上主动上报指定事件。有效期为设备本次上线周期，下线后重新上线需要重新订阅。
+    precondition: 无。
+    side_effect_and_idempotency: 重复订阅相同的 resource + event 组合是幂等的（不会产生重复推送）。
+    recommended_tools: system_event_unsubscribe。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: items
+    type: array
+    required: true
+    description: 需要订阅的资源-事件组合列表
+  - field: items[].resource
+    type: string
+    required: true
+    description: 事件订阅资源域，取值见公共枚举集 resource_name
+    enum_ref: resource_name
+    max: 16
+  - field: items[].event
+    type: string
+    required: false
+    description: 事件类型，取值见公共枚举集 event_name；不传或传 all 表示订阅该资源下的所有事件
+    default: all
+    enum_ref: event_name
+    max: 32
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: system_event_unsubscribe
+  resource: system
+  permission: WRITE
+  description:
+    function: 取消订阅指定的事件。取消后，终端设备不再主动推送相应的事件。
+    precondition: 已通过 system_event_subscribe 订阅了对应事件。
+    side_effect_and_idempotency: 重复取消是安全的（已取消时自动忽略）。
+    recommended_tools: system_event_subscribe。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: items
+    type: array
+    required: true
+    description: 需要取消订阅的资源-事件组合列表
+  - field: items[].resource
+    type: string
+    required: true
+    description: 事件订阅资源域，取值见公共枚举集 resource_name
+    default: all
+    enum_ref: resource_name
+    max: 16
+  - field: items[].event
+    type: string
+    required: false
+    description: 事件类型，取值见公共枚举集 event_name；不传或传 all 表示取消订阅该资源下的所有事件
+    default: all
+    enum_ref: event_name
+    max: 32
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

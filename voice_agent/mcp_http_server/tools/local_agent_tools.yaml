@@ -1,0 +1,156 @@
+description: 智能体本地解析与调度能力；与设备原子工具共用 ToolCatalog 契约，但不进入终端二进制 wire。
+domain: agent-local
+executor_kind: local
+tools:
+- name: contact_resolve
+  resource: directory
+  permission: READ
+  description:
+    function: 根据用户给出的联系人称呼解析唯一联系人，返回可直接用于短信和呼叫的目标 ID 与类型。
+    precondition: 必须提供联系人称呼；无法唯一确定时必须失败，不得猜测。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: sms_send, call_start
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: name
+    type: string
+    required: true
+    min: 1
+    max: 128
+    description: 用户给出的联系人称呼。
+  - field: contact_type
+    type: string
+    required: false
+    enum:
+    - private
+    - group
+    - standby
+    max: 16
+    description: 可选联系人类型提示；最终类型以权威目录为准。
+  output:
+  - field: contact_id
+    type: string
+    description: 联系人设备 ID。
+  - field: target_id
+    type: string
+    description: 可直接传给短信/呼叫能力的目标 ID。
+  - field: target_type
+    type: string
+    enum:
+    - private
+    - group
+    description: 可直接传给 sms_send.target_type 的目标类型。
+  - field: contact_type
+    type: string
+    enum:
+    - private
+    - group
+    - standby
+    description: 可直接传给 call_start.call_type 的联系人类型。
+  - field: name
+    type: string
+    description: 权威目录中的联系人名称。
+  error_codes: []
+- name: radio_resolve_zone_channel
+  resource: directory
+  permission: READ
+  description:
+    function: 根据权威区域/信道目录，把自然语言区域或信道名称解析为 zone_id/channel_id；只解析，不执行切换。
+    precondition: zone/channel 至少提供一个；实体类型以权威目录为准，不根据名称后缀猜测。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: zone_channel_active_set
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: zone
+    type: string
+    required: 条件必选
+    min: 1
+    max: 128
+    description: 区域名称提示。
+  - field: channel
+    type: string
+    required: 条件必选
+    min: 1
+    max: 128
+    description: 信道名称提示。
+  - field: mode
+    type: string
+    required: true
+    enum:
+    - active
+    - conventional
+    - trunking
+    default: conventional
+    max: 16
+    description: 用户未明确说明时使用 conventional。
+  output:
+  - field: zone_id
+    type: integer
+    description: 解析出的区域 ID。
+  - field: zone_name
+    type: string
+    description: 权威区域名称。
+  - field: channel_id
+    type: integer
+    description: 解析出的信道 ID。
+  - field: channel_name
+    type: string
+    description: 权威信道名称。
+  error_codes: []
+  constraints:
+    at_least_one:
+    - zone
+    - channel
+- name: reminder_schedule
+  resource: reminder
+  permission: WRITE
+  description:
+    function: 为当前终端创建一个主动提醒；时间可以保留自然语言描述，由本地确定性时间解析器处理。
+    precondition: task 必填；time_desc 与 target_datetime 至少应能解析出一个有效触发时间。
+    side_effect_and_idempotency: 创建提醒任务，有副作用；重复调用可能创建重复提醒。
+    recommended_tools: utility_todo_add
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: task
+    type: string
+    required: true
+    min: 1
+    max: 1000
+    description: 提醒内容。
+  - field: time_desc
+    type: string
+    required: false
+    max: 500
+    description: 用户原始时间表达。
+  - field: target_datetime
+    type: string
+    required: false
+    max: 128
+    description: 已解析的目标时间。
+  output:
+  - field: ok
+    type: boolean
+  - field: scheduled
+    type: boolean
+  - field: target_datetime
+    type: string
+  - field: delay_seconds
+    type: number
+  - field: sms_content
+    type: string
+  - field: terminal_id
+    type: integer
+  error_codes: []
+  constraints:
+    at_least_one:
+    - time_desc
+    - target_datetime

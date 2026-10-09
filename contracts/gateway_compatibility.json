@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "purpose": "x86 ADK 网关兼容性基线。重构时不得无意修改既有 HTTP 路由、protobuf 工具编号或生成代码。",
+  "http_routes": [
+    {
+      "path": "/adk/protobuf/result-sms",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/channels",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/health",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/sms/group",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/sms/private",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/voice/callback/dead-letters",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/voice/callback/outbox",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/voice/capture/start",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/voice/capture/stop",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/voice/info",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/voice/private/send-wav",
+      "methods": [
+        "POST"
+      ]
+    }
+  ],
+  "tool_name_to_id": {
+    "accessory_bt_pair": 1,
+    "accessory_bt_switch": 2,
+    "accessory_gps_switch": 3,
+    "app_todo_add": 4,
+    "audio_microphone_switch": 5,
+    "audio_translate_start": 6,
+    "audio_translate_stop": 7,
+    "audio_volume_get": 8,
+    "audio_volume_set": 9,
+    "call_answer": 10,
+    "call_end": 11,
+    "call_start": 12,
+    "contact_add": 13,
+    "contact_delete": 14,
+    "contact_favorite_add": 15,
+    "contact_favorite_delete": 16,
+    "contact_list": 17,
+    "device_find": 18,
+    "device_interconnect_switch": 19,
+    "hmi_dialog_confirm": 20,
+    "hmi_profile_get": 21,
+    "hmi_profile_set": 22,
+    "hmi_vibration_switch": 23,
+    "location_gps_get": 24,
+    "location_nearby_query": 25,
+    "location_report_trigger": 26,
+    "media_call_record_start": 27,
+    "media_call_record_stop": 28,
+    "media_field_record_start": 29,
+    "media_field_record_stop": 30,
+    "media_record_play": 31,
+    "sms_workorder_send": 32,
+    "power_battery_get": 33,
+    "power_transmit_level_set": 34,
+    "radio_alias_get": 35,
+    "radio_alias_set": 36,
+    "radio_id_get": 37,
+    "radio_id_set": 38,
+    "radio_time_get": 39,
+    "radio_version_get": 40,
+    "sms_list": 41,
+    "sms_preset_list": 42,
+    "sms_delete": 43,
+    "sms_send": 44,
+    "sms_emergency_alert_send": 45,
+    "sms_location_send": 46,
+    "sms_status_send": 47,
+    "sms_play": 48,
+    "zone_list": 49,
+    "zone_delete": 50,
+    "zone_add": 51,
+    "zone_channel_list": 52,
+    "zone_channel_active_get": 53,
+    "zone_channel_active_set": 54
+  },
+  "protected_file_sha256": {
+    "generated/python/accessory_skill_pb2.py": "4d66e4618dd161799b335ef372c7cccd3738856f40b395c657edc64a461b8332",
+    "generated/python/app_skill_pb2.py": "d2da2522edd489d2d8f81e3cd9298bcaacbc340acd0cfe3a246d039ab6c189d4",
+    "generated/python/audio_skill_pb2.py": "db97b2cde2518bb0200eb6358f24d1c33735f667d3c60326d1ea01f91b37933d",
+    "generated/python/call_skill_pb2.py": "dc5b2cc4a764a66d15feea0216f8398400c11c7cc204bd98a61baca741ef45e6",
+    "generated/python/common_pb2.py": "50fde7b92eff022df36570d4f59685228dc39131f1d9d9bc3f5c84dc556b2e6c",
+    "generated/python/contact_skill_pb2.py": "a419870ec49c224df8977aa8ead78754ce186317e43e00653c3a1ddc85a71bdb",
+    "generated/python/device_skill_pb2.py": "4d42eb22e08802c884d9fb1d2887a4a736081d8675a4851abbd6cb402035c075",
+    "generated/python/hmi_skill_pb2.py": "5c83e76e1f257f405b7aa8ef99338dc846a106c8a90224cc2638a2d80856b5a9",
+    "generated/python/location_skill_pb2.py": "7eef83ead1836ebb05dc842d42bdb8a250e83c7fc334c3677afd18918758b146",
+    "generated/python/media_skill_pb2.py": "84e30a75674c2abd82f27609a5168d9b3f22f5b54cd45077eaf564ca02094a2c",
+    "generated/python/network_skill_pb2.py": "eaaf84f374839ed5a9ab24da06897aa7acb326710ed5cea2e7b48271185a4d8a",
+    "generated/python/power_skill_pb2.py": "ddf9c01e85e30fbaa073416cde27f3907983713a4947f4c001e04ac04e9070e9",
+    "generated/python/radio_skill_pb2.py": "91393b9afcd187abe7819d4efd4db66bbc4996bb351a0f3d3282d5ad4942fc58",
+    "generated/python/sms_skill_pb2.py": "14f6c880122abf50be7b8f21974f70e4705cfe6c6eb68566a7823e97afa8cbc8",
+    "generated/python/zone_skill_pb2.py": "7ce422d9f519949da58884e68700ffb27547605b49d3a30e79ac6ac3436bc309",
+    "tool_registry.py": "8dd463e89f51d37ed314ec55bc111f0302e1e2d4b26a3a74492d96b02360da91"
+  }
+}

@@ -1,0 +1,39 @@
+name: utility_tools
+description: 本地辅助工具（非通信核心业务）的交互管理。
+tools:
+- name: utility_todo_add
+  resource: utility
+  permission: WRITE
+  description:
+    function: 自动生成一条待办事项（任务），可设置标题、描述、截止时间。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 每次调用创建一条新待办，请勿重复调用。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: title
+    type: string
+    required: true
+    description: 待办标题
+    max: 128
+  - field: content
+    type: string
+    required: false
+    description: 待办内容详情
+    default: ''
+    max: 2048
+  - field: deadline
+    type: string
+    required: false
+    description: 截止时间（ISO 8601）
+    default: ''
+    max: 32
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

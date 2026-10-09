@@ -1,0 +1,308 @@
+name: zone_tools
+description: 区域管理
+tools:
+- name: zone_list
+  resource: zone
+  permission: READ
+  description:
+    function: 获取终端当前模式下的全部区域列表（ID 和名称）。用于了解可用信道区域，是 zone_channel_active_set 的推荐前置查询。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 查询操作，重复调用安全。
+    recommended_tools: zone_channel_active_set
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  - field: offset
+    type: integer
+    required: false
+    description: 偏移量
+    default: 0
+  - field: limit
+    type: integer
+    required: false
+    description: 每页数量
+    default: 10
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: total
+    type: integer
+    presence: mandatory
+    description: 总记录数
+  - field: has_more
+    type: boolean
+    presence: mandatory
+    description: 是否还有更多数据
+  - field: items
+    type: array
+    presence: mandatory
+    description: 当前页记录列表
+  - field: items[].zone_id
+    type: integer
+    presence: mandatory
+    description: 区域 ID，无 ID   则填序号（从1开始）
+  - field: items[].zone_name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 区域名称
+  error_codes: []
+- name: zone_delete
+  resource: zone
+  permission: WRITE
+  description:
+    function: 永久删除指定区域及其信道归属，不可恢复。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复删除安全（区域不存在时返回成功）。
+    recommended_tools: 无推荐配合工具
+  annotations:
+    readOnlyHint: false
+    destructiveHint: true
+    idempotentHint: true
+  input:
+  - field: items
+    type: array
+    required: true
+    description: 需要删除区域组合列表
+  - field: items[].zone_id
+    type: integer
+    required: true
+    description: 要删除的区域 ID
+  - field: items[].mode
+    type: string
+    required: true
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: zone_add
+  resource: zone
+  permission: WRITE
+  description:
+    function: 新增区域。zone_name 已存在时返回错误。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 每次调用创建一个新区域，请勿重复调用。
+    recommended_tools: 无推荐配合工具
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: zone_name
+    type: string
+    required: true
+    description: 区域名称
+    max: 64
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: zone_id
+    type: integer
+    presence: mandatory
+    description: 新建区域 ID
+  error_codes: []
+- name: zone_channel_list
+  resource: zone
+  permission: READ
+  description:
+    function: 获取指定区域内的信道列表（ID、名称、制式）。不传 zone_id 则返回当前激活区域的信道。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复调用安全
+    recommended_tools: 无推荐配合工具
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  - field: zone_id
+    type: integer
+    required: false
+    description: 区域 ID，无 ID   则填序号（从1开始）
+    default: 0
+  - field: offset
+    type: integer
+    required: false
+    description: 偏移量
+    default: 0
+  - field: limit
+    type: integer
+    required: false
+    description: 每页数量
+    default: 10
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: total
+    type: integer
+    presence: mandatory
+    description: 总记录数
+  - field: has_more
+    type: boolean
+    presence: mandatory
+    description: 是否还有更多数据
+  - field: items
+    type: array
+    presence: mandatory
+    description: 当前页记录列表
+  - field: items[].channel_id
+    type: integer
+    presence: mandatory
+    description: 信道 ID，无 ID   则填序号（从1开始）
+  - field: items[].channel_name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 信道名称
+  - field: items[].channel_type
+    type: string
+    max: 16
+    presence: mandatory
+    enum_ref: channel_type
+    description: 信道类型，取值见公共枚举集 channel_type
+  error_codes: []
+- name: zone_channel_active_get
+  resource: zone
+  permission: READ
+  description:
+    function: 查询当前激活的区域和信道。切换区域或信道前建议先调用此接口确认当前状态。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复调用安全
+    recommended_tools: zone_channel_active_set
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: zone_id
+    type: integer
+    presence: mandatory
+    description: 当前区域 ID
+  - field: zone_name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 当前区域名称
+  - field: channel_id
+    type: integer
+    presence: mandatory
+    description: 当前信道 ID
+  - field: channel_name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 当前信道名称
+  error_codes: []
+- name: zone_channel_active_set
+  resource: zone
+  permission: WRITE
+  description:
+    function: 通过ID切换区域/信道，改变设备当前通话信道。传参组合说明：
+    precondition: 建议先调用 zone_channel_active_get 确认当前状态后再切换。
+    side_effect_and_idempotency: 重复调用安全
+    recommended_tools: zone_channel_active_get
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  - field: zone_id
+    type: integer
+    required: 条件必选
+    description: 目标区域 ID（与   channel_id 至少提供一个）
+  - field: channel_id
+    type: integer
+    required: 条件必选
+    description: 目标信道 ID（与   zone_id 至少提供一个）
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: zone_channel_active_index_set
+  resource: zone
+  permission: WRITE
+  description:
+    function: 通过索引切换区域/信道，改变设备当前通话信道。索引从 1 开始，顺序与设备旋钮/列表展示顺序一致。传参组合说明：
+    precondition: 建议先调用 zone_channel_list_get 获取区域及信道的有序列表，确认索引有效性。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: zone_channel_list_get、zone_channel_active_get
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: zone_index
+    type: integer
+    required: 条件必选
+    description: 目标区域的索引（从 1 开始），与 channel_index 至少提供一个
+  - field: channel_index
+    type: integer
+    required: 条件必选
+    description: 目标信道在目标区域内的索引（从 1 开始），与 zone_index 至少提供一个
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

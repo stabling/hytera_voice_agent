@@ -1,0 +1,99 @@
+name: hmi_tools
+description: 人机交互与用户界面
+tools:
+- name: hmi_dialog_confirm
+  resource: hmi
+  permission: WRITE
+  description:
+    function: 对终端上的待确认业务进行确认的操作。
+    precondition: 有待确认业务。
+    side_effect_and_idempotency: 每次调用确认一个业务，请勿重复调用；
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: confirmed
+    type: boolean
+    required: true
+    description: true=用户确认（点击“确认”），false=用户取消（点击“取消”）
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: hmi_profile_get
+  resource: hmi
+  permission: READ
+  description:
+    function: 查询当前情景模式（如正常、静音、会议、户外等）。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: hmi_profile_set。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: profile
+    type: string
+    max: 16
+    presence: mandatory
+    enum_ref: hmi_profile
+    description: 情景模式，取值见公共枚举集 hmi_profile
+  error_codes: []
+- name: hmi_profile_set
+  resource: hmi
+  permission: WRITE
+  description:
+    function: 设置情景模式（正常、静音、会议、户外等），不同模式影响铃声、振动、音量等设置。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 重复调用安全。
+    recommended_tools: hmi_profile_get。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: profile
+    type: string
+    required: true
+    description: 情景模式，取值见公共枚举集 hmi_profile
+    enum_ref: hmi_profile
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: hmi_vibration_switch
+  resource: hmi
+  permission: WRITE
+  description:
+    function: 开启或关闭整机振动（来电、消息等振动提醒）。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: enabled
+    type: boolean
+    required: true
+    description: true=开启振动,   false=关闭
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

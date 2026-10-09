@@ -1,0 +1,115 @@
+name: folder_tools
+description: 通话组与组群/文件夹管理
+tools:
+- name: folder_group_active_get
+  resource: folder
+  permission: READ
+  description:
+    function: 查询当前激活的组群/文件夹和通话组。切换通话组前建议先调用此接口确认当前状态。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: folder_group_active_set
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: folder_id
+    type: integer
+    presence: mandatory
+    description: 当前组群/文件夹 ID
+  - field: folder_name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 当前组群/文件夹名称
+  - field: group_id
+    type: integer
+    presence: mandatory
+    description: 当前通话组 ID
+  - field: group_name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 当前通话组名称
+  error_codes: []
+- name: folder_group_active_set
+  resource: folder
+  permission: WRITE
+  description:
+    function: 通过ID切换到指定通话组，改变设备当前监听的通话组。传参组合说明：
+    precondition: 建议先调用 folder_group_active_get 确认当前状态后再切换。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: folder_group_active_get
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: folder_id
+    type: integer
+    required: 条件必选
+    description: 目标组群/文件夹 ID（与 group_id 至少提供一个）
+  - field: group_id
+    type: integer
+    required: 条件必选
+    description: 目标通话组 ID（与 folder_id 至少提供一个）
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: folder_group_active_index_set
+  resource: folder
+  permission: WRITE
+  description:
+    function: 按索引切换通话组/组群，改变设备当前监听的通话组。索引从 1 开始，顺序与设备旋钮/列表展示顺序一致。传参组合说明：
+    precondition: 建议先调用 folder_group_list_get 获取文件夹及通话组的有序列表，确认索引有效性。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: folder_group_list_get、folder_group_active_get
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: folder_index
+    type: integer
+    required: 条件必选
+    description: 目标组群/文件夹的索引（从 1 开始），与 group_index 至少提供一个
+  - field: group_index
+    type: integer
+    required: 条件必选
+    description: 目标通话组在目标文件夹内的索引（从 1 开始），与 folder_index 至少提供一个
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

@@ -1,0 +1,111 @@
+name: audio_tools
+description: 音频通路与声学参数
+tools:
+- name: audio_microphone_switch
+  resource: audio
+  permission: WRITE
+  description:
+    function: 开启或关闭麦克风。关闭后对方将听不到本机声音，通话连接不受影响。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复调用安全
+    recommended_tools: 无推荐配合工具
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: enabled
+    type: boolean
+    required: true
+    description: true=开启,   false=关闭
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: audio_volume_get
+  resource: audio
+  permission: READ
+  description:
+    function: 查询扬声器音量。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 查询操作，重复调用安全。
+    recommended_tools: 无推荐配合工具
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: type
+    type: string
+    required: false
+    description: 音量类型，取值见公共枚举集 volume_type
+    default: call
+    enum_ref: volume_type
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: value
+    type: integer
+    max: 100
+    presence: mandatory
+    description: 音量百分比（0-100）
+  - field: type
+    type: string
+    max: 16
+    presence: mandatory
+    enum_ref: volume_type
+    description: 音量类型，取值见公共枚举集 volume_type
+  - field: step
+    type: integer
+    max: 100
+    presence: optional
+    description: 步进百分比（0-100），即一个档位的百分比
+  error_codes: []
+- name: audio_volume_set
+  resource: audio
+  permission: WRITE
+  description:
+    function: 调整扬声器音量，支持两种模式：
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复调用安全
+    recommended_tools: 无推荐配合工具
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: true
+    description: '音量调整方式，
+
+      step=相对挡位调整，percent=百分比设置；音量调大一些用step，音量调到50%则用percent'
+    enum:
+    - step
+    - percent
+    max: 16
+  - field: value
+    type: integer
+    required: true
+    description: '当mode=step时，value为相对挡位调整：正数为调大多少档，负数则为调小多少档；
+
+      当mode=percent时，value为百分比设置：将音量设置为百分之几；'
+    max: 100
+  - field: type
+    type: string
+    required: false
+    description: 音量类型，取值见公共枚举集 volume_type
+    default: call
+    enum_ref: volume_type
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

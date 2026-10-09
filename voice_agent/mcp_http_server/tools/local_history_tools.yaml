@@ -1,0 +1,287 @@
+description: 受权限约束的通信历史与任务查询；只允许预定义参数化查询
+domain: history
+tools:
+- name: history_recent_calls
+  resource: communication_history
+  permission: READ
+  description:
+    function: 查询调用终端权限范围内的近期通话事实；同时返回可直接传给下游单通话工具的最近可摘要 call_id。
+    precondition: 必须提供 actor_terminal_id；返回结果经过终端范围过滤。call_id 会跳过无转写记录和 /text/input 产生的 synthetic direct-text 命令记录。
+    side_effect_and_idempotency: 只读，重复调用安全；不创建 Command 或 Operation。
+    recommended_tools: history_entity_timeline, call_summarize
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 调用者终端 ID，也是强制权限范围。
+  - field: days
+    type: integer
+    required: false
+    default: 7
+    description: 向前查询天数。
+  - field: limit
+    type: integer
+    required: false
+    default: 20
+    description: 最大返回条数。
+  output:
+  - field: ok
+    type: boolean
+  - field: call_id
+    type: string
+    description: 权限范围内最近一条具有真实转写内容、可交给 call_summarize/call_get_transcript 的通话 ID；无符合条件通话时为空字符串。
+  - field: calls
+    type: array
+  - field: count
+    type: integer
+  error_codes: []
+  examples:
+    request:
+      actor_terminal_id: '5'
+      days: 7
+      limit: 20
+    response:
+      ok: true
+      call_id: call_example
+      calls: []
+      count: 0
+- name: history_entity_timeline
+  resource: communication_history
+  permission: READ
+  description:
+    function: 查询一个明确实体相关的通话与操作时间线。
+    precondition: 必须提供 actor_terminal_id 和 entity_id；不接受 SQL、表名或字段表达式。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: history_recent_calls, history_similar_outcomes
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 调用者终端 ID，也是强制权限范围。
+  - field: entity_id
+    type: string
+    required: true
+    description: 稳定联系人、终端或目标实体 ID。
+  - field: limit
+    type: integer
+    required: false
+    default: 50
+  output:
+  - field: ok
+    type: boolean
+  - field: timeline
+    type: array
+  - field: count
+    type: integer
+  error_codes: []
+  examples:
+    request:
+      actor_terminal_id: '5'
+      entity_id: '1001'
+      limit: 50
+    response:
+      ok: true
+      timeline: []
+      count: 0
+- name: history_similar_outcomes
+  resource: communication_history
+  permission: READ
+  description:
+    function: 按明确 operation_type 查询当前 actor 的历史操作结果。
+    precondition: 必须提供 actor_terminal_id 和 operation_type；结构化精确过滤优先。
+    side_effect_and_idempotency: 只读，重复调用安全；不执行相似操作。
+    recommended_tools: history_entity_timeline
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: actor_terminal_id
+    type: string
+    required: true
+  - field: operation_type
+    type: string
+    required: true
+    description: 原子操作类型，例如 call.start。
+  - field: limit
+    type: integer
+    required: false
+    default: 20
+  output:
+  - field: ok
+    type: boolean
+  - field: outcomes
+    type: array
+  - field: count
+    type: integer
+  error_codes: []
+  examples:
+    request:
+      actor_terminal_id: '5'
+      operation_type: call.start
+      limit: 20
+    response:
+      ok: true
+      outcomes: []
+      count: 0
+- name: history_open_tasks
+  resource: communication_history
+  permission: READ
+  description:
+    function: 查询当前 actor 尚未终结的 Command。
+    precondition: 必须提供 actor_terminal_id。
+    side_effect_and_idempotency: 只读，重复调用安全；不会恢复、取消或创建任务。
+    recommended_tools: history_similar_outcomes
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: actor_terminal_id
+    type: string
+    required: true
+  - field: limit
+    type: integer
+    required: false
+    default: 20
+  output:
+  - field: ok
+    type: boolean
+  - field: tasks
+    type: array
+  - field: count
+    type: integer
+  error_codes: []
+  examples:
+    request:
+      actor_terminal_id: '5'
+      limit: 20
+    response:
+      ok: true
+      tasks: []
+      count: 0
+- name: history_call_by_position
+  resource: communication_history
+  permission: READ
+  description:
+    function: 按倒数序号定位用户的第 N 通电话；1=最近一通，N=倒数第 N 通；同时返回可直接传给下游单通话工具的 call_id。
+    precondition: 必须提供 actor_terminal_id 与 position_from_latest（>=1）。序号只从 user_voice 统计，排除控制通话、direct-text/测试输入、无 call_id、ASR 失败与空文本记录。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: history_recent_calls, call_summarize, call_get_transcript
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 调用者终端 ID，也是强制权限范围。
+  - field: position_from_latest
+    type: integer
+    required: true
+    min: 1
+    description: 倒数序号；1=最近一通，N=倒数第 N 通。
+  output:
+  - field: ok
+    type: boolean
+  - field: call_id
+    type: string
+    description: 命中的通话 ID；超出历史数量时为空字符串。
+  - field: call
+    type: object
+    description: 命中的通话记录；未命中为 null。
+  - field: count
+    type: integer
+    description: 该用户有效的历史通话总数。
+  error_codes: []
+  examples:
+    request:
+      actor_terminal_id: '5'
+      position_from_latest: 1
+    response:
+      ok: true
+      call_id: call_example
+      call: null
+      count: 0
+- name: history_recent_sms
+  resource: communication_history
+  permission: READ
+  description:
+    function: 查询用户历史短信（只读 user_sms），支持最近/时间段/联系人/关键词/方向与 source/target/group 精确过滤。
+    precondition: 必须提供 actor_terminal_id。scope 固定为 user，即使传 control/all 也不放宽。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: history_recent_calls, contact_list
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 调用者终端 ID，也是强制权限范围。
+  - field: limit
+    type: integer
+    required: false
+    default: 20
+    description: 最大返回条数。
+  - field: start_time
+    type: string
+    required: false
+    description: 起始时间（ISO 8601），与 end_time 组成时间段过滤。
+  - field: end_time
+    type: string
+    required: false
+    description: 结束时间（ISO 8601）。
+  - field: contact_id
+    type: string
+    required: false
+    description: 对端联系人/终端/组 ID。
+  - field: keyword
+    type: string
+    required: false
+    description: 短信内容关键词（包含匹配）。
+  - field: direction
+    type: string
+    required: false
+    description: 方向过滤，inbound=收，outbound=发。
+    enum:
+    - inbound
+    - outbound
+  - field: source_id
+    type: string
+    required: false
+    description: 按发送方 ID 精确过滤。
+  - field: target_id
+    type: string
+    required: false
+    description: 按接收方 ID 精确过滤。
+  - field: group_id
+    type: string
+    required: false
+    description: 按组 ID 精确过滤。
+  output:
+  - field: ok
+    type: boolean
+  - field: messages
+    type: array
+  - field: count
+    type: integer
+  error_codes: []
+  examples:
+    request:
+      actor_terminal_id: '5'
+      limit: 20
+    response:
+      ok: true
+      messages: []
+      count: 0

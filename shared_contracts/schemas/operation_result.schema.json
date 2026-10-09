@@ -1,0 +1,121 @@
+{
+  "additionalProperties": true,
+  "description": "Layered outcome; HTTP acceptance never implies device confirmation.",
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "operation_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "ok": {
+      "title": "Ok",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "CREATED",
+        "READY",
+        "RUNNING",
+        "ACCEPTED",
+        "DISPATCHED",
+        "DEVICE_CONFIRMED",
+        "SUCCEEDED",
+        "FAILED",
+        "CANCELLED",
+        "TIMED_OUT",
+        "UNKNOWN"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "accepted": {
+      "default": false,
+      "title": "Accepted",
+      "type": "boolean"
+    },
+    "dispatched": {
+      "default": false,
+      "title": "Dispatched",
+      "type": "boolean"
+    },
+    "device_confirmed": {
+      "default": false,
+      "title": "Device Confirmed",
+      "type": "boolean"
+    },
+    "final_result": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Final Result"
+    },
+    "response": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Response"
+    },
+    "error_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error Code"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error"
+    },
+    "cached": {
+      "default": false,
+      "title": "Cached",
+      "type": "boolean"
+    },
+    "completed_at": {
+      "maxLength": 64,
+      "title": "Completed At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "operation_id",
+    "ok",
+    "status"
+  ],
+  "title": "OperationResult",
+  "type": "object"
+}

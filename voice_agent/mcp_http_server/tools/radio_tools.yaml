@@ -1,0 +1,231 @@
+name: radio_tools
+description: 设备基础信息、配置与设备管控
+tools:
+- name: radio_alias_get
+  resource: radio
+  permission: READ
+  description:
+    function: 查询对讲机别名（显示名称，不影响呼叫号）。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: alias
+    type: string
+    max: 64
+    presence: mandatory
+    description: 对讲机别名
+  error_codes: []
+- name: radio_alias_set
+  resource: radio
+  permission: WRITE
+  description:
+    function: 设置对讲机别名（显示名称）。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 修改别名不影响呼叫 ID 和通信路由；重复调用安全（幂等）。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: alias
+    type: string
+    required: true
+    description: 要设置的别名
+    max: 64
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: radio_id_get
+  resource: radio
+  permission: READ
+  description:
+    function: 查询对讲机ID。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: radio_id
+    type: string
+    max: 32
+    presence: mandatory
+    description: 对讲机 ID
+  - field: mode
+    type: string
+    max: 16
+    presence: mandatory
+    enum_ref: work_mode
+    description: 终端工作模式，取值见公共枚举集 work_mode
+  error_codes: []
+- name: radio_id_set
+  resource: radio
+  permission: ADMIN
+  description:
+    function: 修改对讲机无线呼叫 ID。
+    precondition: 高危操作：ID 修改会影响专网呼叫路由，可能与其他设备 ID 冲突； 通常应通过网管平台修改而非直接调用此接口。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: radio_id_get
+  annotations:
+    readOnlyHint: false
+    destructiveHint: true
+    idempotentHint: true
+  input:
+  - field: radio_id
+    type: string
+    required: true
+    description: 要设置的 ID
+    max: 32
+  - field: mode
+    type: string
+    required: false
+    description: 终端工作模式，取值见公共枚举集 work_mode
+    default: active
+    enum_ref: work_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: radio_time_get
+  resource: radio
+  permission: READ
+  description:
+    function: 查询终端当前系统时间（ISO 8601）及时区。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: time
+    type: string
+    max: 32
+    presence: mandatory
+    description: 当前时间（ISO 8601）
+  error_codes: []
+- name: radio_version_get
+  resource: radio
+  permission: READ
+  description:
+    function: 查询固件版本、数据版本。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: firmware
+    type: string
+    max: 32
+    presence: mandatory
+    description: 固件版本号
+  - field: data
+    type: string
+    max: 32
+    presence: mandatory
+    description: 数据版本号
+  error_codes: []
+- name: radio_find
+  resource: radio
+  permission: WRITE
+  description:
+    function: 查找终端：触发提示音、振动、指示灯，便于在附近定位设备。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 每次调用触发一次查找，请勿重复调用。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: duration
+    type: integer
+    required: false
+    description: 持续秒数
+    default: 10
+    max: 60
+  - field: mode
+    type: string
+    required: false
+    description: 查找方式：tone=提示音,vibrate=震动, led=指示灯,all=全部。
+    default: all
+    enum:
+    - tone
+    - vibrate
+    - led
+    - all
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: radio_interconnect_switch
+  resource: radio
+  permission: WRITE
+  description:
+    function: 设备进入或退出无线互联状态。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: enabled
+    type: boolean
+    required: true
+    description: true=进入无线互联, false=退出
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

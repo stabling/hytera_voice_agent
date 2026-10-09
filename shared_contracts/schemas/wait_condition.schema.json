@@ -1,0 +1,94 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "wait_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Wait Id",
+      "type": "string"
+    },
+    "operation_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "subject_type": {
+      "enum": [
+        "call_id",
+        "operation_id",
+        "reminder_id"
+      ],
+      "title": "Subject Type",
+      "type": "string"
+    },
+    "subject_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Subject Id",
+      "type": "string"
+    },
+    "predicate": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Predicate",
+      "type": "string"
+    },
+    "status": {
+      "default": "WAITING",
+      "enum": [
+        "WAITING",
+        "SATISFIED",
+        "TIMED_OUT",
+        "CANCELLED"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "timeout_at": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Timeout At"
+    },
+    "created_at": {
+      "maxLength": 64,
+      "title": "Created At",
+      "type": "string"
+    },
+    "satisfied_at": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Satisfied At"
+    }
+  },
+  "required": [
+    "operation_id",
+    "subject_type",
+    "subject_id",
+    "predicate"
+  ],
+  "title": "WaitCondition",
+  "type": "object"
+}

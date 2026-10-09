@@ -1,0 +1,169 @@
+{
+  "additionalProperties": false,
+  "description": "Durable instruction record. Raw payloads are deliberately redacted.",
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "command_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Command Id",
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "voice",
+        "http",
+        "scheduled",
+        "manual",
+        "recovery"
+      ],
+      "title": "Source Type",
+      "type": "string"
+    },
+    "source_ref": {
+      "anyOf": [
+        {
+          "maxLength": 256,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Ref"
+    },
+    "actor_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Actor Id"
+    },
+    "raw_text": {
+      "anyOf": [
+        {
+          "maxLength": 20000,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Raw Text"
+    },
+    "payload_redacted": {
+      "additionalProperties": true,
+      "title": "Payload Redacted",
+      "type": "object"
+    },
+    "status": {
+      "default": "RECEIVED",
+      "enum": [
+        "RECEIVED",
+        "CLASSIFIED",
+        "PLANNED",
+        "RUNNING",
+        "DISPATCHED",
+        "SUCCEEDED",
+        "FAILED",
+        "CANCELLED",
+        "UNKNOWN"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "trace_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Trace Id"
+    },
+    "correlation_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Correlation Id"
+    },
+    "parent_command_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Command Id"
+    },
+    "cancel_reason": {
+      "anyOf": [
+        {
+          "maxLength": 512,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cancel Reason"
+    },
+    "created_at": {
+      "maxLength": 64,
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "maxLength": 64,
+      "title": "Updated At",
+      "type": "string"
+    },
+    "completed_at": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Completed At"
+    }
+  },
+  "required": [
+    "source_type"
+  ],
+  "title": "Command",
+  "type": "object"
+}

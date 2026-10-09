@@ -1,0 +1,377 @@
+{
+   "BasicInfo" : {
+      "DataVer" : "D03.0.29.049",
+      "FirewareVer" : "A03.2.01.000",
+      "ModelNumber" : "HP780-T00B00PB-MB00DC-Uv-0-G"
+   },
+   "Convention" : {
+      "2ToneService" : {
+         "Contact" : []
+      },
+      "Channel" : {
+         "AnalogChannels" : [
+            {
+               "Alias" : "CH A1",
+               "Index" : 1,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "CH A2",
+               "Index" : 2,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "CH A3",
+               "Index" : 3,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            }
+         ],
+         "DigitalChannels" : [
+            {
+               "Alias" : "交通组",
+               "ColorCode" : 1,
+               "Index" : 1,
+               "PowerLevel" : 0,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "消防组",
+               "ColorCode" : 1,
+               "Index" : 2,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "应急组",
+               "ColorCode" : 1,
+               "Index" : 3,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "公安组",
+               "ColorCode" : 1,
+               "Index" : 4,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "安防组",
+               "ColorCode" : 1,
+               "Index" : 5,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            },
+            {
+               "Alias" : "机动组",
+               "ColorCode" : 1,
+               "Index" : 6,
+               "PowerLevel" : 2,
+               "RxOnly" : 0,
+               "TalkAround" : 0,
+               "TxAdmin" : 0
+            }
+         ]
+      },
+      "DigitalService" : {
+         "Contact" : [
+            {
+               "CallAlias" : "Call1",
+               "CallID" : 1,
+               "CallType" : 17,
+               "Index" : 1,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "陈嘉豪",
+               "CallID" : 1048585,
+               "CallType" : 0,
+               "Index" : 2,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "林安娜",
+               "CallID" : 1048581,
+               "CallType" : 0,
+               "Index" : 3,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "路面二组",
+               "CallID" : 1048583,
+               "CallType" : 1,
+               "Index" : 4,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "路面一组",
+               "CallID" : 1048582,
+               "CallType" : 1,
+               "Index" : 5,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "王志强",
+               "CallID" : 1048583,
+               "CallType" : 0,
+               "Index" : 6,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "巡逻二组",
+               "CallID" : 1048581,
+               "CallType" : 1,
+               "Index" : 7,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "巡逻一组",
+               "CallID" : 1048580,
+               "CallType" : 1,
+               "Index" : 8,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "值班调度",
+               "CallID" : 1048579,
+               "CallType" : 1,
+               "Index" : 9,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "中转台",
+               "CallID" : 1048607,
+               "CallType" : 0,
+               "Index" : 10,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "周队",
+               "CallID" : 1048582,
+               "CallType" : 0,
+               "Index" : 11,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            },
+            {
+               "CallAlias" : "周晓敏",
+               "CallID" : 1048584,
+               "CallType" : 0,
+               "Index" : 12,
+               "Info1" : "",
+               "Info2" : "",
+               "Info3" : "",
+               "PhoneID" : ""
+            }
+         ]
+      },
+      "HDC1200Service" : {
+         "Contact" : []
+      },
+      "Zone" : [
+         {
+            "Alias" : "Zone 1",
+            "Index" : 1,
+            "Members" : [
+               {
+                  "Alias" : "交通组",
+                  "ChannelID" : 1573040,
+                  "ChannelType" : 0,
+                  "Index" : 1
+               },
+               {
+                  "Alias" : "消防组",
+                  "ChannelID" : 1573240,
+                  "ChannelType" : 0,
+                  "Index" : 2
+               },
+               {
+                  "Alias" : "应急组",
+                  "ChannelID" : 1573440,
+                  "ChannelType" : 0,
+                  "Index" : 3
+               },
+               {
+                  "Alias" : "公安组",
+                  "ChannelID" : 1573640,
+                  "ChannelType" : 0,
+                  "Index" : 4
+               },
+               {
+                  "Alias" : "安防组",
+                  "ChannelID" : 1573840,
+                  "ChannelType" : 0,
+                  "Index" : 5
+               },
+               {
+                  "Alias" : "机动组",
+                  "ChannelID" : 1574040,
+                  "ChannelType" : 0,
+                  "Index" : 6
+               }
+            ]
+         },
+         {
+            "Alias" : "Zone 2",
+            "Index" : 2,
+            "Members" : [
+               {
+                  "Alias" : "交通组",
+                  "ChannelID" : 1573040,
+                  "ChannelType" : 0,
+                  "Index" : 1
+               },
+               {
+                  "Alias" : "消防组",
+                  "ChannelID" : 1573240,
+                  "ChannelType" : 0,
+                  "Index" : 2
+               },
+               {
+                  "Alias" : "应急组",
+                  "ChannelID" : 1573440,
+                  "ChannelType" : 0,
+                  "Index" : 3
+               },
+               {
+                  "Alias" : "公安组",
+                  "ChannelID" : 1573640,
+                  "ChannelType" : 0,
+                  "Index" : 4
+               },
+               {
+                  "Alias" : "安防组",
+                  "ChannelID" : 1573840,
+                  "ChannelType" : 0,
+                  "Index" : 5
+               },
+               {
+                  "Alias" : "机动组",
+                  "ChannelID" : 1574040,
+                  "ChannelType" : 0,
+                  "Index" : 6
+               }
+            ]
+         }
+      ]
+   },
+   "DigitalTrunking" : {
+      "Contact" : {
+         "GroupCall" : [
+            {
+               "Alias" : "32831262",
+               "CallID" : "1056339",
+               "CallIDView" : "32831262",
+               "CallType" : 4,
+               "EncryptType" : 0,
+               "GroupCallType" : 4,
+               "Index" : 1,
+               "PriorityLevel" : 0,
+               "RxOnly" : 0,
+               "SafeguardRx" : 0,
+               "ScanGroupList" : 0,
+               "ScanGroupListView" : "无"
+            },
+            {
+               "Alias" : "32830960",
+               "CallID" : "1049637",
+               "CallIDView" : "32830960",
+               "CallType" : 0,
+               "EncryptType" : 0,
+               "GroupCallType" : 1,
+               "Index" : 2,
+               "PriorityLevel" : 0,
+               "RxOnly" : 0,
+               "SafeguardRx" : 0,
+               "ScanGroupList" : 0,
+               "ScanGroupListView" : "无"
+            }
+         ],
+         "PrivateCall" : [
+            {
+               "Alias" : "p20820",
+               "CallID" : "1048577",
+               "CallIDView" : "32820200",
+               "Index" : 1,
+               "PABXCallID" : "",
+               "PABXCallIDView" : "",
+               "PSTNCallID" : "",
+               "PSTNCallIDView" : "",
+               "ScanGroupList" : -1,
+               "ScanGroupListView" : ""
+            }
+         ],
+         "SubgroupList" : [
+            {
+               "Alias" : "Subgroup 1",
+               "Index" : 0
+            }
+         ],
+         "Subgroups" : [
+            {
+               "Alias" : "Subgroup 1",
+               "Index" : 1,
+               "Members" : [
+                  {
+                     "Alias" : "32830960",
+                     "CallType" : 0,
+                     "Index" : 1,
+                     "WorkMode" : 0
+                  }
+               ]
+            }
+         ]
+      }
+   }
+}

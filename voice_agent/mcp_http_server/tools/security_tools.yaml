@@ -1,0 +1,41 @@
+name: security_tools
+description: 安全加密与告警传感器
+tools:
+- name: security_alert_start
+  resource: security
+  permission: SECURITY
+  description:
+    function: 向调度中心发起紧急报警，终端进入报警状态。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 每次调用触发一次报警，请勿重复调用；触发后设备会进入报警状态，直到调用 security_alert_end或超时自动解除。
+    recommended_tools: security_alert_end（解除报警）、location_report_trigger（在报警期间上报位置）。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: security_alert_end
+  resource: security
+  permission: SECURITY
+  description:
+    function: 解除当前正在进行的紧急报警状态，终端恢复至正常模式。
+    precondition: 当前须有未解除的报警（已通过 security_alert_start 触发）。
+    side_effect_and_idempotency: 重复调用安全（无报警时返回成功）。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

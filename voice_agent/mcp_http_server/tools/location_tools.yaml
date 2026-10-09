@@ -1,0 +1,79 @@
+name: location_tools
+description: 定位与位置服务
+tools:
+- name: location_gps_switch
+  resource: location
+  permission: WRITE
+  description:
+    function: 设置 GPS 定位模块的开关或运行模式，控制定位业务的启用策略。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: mode
+    type: string
+    required: true
+    description: 定位模块运行模式，取值见公共枚举集 gps_mode
+    enum_ref: gps_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: location_gps_get
+  resource: location
+  permission: READ
+  description:
+    function: 即时获取当前 GPS 位置。
+    precondition: GPS 模块须已开启（可用 location_gps_switch 开启）；室内或遮挡环境可能无信号，返回错误时建议稍后重试。
+    side_effect_and_idempotency: 无副作用，重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: value
+    type: string
+    max: 128
+    presence: mandatory
+    description: 定位信息NMEA 0183格式
+  - field: latitude
+    type: float
+    presence: optional
+    description: 纬度，单位度，wgs84坐标系。
+  - field: longitude
+    type: float
+    presence: optional
+    description: 经度，单位度，wgs84坐标系。
+  error_codes: []
+- name: location_report_trigger
+  resource: location
+  permission: WRITE
+  description:
+    function: 立即上报当前位置。上报事件为 location_report。
+    precondition: GPS已开启。
+    side_effect_and_idempotency: 每次调用触发一次上报，请勿重复调用。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

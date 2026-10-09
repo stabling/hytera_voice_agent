@@ -1,0 +1,87 @@
+name: call_tools
+description: 呼叫控制
+tools:
+- name: call_answer
+  resource: call
+  permission: WRITE
+  description:
+    function: 接听当前振铃的来电。接听后方可申请话权。
+    precondition: 当前有振铃来电。
+    side_effect_and_idempotency: 重复调用安全（已接听时忽略）。若无振铃呼叫则忽略。
+    recommended_tools: 无
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: call_end
+  resource: call
+  permission: WRITE
+  description:
+    function: 结束或/挂断当前活动通话。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复调用安全（无活动通话时系统自动忽略）。
+    recommended_tools: 无
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: call_start
+  resource: call
+  permission: WRITE
+  description:
+    function: 发起语音呼叫（个呼/组呼/全呼/紧急）。不是全呼时需传组 ID，可先用 contact_list 查询组列表；全呼无需 target_id。
+    precondition: 建议先调用 contact_list 确认被叫方 ID 正确。
+    side_effect_and_idempotency: 每次调用发起一次新呼叫，请勿重复调用。
+    recommended_tools: contact_list。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: target_type
+    type: string
+    required: true
+    description: 呼叫目标类型，取值见公共枚举集 target_type
+    enum_ref: target_type
+    max: 16
+  - field: target_id
+    type: string
+    required: 条件必选
+    description: 被叫方 ID。当  target_type 为standby,all,all_in_station,all_in_area,all_in_system,all_in_region时不用填写，系统会自动忽略；当target_type
+      为   其它值时必填。
+    default: ''
+    max: 32
+  - field: priority
+    type: string
+    required: false
+    description: 呼叫优先级，取值见公共枚举集 call_priority
+    default: normal
+    enum_ref: call_priority
+    max: 16
+  - field: talk_mode
+    type: string
+    required: false
+    description: 通话模式，取值见公共枚举集 talk_mode
+    default: half_duplex
+    enum_ref: talk_mode
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

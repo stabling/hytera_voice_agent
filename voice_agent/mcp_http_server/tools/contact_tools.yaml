@@ -1,0 +1,173 @@
+name: contact_tools
+description: 联系人管理
+tools:
+- name: contact_add
+  resource: contact
+  permission: WRITE
+  description:
+    function: 新增联系人。未指定 type 时默认private。
+    precondition: 无前置条件
+    side_effect_and_idempotency: contact_id 已存在时返回错误（“联系人 ID 已存在，请使用其他 ID”），不会覆盖现有记录。每次调用创建一条新记录，请勿重复调用。
+    recommended_tools: 无
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: name
+    type: string
+    required: true
+    description: 联系人名称
+    max: 64
+  - field: contact_id
+    type: string
+    required: true
+    description: 联系人ID/号码
+    max: 32
+  - field: type
+    type: string
+    required: false
+    description: 联系人类型，取值见公共枚举集 target_type
+    default: private
+    enum_ref: target_type
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: contact_delete
+  resource: contact
+  permission: WRITE
+  description:
+    function: 永久删除指定联系人记录，不可恢复，执行前须与用户确认。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 重复删除安全。
+    recommended_tools: 无
+  annotations:
+    readOnlyHint: false
+    destructiveHint: true
+    idempotentHint: true
+  input:
+  - field: items
+    type: array
+    required: true
+    description: 需要删除联系组合列表
+  - field: items[].contact_id
+    type: string
+    required: true
+    description: 联系人ID/号码
+    max: 32
+  - field: items[].type
+    type: string
+    required: true
+    description: 联系人类型，取值见公共枚举集 target_type
+    enum_ref: target_type
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: contact_update
+  resource: contact
+  permission: WRITE
+  description:
+    function: 更新指定联系人的信息。仅需传入需要修改的字段，未传入的字段保持原有值不变。
+    precondition: contact_id 必须存在，否则返回错误。
+    side_effect_and_idempotency: 非幂等（重复更新同一条记录会因版本/状态变更而产生不同影响，建议前端防抖）。
+    recommended_tools: contact_list（更新前先查询现有数据）
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: contact_id
+    type: string
+    required: true
+    description: 联系人ID/号码（必须存在）
+    max: 32
+  - field: name
+    type: string
+    required: false
+    description: 新的联系人名称（不传则不修改）
+    max: 64
+  - field: type
+    type: string
+    required: false
+    description: 联系人类型，取值见公共枚举集 target_type（不传则不修改）
+    enum_ref: target_type
+    max: 16
+  - field: is_favorite
+    type: boolean
+    required: false
+    description: 是否设为常用联系人（不传则不修改）
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: contact_list
+  resource: contact
+  permission: READ
+  description:
+    function: 查询联系人列表。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: 发起呼叫或发短消息前推荐先调用此接口确认被叫方 ID 正确（call_start / sms_send）。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: offset
+    type: integer
+    required: false
+    description: 偏移量
+    default: 0
+  - field: limit
+    type: integer
+    required: false
+    description: 每页数量
+    default: 10
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: total
+    type: integer
+    presence: mandatory
+    description: 总记录数
+  - field: has_more
+    type: boolean
+    presence: mandatory
+    description: 是否还有更多数据
+  - field: items
+    type: array
+    presence: mandatory
+    description: 当前页记录列表
+  - field: items[].contact_id
+    type: string
+    max: 32
+    presence: mandatory
+    description: 联系人 ID
+  - field: items[].name
+    type: string
+    max: 64
+    presence: mandatory
+    description: 联系人名称
+  - field: items[].type
+    type: string
+    max: 16
+    presence: mandatory
+    enum_ref: target_type
+    description: 联系人类型，取值见公共枚举集 target_type
+  - field: items[].is_favorite
+    type: boolean
+    presence: optional
+    description: 是否常用联系人
+  error_codes: []

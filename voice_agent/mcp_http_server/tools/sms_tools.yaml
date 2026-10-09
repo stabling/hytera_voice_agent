@@ -1,0 +1,156 @@
+name: sms_tools
+description: 短消息与状态消息
+tools:
+- name: sms_send
+  resource: sms
+  permission: WRITE
+  description:
+    function: 向指定个人或组发送文本短消息。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 每次调用均发送一条消息，发出后不可撤回，请勿重复调用。
+    recommended_tools: 建议先用 contact_list 确认 target_id，或用 sms_preset_list 获取预设内容。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: target_type
+    type: string
+    required: true
+    description: 目标类型，取值见公共枚举集 target_type
+    enum_ref: target_type
+    max: 16
+  - field: target_id
+    type: string
+    required: 条件必选
+    description: 目的方 ID。当   target_type 为standby,all,all_in_station,all_in_area,all_in_system,all_in_region时不用填写，系统会自动忽略；当target_type
+      为   其它值时必填。
+    default: ''
+    max: 32
+  - field: content
+    type: string
+    required: true
+    description: 消息内容
+    max: 2048
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: sms_location_send
+  resource: sms
+  permission: WRITE
+  description:
+    function: 将当前位置信息（经纬度）以短消息形式发送给指定联系人。
+    precondition: GPS 已开启且定位有效。
+    side_effect_and_idempotency: 每次调用发送一条消息，请勿重复调用。
+    recommended_tools: location_gps_get（若需先获取位置）。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: target_type
+    type: string
+    required: true
+    description: 目标类型，取值见公共枚举集 target_type
+    enum_ref: target_type
+    max: 16
+  - field: target_id
+    type: string
+    required: 条件必选
+    description: 目的方 ID。当target_type 为standby,all,all_in_station,all_in_area,all_in_system,all_in_region时不用填写，系统会自动忽略；当target_type为
+      其它值时必填。
+    default: ''
+    max: 32
+  - field: value
+    type: string
+    required: true
+    description: 定位信息NMEA 0183格式
+    max: 128
+  - field: latitude
+    type: float
+    required: false
+    description: 纬度，单位度，wgs84坐标系。
+    default: 0.0
+  - field: longitude
+    type: float
+    required: false
+    description: 经度，单位度，wgs84坐标系。
+    default: 0.0
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: sms_play
+  resource: sms
+  permission: WRITE
+  description:
+    function: 对已接收的一条或多条短消息进行语音播报（TTS 朗读文本内容）。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 每次调用触发一次播报，重复调用会重复播报，不具备幂等性。
+    recommended_tools: 无。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: filter
+    type: string
+    required: false
+    description: 'unread=只播报未读短信；
+
+      all=播报所有短信'
+    default: unread
+    enum:
+    - unread
+    - all
+    max: 16
+  - field: start
+    type: integer
+    required: false
+    description: start>=0为正向索引，0为第一条短消息；start<0为负向索引，-1为最后一条短消息
+    default: -1
+  - field: number
+    type: integer
+    required: false
+    description: 从start开始播放短消息的数目
+    default: 1
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []
+- name: sms_speak
+  resource: sms
+  permission: WRITE
+  description:
+    function: 将外部传入的任意自定义文本通过 TTS进行语音播报，并可选择是否将该文本保存到设备短消息记录中，便于后续追溯。
+    precondition: 无前置条件
+    side_effect_and_idempotency: 每次调用触发一次新的播报任务；若 save 为 true，会在设备存储中生成一条新的消息记录。重复调用会重复播报，不具备幂等性。
+    recommended_tools: 无。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: false
+  input:
+  - field: text
+    type: string
+    required: true
+    description: 待播报的文本内容
+    max: 2048
+  - field: save
+    type: boolean
+    required: false
+    description: 是否将播报内容保存到设备短消息记录。true=保存，false=仅播报不保存。
+    default: false
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

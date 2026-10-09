@@ -1,0 +1,196 @@
+description: 按明确 call_id 查询、读取和派生通话内容
+tools:
+- name: call_query
+  resource: call_content
+  permission: READ
+  description:
+    function: 将明确选择器解析为唯一 call_id；零结果或多结果不会自动选择。
+    precondition: 必须提供来源终端范围，禁止 future/next 选择器。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: call_get_transcript, call_summarize, call_translate
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: selector
+    type: object
+    required: true
+    description: CallSelector 对象，支持 call_id/current_active/latest_completed/联系人与时间范围。
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 权限范围内的来源终端 ID。
+  output:
+  - field: ok
+    type: boolean
+    description: 是否解析为唯一通话。
+  - field: call_id
+    type: string
+    description: 唯一稳定 call_id。
+  - field: error_code
+    type: string
+    description: CALL_NOT_FOUND/TARGET_AMBIGUOUS/TARGET_NOT_RESOLVED/FORBIDDEN。
+  error_codes: []
+  examples:
+    request:
+      selector:
+        relative_type: latest_completed
+        source_terminal_id: '5'
+      actor_terminal_id: '5'
+    response:
+      ok: true
+      call_id: call_example
+  domain: call-content
+- name: call_get_transcript
+  resource: call_content
+  permission: READ
+  description:
+    function: 按权限读取一个明确 call_id 的 CallTurn，按 sequence_no 和时间排序。
+    precondition: call_id 已由 call_query 或显式参数唯一确定。
+    side_effect_and_idempotency: 只读，重复调用安全。
+    recommended_tools: call_summarize, call_translate
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: call_id
+    type: string
+    required: true
+    description: 唯一通话 ID。
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 权限范围内的来源终端 ID。
+  output:
+  - field: ok
+    type: boolean
+    description: 是否读取成功。
+  - field: turns
+    type: array
+    description: 顺序化的 CallTurn 列表。
+  error_codes: []
+  examples:
+    request:
+      call_id: call_example
+      actor_terminal_id: '5'
+    response:
+      ok: true
+      turns: []
+  domain: call-content
+- name: call_summarize
+  resource: call_content
+  permission: READ
+  description:
+    function: 对明确 call_id 的转写生成摘要并保存派生审计；不发送短信。
+    precondition: call_id 唯一且调用者有权读取。
+    side_effect_and_idempotency: operation_id 唯一；重试复用已有结果，不重复调用模型。
+    recommended_tools: call_get_transcript
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: call_id
+    type: string
+    required: true
+    description: 唯一通话 ID。
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 权限范围内的来源终端 ID。
+  - field: operation_id
+    type: string
+    required: true
+    description: 稳定操作 ID，用于模型调用幂等。
+  - field: options
+    type: object
+    required: false
+    description: max_chars 等摘要选项。
+  output:
+  - field: ok
+    type: boolean
+    description: 是否生成成功。
+  - field: content
+    type: string
+    description: 摘要正文。
+  - field: source_turn_ids
+    type: array
+    description: 来源 turn_id 列表。
+  - field: prompt_hash
+    type: string
+    description: 输入与选项哈希。
+  error_codes: []
+  examples:
+    request:
+      call_id: call_example
+      actor_terminal_id: '5'
+      operation_id: op_example
+      options:
+        max_chars: 160
+    response:
+      ok: true
+      content: 摘要内容
+  domain: call-content
+- name: call_translate
+  resource: call_content
+  permission: READ
+  description:
+    function: 对明确 call_id 的转写生成指定语言译文并保存派生审计；不发送短信。
+    precondition: call_id 唯一且调用者有权读取。
+    side_effect_and_idempotency: operation_id 唯一；重试复用已有结果，不重复调用模型。
+    recommended_tools: call_get_transcript
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: call_id
+    type: string
+    required: true
+    description: 唯一通话 ID。
+  - field: actor_terminal_id
+    type: string
+    required: true
+    description: 权限范围内的来源终端 ID。
+  - field: operation_id
+    type: string
+    required: true
+    description: 稳定操作 ID，用于模型调用幂等。
+  - field: target_language
+    type: string
+    required: true
+    description: 目标语言。
+    enum:
+    - en
+    - zh
+  - field: options
+    type: object
+    required: false
+    description: max_chars 等翻译选项。
+  output:
+  - field: ok
+    type: boolean
+    description: 是否生成成功。
+  - field: content
+    type: string
+    description: 译文正文。
+  - field: source_turn_ids
+    type: array
+    description: 来源 turn_id 列表。
+  - field: prompt_hash
+    type: string
+    description: 输入与选项哈希。
+  error_codes: []
+  examples:
+    request:
+      call_id: call_example
+      actor_terminal_id: '5'
+      operation_id: op_translate_example
+      target_language: en
+    response:
+      ok: true
+      content: Translation
+  domain: call-content
+domain: call-content

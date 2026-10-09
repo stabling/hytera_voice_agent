@@ -1,0 +1,69 @@
+name: power_tools
+description: 电源电池与功耗管理
+tools:
+- name: power_battery_get
+  resource: power
+  permission: READ
+  description:
+    function: 查询电池电量、充电状态、健康状态等电池信息。
+    precondition: 无前置条件。
+    side_effect_and_idempotency: 只读查询，重复调用安全。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: true
+    destructiveHint: false
+    idempotentHint: true
+  input: []
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  - field: value
+    type: integer
+    max: 100
+    presence: mandatory
+    description: 电量百分比（0-100）
+  - field: charging
+    type: boolean
+    presence: optional
+    description: 是否正在充电
+  - field: health
+    type: integer
+    max: 100
+    presence: optional
+    description: 电池健康度百分比（0-100，100为全新）
+  - field: voltage
+    type: float
+    presence: optional
+    description: 电池电压，单位伏（V）
+  - field: temperature
+    type: float
+    presence: optional
+    description: 电池温度，单位：摄氏度（℃）
+  error_codes: []
+- name: power_transmit_level_set
+  resource: power
+  permission: ADMIN
+  description:
+    function: 切换射频发射功率等级。
+    precondition: 修改功率可能影响频谱许可合规性，仅限管理员操作。建议先确认当前制式允许该功率级别。
+    side_effect_and_idempotency: 重复调用安全（幂等）。
+    recommended_tools: 无推荐配合工具。
+  annotations:
+    readOnlyHint: false
+    destructiveHint: false
+    idempotentHint: true
+  input:
+  - field: level
+    type: string
+    required: true
+    description: 射频发射功率等级，取值见公共枚举集 tx_power_level
+    enum_ref: tx_power_level
+    max: 16
+  output:
+  - field: code
+    type: integer
+    presence: mandatory
+    description: 见错误码详情
+  error_codes: []

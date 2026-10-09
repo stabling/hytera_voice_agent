@@ -1,0 +1,243 @@
+{
+  "$defs": {
+    "AtomicOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "operation_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "title": "Operation Id",
+          "type": "string"
+        },
+        "origin_command_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "title": "Origin Command Id",
+          "type": "string"
+        },
+        "operation_type": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Operation Type",
+          "type": "string"
+        },
+        "step_id": {
+          "default": "step-1",
+          "maxLength": 128,
+          "minLength": 1,
+          "title": "Step Id",
+          "type": "string"
+        },
+        "actor_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Actor Id"
+        },
+        "target_type": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Type"
+        },
+        "target_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Id"
+        },
+        "arguments": {
+          "additionalProperties": true,
+          "title": "Arguments",
+          "type": "object"
+        },
+        "resolved_arguments": {
+          "additionalProperties": true,
+          "title": "Resolved Arguments",
+          "type": "object"
+        },
+        "executor_kind": {
+          "default": "mcp",
+          "enum": [
+            "mcp",
+            "local",
+            "query",
+            "content",
+            "delivery"
+          ],
+          "title": "Executor Kind",
+          "type": "string"
+        },
+        "tool_name": {
+          "anyOf": [
+            {
+              "maxLength": 160,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Name"
+        },
+        "risk_level": {
+          "default": "R1",
+          "enum": [
+            "R0",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ],
+          "title": "Risk Level",
+          "type": "string"
+        },
+        "idempotency_key": {
+          "anyOf": [
+            {
+              "maxLength": 160,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Idempotency Key"
+        },
+        "depends_on": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Depends On",
+          "type": "array"
+        },
+        "status": {
+          "default": "READY",
+          "enum": [
+            "CREATED",
+            "READY",
+            "RUNNING",
+            "ACCEPTED",
+            "DISPATCHED",
+            "DEVICE_CONFIRMED",
+            "SUCCEEDED",
+            "FAILED",
+            "CANCELLED",
+            "TIMED_OUT",
+            "UNKNOWN"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "timeout_seconds": {
+          "default": 60.0,
+          "exclusiveMinimum": 0,
+          "maximum": 3600,
+          "title": "Timeout Seconds",
+          "type": "number"
+        },
+        "max_retries": {
+          "default": 0,
+          "maximum": 20,
+          "minimum": 0,
+          "title": "Max Retries",
+          "type": "integer"
+        },
+        "side_effect": {
+          "default": false,
+          "title": "Side Effect",
+          "type": "boolean"
+        },
+        "created_at": {
+          "maxLength": 64,
+          "title": "Created At",
+          "type": "string"
+        },
+        "updated_at": {
+          "maxLength": 64,
+          "title": "Updated At",
+          "type": "string"
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Completed At"
+        }
+      },
+      "required": [
+        "origin_command_id",
+        "operation_type"
+      ],
+      "title": "AtomicOperation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "origin_command_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Origin Command Id",
+      "type": "string"
+    },
+    "operations": {
+      "items": {
+        "$ref": "#/$defs/AtomicOperation"
+      },
+      "maxItems": 64,
+      "title": "Operations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "origin_command_id"
+  ],
+  "title": "OperationPlan",
+  "type": "object"
+}
