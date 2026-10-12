@@ -1,0 +1,787 @@
+{"messages":[{"role":"user","content":"预占呼叫的定义及其优先级特性是什么？配置呼叫优先级为“预占”的前提条件是什么？"},{"role":"assistant","content":"预占呼叫是具有最高优先级的普通语音呼叫（除紧急呼叫以外的所有呼叫，包括个呼、组呼、广播呼叫等）。只有开启预占呼叫功能后，呼叫优先级参数才可配置“预占”选项。"}]}
+{"messages":[{"role":"user","content":"Which time zone is associated with the identifier America/Regina?"},{"role":"assistant","content":"The identifier America/Regina refers to Regina, Saskatchewan, Canada: Central Standard Time (CST, UTC−06:00) year-round, without daylight saving time."}]}
+{"messages":[{"role":"user","content":"Which location corresponds to the time zone identifier Pacific/Honolulu?"},{"role":"assistant","content":"Honolulu"}]}
+{"messages":[{"role":"user","content":"What time zone is linked to Europe/London?"},{"role":"assistant","content":"Europe/London represents London, UK: Greenwich Mean Time (GMT, UTC+00:00) in winter and British Summer Time (BST, UTC+01:00) in summer."}]}
+{"messages":[{"role":"user","content":"在本手册的符号说明中，“注意”、“警告”和“危险”分别表示什么含义？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项；“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"What is the initial charge limit for lithium-ion batteries according to the new IATA regulation?"},{"role":"assistant","content":"Under IATA's 2026 guidance, requirements depend on how the lithium-ion battery is transported. Batteries shipped alone (PI 965) generally must be at no more than 30% state of charge unless approved. For batteries packed with equipment (PI 966), Section I has a 30% limit and Section II applies the 30% limit to batteries exceeding 2.7 Wh, with specified approval exceptions. For batteries contained in equipment (PI 967), no more than 30% state of charge or 25% indicated battery capacity is recommended, not universally mandatory. Low shipping charge can explain a low-battery alert on first use; charge safely per the product instructions."}]}
+{"messages":[{"role":"user","content":"文档中“危险”符号表示什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"MDM对应的英文全称和中文全称是什么？"},{"role":"assistant","content":"MDM的英文全称是Mobile Device Management，中文全称是移动设备管理系统。"}]}
+{"messages":[{"role":"user","content":"专用型和共享型的定义应参考哪个文档？"},{"role":"assistant","content":"专用型和共享型的定义可参见 G2 DT 分组数据-软件需求规格-G2 DT.SRS.Packet Data.doc。"}]}
+{"messages":[{"role":"user","content":"哪里可以查看专用型和共享型的定义？"},{"role":"assistant","content":"可参见 G2 DT 分组数据-软件需求规格-G2 DT.SRS.Packet Data.doc。"}]}
+{"messages":[{"role":"user","content":"DEM的全称是什么？"},{"role":"assistant","content":"Digital Evidence Management (电子证据管理系统)"}]}
+{"messages":[{"role":"user","content":"MPT是哪个部门的缩写？"},{"role":"assistant","content":"Ministry of Post and Telegraph (邮电部)"}]}
+{"messages":[{"role":"user","content":"在文档中，“注意”符号代表什么含义？"},{"role":"assistant","content":"表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"航空运输的锂离子电池（芯）荷电状态有何限制？"},{"role":"assistant","content":"按 IATA 2026 年指引，须按包装方式区分：①锂离子电池独立运输（PI 965）原则上荷电状态≤30%，超出需主管当局批准；②与设备同包装（PI 966）第 I 类≤30%，第 II 类中额定能量超过2.7 Wh的电池≤30%，超出须按规定获批准；③装在设备内（PI 967）建议荷电状态≤30%或电量显示≤25%，并非一律强制。低荷电状态出货可能导致新设备首次使用低电量提示，应按产品说明安全充电。"}]}
+{"messages":[{"role":"user","content":"IMEI的全称和中文含义是什么？"},{"role":"assistant","content":"IMEI的全称是International Mobile Equipment Identity，中文含义是国际移动设备标识。"}]}
+{"messages":[{"role":"user","content":"What does OTAK stand for?"},{"role":"assistant","content":"OTAK stands for Over The Air Key Management."}]}
+{"messages":[{"role":"user","content":"本需求定义的两个功能主要为了满足哪些业务限制？"},{"role":"assistant","content":"满足客户对于呼入呼出限制，以及通话记录和短信记录的限制删除的业务。"}]}
+{"messages":[{"role":"user","content":"未经海能达事先书面授权，用户对产品中包含的计算机程序有哪些禁止行为？"},{"role":"assistant","content":"不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"在海能达手册中，符号“危险”代表什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"在文档的符号说明中，“警告”和“危险”分别代表什么含义？"},{"role":"assistant","content":"“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"Project 25 Phase I标准是在何时完成并公布的？"},{"role":"assistant","content":"Project 25标准的第I阶段是在1995年8月的APCO大会上完成和公布的。"}]}
+{"messages":[{"role":"user","content":"在海能达的手册文档规范中，“注意”、“警告”和“危险”这三个符号分别代表什么含义？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项；“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"购买海能达产品是否意味着获得了其中计算机程序的权益？"},{"role":"assistant","content":"不意味着。购买本产品并不意味着海能达以明示或暗示方式向购买者授予有关此等电脑程序的权益。未经海能达事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"WLAN的英文全称及中文名称分别是什么？"},{"role":"assistant","content":"WLAN的英文全称是Wireless Local Area Networks，中文名称是无线局域网。"}]}
+{"messages":[{"role":"user","content":"购买海能达产品是否意味着获得了其中计算机程序的权益？未经书面授权有哪些禁止行为？"},{"role":"assistant","content":"购买产品并不意味着以明示或暗示方式向购买者授予有关计算机程序的权益。未经事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"未经海能达事先书面授权，对计算机程序有哪些禁止行为？"},{"role":"assistant","content":"未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"What is the meaning of the CAUTION icon?"},{"role":"assistant","content":"The CAUTION icon indicates situations that could cause data loss or equipment damage."}]}
+{"messages":[{"role":"user","content":"What is the full form of the abbreviation NFC?"},{"role":"assistant","content":"Near Field Communication"}]}
+{"messages":[{"role":"user","content":"VoLTE的全称是什么，其基本定义是什么？"},{"role":"assistant","content":"VoLTE全称为Voice over LTE，是各大运营商推出的4G高清语音/视频通讯业务，是一种全部业务承载于4G网络上的IP数据传输技术。"}]}
+{"messages":[{"role":"user","content":"本手册中的补充说明符号和备注符号分别表示什么内容？"},{"role":"assistant","content":"补充说明符号表示对正文内容的补充、说明和强调；备注符号表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"在1.57542GHz附近，Z9201的插入损耗标准是多少？"},{"role":"assistant","content":"在1.57542GHz附近，Z9201的插入损耗应小于3dB。"}]}
+{"messages":[{"role":"user","content":"SEL1_OPT、SEL2_OPT 和 SEL3_OPT 分别为 1、0、1 且 SWB+ 为 Y 时，定义的配件类型是什么？"},{"role":"assistant","content":"常规肩咪类配件。"}]}
+{"messages":[{"role":"user","content":"启动盘写入完成后，是否需要重新启动计算机？"},{"role":"assistant","content":"无需重新启动。"}]}
+{"messages":[{"role":"user","content":"如何修改所在地时区并调整时间？"},{"role":"assistant","content":"单击“DATE & TIME”，修改所在地时区（例如将“Region”修改为“Asia”、“City”修改为“Shanghai”），并调整时间。"}]}
+{"messages":[{"role":"user","content":"America/New_York、America/Denver 和 America/Chicago 分别对应美国的哪些时区及城市？"},{"role":"assistant","content":"America/New_York 对应美国东部时间（纽约），America/Denver 对应美国山区时间（丹佛），America/Chicago 对应美国中部时间（芝加哥）。"}]}
+{"messages":[{"role":"user","content":"Europe\\London 和 Europe\\Amsterdam 分别对应什么标准时间及城市？"},{"role":"assistant","content":"Europe\\London 对应格林尼治标准时间（伦敦），Europe\\Amsterdam 对应中欧标准时间（阿姆斯特丹）。"}]}
+{"messages":[{"role":"user","content":"Europe/Belgrade、Europe/Brussels 和 Europe/Sarajevo 对应的时区名称是什么？"},{"role":"assistant","content":"这三个地区对应的时区均为中欧标准时间。"}]}
+{"messages":[{"role":"user","content":"Asia/Jerusalem、Africa/Cairo 和 Asia/Amman 分别对应什么时区？"},{"role":"assistant","content":"Asia/Jerusalem 对应以色列时间，Africa/Cairo 和 Asia/Amman 均对应东欧标准时间。"}]}
+{"messages":[{"role":"user","content":"在危险场所分类中，0区、1区和2区是如何定义的？"},{"role":"assistant","content":"0区指正常情况下，爆炸性气体混合物连续地或长时间存在的场所；1区指正常情况下，爆炸性气体混合物有可能出现的场所；2区指正常情况下，爆炸性气体混合物不可能出现，或者即使出现也只是短时间存在的场所。"}]}
+{"messages":[{"role":"user","content":"未经书面授权，对企业、组织或个人针对计算机程序的行为有哪些禁止性规定？"},{"role":"assistant","content":"未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"What is the full name of the abbreviation OTAK?"},{"role":"assistant","content":"The full name of OTAK is Over-The-Air-Key Management."}]}
+{"messages":[{"role":"user","content":"DMR的全称是什么？"},{"role":"assistant","content":"Digital Mobile Radio"}]}
+{"messages":[{"role":"user","content":"What steps are required to manually select a time zone?"},{"role":"assistant","content":"Turn off Auto time zone, and then tap Select time zone."}]}
+{"messages":[{"role":"user","content":"当自定义配置不保存时，系统何时恢复默认配置？"},{"role":"assistant","content":"结束抓取后即恢复默认配置。"}]}
+{"messages":[{"role":"user","content":"如果自定义配置不保存，结束抓取后配置会如何变化？"},{"role":"assistant","content":"若自定义配置不保存，结束此次抓取后恢复默认配置。"}]}
+{"messages":[{"role":"user","content":"在海能达手册中，符号“危险”表示什么含义？"},{"role":"assistant","content":"符号“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"NFC的全称和中文名称分别是什么？"},{"role":"assistant","content":"NFC的全称是Near Field Communication，中文名称是近场通信。"}]}
+{"messages":[{"role":"user","content":"What warranties are explicitly excluded regarding the deliverable?"},{"role":"assistant","content":"No representation or warranty is made that the deliverable is technically accurate, sufficient, or conforms to any law, governmental rule, or regulation. Additionally, no warranty is made of merchantability, fitness for any particular purpose, or against infringement of intellectual property rights."}]}
+{"messages":[{"role":"user","content":"What is the definition of 'access code' in the context of the document?"},{"role":"assistant","content":"Access code is defined as the subdivision of mobiles for random access opportunities."}]}
+{"messages":[{"role":"user","content":"What is the definition of ranking in the context of cell communication?"},{"role":"assistant","content":"Ranking is a procedural method of listing cells in descending order from the most suitable for communication to the least suitable for communication."}]}
+{"messages":[{"role":"user","content":"What is the definition of MIMO?"},{"role":"assistant","content":"Multiple Input and Multiple Output"}]}
+{"messages":[{"role":"user","content":"What is the mathematical rule used by a (K, a) block interleaver to map input bits to output positions?"},{"role":"assistant","content":"The rule is $q_{o}(k)=q_{i}(i)$ for $i=1,2, \\cdots, K$, with the output index calculated as $k=1+(a \\times i) \\bmod K$."}]}
+{"messages":[{"role":"user","content":"What is the mathematical formula for the scrambling method transforming type-4 bits to type-5 bits?"},{"role":"assistant","content":"The transformation is defined by the formula $b_{5}(k)=b_{4}(k)+p(k)$ for $k=1,2, \\\\. . . , K_{5}$, where the addition is modulo 2, and $p(k)$ is the $k$-th bit of the scrambling sequence. The number of output bits equals the number of input bits ($K_{5}=K_{4}$)."}]}
+{"messages":[{"role":"user","content":"Under what conditions may the lost packet probability requirements of the high reliability class be realizable?"},{"role":"assistant","content":"The lost packet probability requirements of the high reliability class may only be realizable if a high delay class or unpredictable delay class is permitted, and it applies only while a usable PDCH is available."}]}
+{"messages":[{"role":"user","content":"What is the meaning of a connection with width 0 and a data transfer throughput of 1102?"},{"role":"assistant","content":"It indicates no information about radio resources."}]}
+{"messages":[{"role":"user","content":"What are the definitions of $M$ and $L$ in the RMSVE formula?"},{"role":"assistant","content":"$M$ denotes the number of subcarriers, and $L$ denotes the number of symbols over a subcarrier."}]}
+{"messages":[{"role":"user","content":"What is the formula for estimating RMSVE based on SSVE, M, and L?"},{"role":"assistant","content":"The estimate for RMSVE is calculated as the square root of SSVE divided by the product of M and L: RMSVE = sqrt(SSVE / (M * L))."}]}
+{"messages":[{"role":"user","content":"How is the coverage probability at a distance r from the BS defined?"},{"role":"assistant","content":"It is determined by the fraction of locations at which the received signal strength is above a threshold (τ)."}]}
+{"messages":[{"role":"user","content":"What is the formula for the probability (Po) that the mean local signal strength exceeds the threshold?"},{"role":"assistant","content":"The probability is given by Po(r) = 1/2 + 1/2 erf[(x - τ) / σ√2], where x is the mean local signal strength, τ is the threshold, and σ is the standard deviation of shadowing fluctuation."}]}
+{"messages":[{"role":"user","content":"Why are rural areas with some degree of clutter considered for evaluation instead of open areas?"},{"role":"assistant","content":"Open areas void of scattered buildings and foliage occur rather infrequently in practice."}]}
+{"messages":[{"role":"user","content":"What is the procedure for simulating Jakes fading?"},{"role":"assistant","content":"Jakes fading is simulated by filtering white Gaussian noise with a FIR filter. The impulse response of this filter is the inverse Fourier transform of the ideal Jakes law truncated to 51 symbol intervals."}]}
+{"messages":[{"role":"user","content":"What is the formula for estimating intermediate fading samples $\\hat{a}_{m \\Delta_F + l, \\tilde{k}}$ in the described method?"},{"role":"assistant","content":"The intermediate fading samples are estimated as $\\hat{a}_{m \\Delta_F + l, \\tilde{k}} = \\hat{a}_{m \\Delta_F, \\tilde{k}} + \\frac{\\hat{a}_{(m + 1) \\Delta_F, \\tilde{k}} - \\hat{a}_{m \\Delta_F, \\tilde{k}}}{\\Delta_F} l$, for $l = 1, \\cdots, \\Delta_F - 1$ and $m = 0, \\cdots, M_F - 1$."}]}
+{"messages":[{"role":"user","content":"What is the formula for the optimal one-dimensional channel estimation (CE) for the $\\bar{n}$-th subcarrier?"},{"role":"assistant","content":"The optimal one-dimensional CE is given by $\\hat{\\alpha}_{\\bar{n}}=C_{\\alpha_{\\bar{n}}} H^{T}\\left[H C_{\\alpha_{\\bar{n}}} H^{T}+C_{w}\\right]^{-1} \\boldsymbol{y}_{\\bar{n}}$."}]}
+{"messages":[{"role":"user","content":"What does the abbreviation DEM stand for?"},{"role":"assistant","content":"Digital Evidence Management"}]}
+{"messages":[{"role":"user","content":"当 USB_VBUS_DET 和 USB_ID_DET 管脚处于 Float 状态时代表什么含义？"},{"role":"assistant","content":"Float 状态代表 USB remove（USB 移除）。"}]}
+{"messages":[{"role":"user","content":"EXT_PTT接口的电气特性和有效电平是什么？"},{"role":"assistant","content":"EXT_PTT是数字输入接口，采用3.3V CMOS标准，低电平有效。"}]}
+{"messages":[{"role":"user","content":"未经事先书面授权，对计算机程序有哪些禁止行为？"},{"role":"assistant","content":"未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"Asia\\Jerusalem、Asia\\Tehran 和 Asia\\Kabul 分别对应什么时间标准？"},{"role":"assistant","content":"Asia\\Jerusalem 对应以色列时间，Asia\\Tehran 对应伊朗标准时间，Asia\\Kabul 对应阿富汗时间。"}]}
+{"messages":[{"role":"user","content":"文档中“注意”符号代表什么含义？"},{"role":"assistant","content":"表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"GSDM的全称及中文含义是什么？"},{"role":"assistant","content":"Graceful Service Degradation Mode，合理服务降级模式。"}]}
+{"messages":[{"role":"user","content":"What is the Chinese full name for the abbreviation GSDM?"},{"role":"assistant","content":"合理服务降级模式"}]}
+{"messages":[{"role":"user","content":"ISO在表中对应的英文全称和中文全称分别是什么？"},{"role":"assistant","content":"英文全称是 International Standardization Organization，中文全称是感光度。"}]}
+{"messages":[{"role":"user","content":"在文档符号说明中，“警告”和“危险”分别代表什么含义？"},{"role":"assistant","content":"“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"文档中对于功能实现状态的标注规则以及做法变更的表示方法是如何定义的？"},{"role":"assistant","content":"1. 做法变更：采用删除线加灰底色表示。 2. 不支持功能：灰色底色部分为当前阶段不支持。 3. 已实现与后续优化：如不做特别说明，表示此部分功能为已实现；后续版本优化的功能将进行标注，如【R4.0】。"}]}
+{"messages":[{"role":"user","content":"用户购买包含计算机程序的产品后，是否自动获得对该程序的复制、反编译或反向工程的权利？"},{"role":"assistant","content":"不，购买产品并不意味着授予有关电脑程序的权益。未经海能达事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、分发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"当 SEL1_OP=1, SEL2_OP=0, SEL3_OPT=0 且 SWB+=Y 时，定义的模式是什么？"},{"role":"assistant","content":"主机端为 USB 从模式。"}]}
+{"messages":[{"role":"user","content":"What is the full name and Chinese translation for the acronym ESN?"},{"role":"assistant","content":"ESN stands for Electronic Serial Number, which translates to 电子序列号 in Chinese."}]}
+{"messages":[{"role":"user","content":"IMEI的全称是什么？"},{"role":"assistant","content":"International Mobile Equipment Identity，国际移动设备标识。"}]}
+{"messages":[{"role":"user","content":"ITSI代表什么含义？"},{"role":"assistant","content":"Individual TETRA Subscriber Identity，即TETRA用户个呼地址。"}]}
+{"messages":[{"role":"user","content":"What is the definition of TEI?"},{"role":"assistant","content":"TEI stands for Terminal Equipment Identity."}]}
+{"messages":[{"role":"user","content":"How do you perform basic arithmetic calculations in the Calculator app?"},{"role":"assistant","content":"1. Tap + . 2. Enter the first number using the on-screen numeric keypad. 3. Tap the appropriate arithmetic function key. 4. Enter the next number. 5. Tap the equal sign to view the result."}]}
+{"messages":[{"role":"user","content":"关于增加无线回传至证据管理平台（DEM）的详细信息应参考哪一部分？"},{"role":"assistant","content":"关于增加无线回传至证据管理平台（DEM）的详细信息，应详见3.4.2部分及参数定义。"}]}
+{"messages":[{"role":"user","content":"What is the meaning of the status icons P1 and P2?"},{"role":"assistant","content":"P1 indicates that the radio stays on Priority Channel 1, and P2 indicates that the radio stays on Priority Channel 2."}]}
+{"messages":[{"role":"user","content":"用户购买产品后，对其中包含的计算机程序拥有哪些权益？有哪些禁止行为？"},{"role":"assistant","content":"购买本产品并不意味着我司以明示或暗示方式向购买者授予有关此等电脑程序的权益。未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"本手册中的符号“注意”、“警告”和“危险”分别代表什么含义？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项；“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"What is the definition of a multimedia message?"},{"role":"assistant","content":"A multimedia message is a message that contains pictures, audio files, videos, or other multimedia content."}]}
+{"messages":[{"role":"user","content":"小区切换协议标准中定义的三个小区切换条件具体是什么？"},{"role":"assistant","content":"三个小区切换条件分别是：radio relinqushable、radio improvable 和 radio enable。"}]}
+{"messages":[{"role":"user","content":"What is the full name and Chinese translation for SCK?"},{"role":"assistant","content":"SCK stands for Static Cipher Key, which translates to 静态密匙."}]}
+{"messages":[{"role":"user","content":"IMEI的全称和中文含义分别是什么？"},{"role":"assistant","content":"IMEI的全称是International Mobile Equipment Identity，中文含义是国际移动设备标识。"}]}
+{"messages":[{"role":"user","content":"What does the acronym OTAK stand for?"},{"role":"assistant","content":"OTAK stands for Over The Air Key Management."}]}
+{"messages":[{"role":"user","content":"在文档中，“危险”符号代表什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"未经海能达事先书面授权，哪些针对计算机程序的行为是被禁止的？"},{"role":"assistant","content":"未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、分发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"Z9204 在 1.561098GHz 附近的插入损耗正常标准是多少？"},{"role":"assistant","content":"Z9204 在 1.561098GHz 附近插入损耗小于 3dB。"}]}
+{"messages":[{"role":"user","content":"当 SEL1_OP、SEL2_OP 和 SEL3_OPT/ 分别为 1、0、0 且 SWB+ 为 Y 时，定义是什么？"},{"role":"assistant","content":"主机端为 USB 从模式。"}]}
+{"messages":[{"role":"user","content":"本手册中符号“贴士”、“注意”和“危险”分别代表什么含义？"},{"role":"assistant","content":"“贴士”表示有助于您更好解决问题的方法；“注意”表示可能导致设备损坏或数据丢失的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"What does the abbreviation SFR stand for?"},{"role":"assistant","content":"SFR stands for Single Frequency Repeater."}]}
+{"messages":[{"role":"user","content":"What is the full name and Chinese meaning of VCO?"},{"role":"assistant","content":"VCO stands for Voltage Control Oscillator, which means 电压控制振荡器."}]}
+{"messages":[{"role":"user","content":"TMOISSI代表什么含义？"},{"role":"assistant","content":"TMO模式下终端的专网号码。"}]}
+{"messages":[{"role":"user","content":"预占呼叫的定义及其优先级地位是什么？配置“预占”选项的前提条件是什么？"},{"role":"assistant","content":"预占呼叫是具有最高优先级的普通语音呼叫（除紧急呼叫以外的所有呼叫，包括个呼、组呼、广播呼叫等）。只有在开启预占呼叫功能后，呼叫优先级参数才可配置“预占”选项。"}]}
+{"messages":[{"role":"user","content":"在文档中，“注意”和“备注”这两个符号分别代表什么含义？"},{"role":"assistant","content":"“备注”表示对正文内容的补充、说明和强调；“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"航空运输锂离子电池时，对电池的荷电状态有什么具体要求？"},{"role":"assistant","content":"按 IATA 2026 年指引，须按包装方式区分：①锂离子电池独立运输（PI 965）原则上荷电状态≤30%，超出需主管当局批准；②与设备同包装（PI 966）第 I 类≤30%，第 II 类中额定能量超过2.7 Wh的电池≤30%，超出须按规定获批准；③装在设备内（PI 967）建议荷电状态≤30%或电量显示≤25%，并非一律强制。低荷电状态出货可能导致新设备首次使用低电量提示，应按产品说明安全充电。"}]}
+{"messages":[{"role":"user","content":"日历中的“采用家里的时区”功能有什么作用？"},{"role":"assistant","content":"开启“采用家里的时区”并选择时区，外出时以原居住地时区显示日历和活动时间。"}]}
+{"messages":[{"role":"user","content":"PDC760在软件生态和APP适配方面有哪些能力？"},{"role":"assistant","content":"PDC760拥有安卓原生APP基础，并具备多款定制研发的海能达APP，例如提供路径规划和在线导航的路航APP。基于标准安卓API接口，终端可灵活适配或定制各行业APP，整合移动办公环境。具体的适配或定制需求需联系海能达销售。"}]}
+{"messages":[{"role":"user","content":"What is the full name of the abbreviation ITSI?"},{"role":"assistant","content":"The full name of ITSI is Individual TETRA Subscriber Identity."}]}
+{"messages":[{"role":"user","content":"What is the meaning of the acronym KMS?"},{"role":"assistant","content":"KMS stands for Key Management Server."}]}
+{"messages":[{"role":"user","content":"手册中定义的“警告”和“危险”符号分别表示什么风险？"},{"role":"assistant","content":"“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"PDT和TETRA分别对应什么中文术语？"},{"role":"assistant","content":"PDT对应警用数字集群，TETRA对应陆地集群无线电。"}]}
+{"messages":[{"role":"user","content":"LTE的全称是什么？"},{"role":"assistant","content":"长期演进（Long Term Evolution）"}]}
+{"messages":[{"role":"user","content":"NAS代表什么含义？"},{"role":"assistant","content":"非接入层（Non Access Stratum）"}]}
+{"messages":[{"role":"user","content":"海能达自定义业务的业务类型标识是什么？"},{"role":"assistant","content":"业务类型为HFID（Hytera自定义业务）。"}]}
+{"messages":[{"role":"user","content":"在Hytera模式下，PFID的001状态码代表什么含义？"},{"role":"assistant","content":"紧急报警。"}]}
+{"messages":[{"role":"user","content":"What does the abbreviation IDS stand for?"},{"role":"assistant","content":"Integrated Device Station"}]}
+{"messages":[{"role":"user","content":"在文档中，“危险”这一符号说明代表什么含义？"},{"role":"assistant","content":"“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"FGN 的全称和中文含义是什么？"},{"role":"assistant","content":"FGN 的全称是 Fleet Group Number，中文含义是组呼队号。"}]}
+{"messages":[{"role":"user","content":"FIN 代表什么？"},{"role":"assistant","content":"FIN 代表单呼队号，其英文全称是 Fleet Individual Number。"}]}
+{"messages":[{"role":"user","content":"LAI 的全称是什么？"},{"role":"assistant","content":"Location Area Identity"}]}
+{"messages":[{"role":"user","content":"MTBF 代表什么含义？"},{"role":"assistant","content":"平均无故障时间 (Mean Time Between Failure)"}]}
+{"messages":[{"role":"user","content":"在爆炸性气体环境中工作的手持台应符合哪些标准规定？"},{"role":"assistant","content":"应符合 GB/T 3836.1 和 GB/T 3836.4 的规定。"}]}
+{"messages":[{"role":"user","content":"在可燃性粉尘环境中工作的手持台需要符合什么标准？"},{"role":"assistant","content":"应符合 GB/T 3836.1 的规定。"}]}
+{"messages":[{"role":"user","content":"在提供的术语表中，ISO 和 HDR 的中文全称分别是什么？"},{"role":"assistant","content":"ISO 的中文全称是感光度，HDR 的中文全称是高动态光照渲染图像。"}]}
+{"messages":[{"role":"user","content":"What does the acronym SNA stand for?"},{"role":"assistant","content":"SNA stands for Short Number Addressing."}]}
+{"messages":[{"role":"user","content":"WLAN和PPS分别对应什么中文术语？"},{"role":"assistant","content":"WLAN对应无线局域网，PPS对应私有定位服务。"}]}
+{"messages":[{"role":"user","content":"在术语表中，ISO 代表什么含义？"},{"role":"assistant","content":"在该术语表中，ISO 代表感光度。"}]}
+{"messages":[{"role":"user","content":"本标准是按照哪个规则进行起草的？"},{"role":"assistant","content":"按照 GB/T 1.1—2009 给出的规则进行起草。"}]}
+{"messages":[{"role":"user","content":"本标准由哪个委员会归口？"},{"role":"assistant","content":"全国通信标准化技术委员会（SAC/TC 485）。"}]}
+{"messages":[{"role":"user","content":"缩写 MSB 的全称及中文含义是什么？"},{"role":"assistant","content":"MSB 的全称是 Most Significant Bit，中文含义是最高比特。"}]}
+{"messages":[{"role":"user","content":"PABX 的全称和中文含义是什么？"},{"role":"assistant","content":"PABX 的全称是 Private Automatic Branch Exchange，中文含义是专用自动交换局。"}]}
+{"messages":[{"role":"user","content":"SAP 的全称是什么？"},{"role":"assistant","content":"Service Access Point"}]}
+{"messages":[{"role":"user","content":"SGI 的全称和中文含义是什么？"},{"role":"assistant","content":"SGI 的全称是 Short Group Identity，中文含义是短组呼号码。"}]}
+{"messages":[{"role":"user","content":"SLCO 代表什么术语？"},{"role":"assistant","content":"SLCO 代表短链路控制码，其英文全称是 Short LC Opcode。"}]}
+{"messages":[{"role":"user","content":"SMS 在通信中通常指代什么服务？"},{"role":"assistant","content":"SMS 指代短消息服务 (Short Message Service)。"}]}
+{"messages":[{"role":"user","content":"SSI 的中文名称及英文全称分别是什么？"},{"role":"assistant","content":"SSI 的中文名称是短单呼号码，英文全称是 Short Subscriber Identity。"}]}
+{"messages":[{"role":"user","content":"tgi 的全称和中文含义是什么？"},{"role":"assistant","content":"tgi 的全称是 Temp Group Identity，中文含义是临时组号。"}]}
+{"messages":[{"role":"user","content":"UAB 的全称是什么？"},{"role":"assistant","content":"UDT 附加帧 (UDT Appended Blocks)"}]}
+{"messages":[{"role":"user","content":"系统实体之间发送短数据时，最大传输字节数是多少？其计算依据是什么？"},{"role":"assistant","content":"最多能够传输 1508 个字节的数据。计算依据为：24 字节/数据帧 × 63 数据帧 - 4 字节。"}]}
+{"messages":[{"role":"user","content":"在预定义格式的数据业务中，数据头帧里的后续帧数量（AB）信息单元和响应请求（A）信息单元应如何设置？"},{"role":"assistant","content":"后续帧数量（AB）信息单元不应设置为 000000₂。响应请求（A）信息单元对于无确认数据应设置为 0₂，对于有确认数据应设置为 1₂。"}]}
+{"messages":[{"role":"user","content":"RSV 位的定义及其设置要求是什么？"},{"role":"assistant","content":"RSV 是保留位，长度为 1 bit，应设置为 0。"}]}
+{"messages":[{"role":"user","content":"SLCD代表什么含义，占用多少比特？"},{"role":"assistant","content":"SLCD代表Short Link Control Data（短链路控制数据），占用24比特。"}]}
+{"messages":[{"role":"user","content":"8比特业务选项信息单元（SO）中，紧急属性的二进制值$0_{2}$和$1_{2}$分别代表什么含义？"},{"role":"assistant","content":"在8比特业务选项信息单元（SO）中，紧急属性值为$0_{2}$代表非紧急业务，值为$1_{2}$代表紧急业务。"}]}
+{"messages":[{"role":"user","content":"8比特的应答响应(AR)信息单元中，二进制值00100000和00100001分别代表什么含义？"},{"role":"assistant","content":"二进制值00100000表示允许，00100001表示拒绝。"}]}
+{"messages":[{"role":"user","content":"SLCO中二进制值$0000_{2}$和$0001_{2}$分别代表什么含义？"},{"role":"assistant","content":"$0000_{2}$代表空信息（Null_Msg），$0001_{2}$代表激活更新（Act_Updt）。"}]}
+{"messages":[{"role":"user","content":"CH_st 的定义是什么？"},{"role":"assistant","content":"CH_st 是系统起始信道号，即起始频率 f_st 对应的信道号。"}]}
+{"messages":[{"role":"user","content":"移动台随机接入依赖 C_ALOHA 的哪些条件，它们分别代表什么含义？"},{"role":"assistant","content":"移动台随机接入依赖 C_ALOHA 的 UP、SF、MASK 条件。其中，UP 表示用户等级，SF 表示业务类别，MASK 表示地址范围。"}]}
+{"messages":[{"role":"user","content":"ACKT 值为 00012 时表示什么含义？"},{"role":"assistant","content":"表示对 P_DAH0Y 的确认。"}]}
+{"messages":[{"role":"user","content":"当 CLASS 为 012 且 TYPE 为 00I2 时，NACK 状态表示什么含义？"},{"role":"assistant","content":"NS 数据 CRC 错误"}]}
+{"messages":[{"role":"user","content":"二进制代码 $0010_{2}$ 用于表示什么内容？"},{"role":"assistant","content":"表示分配分组业务的事件标签。"}]}
+{"messages":[{"role":"user","content":"在 DPF 定义中，用于常规模式的预定义格式短数据和预定义编码状态数据的二进制值分别是多少？"},{"role":"assistant","content":"用于常规模式的预定义格式短数据为 $1101_{2}$，预定义编码状态数据为 $1110_{2}$。"}]}
+{"messages":[{"role":"user","content":"DSF_ALL、DSF_G、DSF_NG 和 DSF_RV 分别代表什么含义？"},{"role":"assistant","content":"DSF_ALL 表示邀请所有业务随机接入；DSF_G 表示邀请组呼业务的随机接入；DSF_NG 表示邀请非组呼业务的随机接入；DSF_RV 表示允许上行分组数据进行预留接入。"}]}
+{"messages":[{"role":"user","content":"在功能集识别码定义中，DT1 的值为 0₂ 和 1₂ 分别代表什么状态？"},{"role":"assistant","content":"DT1 的值为 0₂ 代表语音呼叫转移不激活，值为 1₂ 代表语音呼叫转移激活。"}]}
+{"messages":[{"role":"user","content":"功能集识别码 DT4 的定义中，0₂ 和 1₂ 分别对应哪种状态呼叫转移的状态？"},{"role":"assistant","content":"0₂ 对应状态呼叫转移不激活，1₂ 对应状态呼叫转移激活。"}]}
+{"messages":[{"role":"user","content":"当二进制值为 $0000001_{2}$ 时，系统预定义的功能是什么？"},{"role":"assistant","content":"报警。"}]}
+{"messages":[{"role":"user","content":"如果号码类型编码不属于列出的特定二进制值，其状态如何定义？"},{"role":"assistant","content":"无效"}]}
+{"messages":[{"role":"user","content":"该算法输出的 hash 值 c 是多少比特？"},{"role":"assistant","content":"32 比特。"}]}
+{"messages":[{"role":"user","content":"在海能达的手册中，符号“危险”和“注意”分别表示什么含义？"},{"role":"assistant","content":"“危险”表示可能会导致重大人身伤亡的事项；“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"IETF RFC 3550 定义的 RTP 协议全称是什么？"},{"role":"assistant","content":"RTP: A Transport Protocol for Real-Time Applications"}]}
+{"messages":[{"role":"user","content":"HTTPS的全称是什么？"},{"role":"assistant","content":"Hypertext Transfer Protocol Secure"}]}
+{"messages":[{"role":"user","content":"IMEI的中文名称和英文全称分别是什么？"},{"role":"assistant","content":"中文名称是国际移动设备识别码，英文全称是International Mobile Equipment Identity"}]}
+{"messages":[{"role":"user","content":"ISI 的全称和中文含义是什么？"},{"role":"assistant","content":"ISI 的全称是 Individually Subscribers Identity，中文含义是个人地址。"}]}
+{"messages":[{"role":"user","content":"RTP的全称是什么？"},{"role":"assistant","content":"Real-time Transport Protocol"}]}
+{"messages":[{"role":"user","content":"TCP的全称是什么？"},{"role":"assistant","content":"Transmission Control Protocol"}]}
+{"messages":[{"role":"user","content":"在群组信息更新结果结构中，RsltList 元素的含义和必要性是什么？"},{"role":"assistant","content":"RsltList 是根元素，表示群组信息更新结果列表，其必要性标记为 M（必须）。"}]}
+{"messages":[{"role":"user","content":"octet-align 代表什么含义？"},{"role":"assistant","content":"octet-align 为字节对齐方式。"}]}
+{"messages":[{"role":"user","content":"包体大小的计算公式是什么，其中 N 代表什么？"},{"role":"assistant","content":"包体大小单位为字节，计算公式为 51 + N，其中 N 表示备用字段大小。"}]}
+{"messages":[{"role":"user","content":"What is the full name of the abbreviation GSDM?"},{"role":"assistant","content":"Graceful Service Degradation Mode"}]}
+{"messages":[{"role":"user","content":"Which organization is represented by the abbreviation ISO?"},{"role":"assistant","content":"International Standardization Organization"}]}
+{"messages":[{"role":"user","content":"文档中“注意”符号表示什么含义？"},{"role":"assistant","content":"表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"OTA 的全称和中文描述分别是什么？"},{"role":"assistant","content":"OTA 的全称是 Over The Air，中文描述为无线。"}]}
+{"messages":[{"role":"user","content":"在文档中，“注意”这一符号具体表示什么含义？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"关于 Smart MDM 手册中涉及的计算机程序，用户有哪些禁止行为？"},{"role":"assistant","content":"未经海能达事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"What is the limited remaining power percentage for lithium-ion batteries under the new IATA shipment regulation?"},{"role":"assistant","content":"Under IATA's 2026 guidance, requirements depend on how the lithium-ion battery is transported. Batteries shipped alone (PI 965) generally must be at no more than 30% state of charge unless approved. For batteries packed with equipment (PI 966), Section I has a 30% limit and Section II applies the 30% limit to batteries exceeding 2.7 Wh, with specified approval exceptions. For batteries contained in equipment (PI 967), no more than 30% state of charge or 25% indicated battery capacity is recommended, not universally mandatory. Low shipping charge can explain a low-battery alert on first use; charge safely per the product instructions."}]}
+{"messages":[{"role":"user","content":"What is the maximum remaining power limit for lithium-ion batteries under IATA shipment regulations?"},{"role":"assistant","content":"Under IATA's 2026 guidance, requirements depend on how the lithium-ion battery is transported. Batteries shipped alone (PI 965) generally must be at no more than 30% state of charge unless approved. For batteries packed with equipment (PI 966), Section I has a 30% limit and Section II applies the 30% limit to batteries exceeding 2.7 Wh, with specified approval exceptions. For batteries contained in equipment (PI 967), no more than 30% state of charge or 25% indicated battery capacity is recommended, not universally mandatory. Low shipping charge can explain a low-battery alert on first use; charge safely per the product instructions."}]}
+{"messages":[{"role":"user","content":"Smart MDM 管理端和用户端能否在同一台计算机上同时运行？会有什么后果？"},{"role":"assistant","content":"不能。请勿在一台计算机上同时运行管理端和用户端，否则部分功能无法使用，如本地读频和有线写频。"}]}
+{"messages":[{"role":"user","content":"手册中的“警告”和“危险”符号分别代表什么含义？"},{"role":"assistant","content":"“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"在SMART MDM手册中，文档符号“危险”代表什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"What does the acronym API stand for?"},{"role":"assistant","content":"API stands for Application Programming Interface."}]}
+{"messages":[{"role":"user","content":"文档中未做特别说明的部分表示什么含义？"},{"role":"assistant","content":"表示此部分为共用部分。"}]}
+{"messages":[{"role":"user","content":"TEA2 和 TEA5 算法在配置时有什么互斥限制？"},{"role":"assistant","content":"TEA2 及 TEA5 不能同时为新算法或同时为旧算法。"}]}
+{"messages":[{"role":"user","content":"DSP常驻内存中算法相关的部分占用多少空间？"},{"role":"assistant","content":"算法相关的部分占用 320K Byte。"}]}
+{"messages":[{"role":"user","content":"Hytera手册中“警告”和“危险”符号分别代表什么含义？"},{"role":"assistant","content":"“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"用户购买产品后，是否自动获得产品中计算机程序的权益？未经书面授权禁止哪些行为？"},{"role":"assistant","content":"购买本产品并不意味着我司以明示或暗示方式向购买者授予有关此等计算机程序的权益。未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"在文档中，“注意”符号表示什么含义？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 手册中定义的“注意”、“警告”和“危险”三种文档符号分别表示什么风险等级？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项；“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"MIDI的全称及其在编曲界的地位是什么？"},{"role":"assistant","content":"MIDI的全称是Musical Instrument Digital Interface（乐器数字接口），它是编曲界最广泛的音乐标准格式，也是电子乐器制造商们建立的通信标准。"}]}
+{"messages":[{"role":"user","content":"NFC is the abbreviation for what technology?"},{"role":"assistant","content":"Near Field Communication"}]}
+{"messages":[{"role":"user","content":"SDM的全称是什么？"},{"role":"assistant","content":"Synchronous Data Manager"}]}
+{"messages":[{"role":"user","content":"SDM功能的核心定义是什么？"},{"role":"assistant","content":"SDM功能指基于SDS业务预留的空口资源，允许在基站计划的时间表中接收SDS的应答消息，并且保证无空口冲突（即同步概念）。"}]}
+{"messages":[{"role":"user","content":"在海能达手册中，“危险”和“注意”这两个符号分别代表什么含义？"},{"role":"assistant","content":"“危险”表示可能会导致重大人身伤亡的事项；“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"What is the full form of DEM in the context of evidence management systems?"},{"role":"assistant","content":"DEM stands for Digital Evidence Management."}]}
+{"messages":[{"role":"user","content":"ISO 在摄影中代表什么含义？"},{"role":"assistant","content":"ISO（International Standardization Organization，感光度）代表相机对光线的敏感度。"}]}
+{"messages":[{"role":"user","content":"What is the full name and Chinese meaning of the abbreviation AIE?"},{"role":"assistant","content":"AIE stands for Air Interface Encryption, which means 空口加密."}]}
+{"messages":[{"role":"user","content":"What is the maximum remaining power limit for lithium-ion batteries under the new shipment regulation approved by the International Air Transport?"},{"role":"assistant","content":"The remaining lithium-ion battery power is limited to 30%."}]}
+{"messages":[{"role":"user","content":"Which time zone is associated with the identifier Europe/Belgrade?"},{"role":"assistant","content":"Central European Time (Belgrade)"}]}
+{"messages":[{"role":"user","content":"What is the time zone designation for Africa/Windhoek?"},{"role":"assistant","content":"Windhoek"}]}
+{"messages":[{"role":"user","content":"What time zone corresponds to Asia/Kabul?"},{"role":"assistant","content":"Afghanistan Time (Kabul)"}]}
+{"messages":[{"role":"user","content":"What is the full name of the abbreviation DHCP?"},{"role":"assistant","content":"DHCP stands for Dynamic Host Configuration Protocol."}]}
+{"messages":[{"role":"user","content":"MIDI 的全称及其中文含义是什么？"},{"role":"assistant","content":"MIDI 的全称是 Musical Instrument Digital Interface，中文含义是乐器数字接口。"}]}
+{"messages":[{"role":"user","content":"在步骤 8 中，如何修改所在地时区？"},{"role":"assistant","content":"单击“DATE & TIME”，将“Region”修改为所需区域（例如“Asia”），将“City”修改为所需城市（例如“ShangHai”）。"}]}
+{"messages":[{"role":"user","content":"手册中符号“危险”表示什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"用户购买海能达产品后，是否自动获得其中计算机程序的权益？未经书面授权禁止哪些行为？"},{"role":"assistant","content":"购买产品并不意味着以明示或暗示方式向购买者授予有关计算机程序的权益。未经事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"TMOISSI 代表什么含义？"},{"role":"assistant","content":"TMO模式下终端的专网号码。"}]}
+{"messages":[{"role":"user","content":"预占呼叫的定义及其优先级地位如何？配置“预占”选项需要满足什么条件？"},{"role":"assistant","content":"预占呼叫是具有最高优先级的普通语音呼叫（除紧急呼叫以外的所有呼叫，包括个呼、组呼、广播呼叫等）。只有在开启预占呼叫功能后，呼叫优先级参数才可配置“预占”选项。"}]}
+{"messages":[{"role":"user","content":"未经 Hytera 事先书面授权，对计算机程序有哪些禁止行为？"},{"role":"assistant","content":"任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"DEM 的英文全称和中文全称分别是什么？"},{"role":"assistant","content":"DEM 的英文全称是 Digital Evidence Management，中文全称是电子证据管理系统。"}]}
+{"messages":[{"role":"user","content":"在防爆标志的设备组别中，II 类和 III 类分别代表什么含义？"},{"role":"assistant","content":"II 表示除煤矿、井下之外的其他爆炸性气体环境用电气设备，III 表示除煤矿之外的其他爆炸性粉尘环境用电气设备。"}]}
+{"messages":[{"role":"user","content":"请描述21区和22区在易燃性粉尘存在状态上的定义区别。"},{"role":"assistant","content":"21区是指在一般条件下，易燃性粉尘偶尔会形成云状物；22区是指在一般条件下，易燃性粉尘形成的云状物一般不会发生，即使发生，也是短时行为。"}]}
+{"messages":[{"role":"user","content":"请列出 EDSI、GSSI 和 SSI 对应的英文全称及中文解释。"},{"role":"assistant","content":"EDSI 对应 Encrypted Direct-mode Short Identity；GSSI 对应 Group Short Subscriber Identity（组呼号）；SSI 对应 Short Subscriber Identity（短用户号）。"}]}
+{"messages":[{"role":"user","content":"What does the acronym DM-SDU stand for?"},{"role":"assistant","content":"DM-SDU stands for Direct Mode Service Data Unit."}]}
+{"messages":[{"role":"user","content":"日历应用中“采用家里的时区”功能的作用是什么？"},{"role":"assistant","content":"开启“采用家里的时区”并选择时区后，外出时以原居住地时区显示日历和活动时间。"}]}
+{"messages":[{"role":"user","content":"ISO 在术语对照中对应的英文全称和中文全称是什么？"},{"role":"assistant","content":"ISO 对应的英文全称是 International Standardization Organization，中文全称是感光度。"}]}
+{"messages":[{"role":"user","content":"What is the definition of DLL in the context of layer 2?"},{"role":"assistant","content":"DLL is a synonym for the whole layer 2, also known as the Data Link Layer."}]}
+{"messages":[{"role":"user","content":"Why do DM-MS Tx/DM-REP Tx have a high probability of desensitization and blocking when using a type 1A DM-REP in the TM-BS transmit band?"},{"role":"assistant","content":"They have a high probability of desensitization and blocking because they are in the same band as the TM-MS Rx."}]}
+{"messages":[{"role":"user","content":"What do the symbols PC and NF represent in the calculation methodology?"},{"role":"assistant","content":"PC represents the power of the unwanted transmitter in dBm at the transmitter output socket, and NF represents the noise floor of the receiver in dBm."}]}
+{"messages":[{"role":"user","content":"What is the definition of PNR in the context of transmitter noise?"},{"role":"assistant","content":"PNR is the allowed unwanted transmitter noise relative to the transmitter power in dBc."}]}
+{"messages":[{"role":"user","content":"What is the impact on blocking calculations if a receiver exhibits non-linear behavior instead of maintaining linearity across its whole input range?"},{"role":"assistant","content":"If the receiver exhibits non-linear behaviour, the levels of blocking experienced at high signal strengths may well have been underestimated."}]}
+{"messages":[{"role":"user","content":"What is the formula for basic path loss between isotropic antennas when frequency is in MHz and distance is in km?"},{"role":"assistant","content":"The basic path loss L is given by the formula: L = 20 ⋅ log10 f + 20 ⋅ log10 d + 32,44, where f is in MHz and d is in km."}]}
+{"messages":[{"role":"user","content":"What loss value is assumed for both wanted and unwanted transmitters in the theoretical calculations?"},{"role":"assistant","content":"In the theoretical calculations, it is assumed that the loss between both the wanted and unwanted transmitter and the receiver is 14 dB."}]}
+{"messages":[{"role":"user","content":"What margin value was decided upon for calculations to compare theoretical results with the Newbury racecourse trials, and what is the underlying assumption?"},{"role":"assistant","content":"It was decided to reduce the margin to 8 dB, based on the assumption that if the incident, wanted signal, is 8 dB above the noise floor, the TETRA vocoder is still capable of producing an acceptable voice quality."}]}
+{"messages":[{"role":"user","content":"What assumed equal losses were used for both wanted and unwanted transmitters in the initial calculations mentioned in the note?"},{"role":"assistant","content":"The calculations used assumed equal losses of 14 dB for both wanted and unwanted transmitters."}]}
+{"messages":[{"role":"user","content":"What threshold value is assumed for non-linear blocking in the calculation?"},{"role":"assistant","content":"The estimate of -25 dBm is used as the threshold."}]}
+{"messages":[{"role":"user","content":"What is a likely reason for the disagreement between theoretical calculations and measured results for the adjacent channel case, as suggested by the step-like pattern in measured stay-away distances?"},{"role":"assistant","content":"It is likely that what is being witnessed is the limitations of the receiver, rather than any fundamental limitations imposed by the TETRA."}]}
+{"messages":[{"role":"user","content":"Why are theoretical calculations for adjacent channel interference considered unreliable for providing accurate results?"},{"role":"assistant","content":"They can only provide a ball-park figure because performance may be dominated by the performance of the radio rather than the limitations of the standard."}]}
+{"messages":[{"role":"user","content":"What does an abbreviation with a (') indicate in the context of DM protocol operation with a type 1A repeater?"},{"role":"assistant","content":"An abbreviation with a (') indicates a repeated transmission sent by the repeater, on either the master link or the slave link."}]}
+{"messages":[{"role":"user","content":"What does the abbreviation 'npd' represent?"},{"role":"assistant","content":"npd represents a null PDU."}]}
+{"messages":[{"role":"user","content":"用户购买包含计算机程序的产品后，是否自动获得该程序的权益？有哪些禁止行为？"},{"role":"assistant","content":"购买本产品并不意味着我司以明示或暗示方式向购买者授予有关此等电脑程序的权益。未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"未经海能达事先书面授权，哪些行为是被禁止对计算机程序进行的？"},{"role":"assistant","content":"任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"在文档符号说明中，“注意”标识代表什么含义？"},{"role":"assistant","content":"“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"用户购买包含计算机程序的产品后，是否自动获得该程序的权益？未经书面授权禁止哪些行为？"},{"role":"assistant","content":"购买本产品并不意味着海能达以明示或暗示方式向购买者授予有关此等电脑程序的权益。未经海能达事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"在海能达的手册中，“危险”、“警告”和“注意”这三个符号分别代表什么含义？"},{"role":"assistant","content":"“危险”表示可能会导致重大人身伤亡的事项；“警告”表示可能会导致轻微人身伤害的事项；“注意”表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"为什么不能在一台计算机上同时运行管理端和用户端？"},{"role":"assistant","content":"否则部分功能无法使用，如本地读频和有线写频。"}]}
+{"messages":[{"role":"user","content":"DEM的全称和中文含义是什么？"},{"role":"assistant","content":"DEM的全称是Digital Evidence Management，中文含义是电子证据管理系统。"}]}
+{"messages":[{"role":"user","content":"在步骤6中，如何修改所在地时区？"},{"role":"assistant","content":"单击“DATE & TIME”，将“Region”修改为所需区域（例如“Asia”），将“City”修改为所需城市（例如“ShangHai”）。"}]}
+{"messages":[{"role":"user","content":"紧急报警根据什么标准分为常规报警和秘密报警？"},{"role":"assistant","content":"紧急报警按照是否存在声音和可视化提示，可以分为常规报警和秘密报警。"}]}
+{"messages":[{"role":"user","content":"Hytera定义的三种告警类型（正常告警、秘密告警、取消告警）在实现方式、接入过程、优先级及触发后的表现上有何区别？"},{"role":"assistant","content":"1. 正常告警：使用【Q】标准规定的状态消息，触发后本地显示报警状态消息发送界面；2. 秘密告警（含秘密和秘密带语音）：为Hytera自定义状态消息，采用普通随机接入过程，优先级和普通业务一致，触发后无任何提示；3. 取消告警：为Hytera自定义状态消息，采用普通随机接入过程，优先级和普通业务一致，触发后报警UI界面消失。所有告警均在控制信道上发送，默认使用高功率发射，成功后恢复原有功率。"}]}
+{"messages":[{"role":"user","content":"取消告警属于哪种业务类型，其状态码是多少？"},{"role":"assistant","content":"属于HFID（Hytera自定义业务），状态码为030。"}]}
+{"messages":[{"role":"user","content":"What is the formula for calculating Tthresh?"},{"role":"assistant","content":"Tthresh = Δt3 - (Δt1 + Δt2 + Δt4 + Δt5)"}]}
+{"messages":[{"role":"user","content":"What is the formula for evaluating the received power level Prec in dBm based on transmitted power and attenuation factors?"},{"role":"assistant","content":"Prec [dBm] = Ptr [dBm] + Anf(H) [dB] + Arec(h) [dB] − γ ⋅ 10 Logρ + Ashad [dB]"}]}
+{"messages":[{"role":"user","content":"What is \"Location probability\" in the context of Base Station power reception?"},{"role":"assistant","content":"Location probability is determined by the width of the margin added to the reference sensitivity level, which accounts for shadowing and fading processes. This margin determines the probability for the received signal power level to be above the reference sensitivity level."}]}
+{"messages":[{"role":"user","content":"What is the location probability specified for the cell antenna configuration?"},{"role":"assistant","content":"90 %"}]}
+{"messages":[{"role":"user","content":"Are probability values dependent on the particular random access technique?"},{"role":"assistant","content":"Probability values are not dependent on the particular random access technique."}]}
+{"messages":[{"role":"user","content":"What is the meaning of Information Value 010112?"},{"role":"assistant","content":"Call rejected by called party"}]}
+{"messages":[{"role":"user","content":"Which organization does the abbreviation ISO represent?"},{"role":"assistant","content":"International Standardization Organization"}]}
+{"messages":[{"role":"user","content":"性能数据上报应符合哪个标准的哪一章节规定？"},{"role":"assistant","content":"性能数据上报符合 GA/T 1365 中 B.2.8 的规定。"}]}
+{"messages":[{"role":"user","content":"省、自治区、直辖市、特别行政区的取值依据什么标准？"},{"role":"assistant","content":"取值符合 GB/T 2260 中表 1 的字母码（小写）。"}]}
+{"messages":[{"role":"user","content":"在系统特定地域内的特定交换中心域名“m*.*”中，两个星号分别代表什么含义？"},{"role":"assistant","content":"第一个星号代表区号，第二个星号代表省级行政区划代码。"}]}
+{"messages":[{"role":"user","content":"省、自治区、直辖市、特别行政区的省级行政区划代码取值依据哪个标准？"},{"role":"assistant","content":"取值符合GB/T 2260。"}]}
+{"messages":[{"role":"user","content":"“o*.*”格式中两个星号分别代表什么含义？"},{"role":"assistant","content":"第一个*为区号，第二个*为省级行政区划代码。"}]}
+{"messages":[{"role":"user","content":"用户购买海能达产品后，是否自动获得其中计算机程序的复制、反编译或反向工程权益？"},{"role":"assistant","content":"否。购买本产品并不意味着我司以明示或暗示方式向购买者授予有关此等电脑程序的权益。未经我司事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"Z9201 在 1.57542GHz 附近的插入损耗标准是多少？"},{"role":"assistant","content":"Z9201 在 1.57542GHz 附近插入损耗小于 3dB。"}]}
+{"messages":[{"role":"user","content":"How do you perform basic arithmetic calculations using the Calculator app?"},{"role":"assistant","content":"1. Tap the + , -, and ÷ buttons on the calculator screen. 2. Enter the first number using the on-screen numeric keypad. 3. Tap the appropriate arithmetic function key. 4. Enter the next number. 5. Tap the equal sign to view the result."}]}
+{"messages":[{"role":"user","content":"What is the definition of squelch level?"},{"role":"assistant","content":"The squelch level refers to the squelch threshold required for the radio's speaker to be turned on."}]}
+{"messages":[{"role":"user","content":"What does the abbreviation FOACSU stand for?"},{"role":"assistant","content":"FOACSU stands for Full Off Air Call Set-Up."}]}
+{"messages":[{"role":"user","content":"防爆标志中的设备组别 II 和 III 分别指代什么环境？其中 IIB 和 III/C 的代表性物质是什么？"},{"role":"assistant","content":"II 表示除煤矿、井下之外的其他爆炸性气体环境用电气设备，III 表示除煤矿之外的其他爆炸性粉尘环境用电气设备。IIB 的代表性气体是乙烯，III/C 代表为导电性粉尘。"}]}
+{"messages":[{"role":"user","content":"20 区、21 区和 22 区在易燃性粉尘存在状态上的定义有什么区别？"},{"role":"assistant","content":"20 区是指易燃性粉尘在空气中形成云状物，并且连续存在、长时间或者频繁存在的场所；21 区是指在一般条件下，易燃性粉尘偶尔会形成云状物的场所；22 区是指在一般条件下，易燃性粉尘形成的云状物一般不会发生，即使发生，也是短时行为的场所。"}]}
+{"messages":[{"role":"user","content":"What is the definition of VoLTE?"},{"role":"assistant","content":"VoLTE stands for Voice over LTE."}]}
+{"messages":[{"role":"user","content":"MDM端会上报并存储哪些电池相关数据用于标记位存储或分析计算？"},{"role":"assistant","content":"MDM端上报并存储健康度、循环次数、最低电压、压差电池、高温高压电池、起鼓电池、满充容量等数据。"}]}
+{"messages":[{"role":"user","content":"MDM智能电池管理在电池详情和电池状态统计中分别增加了哪些功能？"},{"role":"assistant","content":"电池详情中增加“电池过热累积时间、电池过热累积次数、电池最高温度”，电池状态统计中增加过热统计。"}]}
+{"messages":[{"role":"user","content":"What does the abbreviation MCPTT stand for in the provided list?"},{"role":"assistant","content":"MCPTT stands for Mission Critical Push-to-Talk."}]}
+{"messages":[{"role":"user","content":"功耗管理App统计各模块功耗的计算原理是什么？"},{"role":"assistant","content":"通过计算各软件或硬件模块的使用时长，乘以该模块对应的工作电流，得出该模块的耗电量。"}]}
+{"messages":[{"role":"user","content":"统计周期是如何定义的，何时数据会清零？"},{"role":"assistant","content":"统计周期以充满电算一个周期。当充电到100%时，数据会清零。"}]}
+{"messages":[{"role":"user","content":"Hytera自定义位置协议的缩略语是什么？"},{"role":"assistant","content":"Hytera自定义位置协议的缩略语是LP（Location Protocol）。"}]}
+{"messages":[{"role":"user","content":"如何根据纬度的24位有符号填充值计算实际纬度，并判断其代表北纬还是南纬？"},{"role":"assistant","content":"纬度（24 bit）的计算公式为 (180 / 2^24) * Y，其中 Y 为 Latitude 转换成有符号类型的填充值。运算结果的正负：正值代表北纬，负值代表南纬。"}]}
+{"messages":[{"role":"user","content":"航空运输锂离子电池时，对荷电状态有什么具体要求？"},{"role":"assistant","content":"按 IATA 2026 年指引，须按包装方式区分：①锂离子电池独立运输（PI 965）原则上荷电状态≤30%，超出需主管当局批准；②与设备同包装（PI 966）第 I 类≤30%，第 II 类中额定能量超过2.7 Wh的电池≤30%，超出须按规定获批准；③装在设备内（PI 967）建议荷电状态≤30%或电量显示≤25%，并非一律强制。低荷电状态出货可能导致新设备首次使用低电量提示，应按产品说明安全充电。"}]}
+{"messages":[{"role":"user","content":"HDR 的全称及其中文含义是什么？"},{"role":"assistant","content":"HDR 的全称是 High-Dynamic Range，中文含义为高动态光照渲染图像。"}]}
+{"messages":[{"role":"user","content":"What is the definition of Weak Mode RSSI Offset?"},{"role":"assistant","content":"After enabling weak mode, the switching condition adopts this offset value."}]}
+{"messages":[{"role":"user","content":"文档中“危险”、“警告”、“注意”和“备注”符号分别代表什么含义？"},{"role":"assistant","content":"“危险”表示可能会导致重大人身伤亡的事项；“警告”表示可能会导致轻微人身伤害的事项；“注意”表示可能导致设备损坏或数据丢失的事项；“备注”表示对正文内容的补充、说明和强调。"}]}
+{"messages":[{"role":"user","content":"用户对产品内置计算机程序拥有哪些权益？有哪些禁止行为？"},{"role":"assistant","content":"购买本产品并不意味着授予购买者有关电脑程序的明示或暗示权益。未经海能达事先书面授权，任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"己方夹的定义是什么，且数量上有什么限制？"},{"role":"assistant","content":"己方夹是默认组所在的文件夹，有且只能有一个。"}]}
+{"messages":[{"role":"user","content":"文档中“⚠危险”符号代表什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"在 positioning.logs 中，signalStrength 的数值范围及含义是什么？"},{"role":"assistant","content":"signalStrength 在 1 与 100 之间为可用信号，数值越大信号越弱。"}]}
+{"messages":[{"role":"user","content":"What does the abbreviation SwMI stand for?"},{"role":"assistant","content":"Switching and Management Infrastructure"}]}
+{"messages":[{"role":"user","content":"AP stands for which platform?"},{"role":"assistant","content":"Android Platform"}]}
+{"messages":[{"role":"user","content":"未经海能达事先书面授权，对企业、组织或个人针对产品中计算机程序的行为有哪些禁止性规定？"},{"role":"assistant","content":"不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"表 68 定义了哪种机制的信息内容？"},{"role":"assistant","content":"选择性自动重传请求(SARQ)"}]}
+{"messages":[{"role":"user","content":"该标准的起草遵循了哪项规则？由哪个技术委员会归口？"},{"role":"assistant","content":"该标准按照 GB/T 1.1—2009 给出的规则起草，由全国通信标准化技术委员会（SAC/TC 485）归口。"}]}
+{"messages":[{"role":"user","content":"请列出该标准的所有起草单位。"},{"role":"assistant","content":"起草单位包括：公安部科技信息化局、海能达通信股份有限公司、杭州承联通信技术有限公司、公安部第一研究所、北京市万格数码科技有限公司、优能通信科技（杭州）有限公司、广州维德科技有限公司、深圳科立讯电子有限公司。"}]}
+{"messages":[{"role":"user","content":"该标准适用的系统简称是什么？"},{"role":"assistant","content":"集群系统"}]}
+{"messages":[{"role":"user","content":"协议数据单元（protocol data unit）的定义是什么？"},{"role":"assistant","content":"在对等层之间传送的包含协议控制信息(信令)或者是用户数据的信息单元。"}]}
+{"messages":[{"role":"user","content":"MSB 的全称和中文含义是什么？"},{"role":"assistant","content":"MSB 的全称是 Most Significant Bit，中文含义是最高比特。"}]}
+{"messages":[{"role":"user","content":"RSSI 的英文全称和中文名称分别是什么？"},{"role":"assistant","content":"RSSI 的英文全称是 Received Signal Strength Indication，中文名称是接收信号强度指示。"}]}
+{"messages":[{"role":"user","content":"SDL的全称及其中文含义是什么？"},{"role":"assistant","content":"SDL的全称是Specification and Description Language，中文含义为规范和描述语言。"}]}
+{"messages":[{"role":"user","content":"符号 $F(f)$ 代表什么含义？"},{"role":"assistant","content":"$F(f)$ 代表平方根升余弦滤波器的频率响应。"}]}
+{"messages":[{"role":"user","content":"MSTx_Duration 的定义和单位是什么？"},{"role":"assistant","content":"MSTx_Duration 是移动台最大连续发射时间，单位为秒 (s)。"}]}
+{"messages":[{"role":"user","content":"请给出“3/4 编码率无确认”业务类型下 N_BlockMax 的计算公式。"},{"role":"assistant","content":"$\\left[\\frac{\\mathrm{N}_{-} \\mathrm{DFragMax}-14}{18}\\right]+1+\\mathrm{N}_{-} \\mathrm{HeaderBlocks}$"}]}
+{"messages":[{"role":"user","content":"在产品制造商自定义的分组数据业务中，第一个头帧的服务接入点 SAP 值是多少？"},{"role":"assistant","content":"SAP=9。"}]}
+{"messages":[{"role":"user","content":"预定义格式短数据头帧中，字节0的比特5和比特4对应哪部分数据？"},{"role":"assistant","content":"AB信息单元（6比特）的最高2比特。"}]}
+{"messages":[{"role":"user","content":"CRCMESG (Message CRC) 的比特长度和校验算法是什么？"},{"role":"assistant","content":"32比特，采用CRC32算法。"}]}
+{"messages":[{"role":"user","content":"CRCMESG (Message CRC) 的算法详情参见哪个章节？"},{"role":"assistant","content":"算法见C.3.8。"}]}
+{"messages":[{"role":"user","content":"预定义格式短数据头帧(DD_HEADER) PDU的用途和长度分别是多少？"},{"role":"assistant","content":"预定义格式短数据头帧(DD_HEADER) PDU用于定义格式短消息业务，长度是96比特。"}]}
+{"messages":[{"role":"user","content":"哪些二进制范围或值被定义为特定厂商功能集 ID(MFID)？"},{"role":"assistant","content":"特定厂商功能集 ID(MFID) 包括 $00000100_{2}$、$01111111_{2}$ 以及 $1xxxxxxx_{2}$。"}]}
+{"messages":[{"role":"user","content":"二进制值 $00000001_{2}$、$00000010_{2}$ 和 $00000011_{2}$ 的用途是什么？"},{"role":"assistant","content":"这些值均为未来标准化的预留。"}]}
+{"messages":[{"role":"user","content":"功能集 ID 重复定义时，会重新定义哪些内容？"},{"role":"assistant","content":"功能集 ID 只重复定义完整 LC 和 CSBK。"}]}
+{"messages":[{"role":"user","content":"功能集 ID 重复定义时，不会重新定义什么？"},{"role":"assistant","content":"不会重新定义 EMB 的 PDU。"}]}
+{"messages":[{"role":"user","content":"在SAP 4 UDT定义中，$0100_{2}$和$0101_{2}$分别表示什么数据或协议？"},{"role":"assistant","content":"$0100_{2}$表示IP分组数据，$0101_{2}$表示地址解析协议ARP。"}]}
+{"messages":[{"role":"user","content":"在FSN中，最高比特和低3比特分别代表什么含义？"},{"role":"assistant","content":"FSN的最高比特用来标识最后一片（其余片应置零），低3比特为每个片的序号。"}]}
+{"messages":[{"role":"user","content":"二进制代码 $010010_{2}$ 对应哪种字符编码标准？"},{"role":"assistant","content":"Unicode UTF-8"}]}
+{"messages":[{"role":"user","content":"N_RssiLo 的定义是什么？"},{"role":"assistant","content":"N_RssiLo 是监听信道活动的 RSSI 门限值。"}]}
+{"messages":[{"role":"user","content":"What is the formula for calculating il_index?"},{"role":"assistant","content":"il_index = (index × 181) mod 196"}]}
+{"messages":[{"role":"user","content":"计算 CRC-8 循环冗余校验码时，CRC 余数寄存器应如何初始化？是否需要取反多项式？"},{"role":"assistant","content":"CRC 余数寄存器应该先初始化为 00000000，且不需要取反多项式。"}]}
+{"messages":[{"role":"user","content":"What is the formula for $F_{H}(x)$?"},{"role":"assistant","content":"$F_{H}(x)=\\left(x^{16} M(x) \\operatorname{\\mathrm{mod}} G_{H}(x)\\right)+I_{H}(x)$"}]}
+{"messages":[{"role":"user","content":"32-bit CRC 的计算范围包括哪些数据，不包括哪些数据？"},{"role":"assistant","content":"32-bit CRC 对中间数据帧和最后数据结束帧的所有用户数据和填充字节进行编码。它不包括数据帧的序列号和 9 比特的 CRC。"}]}
+{"messages":[{"role":"user","content":"在准备计算 32-bit CRC 时，用户数据字节如何映射到 16 比特字（Word）中？"},{"role":"assistant","content":"用户数据按 16 比特排列成字，每个字包含一个最高位字节 (MSO) 和一个最低位字节 (LSO)。第一个字节放在第 0 个字的 MSO，第二个字节放在第 0 个字的 LSO，第三个字节放在第 1 个字的 MSO，依此类推，直到最后一个字节放在第 k/16-1 个字的 LSO。"}]}
+{"messages":[{"role":"user","content":"在 32-bit CRC 计算过程中，变量 k 代表什么含义？"},{"role":"assistant","content":"k 是 CRC 消息需要计算的用户数据和填充比特的总数。"}]}
+{"messages":[{"role":"user","content":"完成用户数据和填充比特的 16 比特字排列后，应依据什么格式计算 32-bit CRC？"},{"role":"assistant","content":"应使用图 C.11 中的格式排列 16 比特字来计算 32 比特的 CRC。"}]}
+{"messages":[{"role":"user","content":"在32比特循环冗余校验码计算中，CRC余数寄存器应初始化为什么值？"},{"role":"assistant","content":"CRC余数寄存器应该初始化为 $00000000_{16}$ 。"}]}
+{"messages":[{"role":"user","content":"32比特CRC计算基于哪种数学域和运算规则？"},{"role":"assistant","content":"所有计算皆为 GF(2) 中的模 2 计算。"}]}
+{"messages":[{"role":"user","content":"在计算有确认数据的CRC-9时，数据帧和7比特序列号应如何排列成比特系列？"},{"role":"assistant","content":"数据帧和7比特序列号排成一个比特系列，其中序列号作为最后7个比特。"}]}
+{"messages":[{"role":"user","content":"CRC-9计算适用于哪些类型的有确认数据业务数据帧及其对应的比特系列长度？"},{"role":"assistant","content":"CRC-9计算适用于：1. 1/2编码率数据帧（10个字节），对应80比特系列；2. 3/4编码率数据帧（16个字节），对应128比特系列；3. 全编码率数据帧（22个字节），对应176比特系列。"}]}
+{"messages":[{"role":"user","content":"What is the formula for c in terms of m and G?"},{"role":"assistant","content":"c = m × G"}]}
+{"messages":[{"role":"user","content":"发送方如何计算数据的 CRC 监督码？"},{"role":"assistant","content":"发送方根据要发送的 DT 在表 C.22 选取对应的 CRC 初值 (Initial State) 来计算数据的 CRC 监督码。"}]}
+{"messages":[{"role":"user","content":"CRC 计算中涉及的传输信息、初值、生成多项式和最终余数码分别用什么符号表示？"},{"role":"assistant","content":"传输的信息为 M(x)，初值为 IS(x)，CRC 生成多项式为 G(x)，生成的最终余数码为 FR(x)。"}]}
+{"messages":[{"role":"user","content":"最终余数码 FR(x) 依据哪个公式进行计算？"},{"role":"assistant","content":"FR(x) 按照公式(C.26) 计算。"}]}
+{"messages":[{"role":"user","content":"在 CRC 生成多项式中，n 代表什么含义？"},{"role":"assistant","content":"n 代表 CRC 生成多项式的最高位的指数。"}]}
+{"messages":[{"role":"user","content":"What is the formula for C(x) as defined in equation (C, 27)?"},{"role":"assistant","content":"C(x)=F R(x)"}]}
+{"messages":[{"role":"user","content":"发送方如何确定用于计算 R-S 监督码的初值？"},{"role":"assistant","content":"发送方根据要发送的 DT 在表 C.22 选取对应的 R-S 初值 (Initial State) 来计算数据的 R-S 监督码。"}]}
+{"messages":[{"role":"user","content":"当 X 的值为 0 0000 1000 1111 1100 0010 10002 时，Longitude 的计算结果及地理含义是什么？"},{"role":"assistant","content":"Longitude 的值为 173.68，表示东经 173.68 度。"}]}
+{"messages":[{"role":"user","content":"在文档中，“危险”这一符号代表什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"情景模式中的标准模式、室内模式、户外模式和自定义模式分别适用于什么环境？自定义模式有何特殊设置？"},{"role":"assistant","content":"标准模式适用于普通环境（如安静的街道）；室内模式适用于安静环境（如室内）；户外模式适用于噪音环境（如公路）；自定义模式适用于除以上情况外的其他环境。选择自定义模式时，可以自行设置“低频增益”、“中频增益”和“高频增益”的值。"}]}
+{"messages":[{"role":"user","content":"What components are responsible for converting the drain current from the drive-stage and final-stage PAs into a voltage?"},{"role":"assistant","content":"The sampling resistor and the two-stage operational amplifier convert the drain current from the drive-stage PA and final-stage PA to a voltage."}]}
+{"messages":[{"role":"user","content":"POC系统在MPTT类解决方案中如何定义？"},{"role":"assistant","content":"POC系统是MPTT类解决方案的统称，在该文档中可理解为MPTT系统。"}]}
+{"messages":[{"role":"user","content":"混合组的定义及其在不同系统内开户时的对应要求是什么？"},{"role":"assistant","content":"混合组至少包括窄带终端、APP终端和双模终端中两种终端类型。它可以开在窄带系统或MPTT系统内：若开在窄带系统内，需在MPTT系统内开漫游组；若开在MPTT系统内，需在窄带系统内开漫游组。"}]}
+{"messages":[{"role":"user","content":"RoIP侧存在哪些呼叫类型概念？"},{"role":"assistant","content":"RoIP侧无预占呼叫的概念，只有普通呼叫和紧急呼叫。"}]}
+{"messages":[{"role":"user","content":"What does the abbreviation DTW stand for?"},{"role":"assistant","content":"Device Task Workstation"}]}
+{"messages":[{"role":"user","content":"手册中符号“注意”代表什么含义？"},{"role":"assistant","content":"表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"WLAN的英文全称和中文名称分别是什么？"},{"role":"assistant","content":"WLAN的英文全称是Wireless Local Area Networks，中文名称是无线局域网。"}]}
+{"messages":[{"role":"user","content":"HDR、ISO 和 VOX 在术语表中分别指代什么？"},{"role":"assistant","content":"HDR 指高动态光照渲染图像；ISO 指感光度；VOX 指声音控制发射。"}]}
+{"messages":[{"role":"user","content":"手册中定义的“警告”和“危险”符号分别表示什么风险等级？"},{"role":"assistant","content":"“警告”表示可能会导致轻微人身伤害的事项；“危险”表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"What is the full form of the abbreviation RSSI?"},{"role":"assistant","content":"RSSI stands for Radio Signal Strength Indication."}]}
+{"messages":[{"role":"user","content":"What is the formula for Receiver Input Power in the downlink direction according to Table 6?"},{"role":"assistant","content":"The formula is $R_{BS}=P_{BS}-B_{BS}+C_{BS}-L+G_{MS}-H_{MS}$."}]}
+{"messages":[{"role":"user","content":"How is location variability defined in the context of coverage area calculations?"},{"role":"assistant","content":"Location variability is defined as the standard deviation of the normally distributed local mean (in dB), where the local mean itself is the RMS value (in dB) of the Rayleigh distribution."}]}
+{"messages":[{"role":"user","content":"How is location probability at distance R defined for moving vehicles?"},{"role":"assistant","content":"It is defined as the probability that the local mean exceeds the dynamic sensitivity of the receiver."}]}
+{"messages":[{"role":"user","content":"航空运输的锂离子电池（芯）的荷电状态有何限制？"},{"role":"assistant","content":"按 IATA 2026 年指引，须按包装方式区分：①锂离子电池独立运输（PI 965）原则上荷电状态≤30%，超出需主管当局批准；②与设备同包装（PI 966）第 I 类≤30%，第 II 类中额定能量超过2.7 Wh的电池≤30%，超出须按规定获批准；③装在设备内（PI 967）建议荷电状态≤30%或电量显示≤25%，并非一律强制。低荷电状态出货可能导致新设备首次使用低电量提示，应按产品说明安全充电。"}]}
+{"messages":[{"role":"user","content":"在修改所在地时区时，可以将 Region 和 City 分别修改为什么示例值？"},{"role":"assistant","content":"可以将“Region”修改为“Asia”，将“City”修改为“ShangHai”。"}]}
+{"messages":[{"role":"user","content":"What is the full name corresponding to the abbreviation OTAK?"},{"role":"assistant","content":"OTAK stands for Over-The-Air-Key Management."}]}
+{"messages":[{"role":"user","content":"海外标准中DGNA下发的地址模式（DGNA_Address Mode）有什么特点？"},{"role":"assistant","content":"在地址模式下，系统一次下发不超过15个DGNA地址给终端，但只包含地址，不包含别名。"}]}
+{"messages":[{"role":"user","content":"海外标准中DGNA下发的别名模式（DGNA_Alias Mode）有什么限制？"},{"role":"assistant","content":"在别名模式下，系统一次只能下发一个DGNA地址及其对应的别名至终端。"}]}
+{"messages":[{"role":"user","content":"术语 DTW 的全称及其对应的中文名称是什么？"},{"role":"assistant","content":"DTW 的全称是 Device Task Workstation，中文名称为设备任务工作站。"}]}
+{"messages":[{"role":"user","content":"智能交通通信系统（ITS）的定义及其主要目标是什么？"},{"role":"assistant","content":"智能交通通信系统（ITS）定义为利用计算机、通信、定位和自动化技术组合的系统，旨在改善地面交通的安全性、管理和效率。"}]}
+{"messages":[{"role":"user","content":"车辆如何计算建议行驶速度，其目的是什么？"},{"role":"assistant","content":"车辆基于收到的信息，结合当前车辆速度和位置来计算建议的行驶速度并提示司机，目的是增加不停车过路口的可能性。"}]}
+{"messages":[{"role":"user","content":"ITS体系结构主要定义了哪四个方面的内容？"},{"role":"assistant","content":"ITS体系结构定义了：1. 必须执行以实现给定用户业务的功能；2. 这些功能所在的物理实体或子系统；3. 物理子系统之间的接口/信息流；4. 信息流的通信要求。"}]}
+{"messages":[{"role":"user","content":"ARC-IT 中的通信视图定义了哪些内容？"},{"role":"assistant","content":"通信视图定义了物理对象如何沟通，包括通信标准和组合成通信解决方案，并规定了物理对象之间如何可靠和安全地共享信息的轮廓。"}]}
+{"messages":[{"role":"user","content":"在ARC-IT企业视图中，企业对象之间的关系和企业对象与资源之间的关系分别被定义为什么？"},{"role":"assistant","content":"企业对象之间的关系被组织成各种类型的协同（即旨在实现实施和交付ITS服务所需的共同目的的协议或合同）；企业对象和资源之间的关系是角色（包括拥有、运营、开发、安装、维护等）。"}]}
+{"messages":[{"role":"user","content":"ARC-IT的功能视图主要描述哪些内容，其中数据流和数据存储在哪里定义？"},{"role":"assistant","content":"功能视图描述了系统配置和功能实体，以及功能实体之间的关系，处理抽象功能元素及其逻辑交互的分析。在进程之间移动的数据流和数据，以及可能会较长时间驻留的数据存储，都在数据字典中定义。"}]}
+{"messages":[{"role":"user","content":"在ITS系统中，个人站点和车辆站点的定义及主要功能是什么？"},{"role":"assistant","content":"个人站点是行人和旅行者的手持设备；车辆站点是供驾驶员使用的车载终端。这两个站点提供无线电接入功能和终端用户的应用数据处理。"}]}
+{"messages":[{"role":"user","content":"当车辆以100 km/h的速度行驶且DSRC覆盖范围为100米时，ITS服务的允许时间是多少？请说明计算依据。"},{"role":"assistant","content":"允许时间不到3.6秒。计算依据是车辆速度为27.7 m/s，除以100米得出该时间。"}]}
+{"messages":[{"role":"user","content":"ITU-R M.1453-2建议书合并了哪些标准？"},{"role":"assistant","content":"该建议书将“中数据速率”的欧洲标准（CEN EN 12253）以及意大利的“高数据速率”标准合并成单一的建议书。"}]}
+{"messages":[{"role":"user","content":"在ITU-R M.1453-2建议书中，CEN EN 12253被定义为什么数据速率的标准？"},{"role":"assistant","content":"“中数据速率”的欧洲标准。"}]}
+{"messages":[{"role":"user","content":"日本关于DSRC系统无线电法律的修改及ITU-R建议书的修订经历了哪些关键时间节点？"},{"role":"assistant","content":"2000年10月，日本邮政省根据提案修改了无线电法律，加入了窄频道间隔规格；2002年8月，向ITU-R提出修改提案并被采纳，发布了修订的DSRC ITU-R M.1453-1建议书。"}]}
+{"messages":[{"role":"user","content":"直接波和地面反射波之间的长度之差如何计算？"},{"role":"assistant","content":"长度之差计算公式为 $\\Delta_r = 2h_T h_R / d$。"}]}
+{"messages":[{"role":"user","content":"什么是中断点，其计算公式及超过该点后的接收电平衰减规律是什么？"},{"role":"assistant","content":"中断点是从这一位置开始，反射波与直接波永远相互抵消的点。其计算公式为 $d_{BP} = (4h_T h_R) / \\lambda$（其中 $\\lambda$ 为波长）。从中断点开始，接收电平的衰减遵循 $1/d^4$ 规律，比自由空间电平的 $1/d^2$ 衰减快得多。"}]}
+{"messages":[{"role":"user","content":"目前大多数实际讨论的C-ITS系统基于哪个接入层标准，该标准现在属于哪个标准集合？"},{"role":"assistant","content":"大多数系统基于由IEEE 802标准化为IEEE 802.11p的已确立接入层（PHY层和MAC层），该标准现在被整合为IEEE 802.11TM-2016标准集合的一部分。"}]}
+{"messages":[{"role":"user","content":"V2X通信技术的开发主要旨在满足哪个标准？"},{"role":"assistant","content":"美国WAVE标准。"}]}
+{"messages":[{"role":"user","content":"韩国科学技术信息通信部在2016年将哪个频段指定给C-ITS应用和技术规范？"},{"role":"assistant","content":"5.855-5.925 GHz频段。"}]}
+{"messages":[{"role":"user","content":"时延扩展的定义是什么？"},{"role":"assistant","content":"时延扩展是指时域中到达的无线电信号的时延统计。"}]}
+{"messages":[{"role":"user","content":"多普勒频移的定义是什么？"},{"role":"assistant","content":"多普勒频移是指在频域中对到达的无线电信号的频移统计。"}]}
+{"messages":[{"role":"user","content":"在V2X业务规范中，针对基于LTE的V2X业务定义了多少个用例，并涉及哪些通信类型？"},{"role":"assistant","content":"规范定义了27个用例，涉及的通信类型包括V2V、V2I、V2P和V2N。"}]}
+{"messages":[{"role":"user","content":"技术规范TS 22.886为哪五个eV2X业务种类定义了业务要求？"},{"role":"assistant","content":"TS 22.886定义的五个eV2X业务种类包括：基本要求、车辆编队、半自主/自动驾驶、延伸的传感器和远程驾驶。"}]}
+{"messages":[{"role":"user","content":"信号处理单元在毫米波雷达中承担哪些计算任务？"},{"role":"assistant","content":"信号处理单元通过计算从射频单元转送过来的信号来提取距离和速度，有时还处理平均距离和平均速度的提取以及干扰的去除。当天线实现射束扫描时，该单元还负责计算所发现目标的方向。"}]}
+{"messages":[{"role":"user","content":"ETSI标准定义了哪些设备及规范？"},{"role":"assistant","content":"ETSI标准定义了OBE和RSE设备，以及用于电子通行费征收的设备及其测试规范。"}]}
+{"messages":[{"role":"user","content":"DSRC标准主要定义了哪些内容？"},{"role":"assistant","content":"DSRC标准定义了OBE和RSE之间的无线电接入，及其对电子通行费征收的测试规范。"}]}
+{"messages":[{"role":"user","content":"ASTM E2213-03 标准规范主要定义了什么内容？"},{"role":"assistant","content":"ASTM E2213-03 是路边和车辆系统之间的电信和信息交换标准规范，具体涉及 5 GHz 频段专用短程通信（DSRC）的媒体接入控制（MAC）和物理层（PHY）规范。"}]}
+{"messages":[{"role":"user","content":"哪个 3GPP 技术规范定义了 V2X 业务的服务要求？"},{"role":"assistant","content":"3GPP TS 22.185。"}]}
+{"messages":[{"role":"user","content":"3GPP TS 36.304 规范主要定义了什么内容？"},{"role":"assistant","content":"3GPP TS 36.304 规范定义了演进的通用陆地无线接入 (E-UTRA) 中用户设备 (UE) 的空闲模式程序。"}]}
+{"messages":[{"role":"user","content":"3GPP的全称是什么？"},{"role":"assistant","content":"第3代合作伙伴计划"}]}
+{"messages":[{"role":"user","content":"DSRC的中文含义是什么？"},{"role":"assistant","content":"专用短程通信"}]}
+{"messages":[{"role":"user","content":"请列出 RSU、OBU 和 LRR 在智能交通系统中的中文全称。"},{"role":"assistant","content":"RSU 是路边单元，OBU 是车上单元，LRR 是远程车载雷达。"}]}
+{"messages":[{"role":"user","content":"For what original purpose was the spectrum requirement calculation methodology in Recommendation ITU-R M.1390 developed, and how can it be adapted?"},{"role":"assistant","content":"It was originally developed for the calculation of IMT-2000 terrestrial spectrum requirements. It can be adapted for a single operator or for a region of any size with multiple operators."}]}
+{"messages":[{"role":"user","content":"What is the definition of technology neutrality in the context of spectrum licensing?"},{"role":"assistant","content":"Technology neutrality means that a BWA operator should be able to deploy any technology that meets the regulatory requirements for the protection of other systems, with the specific technology chosen according to the operator's business plan."}]}
+{"messages":[{"role":"user","content":"Why do regulators need a new, forward-looking approach to regulation in mobile broadband networks?"},{"role":"assistant","content":"Regulators need a new, forward-looking approach because the rapid pace of technological innovation has created a highly dynamic environment."}]}
+{"messages":[{"role":"user","content":"What do the acronyms CAPEX, EBIT, and OPEX stand for in the provided glossary?"},{"role":"assistant","content":"CAPEX stands for Capital Expenditure, EBIT stands for Earnings Before Interest and Taxes, and OPEX stands for Operational Expenditure."}]}
+{"messages":[{"role":"user","content":"What is the definition of e.i.r.p.?"},{"role":"assistant","content":"Equivalent/effective isotropically radiated power"}]}
+{"messages":[{"role":"user","content":"GNSS 和 HDR 的中文含义分别是什么？"},{"role":"assistant","content":"GNSS 是全球导航卫星系统，HDR 是高动态光照渲染图像"}]}
+{"messages":[{"role":"user","content":"RoIP的全称是什么，其基本定义是什么？"},{"role":"assistant","content":"RoIP全称为Radio Over IP，指依托于IP技术实现的具有专网特征的通信业务。"}]}
+{"messages":[{"role":"user","content":"P_VHU表示什么状态？"},{"role":"assistant","content":"抢话成功，在原先的组内讲话"}]}
+{"messages":[{"role":"user","content":"What is the meaning of the abbreviation KMC?"},{"role":"assistant","content":"KMC stands for Key Management Center."}]}
+{"messages":[{"role":"user","content":"What is the full form and Chinese translation of DEM?"},{"role":"assistant","content":"DEM stands for Digital Evidence Management (电子证据管理系统)."}]}
+{"messages":[{"role":"user","content":"根据国际民航（IATA）规定，航空运输的锂离子电池荷电状态有何限制？"},{"role":"assistant","content":"按 IATA 2026 年指引，须按包装方式区分：①锂离子电池独立运输（PI 965）原则上荷电状态≤30%，超出需主管当局批准；②与设备同包装（PI 966）第 I 类≤30%，第 II 类中额定能量超过2.7 Wh的电池≤30%，超出须按规定获批准；③装在设备内（PI 967）建议荷电状态≤30%或电量显示≤25%，并非一律强制。低荷电状态出货可能导致新设备首次使用低电量提示，应按产品说明安全充电。"}]}
+{"messages":[{"role":"user","content":"HDR 模式的全称及中文含义是什么？"},{"role":"assistant","content":"HDR 的全称是 High-Dynamic Range，中文含义为高动态光照渲染图像。"}]}
+{"messages":[{"role":"user","content":"LTE对应的英文全称及中文解释是什么？"},{"role":"assistant","content":"LTE对应的英文全称是Long Term Evolution，中文解释为通用移动通信技术的长期演进。"}]}
+{"messages":[{"role":"user","content":"启动盘制作完成后，是否需要重新启动计算机？"},{"role":"assistant","content":"无需重新启动。在界面显示刻录成功后，单击“返回”即可完成启动盘制作。"}]}
+{"messages":[{"role":"user","content":"t头域的主要用途是什么？"},{"role":"assistant","content":"t头域用来承载各厂家的自定义信息。"}]}
+{"messages":[{"role":"user","content":"在移动组用户位置变更数据中，FR 和 TO 元素同时存在表示什么含义？"},{"role":"assistant","content":"FR 和 TO 都存在，表示删除位置变更前的 MSC 中移动台的组并且增加到当前位置的 MSC 中。"}]}
+{"messages":[{"role":"user","content":"V_ MSC、H_ MSC、OLD_ MSC 和 GH_ MSC 分别表示什么，其域名是什么？"},{"role":"assistant","content":"V_ MSC 表示待登记用户当前拜访的交换中心，域名为 m1；H_ MSC 表示待登记用户的归属交换中心，域名为 m2；OLD_ MSC 表示待登记移动台位置变更前的交换中心，域名为 m3；GH_ MSC 表示待登记用户归属组的归属交换中心，域名为 m4。"}]}
+{"messages":[{"role":"user","content":"O_MSC、GH_MSC 和 P_MSC 分别代表什么含义？"},{"role":"assistant","content":"O_MSC 表示组呼发起的交换中心；GH_MSC 表示当前组呼的归属交换中心；P_MSC 表示参与组呼的交换中心。"}]}
+{"messages":[{"role":"user","content":"倒放状态码的默认配置是什么？是否可以自定义？"},{"role":"assistant","content":"倒放状态码默认与紧急报警状态码相同，也可以选择状态消息列表中任一预设的状态码。"}]}
+{"messages":[{"role":"user","content":"“DEM (Digital Evidence Management)”表示什么？"},{"role":"assistant","content":"电子证据管理系统"}]}
+{"messages":[{"role":"user","content":"“DTW (Device Task Workstation)”表示什么？"},{"role":"assistant","content":"设备任务工作站"}]}
+{"messages":[{"role":"user","content":"“MPT”表示什么？"},{"role":"assistant","content":"Ministry of Post and Telegraph (邮电部)"}]}
+{"messages":[{"role":"user","content":"“IDS (Integrated Device Station)”表示什么？"},{"role":"assistant","content":"集成设备工作站"}]}
+{"messages":[{"role":"user","content":"“HDR (High-Dynamic Range)”表示什么？"},{"role":"assistant","content":"高动态光照渲染图像"}]}
+{"messages":[{"role":"user","content":"“LED (Light-Emitting Diode)”表示什么？"},{"role":"assistant","content":"发光二极管"}]}
+{"messages":[{"role":"user","content":"“TEI (Terminal Equipment Identity)”表示什么？"},{"role":"assistant","content":"终端设备号"}]}
+{"messages":[{"role":"user","content":"“VOX (Voice Operated Transmit)”表示什么？"},{"role":"assistant","content":"声音控制发射"}]}
+{"messages":[{"role":"user","content":"“XPT (Extended Pseudo Trunk)”表示什么？"},{"role":"assistant","content":"增强型虚拟集群系统"}]}
+{"messages":[{"role":"user","content":"“AGA”表示什么？"},{"role":"assistant","content":"Air-Ground-Air service"}]}
+{"messages":[{"role":"user","content":"“ASSI”表示什么？"},{"role":"assistant","content":"Alias Short Subscriber Identity"}]}
+{"messages":[{"role":"user","content":"“ATSI”表示什么？"},{"role":"assistant","content":"Alias TETRA Subcriber Identity"}]}
+{"messages":[{"role":"user","content":"“CA”表示什么？"},{"role":"assistant","content":"Conventional Access"}]}
+{"messages":[{"role":"user","content":"“CCK”表示什么？"},{"role":"assistant","content":"Common Cipher Key"}]}
+{"messages":[{"role":"user","content":"“CCKX”表示什么？"},{"role":"assistant","content":"eXtended Common Cipher Key"}]}
+{"messages":[{"role":"user","content":"“CKX”表示什么？"},{"role":"assistant","content":"Cipher Key (TEA set B)"}]}
+{"messages":[{"role":"user","content":"“CODEC”表示什么？"},{"role":"assistant","content":"COder-DECODer"}]}
+{"messages":[{"role":"user","content":"“D8PSK”表示什么？"},{"role":"assistant","content":"Differential 8 Phase Shift Keying"}]}
+{"messages":[{"role":"user","content":"“DA”表示什么？"},{"role":"assistant","content":"Direct Access"}]}
+{"messages":[{"role":"user","content":"“DCK”表示什么？"},{"role":"assistant","content":"Derived Cipher Key"}]}
+{"messages":[{"role":"user","content":"“DCKX”表示什么？"},{"role":"assistant","content":"Extended Derived Cipher Key"}]}
+{"messages":[{"role":"user","content":"“DCOMP”表示什么？"},{"role":"assistant","content":"Data COMpression Protocol"}]}
+{"messages":[{"role":"user","content":"“DSP”表示什么？"},{"role":"assistant","content":"Digital Signal Processor"}]}
+{"messages":[{"role":"user","content":"“ECA”表示什么？"},{"role":"assistant","content":"European Common Allocation"}]}
+{"messages":[{"role":"user","content":"“EEC”表示什么？"},{"role":"assistant","content":"European Economic Community"}]}
+{"messages":[{"role":"user","content":"“ERP”表示什么？"},{"role":"assistant","content":"Effective Radiated Power"}]}
+{"messages":[{"role":"user","content":"“EVM”表示什么？"},{"role":"assistant","content":"Error Vector Magnitude"}]}
+{"messages":[{"role":"user","content":"“FCS”表示什么？"},{"role":"assistant","content":"Frame Check Sequence"}]}
+{"messages":[{"role":"user","content":"“FIR”表示什么？"},{"role":"assistant","content":"Finite Impulse Response"}]}
+{"messages":[{"role":"user","content":"“GCK”表示什么？"},{"role":"assistant","content":"Group Cipher Key"}]}
+{"messages":[{"role":"user","content":"“GCKX”表示什么？"},{"role":"assistant","content":"eXtended Group Cipher Key"}]}
+{"messages":[{"role":"user","content":"“GPRS”表示什么？"},{"role":"assistant","content":"General Packet Radio Service"}]}
+{"messages":[{"role":"user","content":"“GTSI”表示什么？"},{"role":"assistant","content":"Group TETRA Subscriber Identity"}]}
+{"messages":[{"role":"user","content":"“HT”表示什么？"},{"role":"assistant","content":"Hilly Terrain"}]}
+{"messages":[{"role":"user","content":"“IEC”表示什么？"},{"role":"assistant","content":"International Electrotechnical Commission"}]}
+{"messages":[{"role":"user","content":"“IV”表示什么？"},{"role":"assistant","content":"Initialization Value"}]}
+{"messages":[{"role":"user","content":"“LA”表示什么？"},{"role":"assistant","content":"Location Area"}]}
+{"messages":[{"role":"user","content":"“LIP”表示什么？"},{"role":"assistant","content":"Location Information Protocol"}]}
+{"messages":[{"role":"user","content":"“LLC”表示什么？"},{"role":"assistant","content":"Logical Link Control"}]}
+{"messages":[{"role":"user","content":"“MCL”表示什么？"},{"role":"assistant","content":"Minimum Coupling Loss"}]}
+{"messages":[{"role":"user","content":"“MEX”表示什么？"},{"role":"assistant","content":"Multimedia EXchange layer"}]}
+{"messages":[{"role":"user","content":"“MGCK”表示什么？"},{"role":"assistant","content":"Modified Group Cipher Key"}]}
+{"messages":[{"role":"user","content":"“MGCKX”表示什么？"},{"role":"assistant","content":"eXtended Modified Group Cipher Key"}]}
+{"messages":[{"role":"user","content":"“MIMO”表示什么？"},{"role":"assistant","content":"Multiple Input and Multiple Output"}]}
+{"messages":[{"role":"user","content":"“ML”表示什么？"},{"role":"assistant","content":"Maximum Likelihood"}]}
+{"messages":[{"role":"user","content":"“MM”表示什么？"},{"role":"assistant","content":"Mobility Management"}]}
+{"messages":[{"role":"user","content":"“MMSE”表示什么？"},{"role":"assistant","content":"Minimum Mean Square Error"}]}
+{"messages":[{"role":"user","content":"“MSEE”表示什么？"},{"role":"assistant","content":"Mean Square Estimation Error"}]}
+{"messages":[{"role":"user","content":"“NF”表示什么？"},{"role":"assistant","content":"Noise Figure"}]}
+{"messages":[{"role":"user","content":"“PAMR”表示什么？"},{"role":"assistant","content":"Public Access Mobile Radio"}]}
+{"messages":[{"role":"user","content":"“PCCC”表示什么？"},{"role":"assistant","content":"Parallel Concatenated Convolutional Code"}]}
+{"messages":[{"role":"user","content":"“PCOMP”表示什么？"},{"role":"assistant","content":"Protocol COMpression Protocol"}]}
+{"messages":[{"role":"user","content":"“PDF”表示什么？"},{"role":"assistant","content":"Probability Density Function"}]}
+{"messages":[{"role":"user","content":"“PDP”表示什么？"},{"role":"assistant","content":"Packet Data Protocol"}]}
+{"messages":[{"role":"user","content":"“PDS”表示什么？"},{"role":"assistant","content":"Power Density Spectrum"}]}
+{"messages":[{"role":"user","content":"“PEI”表示什么？"},{"role":"assistant","content":"Peripheral Equipment Interface"}]}
+{"messages":[{"role":"user","content":"“PMPR”表示什么？"},{"role":"assistant","content":"Peak-to-Mean Power Ratio"}]}
+{"messages":[{"role":"user","content":"“PMR”表示什么？"},{"role":"assistant","content":"Private Mobile Radio"}]}
+{"messages":[{"role":"user","content":"“PPDR”表示什么？"},{"role":"assistant","content":"Public Protection and Disaster Relief"}]}
+{"messages":[{"role":"user","content":"“RCPC”表示什么？"},{"role":"assistant","content":"Rate Compatible Punctured Convolutional code"}]}
+{"messages":[{"role":"user","content":"“RFC”表示什么？"},{"role":"assistant","content":"Request For Comments"}]}
+{"messages":[{"role":"user","content":"“RM”表示什么？"},{"role":"assistant","content":"Reed-Muller"}]}
+{"messages":[{"role":"user","content":"“RMS”表示什么？"},{"role":"assistant","content":"Root Mean Square"}]}
+{"messages":[{"role":"user","content":"“RMSVE”表示什么？"},{"role":"assistant","content":"Root-Mean-Square Vector Error"}]}
+{"messages":[{"role":"user","content":"“RSC”表示什么？"},{"role":"assistant","content":"Recursive Systematic Convolutional"}]}
+{"messages":[{"role":"user","content":"“SCKX”表示什么？"},{"role":"assistant","content":"eXtended Static Cipher Key"}]}
+{"messages":[{"role":"user","content":"“SDS”表示什么？"},{"role":"assistant","content":"Short Data Service"}]}
+{"messages":[{"role":"user","content":"“SDS-TL”表示什么？"},{"role":"assistant","content":"Short Data Service Transport Layer"}]}
+{"messages":[{"role":"user","content":"“SIR”表示什么？"},{"role":"assistant","content":"Signal-to-Interference Ratio"}]}
+{"messages":[{"role":"user","content":"“SMI”表示什么？"},{"role":"assistant","content":"Short Management Identity"}]}
+{"messages":[{"role":"user","content":"“SNAF”表示什么？"},{"role":"assistant","content":"SubNetwork Access Function"}]}
+{"messages":[{"role":"user","content":"“SNDCP”表示什么？"},{"role":"assistant","content":"SubNetwork Dependent Convergence Protocol"}]}
+{"messages":[{"role":"user","content":"“SNR”表示什么？"},{"role":"assistant","content":"Signal-to-Noise Ratio"}]}
+{"messages":[{"role":"user","content":"“SRRC”表示什么？"},{"role":"assistant","content":"Square-Root Raised Cosine"}]}
+{"messages":[{"role":"user","content":"“SS”表示什么？"},{"role":"assistant","content":"Supplementary Service"}]}
+{"messages":[{"role":"user","content":"“SSVE”表示什么？"},{"role":"assistant","content":"Sum Square Vector Error"}]}
+{"messages":[{"role":"user","content":"“TEDS”表示什么？"},{"role":"assistant","content":"TETRA Enhanced Data Service"}]}
+{"messages":[{"role":"user","content":"“TL”表示什么？"},{"role":"assistant","content":"TETRA LLC"}]}
+{"messages":[{"role":"user","content":"“TLA-SAP”表示什么？"},{"role":"assistant","content":"TETRA LLC Service Access Point A"}]}
+{"messages":[{"role":"user","content":"“TLB-SAP”表示什么？"},{"role":"assistant","content":"TETRA LLC Service Access Point B"}]}
+{"messages":[{"role":"user","content":"“TLC-SAP”表示什么？"},{"role":"assistant","content":"TETRA LLC Service Access Point C"}]}
+{"messages":[{"role":"user","content":"“TLE-SAP”表示什么？"},{"role":"assistant","content":"TETRA LLC Service Access Point E"}]}
+{"messages":[{"role":"user","content":"“TMI”表示什么？"},{"role":"assistant","content":"TETRA Management Identity"}]}
+{"messages":[{"role":"user","content":"“TP-SAP”表示什么？"},{"role":"assistant","content":"TETRA Physical layer Service Access Point"}]}
+{"messages":[{"role":"user","content":"“TSI”表示什么？"},{"role":"assistant","content":"TETRA Subscriber Identity"}]}
+{"messages":[{"role":"user","content":"“TU”表示什么？"},{"role":"assistant","content":"Typical Urban"}]}
+{"messages":[{"role":"user","content":"“USB”表示什么？"},{"role":"assistant","content":"Universal Serial Bus"}]}
+{"messages":[{"role":"user","content":"“USS”表示什么？"},{"role":"assistant","content":"Unexchanged Short Subscriber Identity"}]}
+{"messages":[{"role":"user","content":"“WGFM”表示什么？"},{"role":"assistant","content":"Working Group on Frequency Management"}]}
+{"messages":[{"role":"user","content":"“WGSE”表示什么？"},{"role":"assistant","content":"Working Group on Spectrum Engineering"}]}
+{"messages":[{"role":"user","content":"“WT”表示什么？"},{"role":"assistant","content":"Waiting Time"}]}
+{"messages":[{"role":"user","content":"“GSDM”表示什么？"},{"role":"assistant","content":"Graceful Service Degradation Mode"}]}
+{"messages":[{"role":"user","content":"“NTG”表示什么？"},{"role":"assistant","content":"Notice Talk Group"}]}
+{"messages":[{"role":"user","content":"“KAG”表示什么？"},{"role":"assistant","content":"Key Association Group (密匙分组)"}]}
+{"messages":[{"role":"user","content":"“SFR”表示什么？"},{"role":"assistant","content":"Single Frequency Repeater (同频中转)"}]}
+{"messages":[{"role":"user","content":"“VCO”表示什么？"},{"role":"assistant","content":"Voltage Control Oscillator (电压控制振荡器)"}]}
+{"messages":[{"role":"user","content":"“TMOISSI”表示什么？"},{"role":"assistant","content":"TMO模式下终端的专网号码。"}]}
+{"messages":[{"role":"user","content":"“TMOMCC”表示什么？"},{"role":"assistant","content":"TMO模式下的国家码。"}]}
+{"messages":[{"role":"user","content":"“NAS”表示什么？"},{"role":"assistant","content":"非接入层（Non Access Stratum）"}]}
+{"messages":[{"role":"user","content":"“ESN (Electronic Serial Number)”表示什么？"},{"role":"assistant","content":"电子序列号"}]}
+{"messages":[{"role":"user","content":"“FGN”表示什么？"},{"role":"assistant","content":"组呼队号 (Fleet Group Number)"}]}
+{"messages":[{"role":"user","content":"“FIN”表示什么？"},{"role":"assistant","content":"单呼队号 (Fleet Individual Number)"}]}
+{"messages":[{"role":"user","content":"“MTBF”表示什么？"},{"role":"assistant","content":"平均无故障时间 (Mean Time Between Failure)"}]}
+{"messages":[{"role":"user","content":"“SGI”表示什么？"},{"role":"assistant","content":"短组呼号码 (Short Group Identity)"}]}
+{"messages":[{"role":"user","content":"“FSSN”表示什么？"},{"role":"assistant","content":"Fleet Specific Short Number (段队短号)"}]}
+{"messages":[{"role":"user","content":"“PNP”表示什么？"},{"role":"assistant","content":"Private Numbering Plan (个人号码计划)"}]}
+{"messages":[{"role":"user","content":"“CPI”表示什么？"},{"role":"assistant","content":"Calling Party Identification (主叫方标识)"}]}
+{"messages":[{"role":"user","content":"“FIFO”表示什么？"},{"role":"assistant","content":"先进先出 (First In First Out)"}]}
+{"messages":[{"role":"user","content":"“GSI”表示什么？"},{"role":"assistant","content":"组地址 (Group Subscriber Identity)"}]}
+{"messages":[{"role":"user","content":"“LBT”表示什么？"},{"role":"assistant","content":"发射前先监听 (Listen Before Transmit)"}]}
+{"messages":[{"role":"user","content":"“MSC”表示什么？"},{"role":"assistant","content":"消息序列图 (Message Sequence Chart)"}]}
+{"messages":[{"role":"user","content":"“PDL”表示什么？"},{"role":"assistant","content":"分组数据层 (Packet Data Layer)"}]}
+{"messages":[{"role":"user","content":"“RSSI”表示什么？"},{"role":"assistant","content":"接收信号强度指示 (Received Signal Strength Indication)"}]}
+{"messages":[{"role":"user","content":"“SDL”表示什么？"},{"role":"assistant","content":"规范和描述语言 (Specification and Description Language)"}]}
+{"messages":[{"role":"user","content":"“SLCO”表示什么？"},{"role":"assistant","content":"短链路控制码 (Short LC Opcode)"}]}
+{"messages":[{"role":"user","content":"“SMS”表示什么？"},{"role":"assistant","content":"短消息服务 (Short Message Service)"}]}
+{"messages":[{"role":"user","content":"“SO”表示什么？"},{"role":"assistant","content":"长度 7 位，含义为服务选项，见 6.3.3。"}]}
+{"messages":[{"role":"user","content":"“IE”表示什么？"},{"role":"assistant","content":"信息元素 (Information Element)"}]}
+{"messages":[{"role":"user","content":"“MDN”表示什么？"},{"role":"assistant","content":"移动目录号码(Mobile Directory Number)"}]}
+{"messages":[{"role":"user","content":"“CAUTION”表示什么？"},{"role":"assistant","content":"Indicates situations that could cause data loss or equipment damage."}]}
+{"messages":[{"role":"user","content":"“GNSS (Global Navigation Satellite System)”表示什么？"},{"role":"assistant","content":"全球导航卫星系统"}]}
+{"messages":[{"role":"user","content":"“PTO”表示什么？"},{"role":"assistant","content":"Public Telecommunications Operator"}]}
+{"messages":[{"role":"user","content":"“SS-SNA”表示什么？"},{"role":"assistant","content":"Supplementary Service - Short Number Addressing"}]}
+{"messages":[{"role":"user","content":"“TIP”表示什么？"},{"role":"assistant","content":"TETRA Inter-operability Profile"}]}
+{"messages":[{"role":"user","content":"“USSI”表示什么？"},{"role":"assistant","content":"Un-exchanged Short Subscriber Identity"}]}
+{"messages":[{"role":"user","content":"“IMEI (International Mobile Equipment Identity)”表示什么？"},{"role":"assistant","content":"国际移动设备标识"}]}
+{"messages":[{"role":"user","content":"“EDSI”表示什么？"},{"role":"assistant","content":"Encrypted Direct-mode Short Identity"}]}
+{"messages":[{"role":"user","content":"“KSGN”表示什么？"},{"role":"assistant","content":"Key Stream Generator Number (KSG序号)"}]}
+{"messages":[{"role":"user","content":"“MDE”表示什么？"},{"role":"assistant","content":"Message Dependent Elements"}]}
+{"messages":[{"role":"user","content":"“TVP”表示什么？"},{"role":"assistant","content":"Time Variant Parameter (时间变化参数)"}]}
+{"messages":[{"role":"user","content":"“GN”表示什么？"},{"role":"assistant","content":"移动台用户号码的组呼用户号( Group Number)"}]}
+{"messages":[{"role":"user","content":"“PABX (Private Automatic Branch Exchange)”表示什么？"},{"role":"assistant","content":"专用自动小交换机"}]}
+{"messages":[{"role":"user","content":"“DLL”表示什么？"},{"role":"assistant","content":"数据链路层 (Data Link Layer)"}]}
+{"messages":[{"role":"user","content":"“RMO”表示什么？"},{"role":"assistant","content":"转信模式 (Repeater Mode)"}]}
+{"messages":[{"role":"user","content":"“AT”表示什么？"},{"role":"assistant","content":"1, 接入类型, 见表 41"}]}
+{"messages":[{"role":"user","content":"“LCSS”表示什么？"},{"role":"assistant","content":"2, 链路控制开始/结束, 见表 38"}]}
+{"messages":[{"role":"user","content":"“BU”表示什么？"},{"role":"assistant","content":"Bad Urban"}]}
+{"messages":[{"role":"user","content":"“DTE”表示什么？"},{"role":"assistant","content":"Data Terminal Equipment"}]}
+{"messages":[{"role":"user","content":"“FM”表示什么？"},{"role":"assistant","content":"Frequency Modulation"}]}
+{"messages":[{"role":"user","content":"“GB”表示什么？"},{"role":"assistant","content":"Guard Band"}]}
+{"messages":[{"role":"user","content":"“LS”表示什么？"},{"role":"assistant","content":"Line Station"}]}
+{"messages":[{"role":"user","content":"“MT”表示什么？"},{"role":"assistant","content":"Mobile Termination"}]}
+{"messages":[{"role":"user","content":"“MTU”表示什么？"},{"role":"assistant","content":"Mobile Termination Unit"}]}
+{"messages":[{"role":"user","content":"“PD”表示什么？"},{"role":"assistant","content":"Packet Data"}]}
+{"messages":[{"role":"user","content":"“PDO”表示什么？"},{"role":"assistant","content":"Packet Data Optimized"}]}
+{"messages":[{"role":"user","content":"“PPP”表示什么？"},{"role":"assistant","content":"Pre-emptive Priority Call"}]}
+{"messages":[{"role":"user","content":"“ACC”表示什么？"},{"role":"assistant","content":"自适应巡游控制"}]}
+{"messages":[{"role":"user","content":"“ADSL”表示什么？"},{"role":"assistant","content":"不对称数字用户环路"}]}
+{"messages":[{"role":"user","content":"“AHS”表示什么？"},{"role":"assistant","content":"自动化高速公路系统"}]}
+{"messages":[{"role":"user","content":"“ASECAP”表示什么？"},{"role":"assistant","content":"欧洲收费公路基础设施运营商协会"}]}
+{"messages":[{"role":"user","content":"“ASK”表示什么？"},{"role":"assistant","content":"幅移键控"}]}
+{"messages":[{"role":"user","content":"“ASTM”表示什么？"},{"role":"assistant","content":"美国试验和材料学会，后来称为ASTM国际"}]}
+{"messages":[{"role":"user","content":"“ATIS”表示什么？"},{"role":"assistant","content":"现代交通信息业务"}]}
+{"messages":[{"role":"user","content":"“AVI”表示什么？"},{"role":"assistant","content":"自动车辆识别"}]}
+{"messages":[{"role":"user","content":"“AWG”表示什么？"},{"role":"assistant","content":"亚太电信组织无线工作组"}]}
+{"messages":[{"role":"user","content":"“BCMCS”表示什么？"},{"role":"assistant","content":"广播-多播系统"}]}
+{"messages":[{"role":"user","content":"“BIS”表示什么？"},{"role":"assistant","content":"公交信息系统"}]}
+{"messages":[{"role":"user","content":"“BMS”表示什么？"},{"role":"assistant","content":"公交管理系统"}]}
+{"messages":[{"role":"user","content":"“BPSK”表示什么？"},{"role":"assistant","content":"二进制相移键"}]}
+{"messages":[{"role":"user","content":"“C2C-CC”表示什么？"},{"role":"assistant","content":"车辆间通讯联盟"}]}
+{"messages":[{"role":"user","content":"“CACC”表示什么？"},{"role":"assistant","content":"协同自适应巡航控制"}]}
+{"messages":[{"role":"user","content":"“CAMP”表示什么？"},{"role":"assistant","content":"防撞度量标准合作伙伴"}]}
+{"messages":[{"role":"user","content":"“CCSA”表示什么？"},{"role":"assistant","content":"中国通信标准化协会"}]}
+{"messages":[{"role":"user","content":"“CCTV”表示什么？"},{"role":"assistant","content":"闭路电视"}]}
+{"messages":[{"role":"user","content":"“CEDR”表示什么？"},{"role":"assistant","content":"欧洲道路主管会议"}]}
+{"messages":[{"role":"user","content":"“CEN”表示什么？"},{"role":"assistant","content":"欧洲标准化委员会"}]}
+{"messages":[{"role":"user","content":"“C-ITS”表示什么？"},{"role":"assistant","content":"协同式智能运输系统"}]}
+{"messages":[{"role":"user","content":"“CSMA”表示什么？"},{"role":"assistant","content":"载波感知多址接入"}]}
+{"messages":[{"role":"user","content":"“DCU”表示什么？"},{"role":"assistant","content":"数据通信单元"}]}
+{"messages":[{"role":"user","content":"“DMB”表示什么？"},{"role":"assistant","content":"数字多媒体广播"}]}
+{"messages":[{"role":"user","content":"“DSB”表示什么？"},{"role":"assistant","content":"数字声音广播"}]}
+{"messages":[{"role":"user","content":"“DTTB”表示什么？"},{"role":"assistant","content":"数字地面电视广播"}]}
+{"messages":[{"role":"user","content":"“EID”表示什么？"},{"role":"assistant","content":"实体识别"}]}
+{"messages":[{"role":"user","content":"“ERI”表示什么？"},{"role":"assistant","content":"电子注册识别"}]}
+{"messages":[{"role":"user","content":"“ETC”表示什么？"},{"role":"assistant","content":"电子通行费征收"}]}
+{"messages":[{"role":"user","content":"“EV”表示什么？"},{"role":"assistant","content":"电动汽车"}]}
+{"messages":[{"role":"user","content":"“FA”表示什么？"},{"role":"assistant","content":"外国代理"}]}
+{"messages":[{"role":"user","content":"“FCC”表示什么？"},{"role":"assistant","content":"联邦通信委员会"}]}
+{"messages":[{"role":"user","content":"“FFT”表示什么？"},{"role":"assistant","content":"快速傅里叶变换"}]}
+{"messages":[{"role":"user","content":"“FLO”表示什么？"},{"role":"assistant","content":"单正向链路技术"}]}
+{"messages":[{"role":"user","content":"“FM0”表示什么？"},{"role":"assistant","content":"双相空号编码"}]}
+{"messages":[{"role":"user","content":"“FWA”表示什么？"},{"role":"assistant","content":"固定无线接入"}]}
+{"messages":[{"role":"user","content":"“GMLC”表示什么？"},{"role":"assistant","content":"关口移动定位中心"}]}
+{"messages":[{"role":"user","content":"“GMSK”表示什么？"},{"role":"assistant","content":"高斯滤波最小相移键控"}]}
+{"messages":[{"role":"user","content":"“GMSS”表示什么？"},{"role":"assistant","content":"全球导航卫星系统"}]}
+{"messages":[{"role":"user","content":"“GPR”表示什么？"},{"role":"assistant","content":"地面穿透雷达"}]}
+{"messages":[{"role":"user","content":"“HDLC”表示什么？"},{"role":"assistant","content":"高级数据链路控制"}]}
+{"messages":[{"role":"user","content":"“HSDPA”表示什么？"},{"role":"assistant","content":"高速下行包接入"}]}
+{"messages":[{"role":"user","content":"“IAG”表示什么？"},{"role":"assistant","content":"国际代理集团"}]}
+{"messages":[{"role":"user","content":"“ICT”表示什么？"},{"role":"assistant","content":"信息和通信技术"}]}
+{"messages":[{"role":"user","content":"“IEEE”表示什么？"},{"role":"assistant","content":"美国电子电工委员会"}]}
+{"messages":[{"role":"user","content":"“IMDA”表示什么？"},{"role":"assistant","content":"通信媒体发展局（新加坡）"}]}
+{"messages":[{"role":"user","content":"“IMS”表示什么？"},{"role":"assistant","content":"IP多媒体子系统"}]}
+{"messages":[{"role":"user","content":"“IMT-2000”表示什么？"},{"role":"assistant","content":"国际移动通信2000"}]}
+{"messages":[{"role":"user","content":"“ISM”表示什么？"},{"role":"assistant","content":"工业科学医学"}]}
+{"messages":[{"role":"user","content":"“ITI”表示什么？"},{"role":"assistant","content":"智能交通基础设施"}]}
+{"messages":[{"role":"user","content":"“ITS”表示什么？"},{"role":"assistant","content":"智能交通系统"}]}
+{"messages":[{"role":"user","content":"“LBS”表示什么？"},{"role":"assistant","content":"基于位置的业务"}]}
+{"messages":[{"role":"user","content":"“LDM”表示什么？"},{"role":"assistant","content":"本地动态映射"}]}
+{"messages":[{"role":"user","content":"“LMS”表示什么？"},{"role":"assistant","content":"定位和监测业务"}]}
+{"messages":[{"role":"user","content":"“LMSK”表示什么？"},{"role":"assistant","content":"电平控制的最小相移键控"}]}
+{"messages":[{"role":"user","content":"“LRR”表示什么？"},{"role":"assistant","content":"远程车载雷达"}]}
+{"messages":[{"role":"user","content":"“MDSS”表示什么？"},{"role":"assistant","content":"维护决策支持系统"}]}
+{"messages":[{"role":"user","content":"“MIC”表示什么？"},{"role":"assistant","content":"内政和通信省（日本）"}]}
+{"messages":[{"role":"user","content":"“MMD”表示什么？"},{"role":"assistant","content":"多媒体域"}]}
+{"messages":[{"role":"user","content":"“MMS”表示什么？"},{"role":"assistant","content":"多媒体消息业务"}]}
+{"messages":[{"role":"user","content":"“MNO”表示什么？"},{"role":"assistant","content":"移动网运营商"}]}
+{"messages":[{"role":"user","content":"“MOCT”表示什么？"},{"role":"assistant","content":"建设和交通部"}]}
+{"messages":[{"role":"user","content":"“MRPI”表示什么？"},{"role":"assistant","content":"中程预报信息"}]}
+{"messages":[{"role":"user","content":"“NOMA”表示什么？"},{"role":"assistant","content":"非正交多址接入"}]}
+{"messages":[{"role":"user","content":"“NRZI”表示什么？"},{"role":"assistant","content":"反向不归零"}]}
+{"messages":[{"role":"user","content":"“OBD”表示什么？"},{"role":"assistant","content":"车上诊断"}]}
+{"messages":[{"role":"user","content":"“OBU”表示什么？"},{"role":"assistant","content":"车上单元"}]}
+{"messages":[{"role":"user","content":"“OFDM”表示什么？"},{"role":"assistant","content":"正交频分复用"}]}
+{"messages":[{"role":"user","content":"“OFDMA”表示什么？"},{"role":"assistant","content":"正交频分多址"}]}
+{"messages":[{"role":"user","content":"“P2C”表示什么？"},{"role":"assistant","content":"行人到中心"}]}
+{"messages":[{"role":"user","content":"“P2I”表示什么？"},{"role":"assistant","content":"行人到基础设施"}]}
+{"messages":[{"role":"user","content":"“P2V”表示什么？"},{"role":"assistant","content":"行人到车辆"}]}
+{"messages":[{"role":"user","content":"“P2X”表示什么？"},{"role":"assistant","content":"行人到万物"}]}
+{"messages":[{"role":"user","content":"“PC5”表示什么？"},{"role":"assistant","content":"设备到设备直连"}]}
+{"messages":[{"role":"user","content":"“PDA”表示什么？"},{"role":"assistant","content":"个人数字助手"}]}
+{"messages":[{"role":"user","content":"“PDE”表示什么？"},{"role":"assistant","content":"位置确定实体"}]}
+{"messages":[{"role":"user","content":"“PSS”表示什么？"},{"role":"assistant","content":"便携式移动台"}]}
+{"messages":[{"role":"user","content":"“PTIS”表示什么？"},{"role":"assistant","content":"公共交通信息系统"}]}
+{"messages":[{"role":"user","content":"“QPSK”表示什么？"},{"role":"assistant","content":"四相相移键控"}]}
+{"messages":[{"role":"user","content":"“RADAR”表示什么？"},{"role":"assistant","content":"雷达，无线电侦测和测距"}]}
+{"messages":[{"role":"user","content":"“RDS”表示什么？"},{"role":"assistant","content":"无线数据系统"}]}
+{"messages":[{"role":"user","content":"“RSU”表示什么？"},{"role":"assistant","content":"路边单元"}]}
+{"messages":[{"role":"user","content":"“RTT”表示什么？"},{"role":"assistant","content":"无线传输技术"}]}
+{"messages":[{"role":"user","content":"“RTTT”表示什么？"},{"role":"assistant","content":"道路交通和流量远程信息处理"}]}
+{"messages":[{"role":"user","content":"“RVC”表示什么？"},{"role":"assistant","content":"道路车辆通信"}]}
+{"messages":[{"role":"user","content":"“SDM”表示什么？"},{"role":"assistant","content":"业务和诊断模块"}]}
+{"messages":[{"role":"user","content":"“SRR”表示什么？"},{"role":"assistant","content":"短程车辆雷达"}]}
+{"messages":[{"role":"user","content":"“TDD”表示什么？"},{"role":"assistant","content":"时分双工"}]}
+{"messages":[{"role":"user","content":"“TIA”表示什么？"},{"role":"assistant","content":"电信行业协会"}]}
+{"messages":[{"role":"user","content":"“TRS”表示什么？"},{"role":"assistant","content":"集群无线电系统"}]}
+{"messages":[{"role":"user","content":"“TSAC”表示什么？"},{"role":"assistant","content":"电信标准咨询委员会（新加坡）"}]}
+{"messages":[{"role":"user","content":"“TTA”表示什么？"},{"role":"assistant","content":"电信技术协会"}]}
+{"messages":[{"role":"user","content":"“TTI”表示什么？"},{"role":"assistant","content":"交通和旅行信息"}]}
+{"messages":[{"role":"user","content":"“UAE”表示什么？"},{"role":"assistant","content":"阿拉伯联合酋长国"}]}
+{"messages":[{"role":"user","content":"“USD”表示什么？"},{"role":"assistant","content":"通用业务指南"}]}
+{"messages":[{"role":"user","content":"“UTRAN”表示什么？"},{"role":"assistant","content":"UMTS无线接入网"}]}
+{"messages":[{"role":"user","content":"“VIN”表示什么？"},{"role":"assistant","content":"车辆识别号"}]}
+{"messages":[{"role":"user","content":"“VMC”表示什么？"},{"role":"assistant","content":"车辆多跳通信"}]}
+{"messages":[{"role":"user","content":"“VMS”表示什么？"},{"role":"assistant","content":"可变消息标志"}]}
+{"messages":[{"role":"user","content":"“WAVE”表示什么？"},{"role":"assistant","content":"移动环境下的无线接入"}]}
+{"messages":[{"role":"user","content":"“WDN”表示什么？"},{"role":"assistant","content":"无线分组数据网"}]}
+{"messages":[{"role":"user","content":"“WNS”表示什么？"},{"role":"assistant","content":"无线网交换"}]}
+{"messages":[{"role":"user","content":"“UL”表示什么？"},{"role":"assistant","content":"Up link transmission direction; DL: Down link transmission direction."}]}
+{"messages":[{"role":"user","content":"“TS (Trunked Station)”表示什么？"},{"role":"assistant","content":"集群系统中的系统设备"}]}
+{"messages":[{"role":"user","content":"“无线读频/无线模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"终端和Smart MDM专业版通过WLAN或LTE网络通讯。"}]}
+{"messages":[{"role":"user","content":"“工作站读频/有线模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"终端和Smart MDM专业版通过写频线通讯，终端需要连接到工作站上。选择有线模式后需选择工作站。"}]}
+{"messages":[{"role":"user","content":"“预占呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启本功能后，终端可以发起预占呼叫。预占呼叫是具有最高优先级的普通语音呼叫（除紧急呼叫以外的所有呼叫，包括个呼、组呼、广播呼叫等）。"}]}
+{"messages":[{"role":"user","content":"“更新文件夹”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户是否允许通过终端菜单更新文件夹成员，包括添加、删除通话组。"}]}
+{"messages":[{"role":"user","content":"“设置己方文件夹”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户是否允许通过终端菜单将静态文件夹设置为己方文件夹。"}]}
+{"messages":[{"role":"user","content":"“更新扫描列表”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户是否允许通过终端菜单更新扫描列表，包括添加、删除通话组。"}]}
+{"messages":[{"role":"user","content":"“设置默认扫描列表”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户是否允许通过终端菜单设置默认扫描列表。"}]}
+{"messages":[{"role":"user","content":"“己方组文件夹(DMO)”的定义、作用或说明是什么？"},{"role":"assistant","content":"将对应的静态组文件夹设置为己方组文件夹。"}]}
+{"messages":[{"role":"user","content":"“本机号码（DMO）”的定义、作用或说明是什么？"},{"role":"assistant","content":"DMO模式下，终端的ISSI号码。"}]}
+{"messages":[{"role":"user","content":"“呼叫优先级（DMO）”的定义、作用或说明是什么？"},{"role":"assistant","content":"终端发起呼叫使用的优先级等级。其由低到高排列依次为普通优先级、高优先级、预占优先级。低优先级呼叫占用信道资源时，高优先级呼叫可打断低优先级呼叫，以获得信道资源。"}]}
+{"messages":[{"role":"user","content":"“己方组文件夹(TMO)”的定义、作用或说明是什么？"},{"role":"assistant","content":"将对应的静态组文件夹设置为己方组文件夹。"}]}
+{"messages":[{"role":"user","content":"“当前扫描列表(TMO)”的定义、作用或说明是什么？"},{"role":"assistant","content":"设置当前扫描列表的别名。"}]}
+{"messages":[{"role":"user","content":"“本机号码（TMO）”的定义、作用或说明是什么？"},{"role":"assistant","content":"TMO模式下，终端的ISSI号码。"}]}
+{"messages":[{"role":"user","content":"“个呼优先级”的定义、作用或说明是什么？"},{"role":"assistant","content":"终端发起的个呼的呼叫优先级。"}]}
+{"messages":[{"role":"user","content":"“话语权申请优先级”的定义、作用或说明是什么？"},{"role":"assistant","content":"申请话语权时的优先级。其优先级由低到高排列依次为低优先级、高优先级、预占优先级，其中低优先级和高优先级不具备预占功能。"}]}
+{"messages":[{"role":"user","content":"“广播呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启本功能后，终端可以发起广播呼叫。"}]}
+{"messages":[{"role":"user","content":"“国家码”的定义、作用或说明是什么？"},{"role":"assistant","content":"TETRA协议为每个国家分配的唯一号码。"}]}
+{"messages":[{"role":"user","content":"“上报地址/端口”的定义、作用或说明是什么？"},{"role":"assistant","content":"Smart MDM服务器IP地址及端口号，用于用户端上报数据。请联系Smart MDM服务器管理员获取。"}]}
+{"messages":[{"role":"user","content":"“PSTN 呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"对讲机通过公共交换电话网络发起的呼叫。 PABX 呼叫：对讲机通过专用自动小交换机发起的呼叫。"}]}
+{"messages":[{"role":"user","content":"“直通模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"对讲机需要在同一个网络中才能进行通信。 集群模式：对讲机所在的当前网络信号变弱或对讲机移动位置到网络覆盖范围之外时，会导致对讲机脱网，需要切换到其他可用的网络，注册成功后可以继续通信。"}]}
+{"messages":[{"role":"user","content":"“音模式支持如下呼叫类型”的定义、作用或说明是什么？"},{"role":"assistant","content":"群呼、紧急群呼、个别呼叫和系统全呼叫。"}]}
+{"messages":[{"role":"user","content":"“配件类型”的定义、作用或说明是什么？"},{"role":"assistant","content":"音视频类"}]}
+{"messages":[{"role":"user","content":"“工作站”的定义、作用或说明是什么？"},{"role":"assistant","content":"自动执行管理站推送的任务，包括对多模终端、窄带终端和执法记录仪的读频、写频和升级等任务。"}]}
+{"messages":[{"role":"user","content":"“防爆电池”的定义、作用或说明是什么？"},{"role":"assistant","content":"BL3204-Ex（3200mAh）"}]}
+{"messages":[{"role":"user","content":"“实时远程控制”的定义、作用或说明是什么？"},{"role":"assistant","content":"通过 WIFI/LTE 网络，可关闭目标对讲机 BT/GPS/相机/WLAN 等，以及配置部分参数。"}]}
+{"messages":[{"role":"user","content":"“用作 MIDI 设备”的定义、作用或说明是什么？"},{"role":"assistant","content":"MIDI（Musical Instrument Digital Interface，乐器数字接口）是编曲界最广泛的音乐标准格式，是电子乐器制造商们建立的通信标准。将设备用作 MIDI 输入设备，在电脑上播放音乐。"}]}
+{"messages":[{"role":"user","content":"“其他模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"还有海量拍摄模式根据拍摄的对象和场景进行细化分类，包括肖像、运动、背光和夜景等。"}]}
+{"messages":[{"role":"user","content":"“USB连接模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"可通过此模式连接终端与电脑，实现终端与电脑的文件传输。"}]}
+{"messages":[{"role":"user","content":"“暂停接收任务”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启后将暂停接收 MDM Pro 下发的任务"}]}
+{"messages":[{"role":"user","content":"“DIRECT 呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"自动建立呼叫。 您无需任何操作即可接听。"}]}
+{"messages":[{"role":"user","content":"“PABX 呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"对讲机通过专用自动小交换机发起的呼叫。"}]}
+{"messages":[{"role":"user","content":"“紧急静默模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"对讲机发起紧急呼叫时，对讲机无任何界面、LED灯或提示音等。"}]}
+{"messages":[{"role":"user","content":"“【R4.0】支持自定义hotseat应用”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户可通过MDM/CPS配置默认hotseat显示的应用。"}]}
+{"messages":[{"role":"user","content":"“标称 $7.7 \\mathrm{~V}$ 锂聚合物电池”的定义、作用或说明是什么？"},{"role":"assistant","content":"工作电压范围为 $6.0 \\mathrm{~V} \\sim 8.8 \\mathrm{~V}$, 且带 $3.3 \\mathrm{~V}$ 电平 1-wire 通信接口的智能电池。 支持 Type-C 接口 $9 \\mathrm{~V} 2 \\mathrm{~A}$ 充电。 充电时主机需要通过 1-Wire 从电池电量计获取电池温度。"}]}
+{"messages":[{"role":"user","content":"“端口列表”的定义、作用或说明是什么？"},{"role":"assistant","content":"5222、18752、8000、8082、8083、8086、8087、8088、8089、8091、8092、8381、8385、8443、8889、8909、9090、9091、9088、9997、9998、9999、10000、1947"}]}
+{"messages":[{"role":"user","content":"“离线执行任务”的定义、作用或说明是什么？"},{"role":"assistant","content":"工作站通过导出导入任务的功能实现离线执行任务。"}]}
+{"messages":[{"role":"user","content":"“播放和编辑电子证据”的定义、作用或说明是什么？"},{"role":"assistant","content":"工作站可以播放采集到的电子证据，还可以预览连接的BWC上的电子证据。工作站还可以剪切视频，为视频打马赛克。"}]}
+{"messages":[{"role":"user","content":"“PNC560 新增功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"安全模式限制、Google 菜单、倒放报警、双域控制、通话优先级。"}]}
+{"messages":[{"role":"user","content":"“TMO号码”的定义、作用或说明是什么？"},{"role":"assistant","content":"TMO模式下终端的专网号码。"}]}
+{"messages":[{"role":"user","content":"“TMO国家码”的定义、作用或说明是什么？"},{"role":"assistant","content":"TMO模式下的国家码。"}]}
+{"messages":[{"role":"user","content":"“基本信息搜集周期”的定义、作用或说明是什么？"},{"role":"assistant","content":"管理端采集在线设备基本信息的时间周期。"}]}
+{"messages":[{"role":"user","content":"“位置信息搜集周期”的定义、作用或说明是什么？"},{"role":"assistant","content":"管理端采集在线设备位置信息的时间周期。"}]}
+{"messages":[{"role":"user","content":"“截屏周期”的定义、作用或说明是什么？"},{"role":"assistant","content":"管理端对多模终端进行截屏的时间周期。"}]}
+{"messages":[{"role":"user","content":"“无线读频”的定义、作用或说明是什么？"},{"role":"assistant","content":"终端和Smart MDM专业版通过WLAN或LTE网络通讯。"}]}
+{"messages":[{"role":"user","content":"“工作站读频”的定义、作用或说明是什么？"},{"role":"assistant","content":"终端和Smart MDM专业版通过写频线通讯，终端需要连接到工作站上。"}]}
+{"messages":[{"role":"user","content":"“Hytera模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"无论系统广播的空口协议版本是什么，终端发射和接收都采用Hytera自定义的方式处理状态消息。"}]}
+{"messages":[{"role":"user","content":"“许可证”的定义、作用或说明是什么？"},{"role":"assistant","content":"授权 PPS 可以服务的终端数量。请向海能达客服或经销商获取该文件。"}]}
+{"messages":[{"role":"user","content":"“数据类型”的定义、作用或说明是什么？"},{"role":"assistant","content":"CSBK"}]}
+{"messages":[{"role":"user","content":"“优先级”的定义、作用或说明是什么？"},{"role":"assistant","content":"2位，$00_{2}$，无优先；$01_{2}$，优先级 $1^{b}$；$10_{2}$，优先级 $2^{b}$；$11_{2}$，优先级 $3^{b}$"}]}
+{"messages":[{"role":"user","content":"“呼叫类型”的定义、作用或说明是什么？"},{"role":"assistant","content":"CallType"}]}
+{"messages":[{"role":"user","content":"“主叫号码”的定义、作用或说明是什么？"},{"role":"assistant","content":"CallerMDN"}]}
+{"messages":[{"role":"user","content":"“人脸识别任务”的定义、作用或说明是什么？"},{"role":"assistant","content":"常驻通知的点击区域应足够大，即使在紧急或移动状态下也易于触发。 人脸识别流程控制在3个步骤以内（点击通知 -> 对准人脸 -> 自动完成）。"}]}
+{"messages":[{"role":"user","content":"“扫描”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启或关闭扫描功能。"}]}
+{"messages":[{"role":"user","content":"“回望扫描”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启或关闭回望扫描功能。在多基站重叠覆盖的区域，对讲机将优先在常用基站登记。当对讲机登记在其他基站时，一旦检测到常用基站的信号强度满足条件，则切换到常用基站。"}]}
+{"messages":[{"role":"user","content":"“手动执行扫描”的定义、作用或说明是什么？"},{"role":"assistant","content":"按照当前设定的扫描模式进行扫描。"}]}
+{"messages":[{"role":"user","content":"“其他 - 切换工作模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"切换对讲机的工作模式。"}]}
+{"messages":[{"role":"user","content":"“其他 - 自动切换工作模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启或关闭模式自动切换功能。"}]}
+{"messages":[{"role":"user","content":"“长链接地址默认地址”的定义、作用或说明是什么？"},{"role":"assistant","content":"192.168.1.250:8889。若上报地址中含有空格则判断为非法地址。"}]}
+{"messages":[{"role":"user","content":"“集成设备工作站”的定义、作用或说明是什么？"},{"role":"assistant","content":"自动执行管理端推送的任务。"}]}
+{"messages":[{"role":"user","content":"“Smart MDM 用户端用户手册”的定义、作用或说明是什么？"},{"role":"assistant","content":"首次发布"}]}
+{"messages":[{"role":"user","content":"“MDM 功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户端执行管理端下发的任务的能力。在用户端开通此功能后，还需在管理端配合开通对应权限。"}]}
+{"messages":[{"role":"user","content":"“指挥调度系统”的定义、作用或说明是什么？"},{"role":"assistant","content":"接收和使用PPS提供的终端位置信息。"}]}
+{"messages":[{"role":"user","content":"“图片格式”的定义、作用或说明是什么？"},{"role":"assistant","content":"JPEG(jpg), GIF(gif), PNG(png), BMP(.bmp)"}]}
+{"messages":[{"role":"user","content":"“差异模板”的定义、作用或说明是什么？"},{"role":"assistant","content":"个性化配置终端的对讲机别名和对讲机 ID 等写频参数。"}]}
+{"messages":[{"role":"user","content":"“TMO IV 的组成”的定义、作用或说明是什么？"},{"role":"assistant","content":"新增了 PDU Counter(8bit)、UP Subslot(1bit)；Hyper 由 15bit 增加为 16bit"}]}
+{"messages":[{"role":"user","content":"“SDM功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"指基于SDS业务预留的空口资源，允许在基站计划的时间表中接收SDS的应答消息，并且保证无空口冲突（即同步概念）。该方法通过系统指定空闲时隙，提高终端的上行接入效率，并且可以避免与其他终端信令发送碰撞。"}]}
+{"messages":[{"role":"user","content":"“数字模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"29.1 小时"}]}
+{"messages":[{"role":"user","content":"“模拟模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"22.4 小时"}]}
+{"messages":[{"role":"user","content":"“MDM功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"用户端执行管理端下发的任务的能力。在用户端开通此功能后，还需在管理端配合开通对应权限。"}]}
+{"messages":[{"role":"user","content":"“紧急业务模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定报警采用紧急模式还是紧急静默模式。"}]}
+{"messages":[{"role":"user","content":"“紧急呼叫类型”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定是否支持紧急呼叫以及紧急呼叫的类型。"}]}
+{"messages":[{"role":"user","content":"“紧急个呼呼叫类型”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定紧急呼叫类型为个呼时，全双工还是半双工。"}]}
+{"messages":[{"role":"user","content":"“紧急呼叫号码”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定个呼或组呼时的接收方号码。"}]}
+{"messages":[{"role":"user","content":"“紧急呼叫外部号码”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定紧急呼叫类型为 PSTN 或 PABX 时的外部号码，1~24 位。"}]}
+{"messages":[{"role":"user","content":"“被叫话语权紧急优先级”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定报警发起方作为紧急呼叫被叫方时话语权优先级。"}]}
+{"messages":[{"role":"user","content":"“外部地址”的定义、作用或说明是什么？"},{"role":"assistant","content":"指定目的方地址类型为 PSTN 或 PABX 时的外部号码。"}]}
+{"messages":[{"role":"user","content":"“采用新的紧急呼叫号码”的定义、作用或说明是什么？"},{"role":"assistant","content":"该号码类型为组呼（采用默认 COU 发起紧急组呼）。"}]}
+{"messages":[{"role":"user","content":"“DIRECT呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"自动建立呼叫。 您无需任何操作即可接听。"}]}
+{"messages":[{"role":"user","content":"“非摘机模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"当有呼叫接入时，无需任何操作即可接听。 摘机模式：当有呼叫接入时，按【接听】键接听呼叫。"}]}
+{"messages":[{"role":"user","content":"“可配电池模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"性能模式、智能均衡、省电模式"}]}
+{"messages":[{"role":"user","content":"“非智能电池”的定义、作用或说明是什么？"},{"role":"assistant","content":"仅上报电池类型、电池型号、电压"}]}
+{"messages":[{"role":"user","content":"“四、会后补充了MDM智能电池管理增加的功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"电池详情中增加“电池过热累积时间、电池过热累积次数、电池最高温度”，电池状态统计中增加过热统计，具体见附录部分。"}]}
+{"messages":[{"role":"user","content":"“设置时间格式”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启“使用 24 小时格式”开关，对讲机时间显示格式为 24 小时。"}]}
+{"messages":[{"role":"user","content":"“快速背景扫描”的定义、作用或说明是什么？"},{"role":"assistant","content":"0.2-7 s"}]}
+{"messages":[{"role":"user","content":"“Hytera MDM Pro 产品概述”的定义、作用或说明是什么？"},{"role":"assistant","content":"R5.5_V1.0"}]}
+{"messages":[{"role":"user","content":"“◦ 时间格式”的定义、作用或说明是什么？"},{"role":"assistant","content":"12位（年月日时分，24小时制），无年信息时填4个0"}]}
+{"messages":[{"role":"user","content":"“倒放功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"倒放是指当对讲机倾斜的角度大于预设角度或保持相对静止（或匀速运动）超过预设时间后，支持紧急报警的对讲机将自动进入紧急报警模式。移动或扶正对讲机可退出预警提示。若对讲机配置了倒放功能，可以通过以下方式开启或关闭倒放：点击“对讲设置”，选择“告警安全 > 倒放”，开启或关闭倒放开关；或按【倒放】快捷键。"}]}
+{"messages":[{"role":"user","content":"“单独工作功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"单独工作是在单独工作期间遇到意外情况，支持紧急报警的对讲机在预设时间内无任何操作或无语音发射时，对讲机将自动进行报警，告知同伴或控制中心以获取帮助。通过按键或旋钮操作或发射语音可退出报警提示。若对讲机配置了单独工作功能，可以通过以下方式开启或关闭单独工作：点击“对讲设置”，选择“告警安全 > 单独工作”，开启或关闭单独工作开关；或按【单独工作】快捷键。"}]}
+{"messages":[{"role":"user","content":"“遥毙功能”的定义、作用或说明是什么？"},{"role":"assistant","content":"对讲机被调度台或系统遥毙时，主屏和顶屏显示图标。对讲机失去除开关机外的所有功能。如果想重新使用被遥毙的对讲机，需将对讲机返回我司处理。"}]}
+{"messages":[{"role":"user","content":"“隐蔽模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"隐蔽模式适用于秘密潜伏行动等特殊场景，禁用提示音、振动及指示灯，主屏显示为最低亮度。开启隐蔽模式时，对讲机需连接音频配件输出语音。点击“设置”，在“声音”中选择“隐蔽模式”，开启或关闭隐蔽模式开关。"}]}
+{"messages":[{"role":"user","content":"“Holdoff 状态”的定义、作用或说明是什么？"},{"role":"assistant","content":"如果在繁忙信道上请求非实时业务传输，则移动台应转换到此状态，并对该发射请求进行排队。当要求随机 holdoff 时，移动台将启动一个随机的 T_Holdoff 定时器。"}]}
+{"messages":[{"role":"user","content":"“振动模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"在振动模式下，终端收到呼叫、信息或通知时进行振动提示。"}]}
+{"messages":[{"role":"user","content":"“情景模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"指终端对语音接收过程的语音信号进行增益处理，调节高频、中频或低频音频信号，优化声音的听觉效果，以满足不同场景需求和适用于不同的人群。选择“情景模式”，选择所需的情景模式。"}]}
+{"messages":[{"role":"user","content":"“标准模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"适用于普通环境，如安静的街道。"}]}
+{"messages":[{"role":"user","content":"“户外模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"适用于噪音环境，如公路。"}]}
+{"messages":[{"role":"user","content":"“紧急呼叫”的定义、作用或说明是什么？"},{"role":"assistant","content":"报警启动后，终端立即启动紧急呼叫。"}]}
+{"messages":[{"role":"user","content":"“切换工作模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"切换对讲机的工作模式。"}]}
+{"messages":[{"role":"user","content":"“自动切换工作模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"开启或关闭模式自动切换功能。"}]}
+{"messages":[{"role":"user","content":"“POC系统”的定义、作用或说明是什么？"},{"role":"assistant","content":"MPTT类解决方案的统称。在该文档中可理解为MPTT系统。"}]}
+{"messages":[{"role":"user","content":"“新建文件夹”的定义、作用或说明是什么？"},{"role":"assistant","content":"在管理界面，点击 + ，选择“新建静态文件夹”并输入文件夹名称。"}]}
+{"messages":[{"role":"user","content":"“删除文件夹”的定义、作用或说明是什么？"},{"role":"assistant","content":"在管理界面，长按并删除文件夹。"}]}
+{"messages":[{"role":"user","content":"“新建扫描列表”的定义、作用或说明是什么？"},{"role":"assistant","content":"在管理界面，点击 + ，选择“新建扫描列表”并输入扫描列表名称。"}]}
+{"messages":[{"role":"user","content":"“删除扫描列表”的定义、作用或说明是什么？"},{"role":"assistant","content":"在管理界面，长按并删除扫描列表。"}]}
+{"messages":[{"role":"user","content":"“文件名称格式”的定义、作用或说明是什么？"},{"role":"assistant","content":"“当前年+月+日+小时+分钟”+“.m4a”"}]}
+{"messages":[{"role":"user","content":"“倒放为整机功能，且满足所有工作模式”的定义、作用或说明是什么？"},{"role":"assistant","content":"常规、集群、TMO、DMO、MPT。"}]}
+{"messages":[{"role":"user","content":"““倒地求助”报警”的定义、作用或说明是什么？"},{"role":"assistant","content":"当用户在某段时间内静止不动或出现倒地时触发应急程序。 当用户摔倒时，集成加速计能够感知到并发起求助呼叫。"}]}
+{"messages":[{"role":"user","content":"文档中的“贴士”表示什么？"},{"role":"assistant","content":"有助于您更好解决问题的方法。"}]}
+{"messages":[{"role":"user","content":"文档中的“备注”表示什么？"},{"role":"assistant","content":"表示对正文内容的补充、说明和强调。"}]}
+{"messages":[{"role":"user","content":"文档中的“注意”表示什么？"},{"role":"assistant","content":"表示可能导致设备损坏或数据丢失的事项。"}]}
+{"messages":[{"role":"user","content":"“ESN”的全称是什么？"},{"role":"assistant","content":"Electronic Serial Number"}]}
+{"messages":[{"role":"user","content":"“OTAK”的全称是什么？"},{"role":"assistant","content":"Over-The-Air-Key Management"}]}
+{"messages":[{"role":"user","content":"“SCK”的全称是什么？"},{"role":"assistant","content":"Static Cipher Key"}]}
+{"messages":[{"role":"user","content":"“TEI”的全称是什么？"},{"role":"assistant","content":"Terminal Equipment Identity"}]}
+{"messages":[{"role":"user","content":"文档中的“💡 贴士”表示什么？"},{"role":"assistant","content":"有助于您更好解决问题的方法。"}]}
+{"messages":[{"role":"user","content":"文档中的“📝 备注”表示什么？"},{"role":"assistant","content":"表示对正文内容的补充、说明和强调。"}]}
+{"messages":[{"role":"user","content":"“FOACSU”的全称是什么？"},{"role":"assistant","content":"Full Off Air Call Set-Up"}]}
+{"messages":[{"role":"user","content":"“HDR”的全称是什么？"},{"role":"assistant","content":"High-Dynamic Range"}]}
+{"messages":[{"role":"user","content":"“LED”的全称是什么？"},{"role":"assistant","content":"Light-Emitting Diode"}]}
+{"messages":[{"role":"user","content":"“MIDI”的全称是什么？"},{"role":"assistant","content":"Musical Instrument Digital Interface"}]}
+{"messages":[{"role":"user","content":"“OACSU”的全称是什么？"},{"role":"assistant","content":"Off Air Call Set-Up"}]}
+{"messages":[{"role":"user","content":"“ISO”的全称是什么？"},{"role":"assistant","content":"International Standardization Organization"}]}
+{"messages":[{"role":"user","content":"“NFC”的全称是什么？"},{"role":"assistant","content":"Near Field Communication"}]}
+{"messages":[{"role":"user","content":"“VoLTE”的全称是什么？"},{"role":"assistant","content":"Voice over LTE"}]}
+{"messages":[{"role":"user","content":"“VOX”的全称是什么？"},{"role":"assistant","content":"Voice Operated Transmit"}]}
+{"messages":[{"role":"user","content":"“DHCP”的全称是什么？"},{"role":"assistant","content":"Dynamic Host Configuration Protocol"}]}
+{"messages":[{"role":"user","content":"“MCC”的全称是什么？"},{"role":"assistant","content":"Mobile Country Code"}]}
+{"messages":[{"role":"user","content":"“GSDM”的全称是什么？"},{"role":"assistant","content":"Graceful Service Degradation Mode"}]}
+{"messages":[{"role":"user","content":"“NTG”的全称是什么？"},{"role":"assistant","content":"Notice Talk Group"}]}
+{"messages":[{"role":"user","content":"“DEM”的全称是什么？"},{"role":"assistant","content":"Digital Evidence Management"}]}
+{"messages":[{"role":"user","content":"“SN”的全称是什么？"},{"role":"assistant","content":"Serial Number"}]}
+{"messages":[{"role":"user","content":"“XPT”的全称是什么？"},{"role":"assistant","content":"Extended Pseudo Trunk"}]}
+{"messages":[{"role":"user","content":"“SK”的全称是什么？"},{"role":"assistant","content":"Side Key"}]}
+{"messages":[{"role":"user","content":"“TK”的全称是什么？"},{"role":"assistant","content":"Top Key"}]}
+{"messages":[{"role":"user","content":"“IDS”的全称是什么？"},{"role":"assistant","content":"Integrated Device Station"}]}
+{"messages":[{"role":"user","content":"“ITSI”的全称是什么？"},{"role":"assistant","content":"Individual TETRA Subscriber Identity"}]}
+{"messages":[{"role":"user","content":"“DTW”的全称是什么？"},{"role":"assistant","content":"Device Task Workstation"}]}
+{"messages":[{"role":"user","content":"在MDM Pro中，报警类型“仅鸣笛”表示什么？"},{"role":"assistant","content":"终端发出尖锐的报警音，同时显示图标，控制中心不会接收到报警信号。"}]}
+{"messages":[{"role":"user","content":"在MDM Pro中，报警类型“正常”表示什么？"},{"role":"assistant","content":"终端会给出可听和可视提示。"}]}
+{"messages":[{"role":"user","content":"在MDM Pro中，报警类型“秘密”表示什么？"},{"role":"assistant","content":"终端不会给出任何声音或可视化的提示。"}]}
+{"messages":[{"role":"user","content":"在MDM Pro中，报警类型“警报鸣笛”表示什么？"},{"role":"assistant","content":"向控制中心发送报警信号，终端发出尖锐的报警音，同时显示图标。"}]}
+{"messages":[{"role":"user","content":"在MDM Pro中，报警模式“紧急警报”表示什么？"},{"role":"assistant","content":"发送紧急报警码，不能与对方进行通话。"}]}
+{"messages":[{"role":"user","content":"“IMEI”的全称是什么？"},{"role":"assistant","content":"International Mobile Equipment Identity"}]}
+{"messages":[{"role":"user","content":"DMO模式下“本机号码”表示什么？"},{"role":"assistant","content":"终端的ISSI号码。"}]}
+{"messages":[{"role":"user","content":"TMO模式下“本机号码”表示什么？"},{"role":"assistant","content":"终端的ISSI号码。"}]}
+{"messages":[{"role":"user","content":"个呼优先级的“未定义”表示什么？"},{"role":"assistant","content":"以系统为终端设置的呼叫优先级为准。"}]}
+{"messages":[{"role":"user","content":"RoIP配置中的“超时时间”表示什么？"},{"role":"assistant","content":"终端连接RoIP服务器的时长；超过该时长后，终端不再连接该RoIP服务器。"}]}
+{"messages":[{"role":"user","content":"DMR的英文全称是什么？"},{"role":"assistant","content":"Digital Mobile Radio。"}]}
+{"messages":[{"role":"user","content":"DEM的英文全称是什么？"},{"role":"assistant","content":"Digital Evidence Management。"}]}
+{"messages":[{"role":"user","content":"DTW的英文全称是什么？"},{"role":"assistant","content":"Device Task Workstation。"}]}
+{"messages":[{"role":"user","content":"MDM的英文全称是什么？"},{"role":"assistant","content":"Mobile Device Management。"}]}
+{"messages":[{"role":"user","content":"PDT的英文全称是什么？"},{"role":"assistant","content":"Police Digital Trunking。"}]}
+{"messages":[{"role":"user","content":"TETRA的英文全称是什么？"},{"role":"assistant","content":"Terrestrial Trunked Radio。"}]}
+{"messages":[{"role":"user","content":"PNC360S 通过了哪些耐用性标准？"},{"role":"assistant","content":"IP67 和 MIL-STD-810H。"}]}

@@ -1,0 +1,949 @@
+{"messages":[{"role":"user","content":"白俄MOD项目中，用户希望终端支持在哪三种网络上自动切换？"},{"role":"assistant","content":"常规、集群、POC。"}]}
+{"messages":[{"role":"user","content":"白俄定制项目文档的适用范围及对应的软件版本信息是什么？"},{"role":"assistant","content":"仅适用白俄定制项目，即仅适用软件版本信息为PDC760 R3.0白俄定制软件。"}]}
+{"messages":[{"role":"user","content":"白俄定制项目中终端的内部版本号是多少？"},{"role":"assistant","content":"BB: V3.0.43.002.01.9F01"}]}
+{"messages":[{"role":"user","content":"白俄MOD项目前期已经采购了哪些产品？"},{"role":"assistant","content":"部分DMR常规产品与集群系统。"}]}
+{"messages":[{"role":"user","content":"该项目新增了哪些设备或系统？"},{"role":"assistant","content":"poc6000宽带以及DMR集群基站"}]}
+{"messages":[{"role":"user","content":"支持三网自动切换的定制版本中，用户对终端工作模式有哪些操作限制？"},{"role":"assistant","content":"用户无法通过菜单手动修改终端工作模式，终端上与网络相关的开关都不可操作。具体包括：工作模式菜单置灰（默认待机在数字集群模式）；可编程按键中没有“切换工作模式”和“窄带网络”功能；自动切换工作模式菜单置灰不可编辑（默认开启）；对讲设置和控制中心的窄带网络菜单不可编辑（默认开启）；“区域/组群”功能置灰不可编辑（默认关闭）。"}]}
+{"messages":[{"role":"user","content":"宽带终端包含哪几种型号？"},{"role":"assistant","content":"宽带终端包含 PNC380 和 PNC550。"}]}
+{"messages":[{"role":"user","content":"请列出所有的 DMR 终端型号。"},{"role":"assistant","content":"DMR 终端型号包括：HP780、PD780、PD980、PD680、PD700、PD750、PD980UL、PD980Ex、MD780、MD780i。"}]}
+{"messages":[{"role":"user","content":"执法记录仪有哪些具体型号？"},{"role":"assistant","content":"执法记录仪型号包括：VM550(M)、DSJ-HYTH5A1(M)、VM680/DSJ-H6、DSJ-HYTH7A1(M)、DSJ-HYTH7A1(Y)、DSJ-HYTI6A1(Y)。"}]}
+{"messages":[{"role":"user","content":"在R4.0版本中，用户输入系统码进行手动切换基站时，若邻站信息表中未找到对应系统码，终端如何处理？"},{"role":"assistant","content":"若在邻站信息表里没有对应的系统码，终端会在CPS配置的控制信道列表中查询该系统码对应的信息，切换到该基站中，并按照基站切换正常流程处理。"}]}
+{"messages":[{"role":"user","content":"Which radio models are supported by Smart MDM Lite for the Multi-mode Advanced Radio category?"},{"role":"assistant","content":"The supported Multi-mode Advanced Radio models for Smart MDM Lite are PDC760, PTC760, PDC680 (HS-T623 and H823p), PTC680, and PDC550."}]}
+{"messages":[{"role":"user","content":"Which TETRA Terminal models are compatible with Smart MDM Lite?"},{"role":"assistant","content":"The TETRA Terminal models compatible with Smart MDM Lite are PT310, PT350, PT590, MT680, and PT890Ex."}]}
+{"messages":[{"role":"user","content":"What features does the PTC680/PDC680 provide?"},{"role":"assistant","content":"The PTC680/PDC680 provides diverse features including mission-critical voice, HD photo capture and video shooting, broadband voice services, etc."}]}
+{"messages":[{"role":"user","content":"Which body worn camera models include an LCD?"},{"role":"assistant","content":"The VM682 and VM550D are Body Worn Cameras with LCD."}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属及本手册中其他商标的权利状态是怎样的？"},{"role":"assistant","content":"Hytera 是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标，我司仅对自有商标及产品名称享有所权。本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"What is the current version of DTW?"},{"role":"assistant","content":"The current version of DTW is V5.0.06.000."}]}
+{"messages":[{"role":"user","content":"型号为 PTC680 的多模智能终端有哪些不同的版本迭代记录？"},{"role":"assistant","content":"PTC680 有两组版本记录：一组起始版本为 V2.5.00102，最新版本为 V3.5.00802；另一组起始版本为 V2.5.001G2，最新版本为 V3.5.008G2。"}]}
+{"messages":[{"role":"user","content":"PDC550 R2 的最新版本号是多少？"},{"role":"assistant","content":"PDC550 R2 的最新版本是 V2.2.14.003.102。"}]}
+{"messages":[{"role":"user","content":"多模智能终端 PDC680 的起始版本和最新版本分别是什么？"},{"role":"assistant","content":"PDC680 的起始版本是 V2.5.001103，最新版本是 V3.5.008303。"}]}
+{"messages":[{"role":"user","content":"What is the firmware version for the PD790 device?"},{"role":"assistant","content":"V9.00.06.001"}]}
+{"messages":[{"role":"user","content":"Which firmware versions are listed for the DSJ-HYTH7A1 (M) body-worn camera?"},{"role":"assistant","content":"V1.0.07.038.0101 and V3.0.07.040.0101"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0.09.001 版本主要介绍的是什么内容？"},{"role":"assistant","content":"Smart MDM V5.0.09.001 相比前一版本 V4.6.16.000 的新增功能。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0.09.001 新增功能涉及哪些执法记录仪型号？"},{"role":"assistant","content":"DSJ-HYTS5A1"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0.09.001 新增功能涉及哪些宽带终端型号？"},{"role":"assistant","content":"PNC460、PNC380D"}]}
+{"messages":[{"role":"user","content":"未经 Hytera 事先书面授权，哪些行为是被禁止的？"},{"role":"assistant","content":"任何企业、组织或个人不得对计算机程序进行任何形式的复制、更改、散发、反编译和反向工程。"}]}
+{"messages":[{"role":"user","content":"Hytera 的服务热线是多少？"},{"role":"assistant","content":"400-830-7020"}]}
+{"messages":[{"role":"user","content":"Which value should be set for mdm.disasterRecovery.model to enable disaster recovery?"},{"role":"assistant","content":"The value \"1\" should be set to enable disaster recovery."}]}
+{"messages":[{"role":"user","content":"V3.05.10版本中关于数据透传与共享型分组数据的限制是什么？"},{"role":"assistant","content":"数据透传不支持加密的共享型分组数据。"}]}
+{"messages":[{"role":"user","content":"空口通路自适应功能从哪个软件版本开始实现？"},{"role":"assistant","content":"R1.5及后续的软件版本。"}]}
+{"messages":[{"role":"user","content":"如果用户需要兼容语音业务或对数据可靠性和实时性要求较低，应如何配置G2终端的数据透传功能？"},{"role":"assistant","content":"用户可只在CPS或MDM中配置数据透传功能而不开启Modem模式。该功能与终端发送消息类似，但终端不对发送的内容进行处理。"}]}
+{"messages":[{"role":"user","content":"有线通路在API接口方面与G1的兼容性情况如何？"},{"role":"assistant","content":"有线通路需要NB开发相应的API接口，不兼容G1的API，客户需要针对新的NB开发自己的应用。"}]}
+{"messages":[{"role":"user","content":"OTAP 回复的分组数据类型和版本分别依据什么确定？"},{"role":"assistant","content":"OTAP 回复采用的分组数据类型由系统下发决定，而版本则采用终端设置。"}]}
+{"messages":[{"role":"user","content":"在 Hytera 手册中，符号“危险”表示什么意义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"Which software version added OTAK (Teltronic) E2EE and when was it released?"},{"role":"assistant","content":"Software Version V3.1, released in July 2023, added OTAK (Teltronic) E2EE."}]}
+{"messages":[{"role":"user","content":"What is the requirement for the SCK version number in relation to the TETRA system?"},{"role":"assistant","content":"The SCK version number must be the same as the one in the TETRA system."}]}
+{"messages":[{"role":"user","content":"Which Hytera DMR models support both E2EE and OTAK in Conventional mode?"},{"role":"assistant","content":"The HR106X and PDC760 models support both E2EE and OTAK in Conventional mode."}]}
+{"messages":[{"role":"user","content":"Does the HP78X model support OTAK (Teltronic) when operating in XPT mode?"},{"role":"assistant","content":"No, the HP78X model does not support OTAK (Teltronic) in XPT mode."}]}
+{"messages":[{"role":"user","content":"What are the specifications and features of the cameras on the PTC760?"},{"role":"assistant","content":"Both the front and rear cameras are 13MP. They offer high quality images, support 4K video taking, and enable video talk in mission critical situations."}]}
+{"messages":[{"role":"user","content":"What communication capabilities and features does the PTC760 provide?"},{"role":"assistant","content":"The PTC760 provides mission-critical voice communication, and installs third party apps as well."}]}
+{"messages":[{"role":"user","content":"How can you check device information such as model name, serial number, software version, and storage capacity?"},{"role":"assistant","content":"Go to Settings > Device info."}]}
+{"messages":[{"role":"user","content":"写频前对CPS插件有什么要求，且插件包含哪些类型？"},{"role":"assistant","content":"写频之前需上传与设备配置版本配套的CPS插件。CPS插件包含公共模板插件和差异模板插件。"}]}
+{"messages":[{"role":"user","content":"Which RFC defines the Simple Network Management Protocol Version 1?"},{"role":"assistant","content":"RFC 1157 defines the Simple Network Management Protocol Version 1."}]}
+{"messages":[{"role":"user","content":"在为不同批次或版本的终端使用Smart MDM写频时，是否需要建立多个写频模板？"},{"role":"assistant","content":"不需要。只需要建立一个模板即可为所有不同批次、不同版本的终端写频。"}]}
+{"messages":[{"role":"user","content":"Hypera 商标的所有权归属于哪家公司？"},{"role":"assistant","content":"Hypera 是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版软件版本 R3.0_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"R3.0_V1.0 版本的发布日期为 2020-01，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"What is the version number of Smart MDM Web?"},{"role":"assistant","content":"V3.0.06.003"}]}
+{"messages":[{"role":"user","content":"What is the version number of KMS?"},{"role":"assistant","content":"V1.5.06.000"}]}
+{"messages":[{"role":"user","content":"执法记录仪 DSJ-HYTH7A1(M) 的最新版本标注了什么特殊信息？"},{"role":"assistant","content":"执法记录仪 DSJ-HYTH7A1(M) 的最新版本是 V1.0.07.040.0101(POC 1.5)。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Pro V3.0.06.000 版本相比前一版本 V2.7.05.001 主要介绍了哪些内容？"},{"role":"assistant","content":"主要介绍了新增功能和优化功能。"}]}
+{"messages":[{"role":"user","content":"当上传的应用已存在其他版本时，Smart MDM 如何处理及有何优势？"},{"role":"assistant","content":"Smart MDM 自动将新上传的应用版本归入已存在的应用，从而减少人工判断应用版本的时间，简化了更新应用的操作流程。"}]}
+{"messages":[{"role":"user","content":"主机和标配附件（电池、充电座）的保修期分别是多久？"},{"role":"assistant","content":"主机的保修期为24个月，标配附件（电池、充电座）的保修期为12个月。"}]}
+{"messages":[{"role":"user","content":"Where can you find the device information such as model name and serial number?"},{"role":"assistant","content":"Tap the Settings app, and then go to System > Device info."}]}
+{"messages":[{"role":"user","content":"项目25是在哪一年启动的？"},{"role":"assistant","content":"1989年"}]}
+{"messages":[{"role":"user","content":"Smart MDM 软件版本 R4.5_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"Smart MDM 软件版本 R4.5_V1.0 于 2021-08 发布，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"Which version of KMS is listed in the application software versions?"},{"role":"assistant","content":"V2.0.09.000"}]}
+{"messages":[{"role":"user","content":"What is the specified version for DTW?"},{"role":"assistant","content":"V3.5.10.001"}]}
+{"messages":[{"role":"user","content":"What is the version of Smart MDM Lite?"},{"role":"assistant","content":"V4.0.08.000"}]}
+{"messages":[{"role":"user","content":"窄带 TETRA 终端 PT350 的最新版本是多少？"},{"role":"assistant","content":"PT350 的最新版本是 V4.02.01.004。"}]}
+{"messages":[{"role":"user","content":"信息整合层支持哪些方式访问其SQL接口？"},{"role":"assistant","content":"信息整合层的SQL接口支持Native方式、JDBC方式和ODBC方式访问。"}]}
+{"messages":[{"role":"user","content":"当MDM SE和MDM Pro管控DMR/终端或PDT终端时，对License有什么强制要求？"},{"role":"assistant","content":"必须导入区域License。"}]}
+{"messages":[{"role":"user","content":"MDM SE和MDM Pro是否支持简化License申请流程？具体方式是什么？"},{"role":"assistant","content":"支持，通过区域License自动跳转申请来简化License申请流程。"}]}
+{"messages":[{"role":"user","content":"Hytera 手册中“危险”符号表示什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"版本 02 (V1.0, 2022-10) 的 PPS 更新包含哪些具体内容？"},{"role":"assistant","content":"新增适配机型 PNC380；更新定位服务安装包为 hytera_deploy_linux-amd64_v0.2.0.zip，同时更新安装部署 PPS 中的操作命令。"}]}
+{"messages":[{"role":"user","content":"PDC760、PDC680、PTC760、PTC680 以及 PNC 380 终端分别需要哪个版本及以上才能支持？"},{"role":"assistant","content":"PDC760、PDC680、PTC760、PTC680 需要 V3.5 及以上版本；PNC 380 需要 V 2.5 及以上版本。"}]}
+{"messages":[{"role":"user","content":"型号 ACN-02 是什么类型的配件，使用时有什么搭配要求？"},{"role":"assistant","content":"ACN-02 是 PTT&MIC 控制线，需搭配只接收耳机使用。"}]}
+{"messages":[{"role":"user","content":"哪些耳机型号需要搭配 PTT&MIC 控制线才能使用？"},{"role":"assistant","content":"型号 EH-02（耳挂式只接收耳机）和型号 ES-01（耳塞式只接收耳机）需搭配 PTT&MIC 控制线使用。"}]}
+{"messages":[{"role":"user","content":"型号 BP4009 的电池容量是多少，属于什么类型？"},{"role":"assistant","content":"BP4009 是智能聚合物锂电池，容量为 4000mAh。"}]}
+{"messages":[{"role":"user","content":"在音视频类配件中，哪款型号是无线 PTT？"},{"role":"assistant","content":"型号 P0A121 是无线 PTT。"}]}
+{"messages":[{"role":"user","content":"海能达通信股份有限公司对“Hytera”商标的权利范围是什么？"},{"role":"assistant","content":"“Hytera”是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。该公司仅对自有商标及产品名称享有所有权，手册中提及的其他商标和产品名称归各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0 (文档版本 00) 支持的源版本和目标版本分别是什么？"},{"role":"assistant","content":"该版本指导用户将 Smart MDM 从 V4.6.10.000 及以上版本升级到 V5.0.10.004。"}]}
+{"messages":[{"role":"user","content":"Does purchasing the product grant the purchaser any rights to the Company's computer programs?"},{"role":"assistant","content":"No, the purchase of the product shall not be deemed to grant, either directly or by implication, any rights to the purchaser regarding the Company's computer programs."}]}
+{"messages":[{"role":"user","content":"How can users obtain optional accessories for the product?"},{"role":"assistant","content":"Users should contact their local dealer to obtain optional accessories for the product."}]}
+{"messages":[{"role":"user","content":"Which EU directive does the product comply with regarding essential requirements?"},{"role":"assistant","content":"The product complies with the essential requirements and other relevant provisions of 2014/53/EU."}]}
+{"messages":[{"role":"user","content":"What is the version number associated with Key14?"},{"role":"assistant","content":"The version number associated with Key14 is 13."}]}
+{"messages":[{"role":"user","content":"型号为 PDC760 的多模智能终端的硬件版本是多少？"},{"role":"assistant","content":"V3.5.001101"}]}
+{"messages":[{"role":"user","content":"宽带终端 PNC550 的版本信息是什么？"},{"role":"assistant","content":"V1.0.23.001.02"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端 PD780 的版本号是多少？"},{"role":"assistant","content":"V9.00.06.001"}]}
+{"messages":[{"role":"user","content":"窄带 PDT 终端 HP780 对应的软件版本是什么？"},{"role":"assistant","content":"V01.5.04.005"}]}
+{"messages":[{"role":"user","content":"型号为 PT310 的窄带 TETRA 终端当前版本是多少？"},{"role":"assistant","content":"V4.01.13.018"}]}
+{"messages":[{"role":"user","content":"执法记录仪 DSJ-HYTH7A1 的版本号是多少？"},{"role":"assistant","content":"V1.0.07.040.0101"}]}
+{"messages":[{"role":"user","content":"在R2.5版本中，窄带顶屏的未接来电和未读短信数量是如何显示的？"},{"role":"assistant","content":"在R2.5版本中，窄带顶屏显示为：专网未接来电数量+公网未接来电数量、专网未读短信数量+公网未读短信数量。"}]}
+{"messages":[{"role":"user","content":"Does purchasing the product grant the buyer any rights to Hytera's computer programs?"},{"role":"assistant","content":"No, the purchase of the product does not grant, either directly or by implication, any rights to the purchaser regarding Hytera's computer programs."}]}
+{"messages":[{"role":"user","content":"Is Hytera liable for consequences arising from the use of the software?"},{"role":"assistant","content":"No, Hytera shall not be liable for any consequences arisen out of the use of the software."}]}
+{"messages":[{"role":"user","content":"如果需要获取更多信息或对本手册提出建议，可以通过哪些方式联系海能达？"},{"role":"assistant","content":"可以访问网站 https://www.hytera.com，或拨打服务热线 400-830-7020。"}]}
+{"messages":[{"role":"user","content":"音频模块中的蓝牙模块型号是多少？"},{"role":"assistant","content":"音频模块中的蓝牙模块型号是 U9300。"}]}
+{"messages":[{"role":"user","content":"文档版本 00 对产品版本 V5.2 做了哪些修改？"},{"role":"assistant","content":"删除“3.1.1.2 IP 规划”中的 3306 端口号。"}]}
+{"messages":[{"role":"user","content":"除了多模终端，Smart MDM 还兼容管理哪些类型的设备，支持什么操作？"},{"role":"assistant","content":"兼容对窄带终端和执法记录仪进行写频和升级。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 支持的执法记录仪型号有哪些？"},{"role":"assistant","content":"Smart MDM 支持的执法记录仪包括：VM550、VM550D/DSJ-HYTH5A1、VM680/DSJ-H6、VM780/DSJ-HYTH7A1、VM580D/DSJ-HYTV5A1、SC580/DSJ-HYTS5A1、SC880/DSJ-HYTT8A1。"}]}
+{"messages":[{"role":"user","content":"管理站或工作站支持哪些版本的Windows操作系统？"},{"role":"assistant","content":"支持的操作系统包括Windows 7 (32/64位)、Windows 8 (32/64位)、Windows 10 (32/64位)以及Windows 11 (64位)。"}]}
+{"messages":[{"role":"user","content":"主从复制支持哪些格式，默认格式是什么？"},{"role":"assistant","content":"主从复制的格式包括 mixed、statement、row，默认格式是 statement。"}]}
+{"messages":[{"role":"user","content":"防爆标志中的 T4 和 T130° C 分别对最高表面温度有什么限制？"},{"role":"assistant","content":"T4 表示产品的最高表面温度不超过 135°C，T130° C 表示产品的最高表面温度不超过 130°C。"}]}
+{"messages":[{"role":"user","content":"该设备的防爆等级是多少？"},{"role":"assistant","content":"Ex ib II B T4Gb 和 Ex ib IIIC T130°C Db"}]}
+{"messages":[{"role":"user","content":"该设备使用的是什么型号的防爆电池，容量是多少？"},{"role":"assistant","content":"使用的是BL3204-Ex防爆电池，容量为3200mAh。"}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属及本手册中其他商标的权利说明是什么？"},{"role":"assistant","content":"Hytera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。我司仅对自有商标及产品名称享有所权，本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"文档版本 01 对应的产品版本、发布日期及主要描述是什么？"},{"role":"assistant","content":"文档版本 01 对应产品版本 V5.0，发布日期为 2023-07，描述为升级文档内容。"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端插件的版本文件名是多少？"},{"role":"assistant","content":"G1_PMR_IDS_V3.5.10.002.06.plug"}]}
+{"messages":[{"role":"user","content":"What are the version number constraints for SCK configuration?"},{"role":"assistant","content":"The SCK version number must be the same as the one in the TETRA system, with a value range of 0-65535."}]}
+{"messages":[{"role":"user","content":"What do the Version values 1, 2, and 3 represent regarding key activation status?"},{"role":"assistant","content":"Version 1 represents the Current key, Version 2 represents the Previous key, and Version 3 represents the Future key."}]}
+{"messages":[{"role":"user","content":"Which DMR models support both E2EE and AIE in Conventional mode?"},{"role":"assistant","content":"The HR1060 and PDC760 models support both E2EE and AIE in Conventional mode."}]}
+{"messages":[{"role":"user","content":"Does the HP780 model support AIE when operating in XPT mode under the DMR standard?"},{"role":"assistant","content":"No, the HP780 model does not support AIE when operating in XPT mode under the DMR standard."}]}
+{"messages":[{"role":"user","content":"TETRA终端有哪些型号？"},{"role":"assistant","content":"TETRA终端包括：MT680 Plus、PT580H plus、PT790Ex、PT895Ex Fv、PT890Ex、PT590、PT350。"}]}
+{"messages":[{"role":"user","content":"How do you convert the current webpage to the PC version?"},{"role":"assistant","content":"Tap Request desktop site."}]}
+{"messages":[{"role":"user","content":"Rosie V3.05.00版本在宽带功能上有什么新增内容？"},{"role":"assistant","content":"新增重启Modem。"}]}
+{"messages":[{"role":"user","content":"G2.0产品获取Log和Trace的两种方式是什么？"},{"role":"assistant","content":"进入终端工程模式，以及借助专用工具Hytera Gen2 Tool。"}]}
+{"messages":[{"role":"user","content":"G2.0产品文档适用于哪些具体机型及其运行模式？"},{"role":"assistant","content":"适用于PTC机型（直通模式/集群模式）和PDC机型（常规模式/集群模式）。"}]}
+{"messages":[{"role":"user","content":"G2.0产品获取Log和Trace的两种方式分别是什么？"},{"role":"assistant","content":"进入终端工程模式，以及借助专用工具Hytera Gen2 Tool。"}]}
+{"messages":[{"role":"user","content":"Does purchasing a Hytera product grant the buyer rights to its computer programs?"},{"role":"assistant","content":"No, the purchase of the product does not grant, either directly or by implication, any rights to the purchaser regarding Hytera's computer programs."}]}
+{"messages":[{"role":"user","content":"Is Hytera liable for consequences arising from the use of its software?"},{"role":"assistant","content":"No, Hytera shall not be liable for any consequences arisen out of the use of the software."}]}
+{"messages":[{"role":"user","content":"Hypera 商标的所有权归属哪家公司？"},{"role":"assistant","content":"Hypera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版软件版本 R3.5_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"版本 R3.5_V1.0 的发布日期为 2020-07，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"What is the version number for IDS?"},{"role":"assistant","content":"V3.5.03.001"}]}
+{"messages":[{"role":"user","content":"Which narrowband PDT terminals have a starting version of V01.5.04.005?"},{"role":"assistant","content":"The narrowband PDT terminals with a starting version of V01.5.04.005 are HP680, HP600, and HM780."}]}
+{"messages":[{"role":"user","content":"Smart MDM V3.5.09.000 版本相比前一版本主要介绍了哪些方面的内容？"},{"role":"assistant","content":"主要介绍了 Smart MDM V3.5.09.000 相比前一版本 V3.0.06.000 的新增功能和优化功能。"}]}
+{"messages":[{"role":"user","content":"若要查询 Smart MDM V3.0.06.000 版本的功能介绍，应参考哪份文档？"},{"role":"assistant","content":"应参见《Smart MDM 专业版_版本指南_R3.0_V1.0》。"}]}
+{"messages":[{"role":"user","content":"绿色快闪和绿色常亮分别对应设备的哪些工作状态？"},{"role":"assistant","content":"绿色快闪表示正在开机，绿色常亮表示正在接收。"}]}
+{"messages":[{"role":"user","content":"该设备支持连接哪些主机？电脑连接后能否读取数据？"},{"role":"assistant","content":"该设备仅与电脑连接。电脑无法读取数据，但可以为设备读写频。"}]}
+{"messages":[{"role":"user","content":"Which PDC760 firmware versions are designated for North American use?"},{"role":"assistant","content":"The PDC760 firmware versions designated for North American use are V1.6.001AG2, V1.6.001A02, V1.6.001NG2, and V1.6.001N02."}]}
+{"messages":[{"role":"user","content":"Which TETRA radios were added to Narrowband Radio Management in this version?"},{"role":"assistant","content":"The management for TETRA radios including PT580H Plus, PT790Ex, Z1p, and PT580H Plus UL913 was added."}]}
+{"messages":[{"role":"user","content":"Which version of a document applies when a reference is specific?"},{"role":"assistant","content":"Only the cited version applies."}]}
+{"messages":[{"role":"user","content":"How is the applicable version determined for non-specific references?"},{"role":"assistant","content":"The latest version of the referenced document, including any amendments, applies."}]}
+{"messages":[{"role":"user","content":"What are intermodulation products?"},{"role":"assistant","content":"Intermodulation products are unwanted signals generated when two or more signals are present in a non-linear circuit."}]}
+{"messages":[{"role":"user","content":"How does the OSI reference model address the requirements for data arrival and data usability?"},{"role":"assistant","content":"It defines network protocol operation in terms of lower level network services to ensure data arrives correctly and in a timely manner, and higher level protocols to ensure data is recognizable and in the proper form for correct use."}]}
+{"messages":[{"role":"user","content":"How many functional layers does the OSI reference model identify?"},{"role":"assistant","content":"The OSI reference model identifies seven functional layers."}]}
+{"messages":[{"role":"user","content":"Which layers of the OSI model does the TETRA standard define protocols for?"},{"role":"assistant","content":"The TETRA standard defines the protocols up to layer 3 of the OSI model."}]}
+{"messages":[{"role":"user","content":"What is TEDS and which TETRA standard version first incorporated it?"},{"role":"assistant","content":"TEDS stands for TETRA Enhanced Data Service, also known as High-Speed Data (HSD). It was first incorporated in the TETRA standard ETSI EN 300 392-2 V3.2.1."}]}
+{"messages":[{"role":"user","content":"What change regarding control channels was introduced in TETRA standard version V3.5.1?"},{"role":"assistant","content":"Version V3.5.1 added an alternative option called Direct Access, which allows cells to use a QAM HSD channel as the main control channel."}]}
+{"messages":[{"role":"user","content":"Which propagation models are specified in the system assumptions?"},{"role":"assistant","content":"The specified propagation models are TU50-400 MHz, HT200-800 MHz, and static."}]}
+{"messages":[{"role":"user","content":"In TETRA standard ETSI EN 300 392-2 V3.4.1 and earlier versions, what channel is assigned to an MS that did not negotiate QoS and did not specifically request a phase modulation channel?"},{"role":"assistant","content":"The MS is assigned to a single-slot π/4-DQPSK PDCH."}]}
+{"messages":[{"role":"user","content":"How does the SwMI choose a PDCH in more recent versions of ETSI EN 300 392-2 if the MS did not negotiate QoS during PDP context activation and does not specifically request a phase modulation channel?"},{"role":"assistant","content":"The SwMI chooses a PDCH based on the MS’s declared capabilities and the default assumption that the PDP context is required for background class data with unspecified throughput, delay and reliability."}]}
+{"messages":[{"role":"user","content":"What is the maximum number of independent unacknowledged advanced links an MS may have per group address in the current version of ETSI EN 300 392-2?"},{"role":"assistant","content":"In the current version of ETSI EN 300 392-2, the MS may have up to four independent unacknowledged advanced links per group address."}]}
+{"messages":[{"role":"user","content":"When does the calculation using ERP and conversion factors fail, requiring direct observations of the main carrier's signal level?"},{"role":"assistant","content":"The calculation fails near the azimuthal edge of a sectored channel, so the MS has to make direct observations of the main carrier's signal level when using a failing sectored channel."}]}
+{"messages":[{"role":"user","content":"What causes inter-modulation products in a transmitter and how are they controlled?"},{"role":"assistant","content":"Inter-modulation products are components generated by transmitter non-linearity when an interfering signal reaching via the antenna is present together with the wanted signal. Limits are introduced in the standard to inhibit the generation of such components."}]}
+{"messages":[{"role":"user","content":"What does the symbol $E_{m}(k)$ represent in the context of transmitter signal modeling?"},{"role":"assistant","content":"$E_{m}(k)$ represents the complex-valued (vector) error associated with the symbol $S_{m}(k)$, which is caused by transmitter inaccuracies."}]}
+{"messages":[{"role":"user","content":"What are the two main components into which the modified Hata model divides total path loss (PL)?"},{"role":"assistant","content":"The two main components are median loss (L_m) and loss due to slow fading (L_s)."}]}
+{"messages":[{"role":"user","content":"How is the link propagation model represented in TETRA channel performance simulations?"},{"role":"assistant","content":"It is represented by a stationary complex tap-gain process, described in terms of Probability Density Function (PDF) and a Power Density Spectrum (PDS) which models the Doppler spectrum."}]}
+{"messages":[{"role":"user","content":"Which channel model is used for high-speed data QAM channel simulations to improve accuracy, particularly under the HT200 propagation environment?"},{"role":"assistant","content":"The GSM six-tap model (table 8.30) is used."}]}
+{"messages":[{"role":"user","content":"What are the statistical properties of the real and imaginary parts of the tap-gain process a(t) in the CLASS model?"},{"role":"assistant","content":"The real and imaginary parts exhibit an identical Gaussian PDF, an identical PDS, and are mutually statistically independent."}]}
+{"messages":[{"role":"user","content":"What are the main assumptions regarding signal bandwidth, modulation and coding rate combinations, and channel models in the simulation scenario?"},{"role":"assistant","content":"The main assumptions are: the signal bandwidth is 50 kHz; the modulation and coding rate combinations are 4-QAM with r = 1/2, 16-QAM with r = 1/2, and 64-QAM with r = 1/2; and the channel models are HT200, HT250, and HT300 at both 400 MHz and 800 MHz."}]}
+{"messages":[{"role":"user","content":"Which propagation model and topographic scenario are used in the example link budgets?"},{"role":"assistant","content":"The Modified Hata propagation model is used in an Urban topographic scenario."}]}
+{"messages":[{"role":"user","content":"How are time-varying path gains modeled in terms of their statistical properties and power spectrum?"},{"role":"assistant","content":"Time-varying path gains are modeled as independent zero-mean Gaussian processes. Their power spectrum obeys the Jakes model, and their mean square values follow the power-delay profile rule in accordance with the GSM model."}]}
+{"messages":[{"role":"user","content":"How is polynomial interpolation used in the described method, and what property of matrix H allows for simplification of the matrix inversion?"},{"role":"assistant","content":"Polynomial interpolation along the frequency axis is used to estimate fading samples at symbol positions that do not carry pilot symbols, following the frequency-domain interpolation of the IBCE method. The matrix inversion required by BCE can be simplified due to the low-density of the matrix H."}]}
+{"messages":[{"role":"user","content":"When was version V1.2.1 of the document published?"},{"role":"assistant","content":"Version V1.2.1 was published in November 2016."}]}
+{"messages":[{"role":"user","content":"Which Multi-mode Radio models are supported by Smart MDM Professional?"},{"role":"assistant","content":"Smart MDM Professional supports the following Multi-mode Radio models: PDC760, PTC760, PTC680, PDC550, H12, and H821."}]}
+{"messages":[{"role":"user","content":"What information must be provided to Hytera to generate the License file?"},{"role":"assistant","content":"The dongle side ID and Key ID must be provided to Hytera for making the License file."}]}
+{"messages":[{"role":"user","content":"What are the prerequisites for importing the IDS License?"},{"role":"assistant","content":"You must have obtained the license file of the dongle in the format of .license, and the dongle must have been inserted to the IDS."}]}
+{"messages":[{"role":"user","content":"Does purchasing the product grant the purchaser any rights to Hytera's computer programs?"},{"role":"assistant","content":"No, the purchase of this product shall not be deemed to grant, either directly or by implication, any rights to the purchaser regarding Hytera's computer programs."}]}
+{"messages":[{"role":"user","content":"G2.0项目配件显示规范文档的主要读者群体包括哪些人员？"},{"role":"assistant","content":"编写相关软件开发人员和相关软件测试员。"}]}
+{"messages":[{"role":"user","content":"在V2.0.01版本中，针对窄带呼叫过程补充了什么关于附件提示音的说明？"},{"role":"assistant","content":"补充窄带呼叫过程中不响附件提示音。"}]}
+{"messages":[{"role":"user","content":"R3.05.01版本中关于执法记录仪终端VM680增加了什么备注？"},{"role":"assistant","content":"增加商业终端产品线的执法记录仪终端VM680不再支持与终端主机显示交互功能的备注。"}]}
+{"messages":[{"role":"user","content":"R4.2版本补充了哪类机型的电池和配件识别说明？"},{"role":"assistant","content":"防爆机型。"}]}
+{"messages":[{"role":"user","content":"防爆终端的配件清单包含哪些型号？"},{"role":"assistant","content":"防爆终端的配件清单包含：SM18N20-Ex、EHN32P-Ex、ACN-02P、ES-02、EH-01、ES-01。"}]}
+{"messages":[{"role":"user","content":"型号 SM18N20-Ex 和 EHN32P-Ex 分别对应什么类型的配件？"},{"role":"assistant","content":"SM18N20-Ex 为防爆肩咪；EHN32P-Ex 为 13PIN 连接的防爆耳机。"}]}
+{"messages":[{"role":"user","content":"在防爆终端配件中，哪些型号属于音频转接头防爆耳机？"},{"role":"assistant","content":"ACN-02P、ES-02、EH-01、ES-01 这 4 款为音频转接头防爆耳机。"}]}
+{"messages":[{"role":"user","content":"R2.5版本提供的安卓7.0原生USB连接方式有哪些，各自采用什么协议或功能？"},{"role":"assistant","content":"R2.5提供四种USB连接方式： 1. 仅连接：停用USB传输功能，降低电量消耗。 2. 传输文件：采用MTP协议，终端作为媒体设备连接到电脑，支持在Windows/Mac上传输文件。 3. 传输图片：采用PTP协议，终端作为图库设备连接到电脑，仅支持传输图库文件。 4. MIDI设备：可将终端的声音图像传至电视。"}]}
+{"messages":[{"role":"user","content":"What steps are required to convert the current webpage to its computer version?"},{"role":"assistant","content":"Tap Request desktop site."}]}
+{"messages":[{"role":"user","content":"What are the recommended steps for cleaning the product safely?"},{"role":"assistant","content":"Turn off the product and remove the battery before cleaning. Regularly clean dust and fine particles from the product surface and charging piece with a clean, dry, lint-free cloth or a brush. For keys, knobs, and the front case after long-time use, use neutral cleanser and non-woven fabric. Ensure the product is completely dry before use."}]}
+{"messages":[{"role":"user","content":"Which substances and actions should be avoided to prevent damage to the product?"},{"role":"assistant","content":"Do not pierce or scrape the product. Keep it away from substances that can corrode the circuitry. Do not hold the product by its antenna or earpiece cable. Avoid using chemical preparations such as stain removers, alcohol, sprays, or oil preparations to prevent surface case damage."}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属如何界定？"},{"role":"assistant","content":"Hytera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。我司仅对自有商标及产品名称享有所权，本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 是否兼容窄带终端和执法记录仪，支持哪些操作？"},{"role":"assistant","content":"兼容对窄带终端和执法记录仪进行写频和升级。"}]}
+{"messages":[{"role":"user","content":"What restrictions apply to the use of Hytera's computer programs included in the product?"},{"role":"assistant","content":"The Company's computer programs may not be copied, modified, distributed, decompiled, or reverse-engineered in any manner without the prior written consent of the Company. Purchasing the product does not grant any rights to the purchaser regarding these programs."}]}
+{"messages":[{"role":"user","content":"Does Hytera provide a warranty for the accuracy or reliability of the manual?"},{"role":"assistant","content":"No, Hytera endeavors to achieve accuracy and completeness but gives no warranty of accuracy or reliability. All specifications and designs are subject to change without notice due to continuous technological development."}]}
+{"messages":[{"role":"user","content":"Does Hytera guarantee the accuracy or validity of third-party products and contents mentioned in the manual?"},{"role":"assistant","content":"No, Hytera does not guarantee the accuracy, validity, timeliness, legitimacy, or completeness of third-party products and contents involved in the manual for any particular purpose."}]}
+{"messages":[{"role":"user","content":"G2.0项目相机和图库操作和功能需求文档的主要读者是谁？"},{"role":"assistant","content":"编写相关软件概要设计说明书的软件开发人员和相关软件测试员。"}]}
+{"messages":[{"role":"user","content":"V3.05.03版本新增了哪些功能定义？"},{"role":"assistant","content":"新增MC4（PDM680）拍照、录像分辨率选项定义。"}]}
+{"messages":[{"role":"user","content":"文档中的软件界面图是否代表最终交付的UI设计？"},{"role":"assistant","content":"不是。文档中的软件界面图均为示意图，仅用于帮助读者理解需求，具体的交互设计以UI设计的最终交互图稿为准。"}]}
+{"messages":[{"role":"user","content":"Hytera 手册中“危险”符号代表什么含义？"},{"role":"assistant","content":"表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"产品版本为V5.0且发布日期为2023-07的文档版本是多少？"},{"role":"assistant","content":"文档版本 01"}]}
+{"messages":[{"role":"user","content":"插件 PTX_CPS_PUBLIC_V1_0_16_004 的配套版本是多少？"},{"role":"assistant","content":"V1.0.16.000"}]}
+{"messages":[{"role":"user","content":"文档版本00适配了哪款新机型？"},{"role":"assistant","content":"DSJ-HYTS7A1"}]}
+{"messages":[{"role":"user","content":"文档版本00删除了哪些章节？"},{"role":"assistant","content":"删除了“部署服务器(Windows)”章节和“mysql 时区参照表”章节。"}]}
+{"messages":[{"role":"user","content":"MDM Pro 版本支持哪些多模终端机型？"},{"role":"assistant","content":"MDM Pro 版本支持的多模终端包括：PDC580、TPC560、PDC680（国内防爆）、PDC680（单北斗）、PDC690、PDM680、PDC760、PTC760、PDC680、PTC680、PDC550。"}]}
+{"messages":[{"role":"user","content":"在 MDM Pro 版本中，支持的 DMR 窄带终端有哪些？"},{"role":"assistant","content":"MDM Pro 版本支持的 DMR 窄带终端包括：HP70X （防爆）、HP78X （防爆）、HP79XEEx、HP71XEx、HP50X(防爆)、HP56X（防爆）、HP98X、HM78X、HM68X、HM65X、HR106X、HR65X、TP530、HP68X、HP60X、HP660、HP56X、HP50X、PD78X、PD98X、PD68X、PD70X、PD75X、PD79X、PD98XUL、PD98XEx、MD78X、MD78Xi。"}]}
+{"messages":[{"role":"user","content":"MDM SE 版本适用的 TETRA 窄带终端型号有哪些？"},{"role":"assistant","content":"MDM SE 版本适用的 TETRA 窄带终端包括：PT895Ex Fv、PT890Ex、PT590、PT350、PT310。"}]}
+{"messages":[{"role":"user","content":"MDM Pro 版本支持哪些执法记录仪设备？"},{"role":"assistant","content":"MDM Pro 版本支持的执法记录仪包括：DSJ-HYTS5A1、DSJ-HYTS7A1、DSJ-HYTT8A1、VM550、DSJ-HYTH5A1、DSJ-HYTH5A1、DSJ-H6、DSJ-HYTH7A1、DSJ-HYTV5A1。"}]}
+{"messages":[{"role":"user","content":"What is the model number of the battery analyzer mentioned?"},{"role":"assistant","content":"The model number of the battery analyzer is MCA26."}]}
+{"messages":[{"role":"user","content":"文件CentOS-7-x86_64-Minimal-2009.iso对应哪个操作系统版本？libaio-0.3.109-13.el7.x86_64.rpm是什么类型的文件？"},{"role":"assistant","content":"CentOS-7-x86_64-Minimal-2009.iso对应CentOS 7.9操作系统；libaio-0.3.109-13.el7.x86_64.rpm是libaio依赖包。"}]}
+{"messages":[{"role":"user","content":"如何获取 V2C 文件和 License 文件？"},{"role":"assistant","content":"向我司客服提供加密狗侧边 ID 和 C2V 文件，即可获取我司客服提供的 V2C 文件和 License 文件。"}]}
+{"messages":[{"role":"user","content":"What is the host name for updating or attaching a license?"},{"role":"assistant","content":"mdmserver"}]}
+{"messages":[{"role":"user","content":"Which file formats are supported for license updates or attachments?"},{"role":"assistant","content":"V2C, V2CP, H2R, R2H, H2H or ID file"}]}
+{"messages":[{"role":"user","content":"在 MDM Pro 中如何加载 License 文件？"},{"role":"assistant","content":"在弹出的窗口中选择步骤 8 获取的 License 文件，单击 “打开”。"}]}
+{"messages":[{"role":"user","content":"该设备支持与哪些主机进行连接？"},{"role":"assistant","content":"该设备仅与电脑连接。"}]}
+{"messages":[{"role":"user","content":"在正常使用条件下，对讲机主机和标配附件（电池、充电座）的保修期分别是多久？"},{"role":"assistant","content":"主机保修期为24个月，标配附件（电池、充电座）保修期为12个月。"}]}
+{"messages":[{"role":"user","content":"What is the maximum sound output level of the PTC680?"},{"role":"assistant","content":"The PTC680 can output sound at up to 128 dB."}]}
+{"messages":[{"role":"user","content":"What is the title of the authorized person who signed on behalf of Hytera Communications Corporation Limited?"},{"role":"assistant","content":"Executive Vice President"}]}
+{"messages":[{"role":"user","content":"What are the steps to access the Import License function in MDM Pro?"},{"role":"assistant","content":"1. Sign into MDM Pro with the \"admin\" account. 2. In the upper-right corner, click the user name. 3. Click Import License."}]}
+{"messages":[{"role":"user","content":"版本 R3.0_V2.0 和 R1.0_V1.0 的发布日期及主要描述是什么？"},{"role":"assistant","content":"R3.0_V2.0 发布于 2020-02，描述为增加安全描述；R1.0_V1.0 发布于 2017-12，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"在河南定制需求中，窄带主界面的Hotseat默认显示哪些应用？对讲机APP的默认行为是什么？"},{"role":"assistant","content":"河南定制需求中，窄带主界面显示菜单、对讲设置、对讲机APP。其中，对讲机APP默认在组群页面，即每次进去都是组群页面。"}]}
+{"messages":[{"role":"user","content":"在R4.0版本中，开启“调整菜单内应用位置”配置后，用户如何操作才能将菜单内的APP拖动到桌面？"},{"role":"assistant","content":"若此参数开启，允许用户长按APP，将菜单内的APP拖动调整到桌面。"}]}
+{"messages":[{"role":"user","content":"将产品返回进行更换或维护前，需要满足哪些包装和检验要求？"},{"role":"assistant","content":"在运回之前需对产品进行检验，确认产品已经正确编程且未遭受产品质量保证规定以外的损坏。产品送回时必须带有原包装，或包装正确，以保证在运输途中不受损坏。"}]}
+{"messages":[{"role":"user","content":"该设备在配备标配电池和选配电池时的外形尺寸及重量分别是多少？"},{"role":"assistant","content":"配备标配电池时，外形尺寸为138.5mm×55.1mm×38.5mm，重量为363g；配备选配电池时，外形尺寸为138.5mm×55.1mm×32.8mm，重量为325g。以上尺寸均不带天线，重量带天线。"}]}
+{"messages":[{"role":"user","content":"Which models share the code 50030100001582?"},{"role":"assistant","content":"R6307, R6309, and R6310"}]}
+{"messages":[{"role":"user","content":"Which models are associated with the code 50030100001961?"},{"role":"assistant","content":"R6321, R6322, and R6327"}]}
+{"messages":[{"role":"user","content":"写频前对CPS插件有什么要求？"},{"role":"assistant","content":"需上传与设备配置版本配套的CPS插件，该插件包含公共模板插件和差异模板插件。"}]}
+{"messages":[{"role":"user","content":"MDM Pro 文档 V5.5 版本的发布日期是什么时候？"},{"role":"assistant","content":"2024-10"}]}
+{"messages":[{"role":"user","content":"MDM Pro 的软件版本是多少？"},{"role":"assistant","content":"V5.5.12.012"}]}
+{"messages":[{"role":"user","content":"MDM SE 的软件版本是多少？"},{"role":"assistant","content":"V5.5.11.012"}]}
+{"messages":[{"role":"user","content":"多模智能终端 PDC680 的版本号是多少？"},{"role":"assistant","content":"V4.5.001407"}]}
+{"messages":[{"role":"user","content":"宽带终端 PNC560 对应的软件版本是什么？"},{"role":"assistant","content":"V2.0.13.005.01"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端 HP785 的版本信息为何？"},{"role":"assistant","content":"A2.5.09.015"}]}
+{"messages":[{"role":"user","content":"请列出该设备配备的所有传感器类型。"},{"role":"assistant","content":"该设备配备距离传感器、环境光传感器、6轴电子罗盘、气压传感器、陀螺仪和加速传感器。"}]}
+{"messages":[{"role":"user","content":"该设备可选配的电池规格是什么？"},{"role":"assistant","content":"选配电池容量为4000mAh，额定电压为7.6V。"}]}
+{"messages":[{"role":"user","content":"该设备符合哪些关于冲击、振动和静电放电的标准？"},{"role":"assistant","content":"冲击和振动符合 MIL-STD-810 G 标准，静电放电符合 IEC 61000-4-2 Level 3 标准。"}]}
+{"messages":[{"role":"user","content":"该设备的湿度耐受条件是什么？"},{"role":"assistant","content":"依据 MIL-STD 810 标准，在温度 ≤ +65°C 时，湿度耐受为 95%RH。"}]}
+{"messages":[{"role":"user","content":"What disclaimer applies to third-party products and contents mentioned in the manual?"},{"role":"assistant","content":"There is no guarantee regarding the accuracy, validity, timeliness, legitimacy, or completeness of third-party products and contents for any particular purpose."}]}
+{"messages":[{"role":"user","content":"What disclaimer is provided regarding the Third Party products and contents mentioned in the manual?"},{"role":"assistant","content":"There is no guarantee for any particular purpose regarding the accuracy, validity, timeliness, legitimacy, or completeness of the Third Party products and contents involved in the manual."}]}
+{"messages":[{"role":"user","content":"What actions should be avoided to prevent physical damage or corrosion to the product?"},{"role":"assistant","content":"To prevent damage, do not pierce or scrape the product, keep it away from substances that can corrode the circuitry, and do not hold the product by its antenna or earpiece cable."}]}
+{"messages":[{"role":"user","content":"What is the correct procedure for cleaning the product's surface, charging piece, keys, knobs, and front case?"},{"role":"assistant","content":"Turn off the product and remove the battery before cleaning. Regularly clean dust and fine particles on the surface and charging piece with a clean and dry lint-free cloth or a brush. After long-time use, use neutral cleanser and non-woven fabric to clean the keys, knobs, and front case. Ensure the product is completely dry before use."}]}
+{"messages":[{"role":"user","content":"Which chemical preparations are prohibited for cleaning the product to avoid surface case damage?"},{"role":"assistant","content":"Do not use stain removers, alcohol, sprays, or oil preparations, as these can cause surface case damage."}]}
+{"messages":[{"role":"user","content":"在V2.6.0.0版本中，当存储空间不足多少时会停止录像？"},{"role":"assistant","content":"在V2.6.0.0版本中，当存储空间不足10G时停止录像。"}]}
+{"messages":[{"role":"user","content":"V2.6.0.0版本目前的预装状态是怎样的？"},{"role":"assistant","content":"V2.6.0.0版本目前取消了预装，待整体方案成熟后再进行预置。"}]}
+{"messages":[{"role":"user","content":"V3.0.05版本中针对第三方OTG摄像头配件的分辨率处理方式做了什么修改？"},{"role":"assistant","content":"因配件摄像头的分辨率无法统一，改成动态读取配件分辨率的做法。"}]}
+{"messages":[{"role":"user","content":"R2.5版本终端在配套使用时有哪些版本兼容性要求及功能限制？"},{"role":"assistant","content":"R2.5版本的终端需与R2.5版本的MDM、采集站配套使用。若和R2.0及之前版本的采集站配套使用，不支持数据采集。"}]}
+{"messages":[{"role":"user","content":"R3.0版本中水印设置的默认格式是什么，是否支持配置？"},{"role":"assistant","content":"R3.0版本中水印设置默认为时间格式（YYYYMMDD HH:MM:SS），支持通过写频和菜单进行配置。"}]}
+{"messages":[{"role":"user","content":"在R3.0版本中，当终端存储剩余空间不足多少时APP会停止摄录？此时系统会给出什么提示？"},{"role":"assistant","content":"当终端存储不足10G（R3.0可配）时，APP停止摄录并保存记录，告知“预留空间不足”。"}]}
+{"messages":[{"role":"user","content":"How can you convert the current webpage to the computer version?"},{"role":"assistant","content":"Tap Request desktop site."}]}
+{"messages":[{"role":"user","content":"文档版本 04 (V1.0, 2020-10) 更新了哪些内容？"},{"role":"assistant","content":"版本 04 新增适配机型 PNC380；更新定位服务安装包为 hytera_deploy_linux-amd64_v0.2.0.zip，同时更新安装部署 PPS 中的操作命令。"}]}
+{"messages":[{"role":"user","content":"PDC760、PDC680、PTC760、PTC680 以及 PNC380 终端支持 PPS 服务所需的最低版本分别是多少？"},{"role":"assistant","content":"PDC760、PDC680、PTC760、PTC680 需要 V3.5 及以上版本；PNC380 需要 V2.5 及以上版本。"}]}
+{"messages":[{"role":"user","content":"Which hardware models and their corresponding versions are included in the product information?"},{"role":"assistant","content":"The hardware models and versions are PDC760 (V1.0.001A and V1.0.001N) and PTC760 (V1.0.001)."}]}
+{"messages":[{"role":"user","content":"How does the super administrator manage roles, administrators, workstations, devices, and radio licenses?"},{"role":"assistant","content":"The super administrator manages these entities by groups. Administrators, workstations, and devices are assigned to different groups for independent management."}]}
+{"messages":[{"role":"user","content":"What steps are required to view status information such as IMEI and software version on the device?"},{"role":"assistant","content":"In the Device info interface, tap Status. Then, tap the corresponding tabs to check SIM card, International mobile equipment identity (IMEI), software version, baseband version, WLAN, BT, and more."}]}
+{"messages":[{"role":"user","content":"Which specific legal documents can be viewed in the Legal information section?"},{"role":"assistant","content":"You can view the Hytera software license, Hytera privacy policy, Hytera version declare, third-party licenses, and system WebView licenses."}]}
+{"messages":[{"role":"user","content":"Which earset model is designed to be used with a PTT & MIC cable?"},{"role":"assistant","content":"EH-02 and ES-01"}]}
+{"messages":[{"role":"user","content":"What are the two conditions for operating a license-exempt radio device under Industry Canada's CNR?"},{"role":"assistant","content":"The two conditions are: (1) the device must not cause interference, and (2) the user must accept any radio interference received, even if such interference may compromise the operation of the device."}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.5 版本文档新增了哪些章节？"},{"role":"assistant","content":"新增“3.1.2 从 R5.2 升至 R5.3”、“3.1.1 从 R5.3 升至 R5.5”、“3.4 授权加密狗与更换 License 文件”章节。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.2 版本文档主要新增了什么内容？"},{"role":"assistant","content":"新增从 R5.1 版本升级到 R5.2 版本的内容。"}]}
+{"messages":[{"role":"user","content":"在 MDM R5.5 版本中，“Features”栏显示的旗舰版与基础版授权信息代码分别是什么？"},{"role":"assistant","content":"在 MDM R5.5 版本中，“Features”栏的旗舰版授权信息对应 141，基础版授权信息对应 131。"}]}
+{"messages":[{"role":"user","content":"如何向 MDM Pro 上传 License 文件？"},{"role":"assistant","content":"需使用 “admin” 账号登录 MDM Pro，然后上传 License 文件。"}]}
+{"messages":[{"role":"user","content":"当终端没有开通license时，该业务功能的状态如何？"},{"role":"assistant","content":"当终端没有开通license时，该功能无效。"}]}
+{"messages":[{"role":"user","content":"哪些型号属于多模终端？"},{"role":"assistant","content":"多模终端包括：PDC760、PTC760、PDC680、PTC680、PDC550。"}]}
+{"messages":[{"role":"user","content":"Windows驱动程序包-libusb-win32 Ambarella Evalution Board Device 是用于哪种设备的驱动？"},{"role":"assistant","content":"执法记录仪驱动。"}]}
+{"messages":[{"role":"user","content":"宽带终端列表中包含了哪些具体型号？"},{"role":"assistant","content":"宽带终端包括：PNC550、PNC550 R2、PNC380、PNC370、PNC370SE、MNC360、PNC560、PNC560 SCAN、PNC460、PNC380D。"}]}
+{"messages":[{"role":"user","content":"执法记录仪有哪些型号及其对应的别名？"},{"role":"assistant","content":"执法记录仪型号包括：VM550、VM550D/DSJ-HYTH5A1、VM680/DSJ-H6、VM780/DSJ-HYTH7A1、VM580D/DSJ-HYTV5A1、SC580/DSJ-HYTS5A1、DSJ-HYTT8A1。"}]}
+{"messages":[{"role":"user","content":"如何查看设备的型号、序列号及软件版本等信息？"},{"role":"assistant","content":"打开系统设置应用，选择“设备信息”，即可查看型号、存储、序列号及软件版本等信息。"}]}
+{"messages":[{"role":"user","content":"What is the stock code of Hytera Communications Limited?"},{"role":"assistant","content":"002583.SZ"}]}
+{"messages":[{"role":"user","content":"“双4G智能切换”功能适用的终端版本是什么？"},{"role":"assistant","content":"本功能仅适用Android10版本的终端。"}]}
+{"messages":[{"role":"user","content":"版本 R2.0_V1.0 的主要用途是什么？"},{"role":"assistant","content":"指导用户将 Smart MDM 从以下版本升级至 V2.0.16.000。"}]}
+{"messages":[{"role":"user","content":"插件 G2_CPS_Public 在版本 V2.0.05.005 时的描述和更新者分别是什么？"},{"role":"assistant","content":"描述为“管理端多模终端公共模板”，更新者为 lxwop。"}]}
+{"messages":[{"role":"user","content":"插件 G2_CPS_diff_V 在版本 V1.5.09.201 时的上传进度状态如何？"},{"role":"assistant","content":"完成"}]}
+{"messages":[{"role":"user","content":"Which steps involve license management in DMR Radio Management?"},{"role":"assistant","content":"Upload the license and Push the license."}]}
+{"messages":[{"role":"user","content":"What steps are required to upload a License in MDM Pro?"},{"role":"assistant","content":"In the navigation bar of the MDM Pro, go to Multi-mode > License. Click Upload, and then upload the License."}]}
+{"messages":[{"role":"user","content":"What is the required action for upgrading Smart MDM from version V3.0.06.003 or earlier to V4.5.10.000?"},{"role":"assistant","content":"Consult Hytera technical service personnel."}]}
+{"messages":[{"role":"user","content":"PDC680、PDC690和PDC690S机型支持哪些工作模式？"},{"role":"assistant","content":"支持“常规”和“集群”工作模式。"}]}
+{"messages":[{"role":"user","content":"哪些版本的PoC软件支持多模终端的切组同步功能？"},{"role":"assistant","content":"支持切组同步功能的PoC软件版本包括：POC3000/POC6000 版本 3.1 / 3.2，以及 POC9000 最新版本 4.7。"}]}
+{"messages":[{"role":"user","content":"V4.1.0.11版本中批量下发联系人功能有哪些特性？"},{"role":"assistant","content":"终端窄带功能禁用，不会受到远程锁定的影响，且会给终端发送通知提醒用户。"}]}
+{"messages":[{"role":"user","content":"文档 V00 版本的发布时间和主要内容是什么？"},{"role":"assistant","content":"V00 版本于 2025-12 首次发布，主要发布了 U3 频段。"}]}
+{"messages":[{"role":"user","content":"文档 V01 版本的发布时间及发布次序是怎样的？"},{"role":"assistant","content":"V01 版本于 2026-05 发布，为第二次发布。"}]}
+{"messages":[{"role":"user","content":"产品送回进行返回更换或返回维护时，对包装有什么要求？"},{"role":"assistant","content":"产品送回时必须带有原包装，或包装正确，以保证在运输途中不受损坏。"}]}
+{"messages":[{"role":"user","content":"摄像头和闪光灯功能在什么版本的设备上支持？"},{"role":"assistant","content":"仅高配版支持摄像头和闪光灯。"}]}
+{"messages":[{"role":"user","content":"该设备的静电防护等级（ESD）具体指标是什么？"},{"role":"assistant","content":"符合IEC61000-4-2 Level4标准，接触放电为±8kV，空气放电为±15kV。"}]}
+{"messages":[{"role":"user","content":"音频模块中的宽带模块型号是多少？"},{"role":"assistant","content":"音频模块中的宽带模块型号是 U4100。"}]}
+{"messages":[{"role":"user","content":"What is the version number for DTW?"},{"role":"assistant","content":"V5.1.06.006"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端 PD680 的最新版本是多少？"},{"role":"assistant","content":"窄带 DMR 终端 PD680 的最新版本是 V10.0.02.003。"}]}
+{"messages":[{"role":"user","content":"型号 PTC680 有哪些不同的起始版本及其对应的最新版本？"},{"role":"assistant","content":"PTC680 有两个版本分支：起始版本 V2.5.00102 对应最新版本 V3.5.00802；起始版本 V2.5.001G2 对应最新版本 V3.5.008G2。"}]}
+{"messages":[{"role":"user","content":"What is the firmware version V3.09.13.020 associated with in the narrowband TETRA terminal list?"},{"role":"assistant","content":"The firmware version V3.09.13.020 is associated with the MT680 terminal."}]}
+{"messages":[{"role":"user","content":"插件 G2_CPS_Te 的版本和配置版本分别是多少？"},{"role":"assistant","content":"插件 G2_CPS_Te 的版本是 V3.5.07.0，配置版本也是 V3.5.07.0。"}]}
+{"messages":[{"role":"user","content":"R4.5 版本支持哪些同频中转相关的转发功能和管理特性？"},{"role":"assistant","content":"支持 DM-SFR 直通到同频中转、高功率转发、自身语音/数据接收、无条件中转接入管理，以及转发所有语音、数据和信令。"}]}
+{"messages":[{"role":"user","content":"在 R4.5 版本中，同频中转的 UI 指示和菜单操作有哪些表现？"},{"role":"assistant","content":"UI 指示包括待机 DM-R 和 Icon，以及普通和紧急语音转发图片；菜单中包含同频中转选项，且可编程按键可设置为同频中转开关。"}]}
+{"messages":[{"role":"user","content":"如何查看终端的设备编码（Modelnumber）和机型（ModelName）？"},{"role":"assistant","content":"可通过终端标签查看终端的设备编码（Modelnumber）和机型（ModelName）。"}]}
+{"messages":[{"role":"user","content":"如何查看终端的设备型号和设备编码？"},{"role":"assistant","content":"可通过终端标签查看设备型号和设备编码。"}]}
+{"messages":[{"role":"user","content":"在Smart MDM专业版中，添加执法记录仪信息后需要满足什么条件才能管控该设备？"},{"role":"assistant","content":"添加执法记录仪信息后，Smart MDM专业版才能管控该执法记录仪。"}]}
+{"messages":[{"role":"user","content":"该设备支持与哪些外部设备进行连接？"},{"role":"assistant","content":"该设备仅与电脑连接。"}]}
+{"messages":[{"role":"user","content":"对讲机主机和标配附件（如电池、充电座）的保修期分别是多久？"},{"role":"assistant","content":"主机的保修期为24个月，标配附件（电池、充电座）的保修期为12个月。"}]}
+{"messages":[{"role":"user","content":"该设备配备了哪些类型的传感器？"},{"role":"assistant","content":"该设备配备距离传感器、环境光传感器、6轴电子罗盘、气压传感器、陀螺仪和加速传感器。"}]}
+{"messages":[{"role":"user","content":"What is the release date of Smart MDM Professional Version R2.7 V1.0?"},{"role":"assistant","content":"Nov 2019"}]}
+{"messages":[{"role":"user","content":"What is the target firmware version for the PD780 DMR Radio?"},{"role":"assistant","content":"The target firmware version for the PD780 DMR Radio is V9.00.06.001."}]}
+{"messages":[{"role":"user","content":"Which Tetra Radio models have a target firmware version of V3.09.02.007?"},{"role":"assistant","content":"The Tetra Radio models with a target firmware version of V3.09.02.007 are PT580H Plus, PT790Ex, and Z1p."}]}
+{"messages":[{"role":"user","content":"Which devices are listed as broadband terminals?"},{"role":"assistant","content":"The broadband terminals are PNC660, PNC660Ex, P50E, P60, W60, RPC 360s, P50, P50 Pro, MNC360, PNC550, PNC550 R2, PNC380, PNC370, PNC370SE, PNC360S, MNC360, PNC560, PNC560 SCAN, PNC460, and PNC380D."}]}
+{"messages":[{"role":"user","content":"Is the PDC690 classified as a broadband terminal in the provided list?"},{"role":"assistant","content":"No, the PDC690 is not listed as a broadband terminal. It appears in the initial list separate from the broadband terminals section."}]}
+{"messages":[{"role":"user","content":"Smart MDM 软件版本 R2.5_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"R2.5_V1.0 版本的发布日期为 2019-06，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版和 KMC 的应用软件版本分别是多少？"},{"role":"assistant","content":"Smart MDM 专业版的版本是 V2.5.20.000，KMC 的版本是 V2.5.05.000。"}]}
+{"messages":[{"role":"user","content":"多模智能终端 PDC760 有哪些可用版本及其对应类型？"},{"role":"assistant","content":"多模智能终端 PDC760 的版本包括：V2.5.001101 (标准版)、V2.5.0011G1 (标准版)、V2.5.001102 (北美版) 和 V2.5.0011G2 (北美版)。"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端中，PD680、PD700、PD750、PD780、PD98X 和 MD78X 的软件版本是多少？"},{"role":"assistant","content":"窄带 DMR 终端 PD680、PD700、PD750、PD780、PD98X 和 MD78X 的软件版本均为 V9.00.06.001。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Pro V2.5.20.000 版本主要介绍了哪些方面的内容？"},{"role":"assistant","content":"该版本主要介绍了相比前一版本 V2.0.16.000 的新增功能和优化功能。"}]}
+{"messages":[{"role":"user","content":"若要查看 Smart MDM Pro V2.0.16.000 版本的功能介绍，应参考哪份文档？"},{"role":"assistant","content":"应参见《Smart MDM 专业版_版本指南_R2.0_V1.0》。"}]}
+{"messages":[{"role":"user","content":"本次更新中，多模智能终端 PDC7 系列和 PTC7 系列的配置指南版本号是多少？"},{"role":"assistant","content":"两个系列的配置指南版本号均为 R2.5_V4.0。"}]}
+{"messages":[{"role":"user","content":"Hypera商标的所有权归属于哪家公司？"},{"role":"assistant","content":"Hypera是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标，海能达对其享有所有权。"}]}
+{"messages":[{"role":"user","content":"Which product is covered by the EU Declaration of Conformity issued by Hytera Communications Corporation Limited?"},{"role":"assistant","content":"The product covered is the Advanced multimode radio."}]}
+{"messages":[{"role":"user","content":"序列号为 0607RD1511 的设备的 TEI/ESN 是多少？"},{"role":"assistant","content":"0001302F0002110"}]}
+{"messages":[{"role":"user","content":"TEI/ESN 为 0001302F0009410 的设备型号是什么？"},{"role":"assistant","content":"PTC680(TETRA)"}]}
+{"messages":[{"role":"user","content":"E_Key 文件支持哪些文件格式？"},{"role":"assistant","content":".ppt 或 .dmr 格式。"}]}
+{"messages":[{"role":"user","content":"序列号为0607RD1005的设备型号是什么？"},{"role":"assistant","content":"PDC760(PDT)"}]}
+{"messages":[{"role":"user","content":"序列号为0607RD1687的设备的IMEI是多少？"},{"role":"assistant","content":"00210612080001686"}]}
+{"messages":[{"role":"user","content":"Rosie V3.05.10 版本增加了什么功能？"},{"role":"assistant","content":"增加E机型下的状态消息描述，DM-12065"}]}
+{"messages":[{"role":"user","content":"Rosie V3.05.11 版本在发送状态消息成功时有什么表现？"},{"role":"assistant","content":"无提示音"}]}
+{"messages":[{"role":"user","content":"ENS V1.7.1模式下终端处理状态消息的流程受系统广播的空口协议版本影响吗？"},{"role":"assistant","content":"不受影响。无论系统广播的空口协议版本是什么，终端均按照ENS V1.7.1标准流程处理状态消息。"}]}
+{"messages":[{"role":"user","content":"当系统未广播空口协议版本或版本为V1.5.1及V1.6.1时，终端采用哪种模式处理状态消息？"},{"role":"assistant","content":"终端按照Hytera模式处理。"}]}
+{"messages":[{"role":"user","content":"当终端状态码版本为ENS V1.7.1时，SFID 100~124状态码的接收表现是什么？"},{"role":"assistant","content":"可以正常接收，但是只显示状态码，消息内容为空。"}]}
+{"messages":[{"role":"user","content":"ENS集群系统在R4.0版本如何向终端广播系统侧使用的协议标准？"},{"role":"assistant","content":"通过Aloha信令给终端广播。"}]}
+{"messages":[{"role":"user","content":"在R3.0版本中，如果终端收到的状态消息不是用户自定义状态码，系统会如何处理？"},{"role":"assistant","content":"不作消息提示和显示，也不会存入状态消息列表。"}]}
+{"messages":[{"role":"user","content":"宽带终端包含哪些型号？"},{"role":"assistant","content":"宽带终端包含：PNC550、PNC380、PNC380S。"}]}
+{"messages":[{"role":"user","content":"PDT终端有哪些具体型号？"},{"role":"assistant","content":"PDT终端包括：HP780、HP700、HP680、HP600、HM780。"}]}
+{"messages":[{"role":"user","content":"What are the current version numbers for Smart MDM, Smart MDM Lite, KMS, and IDS?"},{"role":"assistant","content":"The version numbers are: Smart MDM V3.5.15.000, Smart MDM Lite V3.5.09.000, KMS V2.0.08.000, and IDS V3.5.03.001."}]}
+{"messages":[{"role":"user","content":"What is the firmware version for the PD98X radio in the first listed column?"},{"role":"assistant","content":"The firmware version for the PD98X radio in the first listed column is V8.05.07.004."}]}
+{"messages":[{"role":"user","content":"Which Tetra Radio models share the firmware version V3.08.71.008 in the first listed column?"},{"role":"assistant","content":"The Tetra Radio models that share the firmware version V3.08.71.008 in the first listed column are PT580H Plus, PT790Ex, Z1p, and PT580H Plus UL913."}]}
+{"messages":[{"role":"user","content":"What are the benefits of using the same template to program radios of different versions or models?"},{"role":"assistant","content":"Using the same template reduces repetitive parameter setting and improves the efficiency of programming multiple radios."}]}
+{"messages":[{"role":"user","content":"Which organization holds the copyright for this document as of 2020?"},{"role":"assistant","content":"Hytera Communications Corporation Limited"}]}
+{"messages":[{"role":"user","content":"Which device model supports Kiosk Mode, and how can a user exit this mode?"},{"role":"assistant","content":"Kiosk Mode is only applicable to the PNC550. Users can exit kiosk mode by entering the preset password."}]}
+{"messages":[{"role":"user","content":"What are the Index and Version values for the TEK entry with ID 4?"},{"role":"assistant","content":"Index 1, Version 2"}]}
+{"messages":[{"role":"user","content":"PDC760(DMR)型号设备的序列号和IMEI是什么？"},{"role":"assistant","content":"序列号是0607RD1687，IMEI是00210612080001686。"}]}
+{"messages":[{"role":"user","content":"序列号0607RD1005对应的设备型号是什么？"},{"role":"assistant","content":"设备型号为PDC760(PDT)。"}]}
+{"messages":[{"role":"user","content":"对于本文件中不注日期的引用文件，应适用哪个版本？"},{"role":"assistant","content":"其最新版本（包括所有的修改单）适用于本文件。"}]}
+{"messages":[{"role":"user","content":"陆地移动通信设备的电磁兼容技术要求和测量方法依据哪个国家标准？"},{"role":"assistant","content":"依据GB/T 15540标准。"}]}
+{"messages":[{"role":"user","content":"LAI 中的省级码 (Zone) 为 01₂ 时，对应哪些省、自治区、直辖市或特别行政区？"},{"role":"assistant","content":"对应的地区包括：内蒙古自治区、湖南省、四川省、江苏省、新疆维吾尔自治区/新疆生产建设兵团、福建省、天津市、澳门特别行政区。"}]}
+{"messages":[{"role":"user","content":"ePDT通信系统中的设备的电磁兼容性应符合哪个标准的规定？"},{"role":"assistant","content":"应符合 GB/T 15540 的规定。"}]}
+{"messages":[{"role":"user","content":"配件型号 EH-02 和 ES-01 在使用时有什么共同要求？"},{"role":"assistant","content":"EH-02（耳挂式只接收耳机）和 ES-01（耳塞式只接收耳机）均需搭配 PTT&MIC 控制线使用。"}]}
+{"messages":[{"role":"user","content":"多模智能终端的型号和版本分别是什么？"},{"role":"assistant","content":"型号为 PDC760，版本为 V3.0.001101"}]}
+{"messages":[{"role":"user","content":"宽带终端 PNC550 的版本号是多少？"},{"role":"assistant","content":"V1.0.19.001.02"}]}
+{"messages":[{"role":"user","content":"型号为 HP780 的窄带 PDT 终端对应的软件版本是什么？"},{"role":"assistant","content":"V01.1.02.002"}]}
+{"messages":[{"role":"user","content":"窄带 TETRA 终端 PT310 的版本信息是什么？"},{"role":"assistant","content":"V4.01.13.018"}]}
+{"messages":[{"role":"user","content":"What Bluetooth version and modes are supported?"},{"role":"assistant","content":"Bluetooth V4.2 is supported with BDR, EDR, and BLE modes."}]}
+{"messages":[{"role":"user","content":"该终端的AP处理器规格和操作系统版本分别是什么？"},{"role":"assistant","content":"AP处理器为八核处理器，主频2.0GHz；操作系统为Android 7.0。"}]}
+{"messages":[{"role":"user","content":"该设备配备了哪些传感器？"},{"role":"assistant","content":"距离传感器、环境光传感器、6轴电子罗盘、气压传感器、陀螺仪、加速传感器。"}]}
+{"messages":[{"role":"user","content":"设备标配电池的容量和额定电压是多少？是否有选配电池？"},{"role":"assistant","content":"标配电池为 2900mAh 锂聚合物电池，额定电压 7.6V；选配电池容量为 4000mAh，额定电压 7.6V。"}]}
+{"messages":[{"role":"user","content":"What are the memory specifications for the broadband version of the device?"},{"role":"assistant","content":"The broadband version has 3GB RAM and 32GB eMMC ROM, and is expandable to 128GB with a Micro SD card."}]}
+{"messages":[{"role":"user","content":"Which standards does the PDC760 meet for shock, vibration, and ESD protection?"},{"role":"assistant","content":"The device meets MIL-STD-810 G for shock and vibration, and IEC 61000-4-2 (Level 3) for ESD."}]}
+{"messages":[{"role":"user","content":"How can frontline officers use third-party apps and accessories with the PDC760?"},{"role":"assistant","content":"Frontline officers can check vehicle and driver information through custom third-party apps installed on the radio and connect specific accessories like a BT printer for field printing tickets."}]}
+{"messages":[{"role":"user","content":"What communication capabilities and features does the PDC760 provide?"},{"role":"assistant","content":"The PDC760 provides mission-critical voice communication and allows the installation of third-party apps."}]}
+{"messages":[{"role":"user","content":"What is the benefit of using the PDC760 regarding device management?"},{"role":"assistant","content":"Users no longer need to carry several devices or frequently change devices."}]}
+{"messages":[{"role":"user","content":"V2.0.000版本对电话本中的联系人数量进行了怎样的调整？"},{"role":"assistant","content":"从1000扩容至2000"}]}
+{"messages":[{"role":"user","content":"在拨号时，ISSI、SNA、FSSN、Full Run和Short Run类型号码前面的零是否计算位数？"},{"role":"assistant","content":"不算位数。"}]}
+{"messages":[{"role":"user","content":"What change was introduced in Document Version 01 released in November 2024?"},{"role":"assistant","content":"Document Version 01, released in November 2024, added distributed deployment."}]}
+{"messages":[{"role":"user","content":"What value must be assigned to 'mdm.disasterRecovery.model' in the 'config.properties' file to enable disaster recovery mode, and where is this file located?"},{"role":"assistant","content":"The file 'config.properties' is located in '/home/nrm/serviceTerminalHandle'. Set 'mdm.disasterRecovery.model' to '1', which indicates dual IP mode or disaster recovery mode. A value of '0' indicates non-disaster recovery."}]}
+{"messages":[{"role":"user","content":"PPS 支持哪些终端类型及版本要求？"},{"role":"assistant","content":"支持的终端类型包括 PDC760、PDC680、PTC760、PTC680，终端版本需为 V3.5 及以上版本。"}]}
+{"messages":[{"role":"user","content":"如何查看设备的电池版本、健康度及充放电次数？"},{"role":"assistant","content":"点击“设置”，在“电池”中选择“电池状态”，即可查看电池版本、电池健康度及充放电次数等信息。"}]}
+{"messages":[{"role":"user","content":"该产品的保修期限是多少，使用非指定配件有何后果？"},{"role":"assistant","content":"主机保修期为 24 个月，标配附件（电池、充电座）保修期为 12 个月。若擅自使用未经许可的配件，由此导致的一切后果由用户自行负责。"}]}
+{"messages":[{"role":"user","content":"PTT&MIC 控制线（型号 ACN-02）需要搭配哪种类型的耳机使用？"},{"role":"assistant","content":"需搭配只接收耳机使用。"}]}
+{"messages":[{"role":"user","content":"型号为 BP2402 和 BP4005 的配件分别是什么规格的电池？"},{"role":"assistant","content":"BP2402 是 2400mAh 智能聚合物锂电池，BP4005 是 4000mAh 智能聚合物锂电池。"}]}
+{"messages":[{"role":"user","content":"海能达是否对本手册中涉及的第三方产品和内容的准确性或合法性提供保证？"},{"role":"assistant","content":"不提供保证。海能达对第三方产品和内容的准确性、有效性、及时性、合法性或完整性均不提供保证。"}]}
+{"messages":[{"role":"user","content":"本文件发布机构对声明中涉及的专利持何种立场？"},{"role":"assistant","content":"本文件的发布机构对于该专利的真实性、有效性和范围无任何立场。"}]}
+{"messages":[{"role":"user","content":"本文件发布机构是否承担识别除已声明专利外其他专利的责任？"},{"role":"assistant","content":"不承担。本文件的发布机构不承担识别这些专利的责任。"}]}
+{"messages":[{"role":"user","content":"对于注日期的引用文件，哪个版本适用于本文件？"},{"role":"assistant","content":"仅注日期的版本适用于本文件。"}]}
+{"messages":[{"role":"user","content":"凡是不注日期的引用文件，其适用版本是如何规定的？"},{"role":"assistant","content":"其最新版本（包括所有的修改单）适用于本文件。"}]}
+{"messages":[{"role":"user","content":"移动用户编号中的设备类型号和出厂序号分别由谁分配，长度各是多少，有哪些保留值？"},{"role":"assistant","content":"设备类型号长度8比特，由厂家自行分配，其中全0和全1保留；出厂序号长度30比特，由厂家自行分配，其中全0和全1保留。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版软件版本 R4.0_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"R4.0_V1.0 版本的发布日期为 2021-01，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"Which version of Smart MDM Lite is listed?"},{"role":"assistant","content":"V4.0.05.000"}]}
+{"messages":[{"role":"user","content":"What is the application software version for KMS?"},{"role":"assistant","content":"V2.0.09.000"}]}
+{"messages":[{"role":"user","content":"What is the version number of IDS?"},{"role":"assistant","content":"V3.5.09.001"}]}
+{"messages":[{"role":"user","content":"DMR 终端中哪些型号的最新版本是 V9.00.06.001？"},{"role":"assistant","content":"DMR 终端中，PD700、PD750、PD780、PD98X 和 MD78X 的最新版本均为 V9.00.06.001。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V4.0.10.000 相比前一版本 V3.5.15.000 主要介绍了哪些方面的内容？"},{"role":"assistant","content":"本节主要介绍 Smart MDM V4.0.10.000 相比前一版本 V3.5.15.000 的新增功能和优化功能。"}]}
+{"messages":[{"role":"user","content":"对于不注日期的引用文件，应如何确定其适用版本？"},{"role":"assistant","content":"对于不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。"}]}
+{"messages":[{"role":"user","content":"What is the destination address and SIP version specified in the REGISTER request line?"},{"role":"assistant","content":"The destination address is 192.168.1.100 and the SIP version is SIP/2.0."}]}
+{"messages":[{"role":"user","content":"What is the destination URI and SIP version specified in the OPTIONS request?"},{"role":"assistant","content":"The destination URI is sip:192.168.1.100 and the SIP version is SIP/2.0."}]}
+{"messages":[{"role":"user","content":"What is the SIP method and version used in the provided message header?"},{"role":"assistant","content":"The SIP method is INVITE and the version is SIP/2.0."}]}
+{"messages":[{"role":"user","content":"What is the SIP method and version used in the provided message?"},{"role":"assistant","content":"The SIP method is INVITE and the version is SIP/2.0."}]}
+{"messages":[{"role":"user","content":"What is the SIP method and version specified in the message header?"},{"role":"assistant","content":"The SIP method is MESSAGE and the version is SIP/2.0."}]}
+{"messages":[{"role":"user","content":"What is the SIP method and version used in the message?"},{"role":"assistant","content":"NOTIFY SIP/2.0"}]}
+{"messages":[{"role":"user","content":"Which directive certifies that the product complies with essential requirements?"},{"role":"assistant","content":"The product is certified to be in compliance with Directive 2014/53/EU."}]}
+{"messages":[{"role":"user","content":"What steps are required to check status information such as IMEI and software version?"},{"role":"assistant","content":"In the Device info interface, tap Status, then tap the corresponding tabs to check SIM card, International mobile equipment identity (IMEI), software version, baseband version, WLAN, BT, and more."}]}
+{"messages":[{"role":"user","content":"在 Smart MDM V5.5 版本的文档更新中，新增了哪些章节？"},{"role":"assistant","content":"新增了“3.1.2 从 R5.2 升至 R5.3”、“3.1 从 R5.X 升至 R5.5”以及“3.4 授权加密狗与更换 License 文件”章节。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V4.6 版本支持的源版本和目标版本分别是什么？"},{"role":"assistant","content":"支持从 V3.5.15.000 及以上版本升级至 V4.6.10.000。"}]}
+{"messages":[{"role":"user","content":"在 MDM 版本为 R5.0 或更高版本时，如何获取用于更换 License 的 C2V 文件？"},{"role":"assistant","content":"在 Windows 电脑上访问 http://192.168.1.96:1947（需将 IP 替换为 MDM 服务器 IP），在“SentinelKeys”一栏中单击“C2V”下载文件。"}]}
+{"messages":[{"role":"user","content":"如何在 MDM Pro 中上传 License 文件？"},{"role":"assistant","content":"使用 “admin” 账号登录 MDM Pro，然后上传 License 文件。"}]}
+{"messages":[{"role":"user","content":"What are the two conditions for the operation of this device under Innovation, Science and Economic Development Canada Compliance license-exempt RSS standard(s)?"},{"role":"assistant","content":"The two conditions are: (1) the device must not cause interference, and (2) the user must accept any radio interference received, even if such interference may compromise the device's operation."}]}
+{"messages":[{"role":"user","content":"How can you convert the current webpage into a computer version?"},{"role":"assistant","content":"Tap Request desktop site."}]}
+{"messages":[{"role":"user","content":"Where should users contact to obtain optional accessories for the product?"},{"role":"assistant","content":"Users should contact their local dealer."}]}
+{"messages":[{"role":"user","content":"主机与标配附件（如电池、充电座）的保修期分别是多久？"},{"role":"assistant","content":"主机的保修期为 24 个月，标配附件（电池、充电座）的保修期为 12 个月。"}]}
+{"messages":[{"role":"user","content":"型号 ACN-02 是什么配件，使用时有什么搭配要求？"},{"role":"assistant","content":"ACN-02 是 PTT&MIC 控制线，需搭配只接收耳机使用。"}]}
+{"messages":[{"role":"user","content":"哪些型号的耳机需要搭配 PTT&MIC 控制线才能使用？"},{"role":"assistant","content":"型号 EH-02（耳挂式只接收耳机）和型号 ES-01（耳塞式只接收耳机）需搭配 PTT&MIC 控制线使用。"}]}
+{"messages":[{"role":"user","content":"电源类配件中智能聚合物锂电池有哪些型号及容量规格？"},{"role":"assistant","content":"智能聚合物锂电池包括型号 BP2402（2400mAh）和型号 BP4009（4000mAh）。"}]}
+{"messages":[{"role":"user","content":"Where can the MDM SE version be checked?"},{"role":"assistant","content":"You can check MDM SE version in the lower-left corner of the main interface."}]}
+{"messages":[{"role":"user","content":"V1.05.001 版本主要更新了哪些内容？"},{"role":"assistant","content":"V1.05.001 版本主要在应用名单中增加了签名证书，并修改了参数定义。"}]}
+{"messages":[{"role":"user","content":"V2.00.000 版本新增了哪些 MDM 相关功能和管控项？"},{"role":"assistant","content":"V2.00.000 版本在 R2.0 中增加了 MDM 注册/登录、有线连接鉴权和无线连接鉴权，以及个人热点白名单和扩展存储控制。"}]}
+{"messages":[{"role":"user","content":"在V3.0.02版本中，关于wlan列表和蓝牙列表的OTAP指令生效有什么特殊要求？"},{"role":"assistant","content":"需要一次自动重启才生效。"}]}
+{"messages":[{"role":"user","content":"在 V3.05.06 版本中，针对 R4.0 的强制运行应用名单功能做了哪些修改？"},{"role":"assistant","content":"删除了原来的强制运行应用不显示在“最近使用的应用”界面的要求，不做额外处理；同时增加了强制运行标识显示及 Toast 提示。"}]}
+{"messages":[{"role":"user","content":"V3.05.05 版本更新主要涉及什么内容的补充？"},{"role":"assistant","content":"增加了 mic 禁用下的描述。"}]}
+{"messages":[{"role":"user","content":"高版本终端与低版本 MDM 客户端之间的兼容性规则是什么？"},{"role":"assistant","content":"高版本终端可以兼容低版本 MDM 客户端，但低版本终端不能兼容高版本 MDM 客户端。建议 MDM 客户端版本与终端版本保持一致。"}]}
+{"messages":[{"role":"user","content":"根据《终端选型技术要求》，位置信息服务的锁定状态有哪些可选配置？"},{"role":"assistant","content":"可选配置包括：开启且锁定位置信息服务（不允许用户或第三方打开或关闭）、关闭且锁定、开启且不锁定、关闭且不锁定、取消锁定。"}]}
+{"messages":[{"role":"user","content":"深圳项目和云南丽江项目在预置应用或开机启动方面分别有什么要求？"},{"role":"assistant","content":"深圳项目要求预置三方 MDM 客户端和插件并实现开机自启动；云南丽江项目要求开机拉起云南公安 APK。"}]}
+{"messages":[{"role":"user","content":"根据 PMT 标准，如何识别 R1.5 版本新增的软件信息？"},{"role":"assistant","content":"根据 PMT 标准，黄色底纹的软件信息为 R1.5 新增信息。"}]}
+{"messages":[{"role":"user","content":"哪个版本增加了反授权功能？"},{"role":"assistant","content":"V1.05.01"}]}
+{"messages":[{"role":"user","content":"V2.05.03 版本中 Rosie 修改了什么内容？"},{"role":"assistant","content":"修改声码器license的编号"}]}
+{"messages":[{"role":"user","content":"V3.00.02 版本更新了哪些授权内容？"},{"role":"assistant","content":"1.修改TEA授权 2.修改路航授权"}]}
+{"messages":[{"role":"user","content":"V3.00.03 版本在韩国版本中增加了什么功能？"},{"role":"assistant","content":"增加韩国版本中的一键双发license"}]}
+{"messages":[{"role":"user","content":"在V4.5版本中，关于license默认数值（Default）做了什么变更？"},{"role":"assistant","content":"将license默认数值（Default）全部改成0，关闭license，默认未授权。"}]}
+{"messages":[{"role":"user","content":"该文档适用于哪款产品的软件许可设计？"},{"role":"assistant","content":"Jupiter产品。"}]}
+{"messages":[{"role":"user","content":"Is the Only Narrow Band feature included in the MDM tool's own License?"},{"role":"assistant","content":"Yes, the Only Narrow Band feature is included in the MDM tool's own License."}]}
+{"messages":[{"role":"user","content":"How is Full Encrypt Hytera licensed and configured?"},{"role":"assistant","content":"Full Encrypt Hytera is merged into a single E2EE authorization item. After authorization, it is selected via the encryption mode parameters in MDM."}]}
+{"messages":[{"role":"user","content":"海能达如何为未交付终端和已交付终端分别导入授权码？"},{"role":"assistant","content":"针对未交付终端，通过产线为每个终端导入对应的授权码；针对已交付终端，通过MDM为每个终端导入对应的授权码。"}]}
+{"messages":[{"role":"user","content":"R1.5版本支持的反授权功能具体指什么？"},{"role":"assistant","content":"反授权功能是指功能授权之后，可以通过授权文件取消授权。"}]}
+{"messages":[{"role":"user","content":"当终端既存在license列表又下发了license文件时，以哪个为准？"},{"role":"assistant","content":"当终端下发过license文件后，以下发的license文件为准。"}]}
+{"messages":[{"role":"user","content":"如果ENS集群功能未下发过license文件，其授权依据是什么？"},{"role":"assistant","content":"以license列表授权信息为准。"}]}
+{"messages":[{"role":"user","content":"License文件与终端功能及序列号（SN）之间有何对应关系？"},{"role":"assistant","content":"一个License文件只对应一台终端的一个功能，且License文件通过终端的SN（序列号）生成。"}]}
+{"messages":[{"role":"user","content":"License文件写入流程有哪些关键特性及生效条件？"},{"role":"assistant","content":"写入流程独立，不影响其它业务（如对讲业务）；写入过程提供进度提示，失败给出失败提示，成功给出重启提示；必须重启后License才能生效。"}]}
+{"messages":[{"role":"user","content":"如何通过License切换终端声码器？下发双声码器时的默认行为是什么？"},{"role":"assistant","content":"当终端当前为其它声码器（如NVOC或者CELP）时，可以通过下发声码license进行切换，终端重启后根据license取值自动切为对应声码器。当下发双声码器时，终端有菜单可以进行声码器切换（AMBE和NVOC），默认声码器为下发之前的声码器。"}]}
+{"messages":[{"role":"user","content":"下发机型切换License对终端有什么影响？为什么RCDB会失效？"},{"role":"assistant","content":"下发机型切换license将对终端进行写号，写号完成后终端将整机重启。由于model number的变化导致RCDB不能使用，需要重新对终端进行写频才能正常使用。"}]}
+{"messages":[{"role":"user","content":"R2.0之前版本的TFTSB E2EE license机制有什么特点？"},{"role":"assistant","content":"R2.0之前版本与E2EE Enhancement共用相同的license。"}]}
+{"messages":[{"role":"user","content":"在R3.0版本中，“锁屏”菜单项的名称应变更为什么？"},{"role":"assistant","content":"应变更为“锁屏操作限制”。"}]}
+{"messages":[{"role":"user","content":"在R4.0版本中，时间显示的读取逻辑顺序是什么？"},{"role":"assistant","content":"先读电池RTC，再读本机RTC。"}]}
+{"messages":[{"role":"user","content":"在设备设置的一级列表中，为何不再移植R3.0版本中的“电池状态”、“电池电量”和“电池版本”菜单项？"},{"role":"assistant","content":"因为设置一级列表中已经有一个“电池”的入口，所以不再移植R3.0中的“电池状态”、“电池电量”、“电池版本”。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 软件版本 R4.6_V1.0 的发布日期和发布状态是什么？"},{"role":"assistant","content":"Smart MDM 软件版本 R4.6_V1.0 的发布日期为 2022-05，状态为首次发布。"}]}
+{"messages":[{"role":"user","content":"What is the version number of DTW?"},{"role":"assistant","content":"V4.6.07.000"}]}
+{"messages":[{"role":"user","content":"What actions can be performed in license management?"},{"role":"assistant","content":"In license management, users can import the license, search for the license, push the license, delete the license, open the license path, and edit license remarks."}]}
+{"messages":[{"role":"user","content":"How do you search for a license in MDM SE?"},{"role":"assistant","content":"In the search box, enter the license name or remarks."}]}
+{"messages":[{"role":"user","content":"To whom should users contact to obtain optional accessories for the product?"},{"role":"assistant","content":"Users should contact their local dealer for the optional accessories of the product."}]}
+{"messages":[{"role":"user","content":"How should the product be cleaned safely?"},{"role":"assistant","content":"Turn off the product and remove the battery before cleaning. Clean dust and fine particles with a clean, dry, lint-free cloth or brush. Use neutral cleanser and non-woven fabric for keys, knobs, and front case after long-time use. Avoid chemical preparations like stain removers, alcohol, sprays, or oil. Ensure the product is completely dry before use."}]}
+{"messages":[{"role":"user","content":"What are the requirements for using optional accessories with the product?"},{"role":"assistant","content":"Only use accessories specified by the Company. The company is not liable for loss or damage from unauthorized accessories. Contact your local dealer for optional accessories."}]}
+{"messages":[{"role":"user","content":"What aspects of third-party products and contents are not guaranteed by the manual?"},{"role":"assistant","content":"The manual does not guarantee the accuracy, validity, timeliness, legitimacy, or completeness of third-party products and contents for any particular purpose."}]}
+{"messages":[{"role":"user","content":"What is the correct procedure for cleaning the product?"},{"role":"assistant","content":"Turn off the product and remove the battery before cleaning. Regularly clean dust and fine particles on the surface and charging piece with a clean, dry, lint-free cloth or brush. After long-time use, clean keys, knobs, and the front case with neutral cleanser and non-woven fabric. Avoid using chemical preparations like stain removers, alcohol, sprays, or oil preparations. Ensure the product is completely dry before use."}]}
+{"messages":[{"role":"user","content":"What are the liabilities regarding the use of accessories with this product?"},{"role":"assistant","content":"Only accessories specified by the Company should be used. The Company will not be liable for any loss or damage arising from the use of unauthorized accessories."}]}
+{"messages":[{"role":"user","content":"Does purchasing the MDM Pro product grant rights to Hytera's computer programs?"},{"role":"assistant","content":"No, the purchase of the product does not grant, either directly or by implication, any rights to the purchaser regarding the Company's computer programs."}]}
+{"messages":[{"role":"user","content":"What special function can the radio support through License management?"},{"role":"assistant","content":"The radio can support camera watermarking by License."}]}
+{"messages":[{"role":"user","content":"What license requirement must be met to manage narrowband DMR and PDT radios on MDM Pro or MDM SE?"},{"role":"assistant","content":"You must import a matching region license. Management is possible only when the MDM Pro or MDM SE has the same region license as the DMR and PDT radios."}]}
+{"messages":[{"role":"user","content":"What is the version number of the KMC software associated with Smart MDM Lite V2.0.16.000?"},{"role":"assistant","content":"The version number of the KMC software is V2.0.04.000."}]}
+{"messages":[{"role":"user","content":"Which Multi-mode Advanced Radio models are designated for the North American market?"},{"role":"assistant","content":"The Multi-mode Advanced Radio models designated for the North American market are PDC760 versions V2.0.001AG2, V2.0.001A02, V2.0.001NG2, and V2.0.001N02."}]}
+{"messages":[{"role":"user","content":"Which standards does the PDC760 meet for shock, vibration, and humidity?"},{"role":"assistant","content":"The device meets MIL-STD-810 G for shock and vibration. For humidity, it complies with MIL-STD 810 at ≤ +65°C and 95%RH."}]}
+{"messages":[{"role":"user","content":"What ESD protection level does the PDC760 support?"},{"role":"assistant","content":"The PDC760 supports IEC 61000-4-2 Level 3 for ESD protection."}]}
+{"messages":[{"role":"user","content":"How do customized apps on the PDC760 benefit airport professionals?"},{"role":"assistant","content":"Customized apps such as W/O, flight check, and airline dispatching use both narrowband and broadband paths to increase productivity. They enable professionals to distribute and follow up tasks in a standard operating procedure, share information, and interact online."}]}
+{"messages":[{"role":"user","content":"How can you check the device information such as model name and serial number?"},{"role":"assistant","content":"Go to Settings > Device info."}]}
+{"messages":[{"role":"user","content":"Which radio models are supported by both MDM Pro and MDM SE under the DMR category?"},{"role":"assistant","content":"The supported DMR radio models are HP70XEx, HP78XEx, HP79XEx, HP71XEx, HP50XEx, HP56XEx, HM78X, HM78X (Duplex), HM68X, HM65X, HR106X, HR65X, HP68X, HP60X, HP56X, HP50X, PD78X, PD98X, PD68X, PD70X, PD75X, PD79X, PD98XUL, PD98XEx, MD78X, and MD78Xi."}]}
+{"messages":[{"role":"user","content":"在海能达产品手册中，“危险”符号代表什么含义？"},{"role":"assistant","content":"“危险”符号表示可能会导致重大人身伤亡的事项。"}]}
+{"messages":[{"role":"user","content":"Smart MDM R1.5_V1.0 版本的发布日期和主要用途是什么？"},{"role":"assistant","content":"Smart MDM R1.5_V1.0 版本发布于 2018-01，用于指导用户将 Smart MDM 从 V1.0.16.000 版本升级至 V1.5.11.000 版本。"}]}
+{"messages":[{"role":"user","content":"插件 G2_CPS_Public 作为管理端多模终端公共模板，有哪些已知版本？"},{"role":"assistant","content":"插件 G2_CPS_Public 的已知版本包括 V2.0.05.005 和 V1.5.09.201。"}]}
+{"messages":[{"role":"user","content":"版本为 V2.0.05.005 的 G2_CPS_diff_V 插件属于什么类型？"},{"role":"assistant","content":"版本为 V2.0.05.005 的 G2_CPS_diff_V 插件类型为管理端多模终端差异模板。"}]}
+{"messages":[{"role":"user","content":"G2_CPS_diff_V 插件在版本 V1.5.09.201 下的具体类型是什么？"},{"role":"assistant","content":"G2_CPS_diff_V 插件在版本 V1.5.09.201 下的类型是管理端多模终端差异模板。"}]}
+{"messages":[{"role":"user","content":"哪些插件的版本号包含 V1.5.09.201？"},{"role":"assistant","content":"版本号为 V1.5.09.201 的插件包括 G2_CPS_Public（管理端多模终端公共模板）和 G2_CPS_diff_V（管理端多模终端差异模板）。"}]}
+{"messages":[{"role":"user","content":"该设备支持哪些全球导航卫星系统？"},{"role":"assistant","content":"支持GPS、北斗、格洛纳斯、伽利略、QZSS以及A-GPS。"}]}
+{"messages":[{"role":"user","content":"该设备兼容哪些视频文件格式及其扩展名？"},{"role":"assistant","content":"支持MPEG-TS(.ts)、AVI(.avi)和Matroska(.mkv)。"}]}
+{"messages":[{"role":"user","content":"该设备的机身尺寸是多少？"},{"role":"assistant","content":"高139.5mm，宽68mm，厚26mm。"}]}
+{"messages":[{"role":"user","content":"在多模宽窄语音中转功能需求文档中，若未做特别说明，默认表示哪个版本的需求？"},{"role":"assistant","content":"若文档中如不做特别说明，表示该需求为R4.5版本需求。"}]}
+{"messages":[{"role":"user","content":"多模宽窄语音中转功能的需求来源包括哪些项目？"},{"role":"assistant","content":"需求来源包括韩国海警项目和澳洲项目。"}]}
+{"messages":[{"role":"user","content":"ROIP功能与语音中转功能是否兼容？"},{"role":"assistant","content":"不兼容。ROIP功能与语音中转功能互斥，不支持使用ROIP进行语音中转。"}]}
+{"messages":[{"role":"user","content":"Which models are supported by MDM Pro for Multi-mode radios?"},{"role":"assistant","content":"The Multi-mode radios supported by MDM Pro are PDC550, PDC580, PDC680, PDC690, PDM680, PDC760, PTC760, and PTC680."}]}
+{"messages":[{"role":"user","content":"What Broadband radio models are compatible with MDM Pro?"},{"role":"assistant","content":"The Broadband radios compatible with MDM Pro are RPC360s, P50, P50 Pro, PNC360S, PNC370, PNC380, PNC380D, PNC460, PNC550, PNC550 R2, PNC560, PNC560 SCAN, PNC660, and MNC360."}]}
+{"messages":[{"role":"user","content":"Which TETRA radio models are supported by MDM SE?"},{"role":"assistant","content":"MDM SE supports the following TETRA radios: PT310, PT350, PT590, PT890Ex, and PT895Ex Fv."}]}
+{"messages":[{"role":"user","content":"What steps are required to apply the V2C license file after obtaining it?"},{"role":"assistant","content":"Click Update/Attach, then click Select File... to select the V2C file, and finally click Apply File to upload it."}]}
+{"messages":[{"role":"user","content":"What steps are required to import a license file into the MDM system?"},{"role":"assistant","content":"Sign in to MDM with the 'admin' account, click the username in the upper-right corner, select Import License, choose the license file, and click Open."}]}
+{"messages":[{"role":"user","content":"What file formats are accepted for updating or attaching a license in the MDM system?"},{"role":"assistant","content":"The accepted file formats are V2C, V2CP, H2R, H2H, or ID file."}]}
+{"messages":[{"role":"user","content":"What is the recommended browser version for accessing MDM Pro?"},{"role":"assistant","content":"Google Chrome 80 or later."}]}
+{"messages":[{"role":"user","content":"Smart MDM V4.6 文档适用的发布日期是哪一年哪一月？"},{"role":"assistant","content":"2022-03。"}]}
+{"messages":[{"role":"user","content":"What conversion method is used to transform the dial string into an 8 bit short number address?"},{"role":"assistant","content":"True decimal to binary conversion is used."}]}
+{"messages":[{"role":"user","content":"When was version V1.4.1 of ETSI TR 102 300-5 published?"},{"role":"assistant","content":"Version V1.4.1 was published in June 2015."}]}
+{"messages":[{"role":"user","content":"Smart MDM 软件版本 R1.5_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"发布日期为 2017-12，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"Which versions are available for the PDC760 device model?"},{"role":"assistant","content":"V1.5.001A and V1.5.001N"}]}
+{"messages":[{"role":"user","content":"What is the current version of KMC software?"},{"role":"assistant","content":"V1.5.05.000"}]}
+{"messages":[{"role":"user","content":"What is the version number for the VM680 device model?"},{"role":"assistant","content":"V1.02.07.013"}]}
+{"messages":[{"role":"user","content":"在文档清单中，哪些手册是首次发布的？"},{"role":"assistant","content":"首次发布的手册包括：《多模智能终端_升级指南_R1.5_V1.0》和《Smart MDM 用户端用户手册》。"}]}
+{"messages":[{"role":"user","content":"若要查看 Smart MDM V1.0.16.000 版本的功能介绍，应参考哪份文档？"},{"role":"assistant","content":"《SMART MDM_版本指南_R1.0_V1.0》。"}]}
+{"messages":[{"role":"user","content":"PPS V3.0 版本相比之前增加了哪些内容？"},{"role":"assistant","content":"PPS V3.0 (2021-11) 增加了 CentOS 资源包下载方式、加密狗安装方式和 license 获取方式。"}]}
+{"messages":[{"role":"user","content":"What is the Key Type and Version of the Sentinel key with Key ID 1103712003261174084?"},{"role":"assistant","content":"The Key Type is HASP SL and the Version is 7.50."}]}
+{"messages":[{"role":"user","content":"在 CBD 进行验证时，应准备几台 PDC760 设备，分别用于什么用途？"},{"role":"assistant","content":"应准备两台 PDC760，一台用于测试，另一台用于对比。"}]}
+{"messages":[{"role":"user","content":"用于 CBD 验证的两台 PDC760 需要接入哪个平台？"},{"role":"assistant","content":"两台 PDC760 均需接入 PUC（Professional United Communications，专业统一通信平台）。"}]}
+{"messages":[{"role":"user","content":"MDM 在未导入 License 的情况下默认试用期是多久？"},{"role":"assistant","content":"90 天"}]}
+{"messages":[{"role":"user","content":"Which cleaning agents must be avoided to prevent damage to the product's surface case?"},{"role":"assistant","content":"Chemical preparations such as stain removers, alcohol, sprays or oil preparations."}]}
+{"messages":[{"role":"user","content":"Which organization should be contacted for optional accessories used with the product?"},{"role":"assistant","content":"Your local dealer"}]}
+{"messages":[{"role":"user","content":"PDC760在软件生态和定制化方面有哪些能力？"},{"role":"assistant","content":"终端拥有安卓原生APP，并具备多款定制研发的海能达APP，如提供路径规划和在线导航的路航APP。基于标准安卓API接口，终端可灵活适配或定制各行业APP，整合移动办公环境。具体适配或定制需求需联系海能达销售。"}]}
+{"messages":[{"role":"user","content":"SMART MDM V1.0版本的发布日期和描述分别是什么？"},{"role":"assistant","content":"版本V1.0的发布日期为2017-08，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"Which versions are listed for the PDC760 device model?"},{"role":"assistant","content":"V1.0.001A and V1.0.001N"}]}
+{"messages":[{"role":"user","content":"What is the version number for the PTC760 device model?"},{"role":"assistant","content":"V1.0.001"}]}
+{"messages":[{"role":"user","content":"海能达R3.0_V2.0版本手册相较于首次发布的R1.0_V1.0版本，主要增加了什么内容？"},{"role":"assistant","content":"R3.0_V2.0版本增加了安全描述。"}]}
+{"messages":[{"role":"user","content":"该产品的保修期限分别是多少？"},{"role":"assistant","content":"主机的保修期为 24 个月，标配附件（包括电池、充电座）的保修期为 12 个月。"}]}
+{"messages":[{"role":"user","content":"哪些耳机型号必须搭配 PTT&MIC 控制线才能使用？"},{"role":"assistant","content":"耳挂式只接收耳机（EH-02）和耳塞式只接收耳机（ES-01）需搭配 PTT&MIC 控制线使用。"}]}
+{"messages":[{"role":"user","content":"型号为 BP4009 的配件是什么，其容量是多少？"},{"role":"assistant","content":"BP4009 是智能聚合物锂电池，容量为 4000mAh。"}]}
+{"messages":[{"role":"user","content":"请列出知识中提到的所有电源类配件及其型号。"},{"role":"assistant","content":"电源类配件包括：智能聚合物锂电池（型号 BP4009）和锂电充电座（型号 CH20L13）。"}]}
+{"messages":[{"role":"user","content":"Hytera商标的所有权归属及本手册中其他商标的权利状态是怎样的？"},{"role":"assistant","content":"Hytera是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标，我司仅对自有商标及产品名称享有所权。本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"海能达对本手册内容的准确性及第三方产品内容分别承担什么责任或保证？"},{"role":"assistant","content":"对于本手册可能出现的错误或疏漏，我司不承担任何责任。对于本手册中涉及的第三方产品和内容，我司对其准确性、有效性、及时性、合法性或完整性均不提供保证。"}]}
+{"messages":[{"role":"user","content":"Does purchasing a Hytera product grant the buyer rights to the company's computer programs?"},{"role":"assistant","content":"No, the purchase of the product shall not be deemed to grant, either directly or by implication, any rights to the purchaser regarding the Company's computer programs."}]}
+{"messages":[{"role":"user","content":"What are the version numbers for Smart Mobile Device Management (MDM), Smart MDM Lite, and Device Task Workstation (DTW) in Document Version R4.6_V1.0?"},{"role":"assistant","content":"In Document Version R4.6_V1.0, the versions are: Smart Mobile Device Management (MDM) V4.6.16.000, Smart MDM Lite V4.6.09.000, and Device Task Workstation (DTW) V4.6.07.000."}]}
+{"messages":[{"role":"user","content":"What is the supported version range for the PNC380 broadband radio?"},{"role":"assistant","content":"The supported version range for the PNC380 broadband radio is from Earliest Version V1.0.17.001.01 to Latest Version V2.5.15.000.04."}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版软件版本 R2.7_V1.0 的发布日期和描述是什么？"},{"role":"assistant","content":"发布日期为 2019-11，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版和 Smart MDM Lite 的当前版本是多少？"},{"role":"assistant","content":"Smart MDM 专业版和 Smart MDM Lite 的版本均为 V2.7.05.000。"}]}
+{"messages":[{"role":"user","content":"宽带终端 PNC550 和 PNC380 的最新版本分别是多少？"},{"role":"assistant","content":"宽带终端 PNC550 的最新版本是 V1.0.08.001.04，PNC380 的最新版本是 V1.0.07.000.01。"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端中，PD680、PD700、PD750 和 PD780 的版本是多少？"},{"role":"assistant","content":"窄带 DMR 终端中，PD680、PD700、PD750 和 PD780 的版本均为 V9.00.06.001。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Pro V2.7.05.000 相比前一版本 V2.6.07.001 主要介绍了哪些内容？"},{"role":"assistant","content":"新增功能和优化功能。"}]}
+{"messages":[{"role":"user","content":"哪些型号支持无线推送应用？"},{"role":"assistant","content":"目前仅 DSJ-HYTH7A1(Y) 和 DSJ-HYTH7A1(M) 支持无线推送应用。"}]}
+{"messages":[{"role":"user","content":"该设备与电脑连接时，电脑能否读取设备中的数据？"},{"role":"assistant","content":"电脑无法读取数据，但可以为设备读写频。"}]}
+{"messages":[{"role":"user","content":"DMR终端和PDT终端中共同包含的型号有哪些？"},{"role":"assistant","content":"DMR终端和PDT终端中共同包含的型号有：PD780、PD980、PD680、PD700、PD750、PD790、PD980UL、PD980Ex、MD780、MD780i、HP780。"}]}
+{"messages":[{"role":"user","content":"执法记录仪系列包含哪些具体型号？"},{"role":"assistant","content":"执法记录仪包括：VM550、VM550D/DSJ-HYTH5A1、VM680/DSJ-H6、VM780/DSJ-HYTH7A1、VM580D/DSJ-HYTV5A1、SC580/DSJ-HYTS5A1。"}]}
+{"messages":[{"role":"user","content":"PC 兼容哪些操作系统？"},{"role":"assistant","content":"PC 兼容 Windows XP、Windows 2003、Windows 7 及以上的操作系统。"}]}
+{"messages":[{"role":"user","content":"如何获取与终端主机版本对应的插件？"},{"role":"assistant","content":"需进入终端“设置 > 设备信息”界面查看“主机版本”，然后联系经销商获取与该版本对应的插件。"}]}
+{"messages":[{"role":"user","content":"系统对同时连接的终端数量有何限制？哪些型号除外？"},{"role":"assistant","content":"最多可同时连接24台终端。PT350、PT310、PT590、PT890Ex无连接数量限制。"}]}
+{"messages":[{"role":"user","content":"In whose name was the document signed and what is the signatory's title?"},{"role":"assistant","content":"The document was signed on behalf of Hytera Communications Corporation Limited by a person holding the title of Senior Vice President."}]}
+{"messages":[{"role":"user","content":"手动修改对讲机别名功能适用于哪些终端型号和系统版本？"},{"role":"assistant","content":"该功能适用于PDC680、PTC680、PTC760型号的安卓10 R4.0版本。"}]}
+{"messages":[{"role":"user","content":"哪些机型和系统版本支持对讲机别名修改功能？"},{"role":"assistant","content":"支持该功能的机型及版本为PDC680、PTC680、PTC760，运行安卓10系统，版本R4.0。"}]}
+{"messages":[{"role":"user","content":"SDM功能适用于哪些具体型号？"},{"role":"assistant","content":"此功能适合于多模PTC760、PTC680。"}]}
+{"messages":[{"role":"user","content":"巴西Ceara州公共安全项目中，终端需要支持基站的哪项功能？"},{"role":"assistant","content":"终端需要支持基站的SDM功能。"}]}
+{"messages":[{"role":"user","content":"巴西Ceara州公共安全项目使用的基站品牌是什么？"},{"role":"assistant","content":"该项目使用Teltronic基站。"}]}
+{"messages":[{"role":"user","content":"巴西Ceara州公共安全项目的网络设备具体包含哪些型号及数量？"},{"role":"assistant","content":"网络包括176个Teltronic基站、590台MT680 Plus以及4204台PT580H Plus。"}]}
+{"messages":[{"role":"user","content":"终端发送短消息时，“Unicode”编码格式与“自适应”编码格式的工作机制有何不同？R2.0版本支持哪些具体的编码格式？"},{"role":"assistant","content":"“Unicode”格式按Unicode编码发送，但终端会自动检测若所有字符均为ASCII则改用8859-1方式发送；“自适应”格式按终端当前整机语言相匹配的编码格式发送。R2.0支持的编码格式包括：8859-1、2、5、6、9和Unicode。"}]}
+{"messages":[{"role":"user","content":"Smart MDM R1.6_V1.0 版本的发布日期是什么时候？"},{"role":"assistant","content":"2018-03"}]}
+{"messages":[{"role":"user","content":"G2_CPS_diff_V 插件在版本 V1.5.09.201 下的类型是什么？"},{"role":"assistant","content":"G2_CPS_diff_V 插件在版本 V1.5.09.201 下的类型是管理端多模终端差异模板。"}]}
+{"messages":[{"role":"user","content":"插件 G2_CPS_Public 在列表中存在哪些版本，各自的更新者是谁？"},{"role":"assistant","content":"插件 G2_CPS_Public 存在两个版本：版本 V2.0.05.005，更新者为 bxwop；版本 V1.5.09.201，更新者为 huangjunjieop。"}]}
+{"messages":[{"role":"user","content":"插件 G2_CPS_diff_V 的类型、版本及上传进度状态如何？"},{"role":"assistant","content":"插件 G2_CPS_diff_V 的类型是管理端多模终端差异模板，列表中列出的版本包括 V2.0.05.005 和 V1.5.09.201，两者的上传进度均为完成。"}]}
+{"messages":[{"role":"user","content":"该产品的保修期限是如何规定的？日常清洁终端时应避免使用哪些化学药剂？"},{"role":"assistant","content":"保修期限规定为：主机24个月，标配附件（电池、充电座）12个月。日常清洁时，请勿用去污剂、酒精、喷雾剂或石油制剂等化学药剂进行清洁，以避免产品表面和外壳受损。"}]}
+{"messages":[{"role":"user","content":"What are the Version and ID values for the SEK entry?"},{"role":"assistant","content":"Version is 1 and ID is 2."}]}
+{"messages":[{"role":"user","content":"序列号 0607RD1941 对应的设备型号是什么？"},{"role":"assistant","content":"PTC680(TETRA)"}]}
+{"messages":[{"role":"user","content":"列表中所有设备的型号是否一致？如果是，具体型号是什么？"},{"role":"assistant","content":"是，所有设备型号均为 PTC680(TETRA)。"}]}
+{"messages":[{"role":"user","content":"序列号为 0607RD1005 的设备型号是什么？"},{"role":"assistant","content":"PDC760(PDT)"}]}
+{"messages":[{"role":"user","content":"序列号为 0607RD1687 的设备的 IMEI 是多少？"},{"role":"assistant","content":"00210612080001686"}]}
+{"messages":[{"role":"user","content":"What action should be taken if the radio label on the battery slot does not match the purchased product?"},{"role":"assistant","content":"You should contact your dealer."}]}
+{"messages":[{"role":"user","content":"How can a user view radio information such as model, serial number, frequency, and software version?"},{"role":"assistant","content":"On the home screen, go to Menu > Settings > About Radio, and then view radio information including model, serial number, frequency, software version, and more."}]}
+{"messages":[{"role":"user","content":"Which specific models of the Multi-mode Advanced Radio are covered by this EU Declaration of Conformity?"},{"role":"assistant","content":"The models covered are PDC760 UxB1, PDC760 U1B1, PDC760 U2B1, PDC760 U3B1, and PDC760 U9B1."}]}
+{"messages":[{"role":"user","content":"What is the EU Identification Number of the Notified Body that performed the conformity assessment for this product?"},{"role":"assistant","content":"The EU Identification Number of the Notified Body, Bay Area Compliance Labs Corp. (BACL), is 1313."}]}
+{"messages":[{"role":"user","content":"如何查看对讲机的型号、存储、序列号及软件版本等设备信息？"},{"role":"assistant","content":"打开系统设置应用，选择“设备信息”，即可查看型号、存储、序列号及软件版本等信息。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Lite 版本 R2.0_V1.0 的发布日期和描述分别是什么？"},{"role":"assistant","content":"发布日期为 2018-07，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"PDC760 多模终端有哪些北美版软件版本？"},{"role":"assistant","content":"PDC760 多模终端的北美版软件版本包括：V2.0.001AG2、V2.0.001A02、V2.0.001NG2 和 V2.0.001N02。"}]}
+{"messages":[{"role":"user","content":"PTC760 多模终端支持哪些软件版本？"},{"role":"assistant","content":"PTC760 多模终端支持的软件版本为 V2.0.0010 和 V2.0.001G。"}]}
+{"messages":[{"role":"user","content":"在 V3.00.01 版本中，窄带语音的默认音频通路是如何确定的？"},{"role":"assistant","content":"窄带语音默认在上一次的音频通路。"}]}
+{"messages":[{"role":"user","content":"R3.5 版本新增了哪些增益调节功能？"},{"role":"assistant","content":"R3.5 新增发射增益调节、接收增益调节。"}]}
+{"messages":[{"role":"user","content":"在4.1.0X版本中，当蓝牙耳机和有线耳机同时可用时，系统依据什么原则进行接通？"},{"role":"assistant","content":"根据后来优先原则接通。"}]}
+{"messages":[{"role":"user","content":"What does the term \"MDM\" refer to in versions earlier than R5.5 versus version R5.5?"},{"role":"assistant","content":"In versions earlier than R5.5, \"MDM\" refers to \"Smart MDM\". In version R5.5, it refers to \"MDM Pro\"."}]}
+{"messages":[{"role":"user","content":"What specific actions are required when upgrading MDM from version R5.3 to R5.5 regarding licensing?"},{"role":"assistant","content":"You must re-license the dongle and replace the license file."}]}
+{"messages":[{"role":"user","content":"What action must be taken regarding the license when upgrading MDM from R4.6 to R5.0?"},{"role":"assistant","content":"You must re-license the dongle, and replace the license file."}]}
+{"messages":[{"role":"user","content":"Which folders must be deleted before replacing them with the backed-up versions in step 8?"},{"role":"assistant","content":"Delete the \"data\" folder located in \"D:\\Hytera\\MDM\\NrmServer\\service\\mdm-baseservice\" and the \"mysql-5.6.28\" folder located in \"D:\\Hytera\\MDM\\NrmServer\"."}]}
+{"messages":[{"role":"user","content":"What are the steps to import a license file in MDM?"},{"role":"assistant","content":"1. Sign in to MDM with the \"admin\" account. 2. In the upper-right corner, click the user name. 3. Click Import License. 4. Select the license file, and then click Open."}]}
+{"messages":[{"role":"user","content":"What file formats are supported for license operations?"},{"role":"assistant","content":"V2C, V2CP, H2R, R2H, H2H or ID file."}]}
+{"messages":[{"role":"user","content":"What information is required for versions earlier than R5.0, such as when upgrading from R4.6 to R5.0?"},{"role":"assistant","content":"Key ID and C2V file."}]}
+{"messages":[{"role":"user","content":"Which radio models are classified under the TETRA radio category supported by the system?"},{"role":"assistant","content":"The TETRA radio models are PT310, PT350, PT590, PT890Ex, PT895Ex Fv, MT680 Plus, PT580H Plus, PT580H Plus UL913, PT790Ex, and Z1p."}]}
+{"messages":[{"role":"user","content":"V3.00.45版本解决了什么问题并增加了什么功能？"},{"role":"assistant","content":"解决韩国单卡机器SIM卡和IMEI号不对应问题，增加IMEI重写后自动重启功能"}]}
+{"messages":[{"role":"user","content":"在韩国定制需求中，SK2和SK3键的功能是什么？"},{"role":"assistant","content":"SK2和SK3键分别为“音量+”及“音量-”功能，用于调节宽窄带通话音量。"}]}
+{"messages":[{"role":"user","content":"What changes were introduced in version R1.6_V3.0 released in March 2018?"},{"role":"assistant","content":"Version R1.6_V3.0 changed the system name to Smart MDM Professional and added instructions on how to install the dongle to IDS."}]}
+{"messages":[{"role":"user","content":"Which device models are supported by Smart MDM Professional but not explicitly listed for Smart MDM Lite?"},{"role":"assistant","content":"Smart MDM Professional supports Broadband Radios (PNC380, PNC550), DMR devices (PD68X, PD70X, PD75X, PD78X, PD98X, PD98XUL, PD98XEx, MD78X, MD78Xi, HP7 series), additional TETRA models (PT580H Plus, PT790Ex, Z1p, PT580H Plus UL913), and BWCs (VM550, VM550D, VM580D, VM68X, VM750, VM780). Smart MDM Lite only lists Multi-mode Radios (PDC760, PTC760, PTC680, PDC550, H12, H821) and TETRA models (PT350, PT310)."}]}
+{"messages":[{"role":"user","content":"Smart MDM 软件 V5.0、V5.1 和 V5.2 版本的发布日期及主要描述是什么？"},{"role":"assistant","content":"V5.0 版本于 2023-05 首次发布；V5.1 版本于 2023-10 新增 R5.1 版本的更新说明；V5.2 版本于 2024-04 新增 R5.2 版本的更新说明。"}]}
+{"messages":[{"role":"user","content":"What is the application software version for Smart MDM?"},{"role":"assistant","content":"V5.2.07.007"}]}
+{"messages":[{"role":"user","content":"What is the application software version for DTW?"},{"role":"assistant","content":"V5.2.05.005"}]}
+{"messages":[{"role":"user","content":"PDC680（安卓 10，PDT）的最新固件版本有哪些？"},{"role":"assistant","content":"PDC680（安卓 10，PDT）的最新版本为 V4.5.001307 和 V4.5.0013G7。"}]}
+{"messages":[{"role":"user","content":"PTC760（安卓 10）的起始版本与最新版本对应关系是怎样的？"},{"role":"assistant","content":"PTC760（安卓 10）的起始版本 V3.5.00604 对应最新版本 V4.5.00104；起始版本 V3.5.006G4 对应最新版本 V4.5.001G4。"}]}
+{"messages":[{"role":"user","content":"PDC680（安卓 10，DMR）和 PDM680（安卓 10，DMR）的最新版本分别是多少？"},{"role":"assistant","content":"PDC680（安卓 10，DMR）的最新版本为 V4.1.001407 和 V4.1.0014G7；PDM680（安卓 10，DMR）的最新版本为 V4.1.0014G8。"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端 HP790 的版本号是多少？"},{"role":"assistant","content":"V2.6.09.010"}]}
+{"messages":[{"role":"user","content":"窄带 PDT 终端 HP780 的版本号是多少？"},{"role":"assistant","content":"V02.5.07.006"}]}
+{"messages":[{"role":"user","content":"What is the firmware version for the PT350 narrowband TETRA terminal listed in the first version column?"},{"role":"assistant","content":"V4.01.13.011"}]}
+{"messages":[{"role":"user","content":"What are the two firmware versions listed for the DSJ-HYTH7A1 (M) body-worn camera?"},{"role":"assistant","content":"V1.0.07.038.0101 and V3.0.07.040.0101"}]}
+{"messages":[{"role":"user","content":"该产品的保修期限分别是多少？使用非指定配件有什么后果？"},{"role":"assistant","content":"主机保修期为 24 个月，标配附件（电池、充电座）保修期为 12 个月。若擅自使用未经许可的配件，由此所导致的一切后果由用户自行负责。"}]}
+{"messages":[{"role":"user","content":"What is the minimum radio version required to resolve issues caused by a low software version?"},{"role":"assistant","content":"R1.5 or later."}]}
+{"messages":[{"role":"user","content":"Which receive-only earpiece models are designed to be used with a PTT & MIC cable?"},{"role":"assistant","content":"EH-02 and ES-01"}]}
+{"messages":[{"role":"user","content":"What actions regarding Hytera's computer programs are prohibited without prior written consent?"},{"role":"assistant","content":"Copying, modifying, distributing, decompiling, or reverse-engineering"}]}
+{"messages":[{"role":"user","content":"What are the two conditions for operating a device compliant with Industry Canada's CNR for license-exempt radio apparatus?"},{"role":"assistant","content":"The two conditions are: (1) the device must not cause interference, and (2) the user must accept any radio interference received, even if such interference may compromise the operation of the device."}]}
+{"messages":[{"role":"user","content":"Which EU directive does the product comply with regarding essential requirements and other relevant provisions?"},{"role":"assistant","content":"The product is in compliance with the essential requirements and other relevant provisions of 2014/53/EU."}]}
+{"messages":[{"role":"user","content":"DMR终端和PDT终端中有哪些共同的型号？"},{"role":"assistant","content":"DMR终端和PDT终端中共同的型号有：PD780、PD980、PD680、PD700、PD750、PD790、PD980UL、PD980Ex、MD780。"}]}
+{"messages":[{"role":"user","content":"执法记录仪包含哪些具体型号及其对应代号？"},{"role":"assistant","content":"执法记录仪包括：VM550、VM550D/DSJ-HYTH5A1、VM680/DSJ-H6、VM780/DSJ-HYTH7A1、VM580D/DSJ-HYTV5A1、SC580/DSJ-HYTS5A1。"}]}
+{"messages":[{"role":"user","content":"R4.0版本增加的双发功能支持哪些信道，是否支持集群模式？"},{"role":"assistant","content":"R4.0版本增加了模拟信道和XPT信道下的双发功能，但不支持集群模式。"}]}
+{"messages":[{"role":"user","content":"R4.1版本增加的license控制功能默认是否授权？"},{"role":"assistant","content":"该功能默认不授权。"}]}
+{"messages":[{"role":"user","content":"当双路发送license生效时，主界面上的通话widget默认显示什么信息？"},{"role":"assistant","content":"主界面上的通话widget显示的是窄带通话信息。"}]}
+{"messages":[{"role":"user","content":"在双路发送license生效的情况下，客户如何增加POC通话widget？"},{"role":"assistant","content":"客户可通过微件增加POC通话widget。"}]}
+{"messages":[{"role":"user","content":"若执行license反授权，之前添加的POC通话widget需要如何处理？"},{"role":"assistant","content":"在授权下添加的POC通话widget需要移除。"}]}
+{"messages":[{"role":"user","content":"在R3.7及以下版本中，于XPT信道下发起一键双发并松开PTT后会出现什么现象？"},{"role":"assistant","content":"POC呼叫结束，XPT呼叫进入信道保留。"}]}
+{"messages":[{"role":"user","content":"在R4.6版本的一键双发模式下，窄带切换联系人时如何与POC进行同步？"},{"role":"assistant","content":"通过融合SDK通知POC；若POC存在同名联系人，则切换至该联系人。"}]}
+{"messages":[{"role":"user","content":"Hytera 服务热线的电话号码是多少？"},{"role":"assistant","content":"400-830-7020"}]}
+{"messages":[{"role":"user","content":"R2.5_V5.0 版本增加了什么 FAQ？"},{"role":"assistant","content":"增加 Windows 7 禁用驱动强制签名 FAQ。"}]}
+{"messages":[{"role":"user","content":"R2.0_V4.0 版本的发布日期是什么时候？"},{"role":"assistant","content":"2018-07"}]}
+{"messages":[{"role":"user","content":"该产品的保修期限是多久？使用非指定配件有什么后果？"},{"role":"assistant","content":"主机保修期为 24 个月，标配附件（电池、充电座）保修期为 12 个月。保修条件为自购买之日起，在正常使用、操作与维护条件下出现材料或制造工艺方面的缺陷。若擅自使用未经许可的配件，由此导致的一切后果由用户自行负责。"}]}
+{"messages":[{"role":"user","content":"型号为 AN0435H24 的天线适用的频率范围和长度是多少？"},{"role":"assistant","content":"该天线适用的频率范围为 400MHz~470MHz，长度为 9cm。"}]}
+{"messages":[{"role":"user","content":"海能达通信股份有限公司对“Hytera”商标享有什么权利？"},{"role":"assistant","content":"“Hytera”是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标，公司仅对自有商标及产品名称享有所有权。"}]}
+{"messages":[{"role":"user","content":"R3.0版本对数字报警及模拟报警增加了什么功能，目的是什么？"},{"role":"assistant","content":"R3.0版本对数字报警及模拟报警增加声光示警功能，目的是方便救援人员快速定位报警人员，及紧急呼叫结束后提供本地威慑。"}]}
+{"messages":[{"role":"user","content":"V4.0.00版本中声光示警功能的实现范围有何变化？"},{"role":"assistant","content":"在V4.0.00版本中，声光示警改为R4.0实现，且不包括模拟报警。"}]}
+{"messages":[{"role":"user","content":"How do you view status information such as SIM card, IMEI, and software version on the device?"},{"role":"assistant","content":"In the Device info interface, tap Status. Then, tap the corresponding tabs to check SIM card, International mobile equipment identity (IMEI), software version, baseband version, WLAN, BT, and more."}]}
+{"messages":[{"role":"user","content":"Which licenses and policies can be viewed in the Legal information section?"},{"role":"assistant","content":"You can view the Hytera software license, Hytera privacy policy, Hytera version declare, third-party licenses, and system WebView licenses."}]}
+{"messages":[{"role":"user","content":"Does purchasing the product grant rights to Hytera's computer programs?"},{"role":"assistant","content":"No, the purchase of the product shall not be deemed to grant, either directly or by implication, any rights to the purchaser regarding the Company's computer programs."}]}
+{"messages":[{"role":"user","content":"Which manufacturer issues this EU Declaration of Conformity and what is their address?"},{"role":"assistant","content":"The manufacturer is Hytera Communications Corporation Limited, located at Hytera Tower, Hi-Tech Industrial Park North, 9108# Beihuan Road, Nanshan District, Shenzhen, P.R. China."}]}
+{"messages":[{"role":"user","content":"What product is covered by this declaration and which Radio Equipment Directive does it comply with?"},{"role":"assistant","content":"The product is the Advanced multimode radio, and it complies with the requirements of Directive RE 2014/53/EU."}]}
+{"messages":[{"role":"user","content":"在R3.0_V7.0版本中，相对于R2.7_V6.0版本增加了哪些配置方法？"},{"role":"assistant","content":"R3.0_V7.0版本相对于R2.7_V6.0版本增加了Nginx-web和安全模式配置方法。"}]}
+{"messages":[{"role":"user","content":"执法记录仪 VM550(M) 和 DSJ-HYTH7A1(Y) 适用于 Smart MDM 的哪个版本？"},{"role":"assistant","content":"执法记录仪 VM550(M) 和 DSJ-HYTH7A1(Y) 适用于 Smart MDM Web。"}]}
+{"messages":[{"role":"user","content":"如何查看终端的设备型号？"},{"role":"assistant","content":"可通过终端标签查看。"}]}
+{"messages":[{"role":"user","content":"已发布的公文在编辑和删除方面有哪些限制？"},{"role":"assistant","content":"已发布的公文无法编辑标题、类别和描述信息，同时也无法删除。只有上传该公文的管理员及其上级组织才拥有删除权限（针对未发布状态）。"}]}
+{"messages":[{"role":"user","content":"What is the TFTSB NB version number?"},{"role":"assistant","content":"V4.1.08.000.01.9G15"}]}
+{"messages":[{"role":"user","content":"Hytera 服务热线是多少？"},{"role":"assistant","content":"400-830-7020"}]}
+{"messages":[{"role":"user","content":"在 Smart MDM 版本 R3.0_V7.0 中，相对于 R2.7_V6.0 版本增加了哪些配置方法？"},{"role":"assistant","content":"增加了 Nginx-web 和安全模式配置方法。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版适用的 DMR 窄带终端有哪些系列或型号？"},{"role":"assistant","content":"Smart MDM 专业版适用的 DMR 窄带终端包括 PD6 系列、PD7 系列、PD9 系列、HPD780、MD7 系列、HP7 系列。"}]}
+{"messages":[{"role":"user","content":"VM550(M) 和 DSJ-HYTH7A1(Y) 属于哪类终端，适用于哪个版本的 Smart MDM？"},{"role":"assistant","content":"VM550(M) 和 DSJ-HYTH7A1(Y) 属于执法记录仪，适用于 Smart MDM 专业版。"}]}
+{"messages":[{"role":"user","content":"在该设备上允许使用的防爆电池型号是什么？"},{"role":"assistant","content":"只能使用规定的防爆电池 BL3204-Ex。"}]}
+{"messages":[{"role":"user","content":"设备的防爆等级具体是什么？"},{"role":"assistant","content":"Ex ib IIB T4Gb 和 Ex ib IIICT130°C Db"}]}
+{"messages":[{"role":"user","content":"设备的卡槽配置及支持的卡片类型是什么？"},{"role":"assistant","content":"卡槽一支持Nano SIM卡；卡槽二支持Nano SIM卡或Micro SD卡。"}]}
+{"messages":[{"role":"user","content":"该设备的防尘防水等级是多少？"},{"role":"assistant","content":"IP66、IP68"}]}
+{"messages":[{"role":"user","content":"该设备的ESD静电防护等级遵循什么标准及级别？"},{"role":"assistant","content":"IEC 61000-4-2(level 4)"}]}
+{"messages":[{"role":"user","content":"该设备在接触放电和空气放电下的ESD耐受电压分别是多少？"},{"role":"assistant","content":"接触放电为±8kV，空气放电为±15kV。"}]}
+{"messages":[{"role":"user","content":"V2.0版本在用户管理和文档结构方面做了哪些更新？"},{"role":"assistant","content":"V2.0版本新增了用户角色、KMC登录和用户管理描述，并调整了文档大纲，从终端类型、用户角色等角度描述操作流程。"}]}
+{"messages":[{"role":"user","content":"V3.0和V2.0版本的发布日期分别是什么？"},{"role":"assistant","content":"V3.0版本的发布日期是2018-07，V2.0版本的发布日期是2017-12。"}]}
+{"messages":[{"role":"user","content":"请列出OTAK_e1中序号1条目的索引、版本和ID数值。"},{"role":"assistant","content":"索引为1，版本为1，ID为1。"}]}
+{"messages":[{"role":"user","content":"为什么ENS集群终端需要对功率控制信令进行兼容性处理？"},{"role":"assistant","content":"因为ETSI标准V1.7.1版本中对RC信令进行了更改，而功率控制信令也是一种RC信令，所以ENS集群终端需对不同版本的功率控制信令进行兼容性处理。"}]}
+{"messages":[{"role":"user","content":"当ENS终端的RC信令版本为ETSI V1.7.1时，终端如何处理系统下发的功率控制信令？"},{"role":"assistant","content":"终端根据ETSI V1.7.1标准规定的RC信令流程解析处理系统下发的功率控制信令。"}]}
+{"messages":[{"role":"user","content":"V2.0版本的发布日期和主要更新内容是什么？"},{"role":"assistant","content":"V2.0版本发布于2021-01，增加了PPS功能验证。"}]}
+{"messages":[{"role":"user","content":"Which device model supports remote factory settings restoration, data erasure, restarting, application unloading, and port switch control?"},{"role":"assistant","content":"The PNC380 supports these features, including remotely restoring factory settings, erasing data, restarting the radio, unloading applications, and controlling the port switch."}]}
+{"messages":[{"role":"user","content":"型号为 AN0435H24 的天线支持什么频率范围，长度是多少？"},{"role":"assistant","content":"AN0435H24 天线支持 400MHz~470MHz 频率范围，长度为 9cm。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版和 KMC 的版本号分别是多少？"},{"role":"assistant","content":"Smart MDM 专业版的版本是 V2.0.16.000，KMC 的版本是 V2.0.04.000。"}]}
+{"messages":[{"role":"user","content":"多模终端 PDC760 有哪些版本及其对应的类型（标准版或北美版）？"},{"role":"assistant","content":"PDC760 的版本包括：V2.0.001A01（标准版）、V2.0.001AG1（标准版）、V2.0.001AG2（北美版）、V2.0.001A02（北美版）、V2.0.001N01（标准版）、V2.0.001NG1（标准版）、V2.0.001NG2（北美版）和 V2.0.001N02（北美版）。"}]}
+{"messages":[{"role":"user","content":"窄带 TETRA 终端 PT580H Plus、PT790Ex、Z1p 和 PT580H Plus UL913 的版本号是多少？"},{"role":"assistant","content":"窄带 TETRA 终端 PT580H Plus、PT790Ex、Z1p 和 PT580H Plus UL913 的版本号均为 V3.08.71.008。"}]}
+{"messages":[{"role":"user","content":"What steps are required to check device information such as model name and serial number?"},{"role":"assistant","content":"Tap the Settings app, and then go to System > Device info."}]}
+{"messages":[{"role":"user","content":"享受保修服务需要满足哪些前提条件？"},{"role":"assistant","content":"需为我司生产的产品，自购买之日起，在正常使用、操作与维护条件下，出现材料或制造工艺方面的缺陷。"}]}
+{"messages":[{"role":"user","content":"How are non-specific references handled regarding their version in this context?"},{"role":"assistant","content":"For non-specific references, the latest version of the referenced document, including any amendments, applies."}]}
+{"messages":[{"role":"user","content":"Which functional layers are identified in the OSI reference model shown in figure 13?"},{"role":"assistant","content":"The OSI model shown in figure 13 identifies seven functional layers."}]}
+{"messages":[{"role":"user","content":"Which propagation model is used for the worked examples and discussion in this document, and why is the Hata model not typically used for these circumstances?"},{"role":"assistant","content":"The Bacon model is used for the worked examples and discussion. The Hata model is not typically used because it is valid for separations of over one kilometre, whereas the path losses in the majority of circumstances of interest equate to separations of less than a kilometre."}]}
+{"messages":[{"role":"user","content":"How does the Bacon model compare to the free-space scenario in terms of path loss?"},{"role":"assistant","content":"The Bacon model is a fairly conservative model that gives more loss than in the free-space scenario."}]}
+{"messages":[{"role":"user","content":"Using the Bacon model, what is the required stay-away distance corresponding to a path loss of 63 dB in Example 1?"},{"role":"assistant","content":"Using the Bacon model, a path loss of 63 dB equates to a stay-away distance of 60 m."}]}
+{"messages":[{"role":"user","content":"What stay-away distance is equivalent to the calculated path loss when using the Bacon model in the first example?"},{"role":"assistant","content":"36,5 m"}]}
+{"messages":[{"role":"user","content":"What is the calculated noise floor uplift (NU) for a Class 4 transmitter broadcasting from 300 m away, assuming the Bacon model path loss and additional losses?"},{"role":"assistant","content":"The noise floor uplift (NU) is 29 dB. This is derived from an effective noise floor of -93 dBm, which is 29 dB above the receiver noise floor."}]}
+{"messages":[{"role":"user","content":"What are the main variables, apart from the short range propagation model, that determine the stay-away distance?"},{"role":"assistant","content":"The main variables are the power of the unwanted transmitter and the frequency separation between the wanted and unwanted signals."}]}
+{"messages":[{"role":"user","content":"What is the Bacon model described as in relation to the SE21 and free space models?"},{"role":"assistant","content":"The Bacon model is intermediate between the highly attenuating SE21 model and the free space model."}]}
+{"messages":[{"role":"user","content":"What are the design conditions and key variables for the Bacon model?"},{"role":"assistant","content":"The Bacon model is designed for use in flat, open areas and incorporates antenna heights and propagation frequency. The variables used are: f (operational frequency in MHz), d (separation between antenna in km), h1 (antenna height at one end of path in m), h2 (antenna height at other end of path in m), and p (percentage of locations where signal is exceeded)."}]}
+{"messages":[{"role":"user","content":"What is the formula for Lm in the Bacon model?"},{"role":"assistant","content":"In the Bacon model, Lm is calculated using the formula: Lm = 120 + 40 ⋅ log10 d - 20 ⋅ log10 (h1 ⋅ h2 )."}]}
+{"messages":[{"role":"user","content":"To what equation does the CEPT SE21 model reduce for a fixed frequency of 400 MHz and antenna heights of less than 30 m?"},{"role":"assistant","content":"L3 = 117,36 + 35,22 log10 d − a(hmin ) − b(hmax )"}]}
+{"messages":[{"role":"user","content":"How is the CEPT SE21 model calculated for separations between 40 m and 100 m?"},{"role":"assistant","content":"The CEPT SE21 model for separations between 40 m and 100 m is calculated as a linear interpolation between the value of the model at 40 m and at 100 m."}]}
+{"messages":[{"role":"user","content":"How do the path loss results of the three models compare at small separations versus increasing separations?"},{"role":"assistant","content":"At small separations (50 m or less), the three models give similar results. As separation increases, differences grow, with the CEPT SE21 model giving the largest path loss and the free space model giving much lower path losses."}]}
+{"messages":[{"role":"user","content":"Who is responsible for choosing the most appropriate propagation model for local conditions when analyzing mixed direct and trunked mode operation?"},{"role":"assistant","content":"It is the responsibility of the system designer."}]}
+{"messages":[{"role":"user","content":"Where and when did the EPT DMO Planning Task Group carry out experimental trials for short range propagation models?"},{"role":"assistant","content":"The trials were carried out at Newbury Racecourse UK during February 2001."}]}
+{"messages":[{"role":"user","content":"What propagation model was used to establish the theoretical stay-away distances in the 2001 trials?"},{"role":"assistant","content":"A modified Bacon Free-Space short range propagation model based on a simple curve fit to actual path loss was used."}]}
+{"messages":[{"role":"user","content":"What are the standard assumptions defined for the propagation model, losses, and receiver behavior?"},{"role":"assistant","content":"The standard assumptions are: the Bacon propagation model is used as defined in annex B; the losses between receiver and transmitters are 14 dB; any noise in excess of the required signal will reduce voice quality; and the receiver is linear."}]}
+{"messages":[{"role":"user","content":"How does the measured path loss compare to the Bacon and Free-space models at separations between 100 m and 600 m?"},{"role":"assistant","content":"At separations between 100 m and 600 m, the measured path loss lies somewhere between the Bacon and Free-space models."}]}
+{"messages":[{"role":"user","content":"What is the definition and structure of the Bacon-FS composite propagation model?"},{"role":"assistant","content":"The Bacon-FS model conforms to the Free-space model at separations below 100 m and to the Bacon model at separations above 600 m. Between these two points, the model follows a linear interpolation between the two models."}]}
+{"messages":[{"role":"user","content":"Which propagation model is used for the calculations in the remainder of the document, and what transmitters are assumed for the stay-away distances in figure C.5?"},{"role":"assistant","content":"The Bacon-FS propagation model is used for the calculations. The assumptions involve a Class 4 wanted transmitter and a Class 5 unwanted transmitter."}]}
+{"messages":[{"role":"user","content":"How do the stay-away distances calculated using the decreased margin and Bacon-FS model compare to the measured stay-away distances?"},{"role":"assistant","content":"The stay-away distances are now significantly less than the measured stay-away distances."}]}
+{"messages":[{"role":"user","content":"What is the primary assumption regarding receiver response in the theoretical calculations of the Bacon-FS model?"},{"role":"assistant","content":"The main assumption is that the receiver responds linearly to noise across the whole dynamic range of the receiver."}]}
+{"messages":[{"role":"user","content":"Which propagation model was adopted to match the observed path losses from the Newbury Racecourse trials?"},{"role":"assistant","content":"A composite Bacon-Free Space model was used."}]}
+{"messages":[{"role":"user","content":"在海信定制需求中，品牌标识和设备型号应如何替换？"},{"role":"assistant","content":"将“Hytera”字样替换为“Hisense”，设备型号“PDC680”替换为“HS-T623”。"}]}
+{"messages":[{"role":"user","content":"海信定制需求中对法律信息的处理方式是什么？"},{"role":"assistant","content":"去除法律信息。"}]}
+{"messages":[{"role":"user","content":"在海信定制的账号设置中，需要修改哪些内容？"},{"role":"assistant","content":"在“设置-账号”中，将“hytera账号”改为“MDM账号”。"}]}
+{"messages":[{"role":"user","content":"What is the version number for the Smart MDM Lite software?"},{"role":"assistant","content":"The version number for Smart MDM Lite is V1.5.06.000."}]}
+{"messages":[{"role":"user","content":"Which PDC760 firmware versions are listed in the product information?"},{"role":"assistant","content":"The listed PDC760 firmware versions are V1.5.001A and V1.5.001N."}]}
+{"messages":[{"role":"user","content":"What features are supported in this version compared to V1.0.07.000?"},{"role":"assistant","content":"This version supports template programming, firmware upgrade, App push, radio license, and key application/push, with optimized software design for easier operation compared to V1.0.07.000."}]}
+{"messages":[{"role":"user","content":"若发现包装盒内的物品丢失或损坏，应采取什么措施？"},{"role":"assistant","content":"请与您所购产品的经销商联系。"}]}
+{"messages":[{"role":"user","content":"Hypera 商标的所有权归属及本手册中其他商标的权属说明是什么？"},{"role":"assistant","content":"Hypera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。海能达仅对自有商标及产品名称享有所权，本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Lite 版本 R1.5_V2.0 的发布日期和主要变更是什么？"},{"role":"assistant","content":"R1.5_V2.0 发布于 2018-01，主要变更是删除了 Smart MDM Lite 连接终端个数限制说明。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Lite 的首次发布版本及时间是什么？"},{"role":"assistant","content":"首次发布版本为 R1.5_V1.0，发布时间为 2017-12。"}]}
+{"messages":[{"role":"user","content":"What is the device model version for VM680?"},{"role":"assistant","content":"V1.02.07.013"}]}
+{"messages":[{"role":"user","content":"哪些 Smart MDM 相关文档属于首次发布？"},{"role":"assistant","content":"《多模智能终端_升级指南_R1.5_V1.0》和《Smart MDM 用户端用户手册》。"}]}
+{"messages":[{"role":"user","content":"相对于 V1.0.07.000 版本，本版本在操作方式上有哪些优化？"},{"role":"assistant","content":"本版本优化了软件设计，使操作方式更加简洁。用户无需配置 IP 地址、端口等参数，通过编程连接线连接终端与 Smart MDM Lite 即可实现即插即用。"}]}
+{"messages":[{"role":"user","content":"本版本 Smart MDM Lite 支持哪些主要功能？"},{"role":"assistant","content":"本版本 Smart MDM Lite 支持模板写频、固件升级、应用推送、终端许可证和密钥申请/推送等功能。"}]}
+{"messages":[{"role":"user","content":"该设备的外形尺寸是多少？"},{"role":"assistant","content":"高140mm，宽60mm，厚29.1mm。"}]}
+{"messages":[{"role":"user","content":"Smart MDM Web 对窄带终端和执法记录仪兼容哪些管理功能？"},{"role":"assistant","content":"Smart MDM Web 兼容对窄带终端和执法记录仪进行数据采集（仅适用执法记录仪）、写频和升级等管理。"}]}
+{"messages":[{"role":"user","content":"在 Smart MDM 版本 R3.0_V7.0 中，相对于 R2.7_V6.0 增加了哪些配置方法？"},{"role":"assistant","content":"在版本 R3.0_V7.0 中，相对于 R2.7_V6.0 增加了 Nginx-web 和安全模式配置方法。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 版本 R1.5_V2.0 相对于 R1.0_V1.0 有哪些主要变更？"},{"role":"assistant","content":"版本 R1.5_V2.0 相对于 R1.0_V1.0 的变更包括：新增部署 Linux 服务器的描述；新增安装工作站前禁用驱动程序强制签名的方法；新增安装配置工作站章节；删除安装所有安装过程中安装密码的描述。"}]}
+{"messages":[{"role":"user","content":"Which radio models are supported by Smart MDM Lite for the DMR category?"},{"role":"assistant","content":"Smart MDM Lite supports the HP78X model for DMR radios."}]}
+{"messages":[{"role":"user","content":"R2.0版本的Feature List中对“报警发送GPS”功能做了什么处理？"},{"role":"assistant","content":"R2.0的Feature List已经将“报警发送GPS”删除，并将这部分需求标灰。"}]}
+{"messages":[{"role":"user","content":"R3.0版本为报警功能增加了什么新功能，其目的是什么？"},{"role":"assistant","content":"R3.0版本对报警增加声光示警功能，目的是方便救援人员快速定位报警人员，及紧急呼叫结束后提供本地威慑。"}]}
+{"messages":[{"role":"user","content":"在电源类配件中，锂电充电座的型号是什么？"},{"role":"assistant","content":"CH20L13。"}]}
+{"messages":[{"role":"user","content":"在 V2.5.000 版本中，关于“紧急保护”和“Hot Mic”的配置状态分别做了什么修改？"},{"role":"assistant","content":"将“紧急保护”修改为默认开启且不可配置（内部参数），并将 Hot Mic 修改为可配置。"}]}
+{"messages":[{"role":"user","content":"R3.0 版本对报警功能增加了什么新特性，其目的是什么？"},{"role":"assistant","content":"R3.0 版本对报警增加声光示警功能，目的是方便救援人员快速定位报警人员，及在紧急状态消息/紧急呼叫结束后提供本地威慑。"}]}
+{"messages":[{"role":"user","content":"本文档主要适用于哪个版本，且适用范围是否包含系统侧需求？"},{"role":"assistant","content":"本文档主要适用于 R2.0，只适用于终端侧需求，与紧急报警业务相关的系统侧需求不在范围内。"}]}
+{"messages":[{"role":"user","content":"在R2.5版本中，Emergency Protect功能的配置状态是怎样的？"},{"role":"assistant","content":"TMO及DMO下修改为默认开启，且不可配置。"}]}
+{"messages":[{"role":"user","content":"How are specific and non-specific references handled regarding version applicability?"},{"role":"assistant","content":"For specific references, only the cited version applies. For non-specific references, the latest version of the referenced document (including any amendments) applies."}]}
+{"messages":[{"role":"user","content":"What are the two groups of simulations carried out due to different possibilities in the radio receiver model?"},{"role":"assistant","content":"The first with ideal synchronization technique, and the second with a particular implementation of the synchronization block."}]}
+{"messages":[{"role":"user","content":"How is the decoder block realized in the described model?"},{"role":"assistant","content":"The decoder block is realized according to the \"soft\" decision Viterbi algorithm, with path length equal to the message."}]}
+{"messages":[{"role":"user","content":"What is the reference document version and date mentioned in the text?"},{"role":"assistant","content":"The reference document is ETSI TR 102 300-2 V1.2.1, dated 2013-09."}]}
+{"messages":[{"role":"user","content":"How is the call duration modeled for a single subscriber?"},{"role":"assistant","content":"The call duration is modeled with a uniform random variable distributed in the interval [a(ind.v.), b(ind.v.)]."}]}
+{"messages":[{"role":"user","content":"How is the Dispatcher modeled in simulations regarding traffic generation?"},{"role":"assistant","content":"In simulations, the Dispatcher is modeled as a fixed user that generates a large amount of voice and circuit data group calls."}]}
+{"messages":[{"role":"user","content":"What assumption is made regarding propagation conditions when modeling the transmission of one burst on a radio channel?"},{"role":"assistant","content":"It is assumed that propagation conditions, including environment, speed, and position, are not modified during the burst time."}]}
+{"messages":[{"role":"user","content":"How is the attenuation of the transmitted signal on a radio channel represented in the model?"},{"role":"assistant","content":"It is represented as a deterministic term depending on transmitter-receiver distance (r) and propagation environment (parameter γ), associated with a stochastic shadowing process (Ashad) with log-normal distribution."}]}
+{"messages":[{"role":"user","content":"In the propagation model for a TETRA system, what is the minimum required value and its implication for adjacent channel interference power?"},{"role":"assistant","content":"For a TETRA system, the value is more or equal to 64 dB. Consequently, the interference power from adjacent channels is at most 64 dB less than the total adjacent channel power, making its contribution negligible compared to Co-channel interference in simulations."}]}
+{"messages":[{"role":"user","content":"What is the document identifier and version for the ETSI technical report containing Figures 204, 205, and 206?"},{"role":"assistant","content":"The document identifier is ETSI TR 102 300-2 V1.2.1 (2013-09)."}]}
+{"messages":[{"role":"user","content":"How is the delay of the answer from the called party modeled for individual voice calls?"},{"role":"assistant","content":"The delay of the answer from the called party is modeled as a uniform distribution between 0,5 and 10 s."}]}
+{"messages":[{"role":"user","content":"How is a Dispatcher modeled in the network context provided?"},{"role":"assistant","content":"A Dispatcher is modeled as a fixed user that generates group calls."}]}
+{"messages":[{"role":"user","content":"How is CONNECT message transmission modelled?"},{"role":"assistant","content":"CONNECT message transmission is modelled with basic link acknowledged transmission."}]}
+{"messages":[{"role":"user","content":"How is data transmission modelled in the described procedure?"},{"role":"assistant","content":"The data transmission is modelled by an acknowledged LLC basic link data transmission."}]}
+{"messages":[{"role":"user","content":"配备标配薄电时，该设备的重量是多少？"},{"role":"assistant","content":"300g。"}]}
+{"messages":[{"role":"user","content":"该设备的ESD静电防护等级及具体放电电压指标是多少？"},{"role":"assistant","content":"IEC61000-4-2(level4),±8kV(接触放电),±15kV(空气放电)"}]}
+{"messages":[{"role":"user","content":"在V1.05版本中，DMO紧急轮询最大次数调整为多少？"},{"role":"assistant","content":"98"}]}
+{"messages":[{"role":"user","content":"在R2.5版本（V2.5.000）中，“紧急保护”功能的配置状态有何变化？"},{"role":"assistant","content":"修改为默认开启，且不可配置（内部参数）。"}]}
+{"messages":[{"role":"user","content":"R3.0版本新增的DMO紧急呼叫发起方式配置支持什么功能？"},{"role":"assistant","content":"可配置 DMO 紧急呼叫切换到 TMO 下发起。"}]}
+{"messages":[{"role":"user","content":"占位符 ×() 的作用及取值限制是什么？"},{"role":"assistant","content":"×() 是占位符，用于说明某参数取值范围内的某个值当前不可选用，且后续扩展时只能重定义为规定含义。例如：若 2 = {紧急静默模式}，意为当前版本取值不能为 2，后续若想扩展取 2 则 2 只能对应紧急静默模式。"}]}
+{"messages":[{"role":"user","content":"Which network types does the Standard radio model support simultaneously?"},{"role":"assistant","content":"The Standard radio works in both narrowband and broadband networks at the same time."}]}
+{"messages":[{"role":"user","content":"What are the requirements for the SCK version number and value format?"},{"role":"assistant","content":"The SCK version number must match the one in the TETRA system with a value range of 0 to 65535. The SCK value consists of 20-bit hexadecimal characters."}]}
+{"messages":[{"role":"user","content":"How is the activation status of a key identified by version numbers?"},{"role":"assistant","content":"Version 1 indicates the current key, version 2 indicates the previous key, and version 3 indicates the future key."}]}
+{"messages":[{"role":"user","content":"如果本产品内部严重浸水，应采取什么措施？"},{"role":"assistant","content":"请勿开机，应尽快联系经销商或维修中心进行检修。"}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属及文档中其他商标的权利归属是如何规定的？"},{"role":"assistant","content":"Hytera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标，Hytera 仅对自有商标及产品名称享有所权。本文档中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"R2.1_V2.0版本增加了哪些内容？"},{"role":"assistant","content":"R2.1_V2.0版本增加了卸载旧版本软件注意事项和端口配置说明。"}]}
+{"messages":[{"role":"user","content":"R2.7_V4.0版本更新了什么配置方法？"},{"role":"assistant","content":"R2.7_V4.0版本增加了安全模式配置方法。"}]}
+{"messages":[{"role":"user","content":"该软件支持的Windows操作系统版本有哪些？"},{"role":"assistant","content":"支持Windows 7_64位和Windows 10_64位。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版软件 R3.5_V1.0 和 R3.5_V2.0 版本的发布日期及描述分别是什么？"},{"role":"assistant","content":"R3.5_V1.0 版本于 2020-07 首次发布；R3.5_V2.0 版本于 2020-10 进行版本优化。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V3.5.09.000 版本主要介绍了哪些方面的内容？"},{"role":"assistant","content":"主要介绍 Smart MDM V3.5.09.000 相比前一版本 V3.0.06.000 的新增功能和优化功能。"}]}
+{"messages":[{"role":"user","content":"如果需要查看 Smart MDM V3.0.06.000 版本的功能介绍，应参考哪份文档？"},{"role":"assistant","content":"应参见《Smart MDM 专业版_版本指南_R3.0_V1.0》。"}]}
+{"messages":[{"role":"user","content":"What are the specifications and capabilities of the cameras on the PTC760?"},{"role":"assistant","content":"Both the front and rear cameras are 13MP. They offer high quality images, support 4K video taking, and enable video talk in mission critical scenarios."}]}
+{"messages":[{"role":"user","content":"What information must be provided when applying for a radio license from the Company?"},{"role":"assistant","content":"You must provide authentication information including the radio information (SN and device model) and the corresponding paid features."}]}
+{"messages":[{"role":"user","content":"What should I do if narrowband PDT or DMR radios fail to connect due to region license issues?"},{"role":"assistant","content":"Ensure the radio's region license matches that of MDM Pro. If no region license is imported to MDM Pro, import one. If a license already exists, replace it with the corresponding one."}]}
+{"messages":[{"role":"user","content":"What are the possible causes for a license file being damaged or failing to parse?"},{"role":"assistant","content":"Possible causes include: abnormal storage path during import, network failure during creation, the file being damaged or tampered with, key damage causing decryption failure, failure to decrypt in the first or second step, or damaged content within the license file."}]}
+{"messages":[{"role":"user","content":"What is the registered address of Hytera Communications Corporation Limited?"},{"role":"assistant","content":"Hytera Tower, Hi-Tech Industrial Park North, 9108# Beihuan Road, Nanshan District, Shenzhen, People's Republic of China"}]}
+{"messages":[{"role":"user","content":"What are the version matching rules between the firmware file and the radio for Terminal GMS flag bits?"},{"role":"assistant","content":"In the firmware file, the first five digits of the firmware software version (e.g., 'V3.5.001') must be greater than or equal to the corresponding number of the radio. The last three digits (e.g., '1G1') must be the same as the corresponding number of the radio. Additionally, the broadband and narrowband versions in the firmware must be greater than the broadband and narrowband versions of the radio."}]}
+{"messages":[{"role":"user","content":"What firmware restriction applies to standard version radios earlier than R2.5?"},{"role":"assistant","content":"If the radio is the standard version earlier than R2.5, it can only use PDC760 standard firmware such as V2.5.0011X1. In this firmware version, the penultimate character 'X' must be consistent with that of the radio."}]}
+{"messages":[{"role":"user","content":"在西班牙矿业项目中，客户希望用什么设备替代S终端和商用智能手机？"},{"role":"assistant","content":"PTC680"}]}
+{"messages":[{"role":"user","content":"How does applying the same template to multiple radios with different models and versions benefit the programming process?"},{"role":"assistant","content":"It streamlines the programming process and reduces the number of template configurations."}]}
+{"messages":[{"role":"user","content":"如果对本手册内容有建议或需要更多信息，可以通过哪些官方渠道联系海能达？"},{"role":"assistant","content":"可以访问网站 https://www.hytera.com，或拨打服务热线 400-830-7020。"}]}
+{"messages":[{"role":"user","content":"该设备支持哪些定位系统和蓝牙版本？"},{"role":"assistant","content":"支持的定位系统包括GPS、BDS、GLONASS和Galileo；蓝牙版本为V5.3 BR/EDR/BLE。"}]}
+{"messages":[{"role":"user","content":"该设备的模拟接收灵敏度和数字接收灵敏度指标是多少？"},{"role":"assistant","content":"模拟接收灵敏度为0.16μV/-123dBm (12dB SINAD)；数字接收灵敏度为0.16μV/-123dBm @BER5% (典型值)。"}]}
+{"messages":[{"role":"user","content":"What cleaning methods and materials are recommended for the product's keys, knobs, and front case after long-time use?"},{"role":"assistant","content":"Use neutral cleanser and a non-woven fabric to clean the keys, knobs, and front case."}]}
+{"messages":[{"role":"user","content":"What are the version numbers for Smart MDM Pro and KMC software?"},{"role":"assistant","content":"The version number for Smart MDM Pro is V2.5.20.000, and the version number for KMC is V2.5.05.000."}]}
+{"messages":[{"role":"user","content":"What is the firmware version for the PDC760 Multi-mode Advanced Radio in the Standard configuration?"},{"role":"assistant","content":"The firmware version for the PDC760 Multi-mode Advanced Radio in the Standard configuration is V2.5.001101."}]}
+{"messages":[{"role":"user","content":"Which firmware version is assigned to the PD78X DMR Radio?"},{"role":"assistant","content":"The firmware version assigned to the PD78X DMR Radio is V9.00.06.001."}]}
+{"messages":[{"role":"user","content":"针对南京项目，Smart Key键的功能分配有哪些特殊调整？"},{"role":"assistant","content":"南京项目需要Smart key支持单击拆线，并将点亮和熄屏功能挪到开关机键上。"}]}
+{"messages":[{"role":"user","content":"How do you check device information such as model name and serial number?"},{"role":"assistant","content":"Tap the Settings app, and then go to System > Device info."}]}
+{"messages":[{"role":"user","content":"Which Canadian standards does the device comply with for unlicensed equipment?"},{"role":"assistant","content":"The device complies with the RSS standards (radio broadcasting technological standards) of the Ministry of Industry of Canada for unlicensed equipment."}]}
+{"messages":[{"role":"user","content":"How can you check device information such as Model Name, RAM, and Serial Number?"},{"role":"assistant","content":"Touch the icon or control widget and then go to General > Device Information."}]}
+{"messages":[{"role":"user","content":"该文档的读者对象包括哪些人员？"},{"role":"assistant","content":"开发、测试、UI&UE、资料人员、产品经理、项目经理"}]}
+{"messages":[{"role":"user","content":"对于智能电池，终端显示、分析仪显示和MDM显示中，哪些渠道可以获取电池型号信息？"},{"role":"assistant","content":"终端显示、分析仪显示和MDM显示均可以获取智能电池的电池型号信息。"}]}
+{"messages":[{"role":"user","content":"V1.0和V2.0版本的复充策略有何不同？最终确定的座充复充电量阈值是多少？"},{"role":"assistant","content":"V1.0的复充策略是电池回到95%会复充；V2.0为了尽可能提高电池寿命，将复充满值从95%改到90%。经讨论后，最终确定座充复充电量从90%改回95%。"}]}
+{"messages":[{"role":"user","content":"窄带 DMR 终端 HP785 对应的版本是什么？"},{"role":"assistant","content":"A2.5.09.015"}]}
+{"messages":[{"role":"user","content":"型号为 HP980 的窄带 PDT 终端的版本号是多少？"},{"role":"assistant","content":"A03.0.05.010"}]}
+{"messages":[{"role":"user","content":"电池分析仪 MCA26 的版本信息是什么？"},{"role":"assistant","content":"V1.00.01.004"}]}
+{"messages":[{"role":"user","content":"电池型号BP3002的设计容量和最大容量分别是多少？"},{"role":"assistant","content":"设计容量为3000 mAh，最大容量为3148 mAh。"}]}
+{"messages":[{"role":"user","content":"Which smart charger model supports a DC 12 V, 2 A input?"},{"role":"assistant","content":"The CH20L13 Smart charger supports DC 12 V, 2 A."}]}
+{"messages":[{"role":"user","content":"在V4.0.01版本中，针对摄像头功耗显示做了什么调整？"},{"role":"assistant","content":"去掉了摄像头的功耗显示。"}]}
+{"messages":[{"role":"user","content":"V2.03.07 版本对地图方案进行了什么调整？"},{"role":"assistant","content":"将在线地图替换成离线地图方案。"}]}
+{"messages":[{"role":"user","content":"在V3.00.02版本中，如果通话结束时用户正处于通话定位界面，系统界面将如何显示？"},{"role":"assistant","content":"通话结束后不退出通话定位界面，只显示本机位置。"}]}
+{"messages":[{"role":"user","content":"在 R2.0 版本中，单次 GPS 上报包含哪些具体功能？"},{"role":"assistant","content":"在 R2.0 版本中，单次 GPS 上报包含 GPS 查询、开机上传、关机上传和按键上传。"}]}
+{"messages":[{"role":"user","content":"R2.0 版本的周期性 GPS 上报支持哪几种上传模式？"},{"role":"assistant","content":"R2.0 版本的周期性 GPS 上报支持定时上传、定距上传、定时或定距上传以及定时和定距上传。"}]}
+{"messages":[{"role":"user","content":"通话定位功能在不同版本中的支持情况有何区别？"},{"role":"assistant","content":"通话定位功能在 R2.0 版本中支持，而通话定位（地图）功能仅在 R2.5 版本中支持。"}]}
+{"messages":[{"role":"user","content":"在 R3.0 版本中，如何切换通话定位使用的地图类型？"},{"role":"assistant","content":"根据 CPS/MDM “整机-系统设置-定位-地图类型” 菜单进行选择。"}]}
+{"messages":[{"role":"user","content":"Which radio models are supported under the Multi-mode radio category in MDM Pro V6.0?"},{"role":"assistant","content":"The supported Multi-mode radio models are PDC650 and PDC690."}]}
+{"messages":[{"role":"user","content":"如何查看设备的型号、存储、序列号及软件版本信息？"},{"role":"assistant","content":"打开系统设置应用，选择“设备信息”，您可以查看型号、存储、序列号及软件版本等。"}]}
+{"messages":[{"role":"user","content":"在 V2.05.00 版本中，当前站采集样本的数量发生了什么变化？"},{"role":"assistant","content":"当前站采集样本由 6 个变为 25 个。"}]}
+{"messages":[{"role":"user","content":"What is the plan version for Enhanced Background Scanning?"},{"role":"assistant","content":"R3.0"}]}
+{"messages":[{"role":"user","content":"在以前版本中，当终端场强值为-230dBm时，邻站列表中的场强值是如何显示的？"},{"role":"assistant","content":"以前版本显示为-230dBm。"}]}
+{"messages":[{"role":"user","content":"R2.0版本中，当前站采集样本点的计算方式发生了什么变化？"},{"role":"assistant","content":"由原来在60ms内采集6个点取均值（去掉最大和最小值），变更为在500ms内采集25个点取均值。"}]}
+{"messages":[{"role":"user","content":"What are the storage temperature limits for the PDC760?"},{"role":"assistant","content":"The storage temperature ranges from -30°C to +80°C."}]}
+{"messages":[{"role":"user","content":"What are the humidity conditions specified for the PDC760 under MIL-STD 810?"},{"role":"assistant","content":"The humidity specification is ≤ +65°C at 95%RH, per MIL-STD 810."}]}
+{"messages":[{"role":"user","content":"What are the specifications and capabilities of the PDC760 cameras?"},{"role":"assistant","content":"Both the front and rear cameras are 13MP. They offer high-quality images, support 4K video recording, and enable video talk in mission-critical situations."}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属及本手册中其他商标的权属如何界定？"},{"role":"assistant","content":"Hytera 是海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标，我司仅对自有商标及产品名称享有所权。本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"产品版本 V5.0 的文档发布日期和描述分别是什么？"},{"role":"assistant","content":"产品版本 V5.0 的文档发布日期为 2023-05，描述为“首次发布”。"}]}
+{"messages":[{"role":"user","content":"针对产品版本 V5.5 的更新说明是在哪一天发布的？"},{"role":"assistant","content":"针对产品版本 V5.5 的更新说明发布于 2024-11。"}]}
+{"messages":[{"role":"user","content":"哪个产品版本的更新说明是在 2023-10 发布的？"},{"role":"assistant","content":"产品版本 V5.1 的更新说明是在 2023-10 发布的。"}]}
+{"messages":[{"role":"user","content":"文档中关于产品版本 V5.2 的描述内容是什么？"},{"role":"assistant","content":"文档中关于产品版本 V5.2 的描述内容是“新增 R5.2 版本的更新说明”。"}]}
+{"messages":[{"role":"user","content":"MDM V5.5.14.014 版本对模板编辑提供了哪些新功能？"},{"role":"assistant","content":"支持智能识别混合模板（含差异与公共模板）类型与公共模板类型，可对差异模板进行单独编辑；支持根据目标模板对单个模板进行目标版本或目标机型的转换。"}]}
+{"messages":[{"role":"user","content":"MDM V5.5.14.014 版本如何实现 MDM Pro 对第三方安卓设备的管控？"},{"role":"assistant","content":"通过提供适配第三方安卓设备的 API 接口。"}]}
+{"messages":[{"role":"user","content":"如果对本手册有建议或需要更多信息，可以通过哪些渠道联系海能达？"},{"role":"assistant","content":"可以访问网站https://www.hytera.com，或拨打服务热线400-830-7020。"}]}
+{"messages":[{"role":"user","content":"Which standards does the PTC680 comply with regarding durability?"},{"role":"assistant","content":"The PTC680 complies with IP68 and MIL-STD-810G standards."}]}
+{"messages":[{"role":"user","content":"What is the weight of the PTC680 device?"},{"role":"assistant","content":"The PTC680 weighs only 325 g."}]}
+{"messages":[{"role":"user","content":"What certifications does the PTC680 hold for robustness?"},{"role":"assistant","content":"The PTC680 is IP68 and MIL-STD-810 G certified."}]}
+{"messages":[{"role":"user","content":"哪个文档版本首次发布？其对应的产品版本和发布日期是什么？"},{"role":"assistant","content":"文档版本00首次发布，对应的产品版本为V1.0，发布日期为2020-11。"}]}
+{"messages":[{"role":"user","content":"PDC760、PDC680、PTC760 和 PTC680 终端要求的最低版本是多少？"},{"role":"assistant","content":"V3.5 及以上版本。"}]}
+{"messages":[{"role":"user","content":"PNC380 终端需要满足什么版本要求？"},{"role":"assistant","content":"V2.5 及以上版本。"}]}
+{"messages":[{"role":"user","content":"V2.00.03版本中，针对TD21535的变更内容是什么？"},{"role":"assistant","content":"修改遥晕状态标志存储。"}]}
+{"messages":[{"role":"user","content":"V2.00.03版本中，针对TD22281增加了什么描述？"},{"role":"assistant","content":"增加遥晕后自动网络切换的描述。"}]}
+{"messages":[{"role":"user","content":"V2.00.03版本新增了哪两个功能之间的交互描述？"},{"role":"assistant","content":"发射禁止和遥晕。"}]}
+{"messages":[{"role":"user","content":"V2.00.03版本的发布日期和作者分别是什么？"},{"role":"assistant","content":"发布日期为2025-7-30，作者为Rosie。"}]}
+{"messages":[{"role":"user","content":"Which product is declared compliant with EU Directives and Regulations in this document?"},{"role":"assistant","content":"The product declared compliant is the Advanced multimode radio."}]}
+{"messages":[{"role":"user","content":"终端设置可编程按键中的配件为何要去掉型号显示？"},{"role":"assistant","content":"以便后续扩充支持的型号。"}]}
+{"messages":[{"role":"user","content":"V0.0.3版本新增了什么内容以避免读者未关注到重点信息？"},{"role":"assistant","content":"新增3.3.3小节说明新增的可编程按键功能。"}]}
+{"messages":[{"role":"user","content":"哪些型号的蓝牙配件支持按键自定义功能？"},{"role":"assistant","content":"支持的型号包括蓝牙PTT指环（POA121）和蓝牙肩咪（SM27W2）。"}]}
+{"messages":[{"role":"user","content":"How can you view legal information such as the Hytera software license and privacy policy?"},{"role":"assistant","content":"In the Device info interface, tap Legal information."}]}
+{"messages":[{"role":"user","content":"What are the specific software version numbers for Narrowband and Broadband operations listed in the declaration?"},{"role":"assistant","content":"The Narrowband software version is V3.5.66.000.01, and the Broadband software version is V3.5.93.012.01."}]}
+{"messages":[{"role":"user","content":"On what date was the CE mark affixed for the document signed on behalf of Hytera Communications Corporation Limited?"},{"role":"assistant","content":"2022-08-09"}]}
+{"messages":[{"role":"user","content":"本文件的发布机构对涉及的专利持有什么立场？"},{"role":"assistant","content":"本文件的发布机构对于该专利的真实性、有效性和范围无任何立场。"}]}
+{"messages":[{"role":"user","content":"对于注日期的引用文件，哪个版本适用于本标准？"},{"role":"assistant","content":"仅注日期的版本适用于本标准。"}]}
+{"messages":[{"role":"user","content":"凡是不注日期的引用文件，其哪个版本适用于本文件？"},{"role":"assistant","content":"其最新版本（包括所有的修改单）适用于本文件。"}]}
+{"messages":[{"role":"user","content":"Which protection standards does the PTC680 meet?"},{"role":"assistant","content":"The device meets IP68 and MIL-STD-810G standards."}]}
+{"messages":[{"role":"user","content":"What is the width of the Hytera PTC680 terminal?"},{"role":"assistant","content":"6 cm"}]}
+{"messages":[{"role":"user","content":"What are the protection class ratings of the PTC680?"},{"role":"assistant","content":"The PTC680 has an IP68 protection class and meets MIL-STD-810 G standards."}]}
+{"messages":[{"role":"user","content":"在发射占空比为 15% 的条件下，节点设备的工作时间要求是多少？"},{"role":"assistant","content":"在发射占空比 15%条件下，节点设备工作时间应不小于 8h。"}]}
+{"messages":[{"role":"user","content":"智能配件包含哪些具体型号？"},{"role":"assistant","content":"智能配件包括MCA26、MCA16和MCA16-T。"}]}
+{"messages":[{"role":"user","content":"DMR终端列表中包含了哪些以HP开头的型号？"},{"role":"assistant","content":"DMR终端中以HP开头的型号有：HP70X CQST、HP78X CQST、HP79XEx、HP710Ex、HP50X CQST、HP56X CQST、HP98X、HP68X、HP60X、HP660、HP56X、HP50X。"}]}
+{"messages":[{"role":"user","content":"What is the required action for upgrading Smart MDM from version V3.0.06.003 or earlier to V4.6.10.000?"},{"role":"assistant","content":"Consult Hytera technical service personnel."}]}
+{"messages":[{"role":"user","content":"如何查看对讲机的ID、序列号、型号及软件版本等信息？"},{"role":"assistant","content":"进入“设置”菜单，选择“常规设置/集群设置 > 对讲机信息”，即可查看对讲机 ID、序列号、型号、频率范围及软件版本等。"}]}
+{"messages":[{"role":"user","content":"如果本产品内部严重浸水，用户应采取什么措施？"},{"role":"assistant","content":"请勿开机，并应尽快联系经销商或维修中心进行检修。"}]}
+{"messages":[{"role":"user","content":"Which LTE protocol version and speed ratio class does the device support?"},{"role":"assistant","content":"The device supports LTE protocol 3GPP LTE Rel 10 and speed ratio class CAT4."}]}
+{"messages":[{"role":"user","content":"Which models share the code 5111000001651A?"},{"role":"assistant","content":"The models sharing the code 5111000001651A are MT5001, MT5002, MT5003, MT5004, MT5005, MT5006, MT5007, MT5008, MT5010, MT5011, MT5641, MT5642, MT5643, MT5644, MT5645, MT5646, MT5647, MT5648, MT5649, MT5650, MT5652, MT5653, and MT5654."}]}
+{"messages":[{"role":"user","content":"What is the code for model MT5651?"},{"role":"assistant","content":"The code for model MT5651 is 5106000000131A."}]}
+{"messages":[{"role":"user","content":"Which models are associated with the code 50070300082004?"},{"role":"assistant","content":"The models associated with the code 50070300082004 are Q2005, Q2006, Q2008, Q2011, Q2109, and Q2115."}]}
+{"messages":[{"role":"user","content":"V2.05.02版本增加了什么功能？"},{"role":"assistant","content":"增加紧急警报功能。"}]}
+{"messages":[{"role":"user","content":"哪个版本补充了相同呼叫下语音和视频的切换交互？"},{"role":"assistant","content":"V2.05.04"}]}
+{"messages":[{"role":"user","content":"V2.05.05版本针对RoIP注册做了什么补充？"},{"role":"assistant","content":"补充RoIP注册的提示音 TD78。"}]}
+{"messages":[{"role":"user","content":"V2.07.01 版本增加了哪些功能？"},{"role":"assistant","content":"增加动态重组等功能"}]}
+{"messages":[{"role":"user","content":"V3.05.01版本增加了哪些功能？"},{"role":"assistant","content":"V3.05.01版本增加了宽带优先、终端动态重组功能。"}]}
+{"messages":[{"role":"user","content":"在R1.5版本中，为什么窄带系统未支持的跨系统业务在RoIP侧无法支持？"},{"role":"assistant","content":"因为MPTT作为窄带系统的对等漫游系统，RoIP侧业务的实现依赖于窄带系统和MPTT系统间的对接方式，所以窄带系统未支持的跨系统业务在RoIP侧无法支持。"}]}
+{"messages":[{"role":"user","content":"当双模终端同时拥有ROIP业务和MMS业务时，对视频个呼的支持情况如何？发起个呼时的默认行为是什么？多媒体呼叫业务中语音流支持哪些格式及版本？"},{"role":"assistant","content":"当前版本不支持视频个呼。当发起个呼时，默认为ROIP语音业务。多媒体呼叫业务中语音流支持NVOC和AMBE格式（R2.5）。"}]}
+{"messages":[{"role":"user","content":"在R1.5版本中，包含双模终端的混合组应如何配置开户？"},{"role":"assistant","content":"在R1.5版本中，如果混合组成员中包含双模终端类型，该混合组只开在窄带系统内，并在MPTT系统内开漫游组。"}]}
+{"messages":[{"role":"user","content":"Flat R1.0和R1.5版本的RoIP实现方式是什么？"},{"role":"assistant","content":"Flat R1.0和R1.5版本由系统实现RoIP，终端侧不实现。"}]}
+{"messages":[{"role":"user","content":"R2.5版本的MMS业务支持哪些专网语音编解码？"},{"role":"assistant","content":"R2.5版本支持NVOC和AMBE专网语音编解码。"}]}
+{"messages":[{"role":"user","content":"MPTT SDK需要同步NB的什么策略及版本？"},{"role":"assistant","content":"需要同步NB的组属性策略 R2.5。"}]}
+{"messages":[{"role":"user","content":"在R1.5版本中，消息接收范围由哪一部分实现？"},{"role":"assistant","content":"在R1.5版本中，消息接收范围由SDK实现。"}]}
+{"messages":[{"role":"user","content":"哪些功能在 R2.0 和 R2.5 版本中可用？"},{"role":"assistant","content":"Regular（报警有UI）Alarm（紧急状态消息）和 Alarm w/ Call (开启/关闭 Call To Follow)（紧急状态消息和紧急呼叫，警报呼叫）在 R2.0 和 R2.5 版本中可用。"}]}
+{"messages":[{"role":"user","content":"Call (开启/关闭 Call To Follow)（紧急呼叫）支持哪些版本？"},{"role":"assistant","content":"Call (开启/关闭 Call To Follow)（紧急呼叫）支持 R1.0 和 R2.0 版本。"}]}
+{"messages":[{"role":"user","content":"R2.0 版本中 Call To Follow（紧急呼叫）的功能描述是什么？"},{"role":"assistant","content":"开启/关闭 Call To Follow（紧急呼叫）"}]}
+{"messages":[{"role":"user","content":"R2.0 版本中 Alarm w/ Call 的功能描述是什么？"},{"role":"assistant","content":"开启/关闭 Call To Follow（紧急状态消息和紧急呼叫，警报呼叫）"}]}
+{"messages":[{"role":"user","content":"RoIP从哪个版本开始支持紧急报警？"},{"role":"assistant","content":"R2.5"}]}
+{"messages":[{"role":"user","content":"在R2.0版本中，为什么要修改可编程按键事件的分发策略？"},{"role":"assistant","content":"因为部分功能变为NB和AP的共用功能，而当前可编程按键的架构无法支持共用功能，需要能够判断公共功能触发时是发给NB还是AP。"}]}
+{"messages":[{"role":"user","content":"R1.5版本中，NB和AP共用的功能有哪些？"},{"role":"assistant","content":"只有“加密”功能为NB和AP共用。"}]}
+{"messages":[{"role":"user","content":"在Status Message Version中，勾选与未勾选时组消息的接收范围分别是什么？"},{"role":"assistant","content":"勾选时，组消息的接收范围为：所有组群中的组+背景组+动态组；未勾选时，组消息的接收范围为：待机组+所有组群中的响应组+背景组+动态组。"}]}
+{"messages":[{"role":"user","content":"What is the stock ticker symbol for Hytera?"},{"role":"assistant","content":"002583.SZ"}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属于哪家公司？"},{"role":"assistant","content":"Hytera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。"}]}
+{"messages":[{"role":"user","content":"为避免液体侵入造成损坏，应避免将本产品暴露在哪些环境或液体中？"},{"role":"assistant","content":"应避免暴露在高温高湿环境（如桑拿房、澡堂）；避免接触非净水，例如盐水、海水、离子水、酒精饮料、化妆水等。"}]}
+{"messages":[{"role":"user","content":"NFC技术在什么条件下能与兼容设备进行识别？"},{"role":"assistant","content":"NFC能在短距离内与兼容设备进行识别。"}]}
+{"messages":[{"role":"user","content":"该设备支持与电脑之间互传哪些类型的内容？"},{"role":"assistant","content":"该设备支持与电脑之间互传文件和照片。"}]}
+{"messages":[{"role":"user","content":"序列号为0607RD1511的设备的TEI/ESN是多少？"},{"role":"assistant","content":"0001302F0002110"}]}
+{"messages":[{"role":"user","content":"TEI/ESN为0001302F0009410的设备型号是什么？"},{"role":"assistant","content":"PTC680(TETRA)"}]}
+{"messages":[{"role":"user","content":"需要设置仲裁服务时，application.properties 中的 arbitration.model 应设置为什么值？"},{"role":"assistant","content":"应将 arbitration.model 配置项设置为 1。"}]}
+{"messages":[{"role":"user","content":"启用仲裁服务时，除了设置 arbitration.model 为 1，还需要配置哪些信息？"},{"role":"assistant","content":"需要同时设置仲裁节点服务器的 IP 地址与端口号。"}]}
+{"messages":[{"role":"user","content":"若不需要设置仲裁服务，arbitration.model 应如何配置？"},{"role":"assistant","content":"保持 “arbitration.model” 默认配置即可，其默认值为 0。"}]}
+{"messages":[{"role":"user","content":"What physical phenomena constitute the dispersive multipath model describing radio wave propagation in the mobile radio environment?"},{"role":"assistant","content":"The dispersive multipath model contains reflection, diffraction, and scattering."}]}
+{"messages":[{"role":"user","content":"How are TETRA propagation models derived from GSM tapped delay line models?"},{"role":"assistant","content":"TETRA adopts the GSM models in principle but uses a reduced number of taps (paths) to account for the much smaller system bandwidth of TETRA."}]}
+{"messages":[{"role":"user","content":"What are the four defining characteristics of the propagation models specified in the TETRA standard?"},{"role":"assistant","content":"The propagation models are defined by the number of discrete taps, the relative tap delay, the average relative tap-gain, and the type of tap-gain process to be applied."}]}
+{"messages":[{"role":"user","content":"How is Rician fading achieved in the propagation model typical for flat rural areas?"},{"role":"assistant","content":"Rician fading is achieved by applying a tap-gain process (RICE) which is the sum of a complex component (STATIC(fs)) with a constant magnitude and a constant Doppler shift fs, and a complex random component (CLASS) with a Rayleigh distributed magnitude and a power density spectrum according to the classical Doppler spectrum."}]}
+{"messages":[{"role":"user","content":"For which types of environments is the Hata model used in this ETR to estimate path loss?"},{"role":"assistant","content":"The Hata model is used to estimate path loss in rural and suburban areas."}]}
+{"messages":[{"role":"user","content":"What is the formula for calculating path loss $L_{\\mathrm{SA}}$ in suburban areas using the Hata suburban model?"},{"role":"assistant","content":"The formula is $L_{\\mathrm{SA}}=69.55+26.16 \\log _{10}\\left(f_{\\mathrm{C}}\\right)-13.82 \\log _{10}\\left(h_{b}\\right)-(1.1 \\log f_{\\mathrm{C}}-0.7) h_{m}+(1.56 \\log _{10}\\left(f_{\\mathrm{C}}\\right)-0.8)+\\left(44.9-6.55 \\log _{10}\\left(h_{b}\\right)\\right) \\log _{10}(R)-2\\left(\\log _{10}\\left(f_{\\mathrm{C}} / 28\\right)\\right)^{2}-5.4 \\mathrm{dB}$."}]}
+{"messages":[{"role":"user","content":"What is the current name for Smart MDM User Client in this version?"},{"role":"assistant","content":"In this version, Smart MDM User Client is named as Integrated Device Station (IDS)."}]}
+{"messages":[{"role":"user","content":"Who is responsible for managing DMR radio licenses?"},{"role":"assistant","content":"The administrator manages the DMR radio licenses, not the super administrator."}]}
+{"messages":[{"role":"user","content":"What happens to the license device quantity when devices are deleted or re-added in MDM?"},{"role":"assistant","content":"Deleting activated devices releases the device quantity of the license, while re-adding deleted devices occupies the device quantity. MDM automatically adjusts the available device quantity of the license during these actions."}]}
+{"messages":[{"role":"user","content":"How does the application management process for Multi-mode Advanced Radio change regarding updates in the described version?"},{"role":"assistant","content":"The update button is removed, leaving only the upload button. When a new version of an existing application is uploaded, Smart MDM automatically integrates it into the existing application, which reduces manual version determination time and simplifies the update process."}]}
+{"messages":[{"role":"user","content":"Hytera 商标的所有权归属及本手册中其他商标的权属说明是什么？"},{"role":"assistant","content":"Hytera 为海能达通信股份有限公司在中华人民共和国和世界其他国家和/或地区的商标或注册商标。我司仅对自有商标及产品名称享有所权，本手册中可能提及的其他商标和产品名称为各自所有者所有。"}]}
+{"messages":[{"role":"user","content":"除了多模终端，MDM Pro 还兼容管理哪些类型的终端？"},{"role":"assistant","content":"MDM Pro 还兼容对窄带终端和执法记录仪进行写频和升级。"}]}
+{"messages":[{"role":"user","content":"在 MDM SE 版本中，PDT 终端列表包含哪些防爆型号？"},{"role":"assistant","content":"在 MDM SE 版本的 PDT 终端列表中，包含的防爆型号为 HP50X 防爆和 HP56X 防爆。"}]}
+{"messages":[{"role":"user","content":"对比 MDM Pro 和 MDM SE 版本，两者在智能配件的支持上有什么区别？"},{"role":"assistant","content":"MDM Pro 版本支持的智能配件为 MCA16、MCA16-T、MCA26；MDM SE 版本支持的智能配件为 MCA26、MCA16、MC16-T。主要区别在于 MDM Pro 支持 MCA16-T，而 MDM SE 支持 MC16-T。"}]}
+{"messages":[{"role":"user","content":"MDM SE 版本支持的 DMR 终端中，哪些型号带有 CQST 标识？"},{"role":"assistant","content":"MDM SE 版本支持的 DMR 终端中，带有 CQST 标识的型号有：HP70X CQST、HP78X CQST、HP50XCQST、HP56XCQST。"}]}
+{"messages":[{"role":"user","content":"已导入旗舰版 License 与未导入时，“Features”栏显示的授权信息有何区别？"},{"role":"assistant","content":"若已导入旗舰版 License，则可看到 141 的授权信息；否则只有 131 的授权信息。"}]}
+{"messages":[{"role":"user","content":"MDM Pro 管理站支持的操作系统版本有哪些？"},{"role":"assistant","content":"MDM Pro 管理站支持 Windows 10（32位或64位）以及 Windows 11（64位）。"}]}
+{"messages":[{"role":"user","content":"G2.0产品文档适用于哪些机型及其模式？"},{"role":"assistant","content":"适用于PTC机型（直通模式/集群模式）和PDC机型（常规模式/集群模式）。"}]}
+{"messages":[{"role":"user","content":"What does the 'Danger' icon indicate in the product documentation?"},{"role":"assistant","content":"The 'Danger' icon indicates situations that could cause major personal injury or even death."}]}
+{"messages":[{"role":"user","content":"What are the requirements for the SCK version number and key value?"},{"role":"assistant","content":"The SCK version number must be the same as the one in the TETRA system, with a value range of 0~65535. The SCK value consists of 20-bit hexadecimal characters."}]}
+{"messages":[{"role":"user","content":"What are the requirements and restrictions for upgrading device firmware from versions earlier than V1.5.001 to V3.0.001?"},{"role":"assistant","content":"Radio version earlier than V1.5.001 cannot be directly upgraded to version V3.0.001. It needs to be upgraded to V1.5.001 or V1.6.002 first before it can be upgraded to V3.0.001. During the upgrade, charge the radio and ensure that the battery level is above 30%."}]}
+{"messages":[{"role":"user","content":"What specific actions are required when directly upgrading a radio version of V1.5.001 or later to V3.0.001?"},{"role":"assistant","content":"Use MDM Pro V5.1.08.008 for wired or wireless upgrade, and program again after the upgrade."}]}
+{"messages":[{"role":"user","content":"What license requirements must be met before connecting Narrowband PDT and DMR radios to MDM Pro?"},{"role":"assistant","content":"Narrowband PDT and DMR radios are region-controlled. Before connecting them, ensure their region license matches that of MDM Pro. If no region license is imported, import one; if a license exists, replace it with a corresponding one."}]}
+{"messages":[{"role":"user","content":"当终端的动态重组版本为 ENS V1.7.1 时，终端如何处理业务？"},{"role":"assistant","content":"无论系统广播的空口协议版本是什么，终端均根据 ENS V1.7.1 标准规定的动态重组流程处理业务。"}]}
+{"messages":[{"role":"user","content":"如果系统下发 ENS V1.7.1 版本的 DGNA 信令，终端会如何响应？"},{"role":"assistant","content":"终端不响应。"}]}
+{"messages":[{"role":"user","content":"当终端动态重组版本配置为“自适应”时，终端依据什么信息来决定处理模式？"},{"role":"assistant","content":"终端根据系统广播的空口协议版本进行处理。"}]}
+{"messages":[{"role":"user","content":"在终端配置为“自适应”模式下，哪些空口协议版本情况会导致终端按照Hytera模式处理？"},{"role":"assistant","content":"当系统没有广播空口协议版本，或者协议版本为1.5.1或1.6.1时，终端按照Hytera模式处理。"}]}
+{"messages":[{"role":"user","content":"终端配置为“自适应”时，系统广播的空口协议版本需满足什么条件才会按照ENS V1.7.1标准模式处理？"},{"role":"assistant","content":"当系统广播的空口协议版本为1.7.1及以上时，终端按照ENS V1.7.1标准模式处理。"}]}
+{"messages":[{"role":"user","content":"当终端配置为“自适应”并发生跨站后，若系统下发的协议版本与跨站前不一致，终端如何处理新下发的动态组？"},{"role":"assistant","content":"终端会先删除已有的动态组，再保存新的动态组。"}]}
+{"messages":[{"role":"user","content":"How should mdm.disasterRecovery.model be configured in address.properties for dual IP mode?"},{"role":"assistant","content":"Modify mdm.disasterRecovery.model to \"1\". By default it is 0, and it should be changed to 1 for dual IP mode."}]}
+{"messages":[{"role":"user","content":"V5.0 版本的发布日期和描述是什么？"},{"role":"assistant","content":"V5.0 版本的发布日期是 2023-05，描述为首次发布。"}]}
+{"messages":[{"role":"user","content":"R6.0 版本的更新说明是在哪个产品版本和日期新增的？"},{"role":"assistant","content":"R6.0 版本的更新说明是在产品版本 V6.0，日期 2026-02 新增的。"}]}
+{"messages":[{"role":"user","content":"V6.0.00 版本的文档列表中是否包含 MDM SE 的相关操作指南？"},{"role":"assistant","content":"是的，列表中包含“MDM SE 操作指南”。"}]}
+{"messages":[{"role":"user","content":"ITU-R陆地移动通信系统手册2006年版第4卷被哪个版本取代？"},{"role":"assistant","content":"ITU-R陆地移动通信系统（包含无线接入）手册2006年版第4卷被2021年版取代。"}]}
+{"messages":[{"role":"user","content":"机构数据类别支持哪些类型的交通研究和分析？"},{"role":"assistant","content":"机构数据类别支持的交通研究和分析包括：基于车辆分类的交通研究、CV 支持的转向交通量和交叉路口分析以及 CV 支持的始发地-目的地研究。"}]}
+{"messages":[{"role":"user","content":"V2I连接支持哪些与交通信号和速度管理相关的业务？"},{"role":"assistant","content":"V2I连接支持的与交通信号和速度管理相关的业务包括：智能交通信号系统、公交信号优先、速度协调、适应天气的交通管理的可变速度限制。"}]}
+{"messages":[{"role":"user","content":"在 ARC-IT 中，企业观点的主要作用是什么？"},{"role":"assistant","content":"企业观点从组织角度考虑 ITS，确定利益攸关方组织或企业，定义利益攸关方角色和各利益攸关方之间的关系。它也是定义需求的视图，因为 ITS 是由利益攸关方组织、其成员和客户的需求驱动的。"}]}
+{"messages":[{"role":"user","content":"为什么无源反向散射法的OBE生产成本低？"},{"role":"assistant","content":"因为OBE的结构是简单的。"}]}
+{"messages":[{"role":"user","content":"日本DSRC标准的制定和发布机构及时间是什么？"},{"role":"assistant","content":"1997年11月，由ARIB（无线电二商联合会）制定和发布了DSRC的标准。"}]}
+{"messages":[{"role":"user","content":"哪一年邮政省发布了有关DSRC（对ETC）的法规？"},{"role":"assistant","content":"1997年，邮政省根据电信技术理事会的报告发布了有关DSRC（对ETC）的法规。"}]}
+{"messages":[{"role":"user","content":"日本电子通行费征收系统（ETC）联合研究项目是何时启动的，由哪些机构合作开展？"},{"role":"assistant","content":"该项目于1994年启动，由日本建设省（现在的国土、基础设施和交通省）与4家主要的公共通行费运营商以及10家由私营公司组成的财团合作开展。"}]}
+{"messages":[{"role":"user","content":"日本ETC联合研究项目是如何宣告完成的？"},{"role":"assistant","content":"通过1997年在小田原—厚木高速公路上进行的试验工作，完成了该项研究工作。"}]}
+{"messages":[{"role":"user","content":"ETC天线与用于信息发布的进场天线在最大脚印长度上有什么区别？"},{"role":"assistant","content":"ETC天线的脚印很小，典型值为3 m×4 m；而通过用于信息发布的进场天线可以实现的最大脚印长度达30 m。"}]}
+{"messages":[{"role":"user","content":"韩国启动ITS的重要里程碑是什么？"},{"role":"assistant","content":"韩国土地、基础设施与交通部（MOLIT）宣布的先进交通系统部署项目。"}]}
+{"messages":[{"role":"user","content":"CAR 2 CAR通讯联盟在2007年发布的宣言为哪项活动奠定了基础？"},{"role":"assistant","content":"为2008年在杜登霍芬的欧宝试验场地进行的首次互操作性演示奠定了基础。"}]}
+{"messages":[{"role":"user","content":"首个基本系统轮廓（BSP）版本是什么时候推出的，供谁使用？"},{"role":"assistant","content":"首个基本系统轮廓（BSP）版本于2014年底推出，供C2C-CC内部使用。"}]}
+{"messages":[{"role":"user","content":"韩国V2X通信国家项目中的车辆多跳通信（VMC）始于哪一年？"},{"role":"assistant","content":"2007年。"}]}
+{"messages":[{"role":"user","content":"广域广播技术支持哪些类型的业务内容？"},{"role":"assistant","content":"广域广播技术可支持人类话音、数据和视频。"}]}
+{"messages":[{"role":"user","content":"ARIB 发布的 STD-T75 标准对应的是什么系统？"},{"role":"assistant","content":"ARIB 发布的 STD-T75 标准对应的是专用短程通信（DSRC）系统。"}]}
+{"messages":[{"role":"user","content":"CCSA 发布的 YD/T3400-2018 和 YD/T3340-2018 标准分别规定了什么内容？"},{"role":"assistant","content":"YD/T3400-2018 规定基于LTE的车联网无线通信技术，YD/T3340-2018 规定基于LTE的车联网无线通信技术空中接口技术要求。"}]}
+{"messages":[{"role":"user","content":"国际电联 (ITU) 发布的报告 ITU-R M.2322 属于哪类文档？"},{"role":"assistant","content":"ITU-R M.2322 属于国际电联发布的报告。"}]}
+{"messages":[{"role":"user","content":"ARIB发布的STD-T48和STD-T111分别针对什么类型的雷达设备？"},{"role":"assistant","content":"ARIB STD-T48针对专用低功率电台的毫米波雷达设备，而STD-T111针对79 GHz频段高分辨率雷达。"}]}
+{"messages":[{"role":"user","content":"国家智能交通通信系统（ITS）参考架构的重要更新整合了哪些版本的内容？"},{"role":"assistant","content":"该更新整合了由国家ITS架构7.1版和CVRIA 2.2版演进而来的内容。"}]}
+{"messages":[{"role":"user","content":"What advantages do License-Exempt (LE) radio bands provide to users implementing BWA systems?"},{"role":"assistant","content":"License-Exempt (LE) radio bands provide users with the advantages of easy entry and cost savings."}]}
+{"messages":[{"role":"user","content":"How is spectrum access coordinated in licensed bands with exclusive access?"},{"role":"assistant","content":"In licensed bands with exclusive access, the regulator coordinates frequency access. One licensee operates on a particular frequency or band and is provided with interference protection rights by the regulator, while no other licensees are permitted access to that spectrum."}]}
+{"messages":[{"role":"user","content":"What role does the regulator play when interference arises between users in exclusive licensed bands?"},{"role":"assistant","content":"The regulator becomes involved if interference between users cannot be resolved by the operators themselves."}]}
+{"messages":[{"role":"user","content":"What are the characteristics of non-exclusive licensed bands regarding fees and interference management?"},{"role":"assistant","content":"In non-exclusive licensed bands, spectrum licence fees are minimal because there is no exclusive access to spectrum in a particular geographic area or frequency range. Since access is non-exclusive, operators are required to employ mitigating measures to reduce interference between radiocommunication systems."}]}
+{"messages":[{"role":"user","content":"What interference protection rights do licensees have compared to licensed systems, and what is expected of them regarding interference issues?"},{"role":"assistant","content":"Licensees do not have the same interference protection rights commonly associated with licensed systems. They are expected to cooperate to identify and resolve possible interference issues amongst themselves."}]}
+{"messages":[{"role":"user","content":"Which handover models are supported by the air interface for micro-mobility and dissimilar access networks?"},{"role":"assistant","content":"The air interface supports the lightweight Simple IP model employed by 3GPP2 for micro-mobility. This is complemented by Mobile IP when necessary, such as when handing over to a dissimilar access network like IEEE 802.11."}]}
+{"messages":[{"role":"user","content":"What are the last available versions of the ETSI standards for BWA listed in the text?"},{"role":"assistant","content":"The last available versions are ETSI TS 102 177 v1.3.2, ETSI TS 102 178 v1.3.2, and ETSI TS 102 210 v1.2.1."}]}
+{"messages":[{"role":"user","content":"What is the appropriate propagation model for predicting interference between terrestrial stations in the frequency range from about 700 MHz up to above 6 GHz when the distance is longer than 1 km?"},{"role":"assistant","content":"Recommendation ITU-R P.452 is the appropriate propagation model."}]}
+{"messages":[{"role":"user","content":"Why can FDD mobile device duplex filters not adapt to a multitude of frequency arrangements in mass-market production?"},{"role":"assistant","content":"From a technical and economical point of view, FDD mobile device duplex filters cannot adapt to a multitude of frequency arrangements because BWA mobile devices are typically manufactured to operate within specific band plans."}]}
+{"messages":[{"role":"user","content":"哪些型号的耳机必须搭配 PTT&MIC 控制线才能使用？"},{"role":"assistant","content":"EH-02 耳挂式只接收耳机和 ES-01 耳塞式只接收耳机需搭配 PTT&MIC 控制线使用。"}]}
+{"messages":[{"role":"user","content":"海能达是否对本手册中涉及的第三方产品和内容的准确性、有效性或合法性提供保证？"},{"role":"assistant","content":"不提供保证。海能达对第三方产品和内容的准确性、有效性、及时性、合法性或完整性均不提供保证。"}]}
+{"messages":[{"role":"user","content":"What are the firmware versions for the PNC380 device?"},{"role":"assistant","content":"The firmware versions for the PNC380 are V1.0.17.001.01 and V2.8.03.003.01."}]}
+{"messages":[{"role":"user","content":"What is the second firmware version listed for the PDT radio model HP78X?"},{"role":"assistant","content":"The second firmware version listed for the PDT radio model HP78X is V02.5.05.008."}]}
+{"messages":[{"role":"user","content":"What are the firmware versions for the Tetra radio model PT350?"},{"role":"assistant","content":"The firmware versions for the Tetra radio model PT350 are V4.01.13.011 and V4.02.01.00420."}]}
+{"messages":[{"role":"user","content":"Which DMR and TETRA radio models are newly supported by Smart MDM in version V5.1.09.009?"},{"role":"assistant","content":"The newly supported DMR radio models are HP56X, HP50X, and HP78X. The newly supported TETRA radio models are MT680 and PT890Ex."}]}
+{"messages":[{"role":"user","content":"Under what condition can Smart MDM display the license details of a TETRA radio in Device?"},{"role":"assistant","content":"When the TETRA radio is connected to the Smart MDM through DTW, Smart MDM allows you to view the license details of the radio in Device."}]}
+{"messages":[{"role":"user","content":"Which Hytera Smart MDM guides are listed with version V5.1.00?"},{"role":"assistant","content":"The guides listed with version V5.1.00 are Hytera Smart MDM Operation Guide, Hytera Smart MDM Installation and Configuration Guide, and Hytera Smart MDM Upgrade Guide."}]}
+{"messages":[{"role":"user","content":"Which EU directive does the product comply with according to the qualified laboratory certification?"},{"role":"assistant","content":"The product is in compliance with the essential requirements and other relevant provisions of 2014/53/EU."}]}
+{"messages":[{"role":"user","content":"What legal information can be viewed in the Device info interface?"},{"role":"assistant","content":"You can see the Hytera software license, Hytera privacy policy, Hytera version declare, third-party licenses, and system WebView licenses."}]}
+{"messages":[{"role":"user","content":"Who should be contacted for optional accessories used with the product?"},{"role":"assistant","content":"Your local dealer"}]}
+{"messages":[{"role":"user","content":"执行读频操作需要满足什么版本条件？"},{"role":"assistant","content":"CPS版本大于或等于终端版。"}]}
+{"messages":[{"role":"user","content":"V2.05.05版本针对RoIP注册补充了什么内容？"},{"role":"assistant","content":"提示音 TD78"}]}
+{"messages":[{"role":"user","content":"V2.05.03版本增加了哪方面的说明？"},{"role":"assistant","content":"组附着参数说明"}]}
+{"messages":[{"role":"user","content":"V2.06.01 版本增加了什么功能？"},{"role":"assistant","content":"增加视频分辨率设置开关"}]}
+{"messages":[{"role":"user","content":"当双模终端同时拥有ROIP业务和MMS业务时，当前版本对视频个呼的支持情况如何？发起个呼时默认使用什么业务？多媒体呼叫业务中语音流支持哪些格式？"},{"role":"assistant","content":"当前版本不支持视频个呼。当发起个呼时，默认使用ROIP语音业务。多媒体呼叫业务中语音流支持NVOC和AMBE格式（R2.5）。"}]}
+{"messages":[{"role":"user","content":"在R1.5版本中，包含双模终端的混合组应如何配置？"},{"role":"assistant","content":"在R1.5版本中，如果混合组成员中包含双模终端，该混合组只开在窄带系统内，并在MPTT系统内开漫游组。"}]}
+{"messages":[{"role":"user","content":"Flat系统的哪些版本支持RoIP系统侧实现且终端侧不实现？"},{"role":"assistant","content":"Flat R1.0和R1.5版本支持RoIP系统侧实现，终端侧不实现。"}]}
+{"messages":[{"role":"user","content":"MPTT SDK需要同步NB的组属性策略的版本要求是什么？"},{"role":"assistant","content":"R2.5。"}]}
+{"messages":[{"role":"user","content":"在R1.5版本中，消息接收范围由什么实现？"},{"role":"assistant","content":"由SDK实现。"}]}
+{"messages":[{"role":"user","content":"Regular Alarm功能在哪些版本中可用？"},{"role":"assistant","content":"R2.0和R2.5"}]}
+{"messages":[{"role":"user","content":"Call To Follow功能在哪些版本中支持开启或关闭？"},{"role":"assistant","content":"R1.0和R2.0"}]}
+{"messages":[{"role":"user","content":"R2.0 版本中 Call (开启/关闭 Call To Follow) 的功能描述是什么？"},{"role":"assistant","content":"紧急呼叫"}]}
+{"messages":[{"role":"user","content":"R2.0 版本中 Alarm w/ Call (开启/关闭 Call To Follow) 包含哪些功能？"},{"role":"assistant","content":"紧急状态消息和紧急呼叫，警报呼叫"}]}
+{"messages":[{"role":"user","content":"在R2.0版本中，为什么需要修改可编程按键事件的分发策略？"},{"role":"assistant","content":"因为部分NB功能变为NB和AP的共用功能，而当前可编程按键的架构无法支持共用功能，需要能够判断公共功能触发时是发给NB还是AP。"}]}
+{"messages":[{"role":"user","content":"V4.00.00 版本新增了哪些私有业务兼容处理功能？"},{"role":"assistant","content":"新增私有业务兼容处理包括：话权抢占、扫描组列表（组附着）、发送讲话方别名、自动优选可用基站、PTT 触发位置信息发送、语音携带定位信息、扫描参数同步、优先站版本。"}]}
+{"messages":[{"role":"user","content":"终端和系统需要达到什么版本才能支持无线终端抢话权功能？"},{"role":"assistant","content":"需要终端和系统为 V1.7.1 标准及之后的版本。"}]}
+{"messages":[{"role":"user","content":"在标准 V1.7.1 模式下，当集群系统广播空口协议版本为 1.7.1 及以上时，终端抢话权业务的状态码及处理流程是什么？"},{"role":"assistant","content":"主叫方发送/系统接收的状态码为 SFID 的 125 状态码。终端和系统按照 V1.7.1 标准进行终端无线抢话业务。"}]}
+{"messages":[{"role":"user","content":"若申请抢话终端 A 使用标准 V1.7.1，但系统广播版本低于 V1.7.1 或系统不支持 V1.7.1 话语抢占功能，系统将如何处理 SFID 125 状态码，结果如何？"},{"role":"assistant","content":"系统将话语抢占状态码 SFID 125 当做普通状态消息码。终端在等待超时后话语抢占申请失败。"}]}
+{"messages":[{"role":"user","content":"当终端话语抢占版本为“自适应”且系统未广播空口协议版本时，终端应按照哪种模式处理？"},{"role":"assistant","content":"终端应按照 Hytera 模式处理。"}]}
+{"messages":[{"role":"user","content":"在自适应版本下，若系统广播的空口协议版本为 1.7.1，终端应采用何种处理模式？"},{"role":"assistant","content":"终端应按照 V1.7.1 标准模式处理。"}]}
+{"messages":[{"role":"user","content":"Smart MDM 专业版、Smart MDM Lite 和 KMC 的应用软件版本分别是多少？"},{"role":"assistant","content":"Smart MDM 专业版为 V1.6.07.000，Smart MDM Lite 为 V1.6.03.000，KMC 为 V1.5.06.000。"}]}
+{"messages":[{"role":"user","content":"PDC760 硬件有哪些固件版本属于北美版？"},{"role":"assistant","content":"PDC760 的北美版固件版本包括 V1.6.001AG2、V1.6.001A02、V1.6.001NG2 和 V1.6.001N02。"}]}
+{"messages":[{"role":"user","content":"VM680 的固件版本是多少？"},{"role":"assistant","content":"VM680 的固件版本是 V1.03.02.002。"}]}
+{"messages":[{"role":"user","content":"在文档清单中，哪些文档的状态是“首次发布”？"},{"role":"assistant","content":"状态为“首次发布”的文档是 Smart MDM 专业版_升级指南_R1.6_V1.0。"}]}
+{"messages":[{"role":"user","content":"相对于 V1.5.11.000 版本，本版本新增支持哪两款 PDC760 机型？"},{"role":"assistant","content":"PDC760 V1B1 和 PDC760 UxB2。"}]}
+{"messages":[{"role":"user","content":"What is the required action for upgrading Smart MDM from version V3.0.06.003 or earlier to V4.0.10.000?"},{"role":"assistant","content":"Consult Hytera technical service personnel."}]}
+{"messages":[{"role":"user","content":"What types of high-speed transmission needs does the PDC760&PTC760 match?"},{"role":"assistant","content":"It matches the needs on high speed transmission, e.g. video talk, real-time video sending and other integrated apps."}]}
+{"messages":[{"role":"user","content":"What trunking features does the PTC760 support?"},{"role":"assistant","content":"The PTC760 supports all TETRA trunking features."}]}
+{"messages":[{"role":"user","content":"What are the version numbers for Smart MDM, Smart MDM Lite, KMS, and IDS?"},{"role":"assistant","content":"Smart MDM is V3.5.09.000, Smart MDM Lite is V3.5.08.000, KMS is V2.0.07.000, and IDS is V3.5.03.001."}]}
+{"messages":[{"role":"user","content":"What are the firmware versions for the PD98X radio?"},{"role":"assistant","content":"The firmware versions for the PD98X radio are V8.05.07.004 and V9.00.06.001."}]}
+{"messages":[{"role":"user","content":"Which Tetra Radio models share the firmware versions V3.08.71.008 and V3.09.02.007?"},{"role":"assistant","content":"The Tetra Radio models PT580H Plus, PT790Ex, Z1p, and PT580H Plus UL913 share the firmware versions V3.08.71.008 and V3.09.02.007."}]}
+{"messages":[{"role":"user","content":"如何在设备中查看型号、序列号等信息，以及如何切换工作模式？"},{"role":"assistant","content":"查看设备信息：打开系统设置应用，选择“设备信息”，可查看型号、存储、序列号及软件版本等。切换工作模式：打开对讲机设置应用，选择“工作模式”，可切换为常规、数字集群或模拟集群。"}]}
+{"messages":[{"role":"user","content":"在V1.1.2版本中，当LED1因Missed info类型闪烁时，按下锁屏键或Power键会有什么效果？"},{"role":"assistant","content":"按下锁屏键或Power键不会停止LED1的闪烁。"}]}
+{"messages":[{"role":"user","content":"根据V1.1.3版本的定义，屏幕左边的LED1用于指示哪些状态？"},{"role":"assistant","content":"LED1用于指示未接来电和未读消息。"}]}
+{"messages":[{"role":"user","content":"在V1.1.3版本调整后，屏幕右边的LED2主要用于什么目的？"},{"role":"assistant","content":"LED2用于其它指示。"}]}
+{"messages":[{"role":"user","content":"在版本V3.50.01和V4.0.07中，分别增加了哪些可配置功能？"},{"role":"assistant","content":"V3.50.01增加了发射指示、接收指示LED灯颜色可配置；V4.0.07中PDC680增加了脱网提示音首次触发时间可配置。"}]}
+{"messages":[{"role":"user","content":"DMR终端包含哪些型号？"},{"role":"assistant","content":"DMR终端包含：PD780、PD980、PD680、PD700、PD750、PD790、PD980UL、PD980Ex、MD780、MD780i。"}]}
+{"messages":[{"role":"user","content":"TETRA终端有哪些具体型号？"},{"role":"assistant","content":"TETRA终端有：PT580H Plus、PT790Ex、Z1p、PT580H Plus UL913、PT350、PT310。"}]}
+{"messages":[{"role":"user","content":"执法记录仪的产品列表是什么？"},{"role":"assistant","content":"执法记录仪包括：VM550(M)、VM690、DSJ-HYTH5A1(M)、VM680/DSJ-H6、DSJ-HYTH7A1(M)、DSJ-HYTH7A1(Y)、DSJ-HYTI6A1(Y)。"}]}
+{"messages":[{"role":"user","content":"在版本 V2.00.03 中增加了哪些处理方法？"},{"role":"assistant","content":"增加空口别名字符长度超限和联系人存储达到上限时的处理方法。"}]}
+{"messages":[{"role":"user","content":"版本 V2.05.04 根据 TD 23274 增加了什么描述？"},{"role":"assistant","content":"不允许添加非法ID到联系人中。"}]}
+{"messages":[{"role":"user","content":"讲话方别名服务是为了解决什么需求而提出的？"},{"role":"assistant","content":"客户希望不用预先写频保存别名也能识别讲话者身份。"}]}
+{"messages":[{"role":"user","content":"该设备的物理尺寸是多少？"},{"role":"assistant","content":"尺寸为139.5mm x 68mm x 26mm（高x宽x厚）。"}]}
+{"messages":[{"role":"user","content":"Smart MDM是否兼容窄带终端和执法记录仪？支持哪些功能？"},{"role":"assistant","content":"兼容，支持对窄带终端和执法记录仪进行写频和升级。"}]}
+{"messages":[{"role":"user","content":"What is the Key Type for the product with Vendor ID 107594?"},{"role":"assistant","content":"HASP SL"}]}
+{"messages":[{"role":"user","content":"管理站或工作站支持哪些Windows操作系统版本及位数要求？"},{"role":"assistant","content":"支持的操作系统包括：Windows 7 (32/64位)、Windows 8 (32/64位)、Windows 10 (32/64位)以及Windows 11 (64位)。"}]}
+{"messages":[{"role":"user","content":"在V2.05.01版本中，Rosie增加了哪些录音功能？"},{"role":"assistant","content":"增加了ROIP录音和窄带录音功能。"}]}
+{"messages":[{"role":"user","content":"How does the Android platform on the PTC760 support industry-specific customization?"},{"role":"assistant","content":"The PTC760 runs on Android and includes custom apps like Navigator for routine planning and online navigation. The standard Android API enables diverse adaptability and customization of different industry apps to build a mobile office automatic platform."}]}
+{"messages":[{"role":"user","content":"Where can you find the device model name, serial number, and software version?"},{"role":"assistant","content":"Tap the Settings app, and then go to System > Device info."}]}
+{"messages":[{"role":"user","content":"Which specific product models are covered by the Declaration of Conformity issued by Hytera Communications Corporation Limited?"},{"role":"assistant","content":"The models covered are PDC760 UxB1, PDC760 U1B1, PDC760 U2B1, PDC760 U3B1, and PDC760 U9B1."}]}
+{"messages":[{"role":"user","content":"What are the applicable standards for Article 3.2 under Directive RE 2014/53/EU for the PDC760 series?"},{"role":"assistant","content":"The applicable standards for Article 3.2 are EN 300 330 V2.1.1 (2017-02), EN 300 113 V3.1.1 (2020-06), EN 301 511 V12.5.1 (2017-03), EN 300 328 V2.2.2 (2019-07), EN 303 413 V1.2.0 (2020-09), EN 300 086 V2.1.2 (2016-08), EN 301 908-1 V13.1.1 (2019-11), EN 301 908-13 V13.1.1 (2019-11), and EN 301 908-2 V11.1.2 (2017-08)."}]}
+{"messages":[{"role":"user","content":"What change was made in the R1.5_V2.0 version of Smart MDM released in Feb, 2018?"},{"role":"assistant","content":"The description for the total number of radios that the Smart MDM Lite can connect was deleted."}]}
+{"messages":[{"role":"user","content":"在Rosie V2.0.03版本中，预提示框对倒放功能按钮做了哪些调整？"},{"role":"assistant","content":"去掉了关闭倒放功能的按钮，只保留取消当前报警的操作。"}]}
+{"messages":[{"role":"user","content":"Rosie V2.5.00版本中，充电情况下倒放功能的状态如何？"},{"role":"assistant","content":"在Rosie V2.5.00版本中，充电情况下倒放功能不生效。"}]}
+{"messages":[{"role":"user","content":"Rosie V3.5.00版本在倒放状态码区分方面实现了什么范围的功能？"},{"role":"assistant","content":"该版本只实现PTC产品的倒放状态码区分。"}]}
+{"messages":[{"role":"user","content":"PDC760 的 内存 是什么？"},{"role":"assistant","content":"32GB 或以上"}]}
+{"messages":[{"role":"user","content":"HP780 的 扬声器 是什么？"},{"role":"assistant","content":"可选"}]}
+{"messages":[{"role":"user","content":"PTC680 的 GSM 是什么？"},{"role":"assistant","content":"900 MHz"}]}
+{"messages":[{"role":"user","content":"PTC680 的 WCDMA 是什么？"},{"role":"assistant","content":"Band 1"}]}
+{"messages":[{"role":"user","content":"PNC550 的 传感器 是什么？"},{"role":"assistant","content":"距离传感器"}]}
+{"messages":[{"role":"user","content":"PNC550 的 接收灵敏度 是什么？"},{"role":"assistant","content":"Static: ≤-116dBm(-117dBm typ.)"}]}
+{"messages":[{"role":"user","content":"PNC550 的 存储温度 是什么？"},{"role":"assistant","content":"-30℃ ~ +80℃"}]}
+{"messages":[{"role":"user","content":"PNC550 的 Audio Distortion 是什么？"},{"role":"assistant","content":"≤3%"}]}
+{"messages":[{"role":"user","content":"PNC550 的 Digital VOCoder Type 是什么？"},{"role":"assistant","content":"AMBE+2\", NVOC"}]}
+{"messages":[{"role":"user","content":"PNC550 的 Storage Temperature 是什么？"},{"role":"assistant","content":"-30°C ~ +80°C"}]}
+{"messages":[{"role":"user","content":"PDC680 的 内存 是什么？"},{"role":"assistant","content":"3GB 或以上"}]}
+{"messages":[{"role":"user","content":"PTC760 的 GSM 是什么？"},{"role":"assistant","content":"900 MHz"}]}
+{"messages":[{"role":"user","content":"PTC760 的 WCDMA 是什么？"},{"role":"assistant","content":"Band 1"}]}
+{"messages":[{"role":"user","content":"PDC760 的 Positioning 是什么？"},{"role":"assistant","content":"Group Call"}]}
+{"messages":[{"role":"user","content":"VM550 的 Storage temperature 是什么？"},{"role":"assistant","content":"-30 °C to +80 °C"}]}
+{"messages":[{"role":"user","content":"VM550 的 NFC 是什么？"},{"role":"assistant","content":"13.56 MHz"}]}
+{"messages":[{"role":"user","content":"VM550 的 Frequency range 是什么？"},{"role":"assistant","content":"340-470 MHz"}]}
+{"messages":[{"role":"user","content":"在Smart MDM中，软件包“PPS_License_XXX.zip”是什么？"},{"role":"assistant","content":"PPS 许可证，用于控制接入 PPS 服务的终端数"}]}
+{"messages":[{"role":"user","content":"白俄MOD项目文档的目的是什么？"},{"role":"assistant","content":"介绍白俄定制项目需求，其中涉及终端和CPS软件定制部分，供开发和测试参考。"}]}
+{"messages":[{"role":"user","content":"白俄MOD项目前期已经采购了哪些网络产品？"},{"role":"assistant","content":"部分DMR常规产品与集群系统。"}]}
+{"messages":[{"role":"user","content":"白俄MOD项目希望终端在哪三种网络之间自动切换？"},{"role":"assistant","content":"常规、集群、POC三种网络。"}]}
+{"messages":[{"role":"user","content":"白俄定制项目文档适用于什么软件版本？"},{"role":"assistant","content":"仅适用于PDC760 R3.0白俄定制软件。"}]}
+{"messages":[{"role":"user","content":"白俄定制项目终端的内部版本号是什么？"},{"role":"assistant","content":"BB: V3.0.43.002.01.9F01。"}]}
+{"messages":[{"role":"user","content":"白俄定制版本支持哪三种网络下的自动切换？"},{"role":"assistant","content":"常规、集群、宽带（ROIP）三种网络。"}]}
+{"messages":[{"role":"user","content":"白俄定制版本的网络优先级是什么？"},{"role":"assistant","content":"集群 > 宽带 > 常规。"}]}
+{"messages":[{"role":"user","content":"白俄定制版本在没有集群信号和宽带信号时会切换到什么模式？"},{"role":"assistant","content":"切换到常规模式，用户通过直通方式通信。"}]}
+{"messages":[{"role":"user","content":"白俄定制版本的三网自动切换功能能否由用户通过菜单手动修改工作模式？"},{"role":"assistant","content":"不能。定制版本默认支持三网自动切换，用户无法通过菜单手动修改终端工作模式。"}]}
+{"messages":[{"role":"user","content":"白俄定制项目对CPS的ROIP与模式自动切换限制有什么要求？"},{"role":"assistant","content":"需要去掉ROIP网络与模式自动切换不可同时开启的限制。"}]}
+{"messages":[{"role":"user","content":"白俄定制版本是否使用特殊定制RCDB？"},{"role":"assistant","content":"不使用，采用主线RCDB。"}]}
+{"messages":[{"role":"user","content":"PTC680/PDC680的重量约是多少？"},{"role":"assistant","content":"约325 g。"}]}
+{"messages":[{"role":"user","content":"PTC680/PDC680的防尘防水等级是多少？"},{"role":"assistant","content":"IP68。"}]}
+{"messages":[{"role":"user","content":"PTC680/PDC680的最大扬声器响度可达多少？"},{"role":"assistant","content":"可达128 dB。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0文档列出的Smart MDM应用软件版本是什么？"},{"role":"assistant","content":"V5.0.10.004。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0文档列出的Smart MDM Lite应用软件版本是什么？"},{"role":"assistant","content":"V5.0.10.000。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0文档列出的DTW应用软件版本是什么？"},{"role":"assistant","content":"V5.0.06.000。"}]}
+{"messages":[{"role":"user","content":"Smart MDM V5.0.09.001中的Web插件如何处理新版本？"},{"role":"assistant","content":"读频、写频或导入模板等操作时，Web插件会自动启动并检测新版本，有新版本时自行升级。"}]}
+{"messages":[{"role":"user","content":"PNC560 可承受多高的跌落？"},{"role":"assistant","content":"可承受 1.5 米跌落。"}]}
+{"messages":[{"role":"user","content":"What is the approximate weight of the PNC560?"},{"role":"assistant","content":"About 270 g."}]}
+{"messages":[{"role":"user","content":"VM690 Pro 的裸机跌落规格是多少？"},{"role":"assistant","content":"1.5 米。"}]}
+{"messages":[{"role":"user","content":"Does the PNC560 support NFC?"},{"role":"assistant","content":"Yes, it supports NFC."}]}
+{"messages":[{"role":"user","content":"VM690 Pro 的防尘防水等级是多少？"},{"role":"assistant","content":"IP68。"}]}
+{"messages":[{"role":"user","content":"PNC560 的防尘防水等级是多少？"},{"role":"assistant","content":"IP68。"}]}
+{"messages":[{"role":"user","content":"What Bluetooth version does the PDC760 support?"},{"role":"assistant","content":"Bluetooth 4.2."}]}
+{"messages":[{"role":"user","content":"PDC760 的防尘防水等级是多少？"},{"role":"assistant","content":"IP67。"}]}
+{"messages":[{"role":"user","content":"PDC760 的主屏尺寸和分辨率是多少？"},{"role":"assistant","content":"主屏为 4.0 英寸，分辨率为 1024×600。"}]}
+{"messages":[{"role":"user","content":"VM690 Pro 的存储容量有哪些选项？"},{"role":"assistant","content":"32 GB、64 GB 和 128 GB。"}]}
+{"messages":[{"role":"user","content":"PDC760 的额定工作电压是多少？"},{"role":"assistant","content":"7.6 V。"}]}
+{"messages":[{"role":"user","content":"PNC560 的存储温度范围是多少？"},{"role":"assistant","content":"-30°C 至 +70°C。"}]}
