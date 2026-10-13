@@ -1,0 +1,144 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__64F90C6",
+  "name": "拾光",
+  "version": {
+    "name": "9.0.0",
+    "code": "900"
+  },
+  "description": "个人成长 · 阅读规划与核验 · 手机摄影进阶学习",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview"
+    },
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "distribute": {
+      "google": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.INTERNET\" />"
+        ]
+      },
+      "apple": {},
+      "plugins": {
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "dark",
+      "background": "#f6f7f2"
+    },
+    "uniStatistics": {
+      "enable": false
+    },
+    "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#fffef8",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
+    "uni-app": {
+      "control": "uni-v3",
+      "vueVersion": "3",
+      "compilerVersion": "4.87",
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      },
+      "nvueLaunchMode": "normal",
+      "webView": {
+        "minUserAgentVersion": "49.0"
+      }
+    },
+    "tabBar": {
+      "position": "bottom",
+      "color": "#9aa99e",
+      "selectedColor": "#306e59",
+      "borderStyle": "rgba(255,255,255,0.4)",
+      "blurEffect": "none",
+      "fontSize": "10px",
+      "iconWidth": "24px",
+      "spacing": "3px",
+      "height": "50px",
+      "list": [
+        {
+          "path": "pages/home/index",
+          "text": "今日",
+          "iconPath": "/static/icons/home.png",
+          "selectedIconPath": "/static/icons/home-active.png"
+        },
+        {
+          "path": "pages/notes/index",
+          "text": "笔记",
+          "iconPath": "/static/icons/notes.png",
+          "selectedIconPath": "/static/icons/notes-active.png"
+        },
+        {
+          "path": "pages/learning/index",
+          "text": "学习",
+          "iconPath": "/static/icons/learn.png",
+          "selectedIconPath": "/static/icons/learn-active.png"
+        },
+        {
+          "path": "pages/goals/index",
+          "text": "目标",
+          "iconPath": "/static/icons/goals.png",
+          "selectedIconPath": "/static/icons/goals-active.png"
+        }
+      ],
+      "backgroundColor": "#fffef8",
+      "selectedIndex": 0,
+      "shown": true
+    }
+  },
+  "app-harmony": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "uniStatistics": {
+      "enable": false
+    },
+    "safearea": {
+      "background": "#fffef8",
+      "bottom": {
+        "offset": "auto"
+      }
+    }
+  },
+  "launch_path": "__uniappview.html"
+}
