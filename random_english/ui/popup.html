@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>随读英语 · 无感学习</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="heading">
+    <img src="../assets/icon48.png" alt="" width="39" height="39">
+    <div class="brand"><strong>随读英语</strong><small>无感学习 · 个人专属</small></div>
+    <div id="statusPill" class="status"><span class="dot"></span>学习中</div>
+  </header>
+  <section class="hero">
+    <span class="eyebrow">让英语融入每一次阅读</span>
+    <h1>不改变你的日常，<br><em>只增加一点英语。</em></h1>
+    <p>浏览文章、资料与视频时，让英语在熟悉的语境中自然出现。</p>
+    <div class="stat-row">
+      <div class="stat"><strong id="exposures">0</strong><small>累计英语接触</small></div>
+      <div class="stat"><strong id="wordCount">0</strong><small>生词记录</small></div>
+      <div class="stat"><strong id="dueCount">0</strong><small>待复习</small></div>
+    </div>
+  </section>
+  <main>
+    <section class="group">
+      <div class="group-title">学习控制</div>
+      <div class="setting switch-row">
+        <div><strong>全局学习开关</strong><small>开启后在支持的网页自动工作</small></div>
+        <label class="switch"><input type="checkbox" id="enabled"><span></span></label>
+      </div>
+      <div class="setting switch-row">
+        <div><strong>在当前网站启用</strong><small id="hostname">读取当前页面…</small></div>
+        <label class="switch"><input type="checkbox" id="siteEnabled"><span></span></label>
+      </div>
+    </section>
+    <section class="group">
+      <div class="group-title">强度与模式</div>
+      <div class="setting">
+        <label for="intensity">英语接触强度 <strong class="value" id="intensityVal">18%</strong></label>
+        <input id="intensity" type="range" min="3" max="55" step="1">
+        <div class="range-label"><span>轻量陪伴</span><span>沉浸输入</span></div>
+      </div>
+      <div class="two">
+        <div class="setting">
+          <label for="level">当前英语水平</label>
+          <select id="level">
+            <option value="1">一级 · 入门</option>
+            <option value="2">二级 · 初级</option>
+            <option value="3">三级 · 中级</option>
+            <option value="4">四级 · 进阶</option>
+            <option value="5">五级 · 高级</option>
+          </select>
+        </div>
+        <div class="setting">
+          <label for="pageMode">网页学习模式</label>
+          <select id="pageMode">
+            <option value="auto">智能识别语言</option>
+            <option value="zh">中文 → 英文</option>
+            <option value="en">英文生词标注</option>
+            <option value="manual">只手动翻译</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="group">
+      <div class="group-title">阅读偏好</div>
+      <div class="setting switch-row">
+        <div><strong>手动划选中文翻译</strong><small>选中中文 → 点击「译成英文」</small></div>
+        <label class="switch"><input id="manualSelectionEnabled" type="checkbox" checked><span></span></label>
+      </div>
+      <div class="setting switch-row">
+        <div><strong>译文后保留原文</strong><small>例如：project（项目）</small></div>
+        <label class="switch"><input id="showOriginalInBrackets" type="checkbox" checked><span></span></label>
+      </div>
+      <div class="setting switch-row">
+        <div><strong>视频学习字幕</strong><small>油管 · 哔哩哔哩 · 奈飞（实验性支持）</small></div>
+        <label class="switch"><input id="videoEnabled" type="checkbox"><span></span></label>
+      </div>
+    </section>
+    <button id="openDashboard" class="dashboard-btn">进入学习中心 <span>↗</span></button>
+    <div class="footer"><span id="note">离线词典已就绪 · 可选智能辅助</span><span>版本 1.3</span></div>
+  </main>
+  <script src="../scripts/core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

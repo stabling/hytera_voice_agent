@@ -1,0 +1,72 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "short_name": "__MSG_extensionShortName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.3.0",
+  "minimum_chrome_version": "114",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "sidePanel"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_popup": "ui/popup.html"
+  },
+  "side_panel": {
+    "default_path": "ui/dashboard.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "scripts/dictionary.js",
+        "scripts/core.js",
+        "scripts/content.js"
+      ],
+      "css": [
+        "scripts/content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-learning": {
+      "suggested_key": {
+        "default": "Alt+Shift+L"
+      },
+      "description": "__MSG_toggleDescription__"
+    },
+    "explain-selection": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "__MSG_explainDescription__"
+    },
+    "manual-translate": {
+      "suggested_key": {
+        "default": "Alt+Shift+T"
+      },
+      "description": "将当前选中的中文翻译成英文"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "default_locale": "zh_CN"
+}

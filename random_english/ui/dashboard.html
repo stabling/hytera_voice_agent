@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>随读英语 · 学习中心</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="logo"><img src="../assets/icon48.png" width="43" height="43" alt=""><div><strong>随读英语</strong><small>让英语自然融入日常</small></div></div>
+    <div class="side-label">我的学习空间</div>
+    <nav aria-label="主要功能">
+      <button data-tab="overview" class="selected"><span class="ico">◫</span> 学习概览</button>
+      <button data-tab="vocabulary"><span class="ico">▤</span> 我的生词</button>
+      <button data-tab="review"><span class="ico">✧</span> 间隔复习 <span id="sideDue" class="small-pill">0</span></button>
+      <button data-tab="settings"><span class="ico">⚙</span> 偏好设置</button>
+      <button data-tab="about"><span class="ico">ⓘ</span> 隐私与帮助</button>
+    </nav>
+    <div class="sidebar-foot"><span class="tiny-dot"></span> 优先本地处理 · 保护隐私<br><small>个人学习空间 · 版本 1.3</small></div>
+  </aside>
+  <main class="main">
+    <div class="topbar"><div><span class="eyebrow">你的专属英语学习空间</span><div id="pageTitle">学习概览</div></div><span class="today" id="today"></span></div>
+
+    <section id="overview" class="panel">
+      <div class="feature">
+        <div class="feature-copy"><div class="small-caps">每天一点点，学习更轻松</div><h1>把学习变成<br><em>日常的自然组成。</em></h1><p>在熟悉的网页中自然遇见英语，也能随时划选中文，主动翻译和学习。</p><button id="goReview" class="button primary">开始今日复习 <span>↗</span></button></div>
+        <div class="feature-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-letter">学<span>+</span></div><div class="art-caption">每天向前一点点</div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div></div>
+      </div>
+      <div class="stat-grid">
+        <article class="stat"><span class="stat-name">累计英语接触</span><strong id="statExposure">0</strong><span>累计融入网页的英语表达</span></article>
+        <article class="stat"><span class="stat-name">已收藏词语</span><strong id="statWords">0</strong><span>已经加入的生词与短语</span></article>
+        <article class="stat"><span class="stat-name">今日待复习</span><strong id="statDue">0</strong><span>现在值得再次回顾的表达</span></article>
+        <article class="stat"><span class="stat-name">已完成复习</span><strong id="statReviews">0</strong><span>已完成的间隔复习次数</span></article>
+      </div>
+      <div class="overview-grid">
+        <article class="card"><div class="card-head"><h2>最近 7 天的接触</h2><span>每日学习接触</span></div><div id="chart" class="chart" aria-label="最近七天英语接触数量"></div><p class="muted">自动接触与手动划词都可以积累学习机会。点击表达查看语境，再通过复习巩固。</p></article>
+        <article class="card"><div class="card-head"><h2>下一步建议</h2><span>学习建议</span></div>
+          <div class="path-step"><b>01</b><div><strong>浏览你原本想读的网页</strong><span>无需改变阅读习惯，自动加入少量英文。</span></div></div>
+          <div class="path-step"><b>02</b><div><strong>点击不熟悉的表达</strong><span>查看原文、释义、发音，保存到个人词库。</span></div></div>
+          <div class="path-step"><b>03</b><div><strong>间隔复习</strong><span>在合适的时间回想，而不是反复死记硬背。</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="vocabulary" class="panel" hidden>
+      <div class="section-intro"><h1>语境里的每一次遇见，<em>都有迹可循。</em></h1><p>点击网页中带有虚线标注的词语，就可以将它加入这里。</p></div>
+      <div class="card">
+        <div class="toolbar"><input id="wordSearch" type="search" placeholder="查找词汇、中文释义或原文语境…"><select id="wordFilter"><option value="all">全部词汇</option><option value="learning">学习中</option><option value="known">已掌握</option><option value="due">待复习</option></select><span id="wordShowing" class="muted"></span></div>
+        <div id="wordsList" class="word-list"></div>
+      </div>
+    </section>
+
+    <section id="review" class="panel" hidden>
+      <div class="section-intro"><h1>少量复习，<em>更长久地记住。</em></h1><p>先尝试自己回想含义，再翻开卡片。按实际掌握情况反馈。</p></div>
+      <div id="reviewPlace" class="review-place">
+        <div class="review-header"><span class="small-caps">间隔记忆训练</span><span id="reviewProgress" class="muted">准备中</span></div>
+        <div class="flip-card" id="flipCard" tabindex="0" role="button" aria-label="显示答案">
+          <span class="eyebrow">你还记得它吗？</span><strong id="reviewTerm">—</strong>
+          <div id="reviewAnswer" class="review-answer" hidden><span id="reviewMeaning"></span><p id="reviewContext"></p><small id="reviewTip"></small></div>
+          <span id="flipHint">点击卡片揭示中文含义</span>
+        </div>
+        <div id="reviewActions" class="review-actions" hidden>
+          <button class="button weak" data-grade="1">不认识 <small>明天再见</small></button>
+          <button class="button mid" data-grade="4">记得 <small>延长间隔</small></button>
+          <button class="button strong" data-grade="5">很熟悉 <small>继续巩固</small></button>
+        </div>
+      </div>
+      <div id="reviewEmpty" class="empty" hidden><div class="empty-mark">✦</div><h2>暂时没有需要复习的词语</h2><p>浏览网页时点击英文词汇，收藏后就能开始间隔复习。</p><button id="showWords" class="button">查看生词本 →</button></div>
+    </section>
+
+    <section id="settings" class="panel" hidden>
+      <div class="section-intro"><h1>你的英语边界，<em>由你决定。</em></h1><p>控制接触量与难度。建议从低强度开始，觉得轻松后逐步提高。</p></div>
+      <div class="settings-grid">
+        <article class="card">
+          <div class="card-head"><h2>英语沉浸</h2><span>沉浸学习</span></div>
+          <label class="field row-check"><span>启用全局学习<small>关闭后不修改网页文本</small></span><input type="checkbox" id="setEnabled"></label>
+          <label class="field">当前英语水平<select id="setLevel"><option value="1">一级 · 入门</option><option value="2">二级 · 初级</option><option value="3">三级 · 中级</option><option value="4">四级 · 进阶</option><option value="5">五级 · 高级</option></select></label>
+          <label class="field">英语接触强度 <b id="setIntensityVal" class="accent">18%</b><input type="range" id="setIntensity" min="3" max="55" step="1"></label>
+          <label class="field">每段最多改造的表达<select id="setMaxTerms"><option value="1">1 个 / 极轻量</option><option value="2">2 个</option><option value="3">3 个 / 推荐</option><option value="4">4 个</option><option value="5">5 个</option><option value="6">6 个</option></select></label>
+          <label class="field">网页学习方式<select id="setPageMode"><option value="auto">自动：中文渐进英文化 + 英文生词</option><option value="zh">仅改造中文页面</option><option value="en">仅标注英文页面</option><option value="manual">只手动划词翻译（不自动替换）</option></select></label>
+          <label class="field row-check"><span>译文旁边保留中文原文<small>默认开启；显示为英文（原文）。关闭后只显示译文。</small></span><input type="checkbox" id="setOriginalInBrackets" checked></label>
+          <div class="inline-preview" aria-label="英文译文保留中文原文的显示示例">
+            <span class="preview-label">实时效果预览</span>
+            <span class="preview-example">这个<span class="preview-english">project</span><span id="previewOriginal">（项目）</span>正在进行。</span>
+          </div>
+          <label class="field row-check"><span>启用手动中文划词翻译<small>选中中文后显示快捷按钮；右键或快捷键也可触发。</small></span><input type="checkbox" id="setManualSelection" checked></label>
+          <div class="inline-preview manual-demo" aria-label="手动划词翻译效果示意">
+            <span class="preview-label">手动选择中文后</span>
+            <span class="preview-example">我在阅读一篇关于 <span class="selected-chinese">市场需求</span> 的文章。</span>
+            <span class="manual-demo-action">译成英文 ↗</span>
+            <span class="manual-demo-result">market demand（市场需求）</span>
+          </div>
+          <label class="field row-check"><span>划词释义<small>选择文本或按 Alt+Shift+E</small></span><input type="checkbox" id="setSelection"></label>
+          <label class="field row-check"><span>网页悬浮快捷球<small>就地控制暂停与英语比例</small></span><input type="checkbox" id="setFloating"></label>
+        </article>
+        <article class="card">
+          <div class="card-head"><h2>视频与网站</h2><span>网站与视频</span></div>
+          <label class="field row-check"><span>增强视频字幕<small>尝试适配油管、哔哩哔哩和奈飞的网页字幕</small></span><input type="checkbox" id="setVideo"></label>
+          <label class="field">视频增强方式<select id="setVideoMode"><option value="bilingual">双语：保留原字幕 + 学习行</option><option value="mix">渐进：优先词语替换（实验）</option></select></label>
+          <label class="field">不启用的网站<small>每行一个域名。可写 example.com，自动包括子域名。</small><textarea id="setSites" rows="6" placeholder="example.com&#10;mail.example.org"></textarea></label>
+          <p class="info">出于隐私保护，常见邮箱、网盘和账户登录站点默认不处理网页正文。当前版本不识别图片中的字幕，也不会绕过平台限制。</p>
+        </article>
+        <article class="card full">
+          <div class="card-head"><h2>智能语境学习 <span class="tag">可选</span></h2><span>接入自己的模型服务</span></div>
+          <p class="muted">开启智能模式后，会将需要分析的<strong>有限网页文本或视频字幕</strong>发送给你配置的模型服务。默认关闭；离线模式不上传浏览内容。</p>
+          <label class="field row-check"><span>开启智能替换、语境讲解和字幕翻译<small>默认仅离线运行，关闭时不请求外部模型</small></span><input type="checkbox" id="setAiEnabled"></label>
+          <div class="form-grid">
+            <label class="field">兼容的模型接口完整地址<input id="setApiUrl" type="url" placeholder="https://api.openai.com/v1/chat/completions"></label>
+            <label class="field">模型名称<input id="setApiModel" type="text" placeholder="gpt-4o-mini"></label>
+            <label class="field">模型接口密钥 <small id="savedKeyState">只保存在当前浏览器，且不会加密存储</small><input id="setApiKey" type="password" autocomplete="off" placeholder="留空则保持原密钥"></label>
+            <label class="field">每日请求次数上限<input id="setDailyLimit" type="number" min="1" max="200" step="1"></label>
+          </div>
+          <div class="button-row"><button id="saveSettings" class="button primary">保存全部设置</button><button id="grantPermission" class="button secondary">授权模型服务地址</button><button id="testAI" class="button secondary">测试模型连接</button><button id="removeKey" class="button quiet">清除本地密钥</button></div>
+          <p id="apiMessage" class="info">仅支持安全加密的远程接口，也支持本机回环地址的本地模型服务。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="panel" hidden>
+      <div class="section-intro"><h1>随时学习，<em>也随时掌控数据。</em></h1><p>这是独立开发的自用学习工具，不包含其他商业插件的专有代码。</p></div>
+      <div class="settings-grid">
+        <article class="card"><div class="card-head"><h2>隐私与安全</h2><span>默认本地处理</span></div>
+          <p>默认词典匹配、网页替换、生词本与复习都在本地完成，数据存在 浏览器插件独立存储中。</p>
+          <p>仅当你主动开启智能模式时，插件才会把有限的网页段落、选中文字或字幕发送给指定的模型服务。接口密钥保存在本机，不会被注入网页。</p>
+          <p>本地扩展存储<strong>不保证静态加密</strong>；请不要在共享设备上保存敏感密钥。扩展不会主动处理输入框、代码编辑器或常见邮箱登录页面。</p>
+        </article>
+        <article class="card"><div class="card-head"><h2>使用说明</h2><span>使用入门</span></div>
+          <ol><li>返回任意中文文章或英文资料页面，并刷新一次。</li><li>用页面右下角快捷球调整接触强度。</li><li>点击有虚线标记的单词查看语境、听发音并收藏。</li><li>在「间隔复习」中给自己的记忆打分。</li><li>已有自己的模型服务时，可以在设置中开启智能模式。</li></ol>
+          <p class="muted">快捷键：Alt+Shift+L 暂停当前页，Alt+Shift+E 解释所选文字，Alt+Shift+T 手动翻译选中中文。浏览器内置页面无法注入插件。</p>
+        </article>
+        <article class="card full"><div class="card-head"><h2>备份与迁移</h2><span>本地备份</span></div><p class="muted">导出包含设置、单词与复习记录，但不包含模型密钥。请自行保管备份文件。</p>
+          <div class="button-row"><button id="exportData" class="button secondary">导出本地学习数据</button><label class="button secondary file-btn">导入备份文件<input id="importData" type="file" accept="application/json,.json" hidden></label></div>
+          <p id="dataMessage" class="info">如果卸载浏览器插件，浏览器可能删除其独立本地数据，请先导出。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../scripts/core.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
