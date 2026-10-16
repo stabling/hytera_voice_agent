@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>FlowLingo Functional Test</title></head>
+<body style="font:19px/1.8 sans-serif;max-width:900px;margin:40px auto;">
+ <h1>页面英语学习测试</h1>
+ <p id="chinese">今天我准备开始一个新的项目，先了解市场需求和开发成本，还要学习新的技术。我会分析数据、设计产品，改善用户体验，并进行测试。</p>
+ <p id="english" lang="en">Modern technology improves productivity. Building a product requires good design, a reliable system, user feedback, and continuous learning.</p>
+ <a id="keep-link" href="#">这个项目的需求和成本</a>
+ <button id="keep-button">学习新的知识</button>
+ <textarea id="keep-editor">请不要更改这里的项目需求和成本</textarea>
+ <div contenteditable="true" id="keep-contenteditable">这个项目需要数据分析</div>
+ <div id="dynamic"></div>
+ <script>
+  document.getElementById("keep-button").addEventListener("click",()=>{
+    const p=document.createElement("p");
+    p.className="late";
+    p.textContent="新的市场信息和项目计划需要技术支持，学习和测试非常重要。";
+    document.getElementById("dynamic").appendChild(p);
+  });
+ </script>
+</body></html>

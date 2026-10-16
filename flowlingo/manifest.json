@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "FlowLingo · 无感英语",
+  "short_name": "FlowLingo",
+  "description": "日常网页与视频中的渐进式英语沉浸学习。支持离线词典、AI 语境分析和个人复习。",
+  "version": "1.0.0",
+  "minimum_chrome_version": "114",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "sidePanel"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_title": "FlowLingo 无感英语",
+    "default_popup": "ui/popup.html"
+  },
+  "side_panel": {
+    "default_path": "ui/dashboard.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "scripts/dictionary.js",
+        "scripts/core.js",
+        "scripts/content.js"
+      ],
+      "css": [
+        "scripts/content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-learning": {
+      "suggested_key": {
+        "default": "Alt+Shift+L"
+      },
+      "description": "开启 / 暂停当前网页的无感英语"
+    },
+    "explain-selection": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "解释当前选中的词语"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}

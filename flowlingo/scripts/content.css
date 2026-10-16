@@ -1,0 +1,33 @@
+/* Inline marks must remain low-pressure and never change line-height or layout. */
+.fl-inline-wrap { display: inline !important; }
+.fl-inline-mark {
+  color: #205f65 !important;
+  background: rgba(235, 173, 99, .16) !important;
+  border-bottom: 1px dashed rgba(32, 95, 101, .7) !important;
+  border-radius: 2px !important;
+  padding: 0 1px !important;
+  text-decoration: none !important;
+  cursor: help !important;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.fl-inline-mark[data-mode="en"] {
+  color: inherit !important;
+  background: rgba(235, 173, 99, .12) !important;
+  border-bottom-color: #bc885e !important;
+}
+.fl-inline-mark.fl-original {
+  color: inherit !important;
+  background: transparent !important;
+  border-bottom: 1px dotted #bc885e !important;
+}
+#flowlingo-root {
+  all: initial;
+  position: fixed !important;
+  z-index: 2147483600 !important;
+  inset: 0 auto auto 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+  font: 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+}
